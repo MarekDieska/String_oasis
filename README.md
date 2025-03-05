@@ -1,3 +1,3 @@
-# Song_oasis
+# String_oasis
  eshop
  wtech project github xdieska + xlaticova
