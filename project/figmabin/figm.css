@@ -1,0 +1,199 @@
+
+.produkt-v-zlave-child {
+    position: absolute;
+    height: 100%;
+    width: 98.93%;
+    right: 0.56%;
+    bottom: 0%;
+    left: 0.51%;
+    background-color: #fafafa;
+}
+
+.produkt-v-zlave-child {
+    top: 0%;
+}
+
+.produkt-child {
+    position: absolute;
+    height: 63.64%;
+    width: 70.71%;
+    top: 0%;
+    right: 14.65%;
+    bottom: 36.36%;
+    left: 14.64%;
+    border-radius: 20px;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.nazov {
+    position: absolute;
+    height: 18.18%;
+    width: 100%;
+    top: 63.64%;
+    left: 0%;
+    line-height: 120%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.cena {
+    position: absolute;
+    height: 18.18%;
+    width: 100%;
+    top: 81.82%;
+    left: 0%;
+    line-height: 120%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.produkt {
+    position: absolute;
+    height: 90.91%;
+    width: 98.01%;
+    top: 5.79%;
+    right: 1.99%;
+    bottom: 3.31%;
+    left: 0%;
+}
+.produkt-v-zlave-item {
+    position: absolute;
+    height: 45.45%;
+    width: 4.59%;
+    top: 9.92%;
+    right: 5.66%;
+    bottom: 44.63%;
+    left: 89.75%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: contain;
+}
+.produkt-v-zlave-inner {
+    position: absolute;
+    height: 38.84%;
+    width: 2.55%;
+    top: 16.53%;
+    right: 7.7%;
+    bottom: 44.63%;
+    left: 89.75%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: contain;
+}
+.mood-icon {
+    position: absolute;
+    top: 140px;
+    left: 166px;
+    width: 20px;
+    height: 20px;
+}
+.produkt-v-zlave {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 196.1px;
+    height: 242px;
+}
+.produkt-v-zlave1 {
+    position: absolute;
+    top: 0px;
+    left: 196px;
+    width: 196.1px;
+    height: 242px;
+}
+.produkt-v-zlave2 {
+    position: absolute;
+    top: 0px;
+    left: 392px;
+    width: 196.1px;
+    height: 242px;
+}
+.produkt-v-zlave3 {
+    position: absolute;
+    top: 0px;
+    left: 588px;
+    width: 196.1px;
+    height: 242px;
+}
+.produkt-v-zlave4 {
+    position: absolute;
+    top: 0px;
+    left: 784px;
+    width: 196.1px;
+    height: 242px;
+}
+.produkt-v-zlave5 {
+    position: absolute;
+    top: 0px;
+    left: 980px;
+    width: 196.1px;
+    height: 242px;
+}
+.produkt-v-zlave-child15 {
+    position: absolute;
+    height: 45.45%;
+    top: 9.92%;
+    bottom: 44.63%;
+    left: 89.75%;
+    max-height: 100%;
+    width: 0px;
+    object-fit: contain;
+}
+.produkt-v-zlave-child16 {
+    position: absolute;
+    height: 38.84%;
+    top: 16.53%;
+    bottom: 44.63%;
+    left: 89.75%;
+    max-height: 100%;
+    width: 0px;
+    object-fit: contain;
+}
+.produkt-v-zlave6 {
+    position: absolute;
+    top: 0px;
+    left: 1176px;
+    width: 196.1px;
+    height: 242px;
+}
+.produkt-v-zlave-child18 {
+    position: absolute;
+    height: 45.45%;
+    top: 55.37%;
+    bottom: -0.83%;
+    left: 89.75%;
+    max-height: 100%;
+    width: 0px;
+    object-fit: contain;
+}
+.produkt-v-zlave7 {
+    position: absolute;
+    top: 0px;
+    left: 1372px;
+    width: 196.1px;
+    height: 242px;
+}
+.produkt-v-zlave8 {
+    position: absolute;
+    top: 0px;
+    left: 1568px;
+    width: 196.1px;
+    height: 242px;
+}
+.zlavy {
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+    background-color: #fafafa;
+    height: 246px;
+    overflow-x: auto;
+    text-align: center;
+    font-size: 40px;
+    color: #000;
+    font-family: Jaini;
+}
+

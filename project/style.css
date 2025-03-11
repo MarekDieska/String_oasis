@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Jaini';
+    src: url('Jaini-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Jaini', cursive;
+}
+
+header{
+    padding: 2px;
+    background-color: white;
+    color: black;
+    height: 60px;
+}
+
+.category {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.30);
+    background-color: #ececec;
+    color: black;
+    padding: 0.1%;
+}
+
+main{
+    flex:1;
+}
+
+.grad{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(180deg, lightgrey 0%, white 100%);
+    text-align: center;
+    line-height: 72px;
+}
+
+
+footer{
+    background-color: lightgray;
+    color: white;
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+}
