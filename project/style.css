@@ -19,18 +19,6 @@ header{
     font-size: 30px;
 }
 
-.head-top-right{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 2%;
-    font-size: 30px;
-}
-
-.head-right{
-    flex-basis: 80%;
-}
-
 .logo{
     display:flex;
     align-items: center;
@@ -47,6 +35,7 @@ header{
 
 .nav_links{
     list-style: none;
+    flex-basis: 20%;
 }
 
 .nav_links ul{
@@ -72,15 +61,15 @@ header{
     color: #0088a9;
 }
 
-
 .nav_help{
-    display: flex;
+    display: inline-flex;
     list-style: none;
 }
 
 .nav_help a{
-    padding-left: 30px;
-    font-size: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
     text-decoration: none;
     color:black;
 }
@@ -89,7 +78,6 @@ header{
     max-width: 600px;
     width:100%;
     display:flex;
-    margin: 0 auto;
     padding:0;
 }
 
