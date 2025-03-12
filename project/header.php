@@ -1,6 +1,6 @@
 <div class="logo">
         <img src="images/logo.svg" alt="Logo" width="70">
-        <p>Song <br> Oasis</p>
+        <p>String <br> Oasis</p>
 </div>
 
 <div class="head-center">
@@ -14,7 +14,6 @@
         <li><a href="#">Reklamácie</a></li>
     </ul>
 </div>
-
 
 <div class="nav_links">
     <ul>
