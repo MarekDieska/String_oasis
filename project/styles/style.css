@@ -9,14 +9,18 @@
 :root{
     --font_color: black;
 
+    --header_color: #ffffff;
+
     --hover_color: #0088a9;
-    --input_bg: #ccc;
+    --input_border: #ccc;
+    --input_color: #ffffff;
+
     --category_color: #ececec;
 
-    --bg_color1: #638e91;
+    --bg_color1: #bccfcf;
     --bg_color2: white;
 
-    --footer_color: #638e91;
+    --footer_color: #bccfcf;
     --footer_text: white;
 }
 
@@ -33,6 +37,7 @@ header{
     justify-content: space-between;
     align-items: center;
     font-size: 30px;
+    background: var(--header_color);
 }
 
 
@@ -88,7 +93,8 @@ input {
     width: 100%;
     padding: 10px 15px;
     font-size: 16px;
-    border: 2px solid var(--input_bg);
+    background: var(--input_color);
+    border: 2px solid var(--input_border);
     border-radius: 25px;
     outline: none;
     transition: all 0.3s ease-in-out;
