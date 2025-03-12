@@ -1,3 +1,4 @@
+/* spolocne nastavenia pre cely subor */
 @font-face {
     font-family: 'Jaini';
     src: url('Jaini-Regular.ttf') format('truetype');
@@ -11,6 +12,8 @@
     padding: 0;
     font-family: 'Jaini', cursive;
 }
+
+/* ------------------ header ------------------ */
 header{
     display:flex;
     justify-content: space-between;
@@ -19,6 +22,8 @@ header{
     font-size: 30px;
 }
 
+
+/*pt1*/
 .logo{
     display:flex;
     align-items: center;
@@ -32,33 +37,10 @@ header{
     font-size: 30px;
     line-height: 1;
 }
-
-.nav_links{
-    list-style: none;
-    flex-basis: 20%;
-}
-
-.nav_links ul{
+/*pt2*/
+.head-center{
     display: flex;
-    gap: 10px;
-    flex-wrap: nowrap;
-    padding: 0 20px;
-    white-space: nowrap;
-}
-
-.nav_links li{
-    display:inline-block;
-    padding-left: 30px;
-}
-
-.nav_links a {
-    text-decoration: none;
-    color: black;
-    transition: all 0.3s ease 0s;
-}
-
-.nav_links a:hover{
-    color: #0088a9;
+    flex-direction: column;
 }
 
 .nav_help{
@@ -92,6 +74,39 @@ input {
 }
 
 
+/*pt3*/
+.nav_links{
+    list-style: none;
+    flex-basis: 20%;
+}
+
+.nav_links ul{
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    padding: 0 20px;
+    white-space: nowrap;
+}
+
+.nav_links li{
+    display:inline-block;
+    padding-left: 30px;
+}
+
+.nav_links a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links a:hover{
+    color: #0088a9;
+}
+
+
+
+/* ------------------ category ------------------ */
+
 .category {
     display:flex;
     justify-content: space-between;
@@ -109,6 +124,8 @@ input {
 }
 
 
+/* ------------------ main ------------------ */
+
 main{
     flex:1;
 }
@@ -124,6 +141,8 @@ main{
     line-height: 72px;
 }
 
+
+/* ------------------ footer ------------------ */
 
 footer{
     background-color: lightgray;
