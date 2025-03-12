@@ -1,7 +1,7 @@
 /* spolocne nastavenia pre cely subor */
 @font-face {
     font-family: 'Jaini';
-    src: url('Jaini-Regular.ttf') format('truetype');
+    src: url('../Jaini-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

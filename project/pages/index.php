@@ -3,15 +3,15 @@
 <head>
     <title>Song Oasis</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
 
 <header>
-    <?php include "header.php"?>
+    <?php include "header.php" ?>
 </header>
 <nav>
-    <?php include "category.php"?>
+    <?php include "category.php" ?>
 </nav>
 
 <main>

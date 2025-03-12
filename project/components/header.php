@@ -1,5 +1,5 @@
 <div class="logo">
-        <img src="images/logo.svg" alt="Logo" width="70">
+        <img src="../images/logo.svg" alt="Logo" width="70">
         <p>Song <br> Oasis</p>
 </div>
 
