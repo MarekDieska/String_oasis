@@ -8,10 +8,10 @@
 <body>
 
 <header>
-    <?php include "header.php" ?>
+    <?php include "../components/header.php" ?>
 </header>
 <nav>
-    <?php include "category.php" ?>
+    <?php include "../components/category.php" ?>
 </nav>
 
 <main>
