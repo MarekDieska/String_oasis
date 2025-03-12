@@ -1,0 +1,25 @@
+<div class="logo">
+        <img src="images/logo.svg" alt="Logo" width="70">
+        <p>Song <br> Oasis</p>
+    </div>
+    <div class="head-right">
+        <div class="head-top-right">
+            <label class="search">
+                <input type="text" placeholder="Hľadať podľa názvu...">
+            </label>
+            <div class="nav_links">
+                <ul>
+                    <li><a href="#">Košík</a></li>
+                    <li><a href="#">Účet</a></li>
+                    <li><a href="#">&#x2661</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="head-bottom-right">
+            <ul class="nav_help">
+                <li><a href="#">Mapa</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Reklamácie</a></li>
+            </ul>
+        </div>
+    </div>

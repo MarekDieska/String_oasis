@@ -11,25 +11,37 @@
     padding: 0;
     font-family: 'Jaini', cursive;
 }
-
 header{
     display:flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 2%;
     font-size: 30px;
-    position: relative;
+}
+
+.head-top-right{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2%;
+    font-size: 30px;
+}
+
+.head-right{
+    flex-basis: 80%;
 }
 
 .logo{
     display:flex;
     align-items: center;
     cursor:pointer;
+    flex-basis: 20%;
+    padding: 10px 2%;
 }
 
 .logo p{
     padding-left: 10px;
-    font-size: 25px;
+    font-size: 30px;
     line-height: 1;
 }
 
@@ -37,9 +49,17 @@ header{
     list-style: none;
 }
 
-.nav_links li {
-    display: inline-block;
+.nav_links ul{
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
     padding: 0 20px;
+    white-space: nowrap;
+}
+
+.nav_links li{
+    display:inline-block;
+    padding-left: 30px;
 }
 
 .nav_links a {
@@ -52,16 +72,25 @@ header{
     color: #0088a9;
 }
 
-.search{
-    /*aby bolo vyhladavanie v strede*/
-    position:absolute;
-    left: 50%;
-    transform: translateX(-50%);
 
+.nav_help{
+    display: flex;
+    list-style: none;
+}
+
+.nav_help a{
+    padding-left: 30px;
+    font-size: 25px;
+    text-decoration: none;
+    color:black;
+}
+
+.search{
     max-width: 600px;
-    width: 100%;
+    width:100%;
     display:flex;
-    justify-content: center;
+    margin: 0 auto;
+    padding:0;
 }
 
 input {
@@ -76,10 +105,21 @@ input {
 
 
 .category {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #ececec;
     color: black;
-    padding: 0.1%;
+    text-decoration: none;
+    list-style: none;
+    height: 70px;
+    padding: 1%;
 }
+
+.category img {
+    stroke: black;
+}
+
 
 main{
     flex:1;
