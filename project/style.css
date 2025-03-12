@@ -5,23 +5,77 @@
     font-style: normal;
 }
 
-html, body{
-    height: 100%;
+*{
+    box-sizing: border-box;
     margin: 0;
-    display: flex;
-    flex-direction: column;
+    padding: 0;
     font-family: 'Jaini', cursive;
 }
 
 header{
-    padding: 2px;
-    background-color: white;
-    color: black;
-    height: 60px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2%;
+    font-size: 30px;
+    position: relative;
 }
 
+.logo{
+    display:flex;
+    align-items: center;
+    cursor:pointer;
+}
+
+.logo p{
+    padding-left: 10px;
+    font-size: 25px;
+    line-height: 1;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav_links a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links a:hover{
+    color: #0088a9;
+}
+
+.search{
+    /*aby bolo vyhladavanie v strede*/
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    max-width: 600px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+
 .category {
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.30);
     background-color: #ececec;
     color: black;
     padding: 0.1%;
