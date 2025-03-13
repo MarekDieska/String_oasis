@@ -1,0 +1,16 @@
+/* ------------------ main ------------------ */
+
+main{
+    flex:1;
+}
+
+.grad{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(180deg, var(--bg_color1) 0%, var(--bg_color2) 100%);
+    text-align: center;
+    line-height: 72px;
+}

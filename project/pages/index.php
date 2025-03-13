@@ -4,6 +4,10 @@
     <title>Song Oasis</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/category.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/footer.css">
 </head>
 <body>
 

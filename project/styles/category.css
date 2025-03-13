@@ -1,0 +1,13 @@
+/* ------------------ category ------------------ */
+
+.category {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--category_color);
+    color: var(--font_color);
+    text-decoration: none;
+    list-style: none;
+    height: 70px;
+    padding: 1%;
+}

@@ -1,0 +1,9 @@
+/* ------------------ footer ------------------ */
+
+footer{
+    background-color: var(--footer_color);
+    color: var(--footer_text);
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+}
