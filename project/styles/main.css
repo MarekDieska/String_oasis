@@ -1,5 +1,9 @@
 /* ------------------ main ------------------ */
 
+.main{
+    display: flex;
+    flex-direction: column;
+}
 .grad{
     display:flex;
     justify-content: center;
@@ -10,3 +14,37 @@
     text-align: center;
     line-height: 72px;
 }
+.container_pre_zlavy{
+    height: 300px;
+    background: var(--bg_color2);
+}
+.produkty_zlava{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 240px;
+    background: var(--bg_color2);
+    overflow-x:auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    gap: 10px;
+
+    scrollbar-width: none; /*toto je pre Firefox*/
+}
+
+.produkty_zlava::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+.produkt {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--category_color);
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+

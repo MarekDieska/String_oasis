@@ -3,7 +3,7 @@ header{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 30px;
+    font-size: 25px;
     background: var(--header_color);
 }
 
@@ -53,12 +53,12 @@ header{
     max-width: 600px;
     width:100%;
     display:flex;
-    padding:0;
+    padding:10px 0 0 0;
 }
 
 input {
     width: 100%;
-    padding: 10px 15px;
+    padding: 5px 15px;
     font-size: 16px;
     background: var(--input_color);
     border: 2px solid var(--input_border);
@@ -72,6 +72,7 @@ input {
 .nav_links{
     list-style: none;
     flex-basis: 20%;
+    padding: 0 0 30px 0;
 }
 
 .nav_links ul{
