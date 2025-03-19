@@ -4,8 +4,7 @@
         <title>String Oasis</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="../styles/style.css">
-        <link rel="stylesheet" href="../styles/filter_style.css">
-        <link rel="stylesheet" href="../styles/products_style.css">
+        <link rel="stylesheet" href="../styles/selected_category_style.css">
     </head>
     <body>
         <header>
@@ -14,10 +13,10 @@
 
         <main>
             <aside class = "filter">
-                <?php include "../components/filter.php" ?>
+                <h3>Filter</h3>
             </aside>
             <article class = "products">
-                <?php include "../components/products.php" ?>
+                <?php include "../components/product.php" ?>
             </article>
         </main>
 

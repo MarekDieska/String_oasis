@@ -1,0 +1,11 @@
+.filter {
+    font-size: 25px;
+    background: lightgrey;
+    order: -1;
+}
+
+.main {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
