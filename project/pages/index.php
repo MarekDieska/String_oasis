@@ -4,6 +4,10 @@
     <title>Song Oasis</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/category.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/footer.css">
 </head>
 <body>
 
@@ -15,16 +19,13 @@
 </nav>
 
 <main>
-    <div class="grad">
-        <h1>"Struny vašich snov, melódia vášho srdca."</h1>
-    </div>
+    <?php include "../components/main.php"?>
 </main>
 
-<div class="foot">
-    <footer>
-        <p>--info o nas--</p>
-    </footer>
-</div>
+<footer class="foot">
+    <p>--info o nas--</p>
+</footer>
+
 
 </body>
 </html>
