@@ -2,22 +2,43 @@
 
 .main{
     display: flex;
+    height: 100vh;
     flex-direction: column;
 }
 .grad{
     display:flex;
+    flex: 1;
     justify-content: center;
     align-items: center;
+    position: relative;
     width: 100%;
     height: 700px;
-    background: linear-gradient(180deg, var(--bg_color1) 0%, var(--bg_color2) 100%);
     text-align: center;
     line-height: 72px;
+    /*background: linear-gradient(180deg, var(--bg_color1) 0%, var(--bg_color2) 100%);*/
 }
+
+.grad img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.grad h1{
+    position: relative;
+    z-index: 1;
+}
+
 .container_pre_zlavy{
     height: 300px;
     background: var(--bg_color2);
 }
+
 .produkty_zlava{
     display: flex;
     align-items: center;
@@ -37,9 +58,30 @@
     display: none; /* Chrome, Safari */
 }
 
+.produkty_platne{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 240px;
+    background: var(--bg_color2);
+    overflow-x:auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    gap: 10px;
+
+    scrollbar-width: none; /*toto je pre Firefox*/
+}
+
+.produkty_platne::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+
 .produkt {
     display: flex;
     align-items: center;
+    vertical-align: center;
     flex-direction: column;
     background: var(--category_color);
     width: 150px;
@@ -47,4 +89,3 @@
     border-radius: 10px;
     flex-shrink: 0;
 }
-

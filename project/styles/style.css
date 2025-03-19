@@ -9,15 +9,16 @@
 :root{
     --font_color: black;
 
-    --header_color: #ffffff;
+    --header_color: #350115;
+    --header_font: white;
 
     --hover_color: #0088a9;
     --input_border: #ccc;
     --input_color: #ffffff;
 
-    --category_color: #ececec;
+    --category_color: #ffffff;
 
-    --bg_color1: #cdcdcd;
+    --bg_color1: #e4e4e4;
     --bg_color2: white;
 
     --footer_color: #cdcdcd;
@@ -30,8 +31,6 @@
     padding: 0;
     font-family: 'Jaini', cursive;
 }
-
-
 
 
 

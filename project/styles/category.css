@@ -1,5 +1,6 @@
 /* ------------------ category ------------------ */
 
+
 .category {
     display:flex;
     justify-content: space-between;
@@ -8,6 +9,28 @@
     color: var(--font_color);
     text-decoration: none;
     list-style: none;
-    height: 70px;
-    padding: 1%;
+    height: 100px;
+    padding: 0 60px;
+}
+
+.category_group{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.category a{
+    text-decoration: none;
+    color: var(--font_color);
+    transition: all 0.3s ease 0s;
+}
+
+.category a:hover{
+    color: var(--hover_color);
+}
+
+.category_group p {
+    font-size: 18px;
 }
