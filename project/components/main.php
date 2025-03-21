@@ -1,6 +1,9 @@
 <article class="grad">
+    <!--
     <img src="../images/hands-holding.jpg" alt="photo" width="100%">
+
     <h1>"Struny vašich snov, melódia vášho srdca."</h1>
+    -->
 </article>
 
 <section class="container_pre_zlavy">

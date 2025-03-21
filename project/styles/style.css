@@ -8,15 +8,20 @@
 
 :root{
     --font_color: black;
+    --font_logo: white;
 
-    --header_color: #350115;
-    --header_font: white;
+    --header_color: #090b3a;
+    --header_font: #cfcfcf;
 
-    --hover_color: #0088a9;
+    --hover_color1: #ffffff;
+    --hover_color2: rgb(9, 11, 58);
+    --hover_bg2: rgba(9, 11, 58, 0.1);
+
     --input_border: #ccc;
-    --input_color: #ffffff;
+    --input_color: rgba(255, 255, 255, 0.71);
+    --input_font: #090b3a;
 
-    --category_color: #ffffff;
+    --category_color: transparent;
 
     --bg_color1: #e4e4e4;
     --bg_color2: white;

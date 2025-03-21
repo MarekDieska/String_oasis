@@ -14,6 +14,7 @@
 <header>
     <?php include "../components/header.php" ?>
 </header>
+
 <nav>
     <?php include "../components/category.php" ?>
 </nav>
