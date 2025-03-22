@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-
+    <script src="../javaScript/animate.js"></script>
 </head>
     <body>
         <header class="navbar navbar-expand-md fixed-top shadow header-custom">

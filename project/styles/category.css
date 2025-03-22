@@ -1,6 +1,6 @@
 /* ------------------ category ------------------ */
 .category-custom {
-/*    width: 100%;*/
+    width: 100%;
 /*    justify-content: space-between;*/
 /*    align-items: center;*/
 /*    background-color: var(--category_color);*/
@@ -9,9 +9,11 @@
 /*    list-style: none;*/
 /*    height: 100px;*/
 /*    padding: 0 5%;*/
+    opacity: 0.85;
     z-index: 2 !important;
     transform: translateY(80px);
     transition: transform 0.1s ease, background-color 0.1s ease, color 0.1s ease;
+    background-color: white;
 }
 
 .category-custom.scrolled {
@@ -29,6 +31,7 @@
     z-index: 1000;
     top: 100%;
     list-style: none;
+    color: var(--font_color);
 }
 
 /*.category.scrolled a:hover{*/
