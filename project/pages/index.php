@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <header>
+    <header class="navbar fixed-top header-custom">
         <?php include "../components/header.php" ?>
     </header>
 
