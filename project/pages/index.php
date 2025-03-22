@@ -9,31 +9,24 @@
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <style>
-        #categoryNav {
-            position: sticky;
-            top: 0;
-            background-color: white;
-            padding-top: 100px;
-        }
-    </style>
 </head>
-<body>
-    <header class="navbar fixed-top header-custom">
-        <?php include "../components/header.php" ?>
-    </header>
+    <body>
+        <header class="navbar fixed-top header-custom">
+            <?php include "../components/header.php" ?>
+        </header>
 
-<nav id = categoryNav> <?php include "../components/category.php" ?>
-</nav>
+        <nav class="category-custom fixed-top">
+            <?php include "../components/category.php" ?>
+        </nav>
 
-<main>
-    <?php include "../components/main.php"?>
-</main>
+        <main>
+            <?php include "../components/main.php"?>
+        </main>
 
-<footer class="foot">
-    <p>--info o nas--</p>
-</footer>
+        <footer class="foot">
+            <p>--info o nas--</p>
+        </footer>
 
-<script src="../js/bootstrap.bundle.min.js"></script>
-</body>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
