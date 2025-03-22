@@ -71,4 +71,9 @@
 /*    background: var(--hover_bg2);*/
 /*}*/
 
+.category-custom {
+    text-align: center;
+    justify-content: center;
+}
+
 
