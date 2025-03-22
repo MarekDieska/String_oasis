@@ -8,25 +8,26 @@
     <link rel="stylesheet" href="../styles/category.css">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
 <body>
 
-<header>
-    <?php include "../components/header.php" ?>
-</header>
+    <header>
+        <?php include "../components/header.php" ?>
+    </header>
 
-<nav>
-    <?php include "../components/category.php" ?>
-</nav>
+    <nav>
+<!--        --><?php //include "../components/category.php" ?>
+    </nav>
 
-<main>
-    <?php include "../components/main.php"?>
-</main>
+    <main>
+        <?php include "../components/main.php"?>
+    </main>
 
-<footer class="foot">
-    <p>--info o nas--</p>
-</footer>
+    <footer class="foot">
+        <p>--info o nas--</p>
+    </footer>
 
-
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
