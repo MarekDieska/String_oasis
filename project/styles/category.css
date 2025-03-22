@@ -24,6 +24,13 @@
     color: var(--header_font);
 }
 
+.dropdown-custom{
+    transform: translateX(-15px);
+    z-index: 1000;
+    top: 100%;
+    list-style: none;
+}
+
 /*.category.scrolled a:hover{*/
 /*    color: var(--hover_color1);*/
 /*}*/

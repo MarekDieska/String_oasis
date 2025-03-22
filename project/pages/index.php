@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
 </head>
     <body>
-        <header class="navbar fixed-top header-custom">
+        <header class="navbar navbar-expand-md fixed-top shadow header-custom">
             <?php include "../components/header.php" ?>
         </header>
 

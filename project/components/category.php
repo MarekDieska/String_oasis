@@ -1,11 +1,11 @@
-<div class = "m-0">
-    <div class = "row d-flex w-100">
-        <div class="col-md-2 d-flex flex-column-align-items-center justify-content-center">
+<div class="m-0">
+    <div class="row d-flex w-100">
+        <div class="col-md-2 d-flex flex-column align-items-center justify-content-start position-relative">
             <a href="#" data-bs-toggle="collapse" data-bs-target="#gitaryCollapse">
                 <img src="../images/git.svg" alt="gitary" height="70">
                 <p class="m-0">GITARY</p>
             </a>
-            <ul id="gitaryCollapse" class="collapse dropdown">
+            <ul id="gitaryCollapse" class="collapse position-absolute w-100 mt-2 bg-white rounded dropdown-custom">
                 <li>elektrické</li>
                 <li>elektro-akustické</li>
                 <li>akustické</li>
@@ -13,41 +13,41 @@
                 <li>detské</li>
             </ul>
         </div>
-        <div class="col-md-2 d-flex flex-column-align-items-center justify-content-center">
+        <div class="col-md-2 d-flex flex-column align-items-center justify-content-start position-relative">
             <a href="#" data-bs-toggle="collapse" data-bs-target="#basgitaryCollapse">
                 <img src="../images/bass.svg" alt="gitary" height="70">
                 <p class="m-0">BASGITARY</p>
             </a>
-            <ul id="basgitaryCollapse" class="collapse dropdown">
+            <ul id="basgitaryCollapse" class="collapse position-absolute w-100 mt-2 bg-white rounded dropdown-custom">
                 <li>4 strunové</li>
                 <li>5 strunové</li>
             </ul>
         </div>
-        <div class="col-md-2 d-flex flex-column-align-items-center justify-content-center">
+        <div class="col-md-2 d-flex flex-column align-items-center justify-content-start position-relative">
             <a href="#" data-bs-toggle="collapse" data-bs-target="#ineStrunyCollapse">
                 <img src="../images/banjo.svg" alt="gitary" height="70">
                 <p class="m-0">INÉ STRUNY</p>
             </a>
-            <ul id="ineStrunyCollapse" class="collapse dropdown">
+            <ul id="ineStrunyCollapse" class="collapse position-absolute w-100 mt-2 bg-white rounded dropdown-custom">
                 <li>ukulele</li>
                 <li>banjo</li>
                 <li>mandolína</li>
                 <li>kora</li>
             </ul>
         </div>
-        <div class="col-md-2 d-flex flex-column-align-items-center justify-content-center">
+        <div class="col-md-2 d-flex flex-column align-items-center justify-content-center">
             <a href="#">
                 <img src="../images/kombo.svg" alt="gitary" height="70">
                 <p class="m-0">KOMBÁ</p>
             </a>
         </div>
-        <div class="col-md-2 d-flex flex-column-align-items-center justify-content-center">
+        <div class="col-md-2 d-flex flex-column align-items-center justify-content-center">
             <a href="#">
                 <img src="../images/kabel.svg" alt="gitary" height="70">
                 <p class="m-0">PRÍSLUŠENSTVO</p>
             </a>
         </div>
-        <div class="col-md-2 d-flex flex-column-align-items-center justify-content-center">
+        <div class="col-md-2 d-flex flex-column align-items-center justify-content-center">
             <a href="#">
                 <img src="../images/platna.svg" alt="gitary" height="70">
                 <p class="m-0">PLATNE</p>
