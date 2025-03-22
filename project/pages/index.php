@@ -20,9 +20,15 @@
 <body>
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <header class="navbar fixed-top header-custom">
         <?php include "../components/header.php" ?>
     </header>
+=======
+<header>
+    <?php include "../components/header.php" ?>
+</header>
+>>>>>>> Stashed changes
 =======
 <header>
     <?php include "../components/header.php" ?>
