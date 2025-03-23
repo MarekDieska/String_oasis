@@ -18,7 +18,7 @@
             <?php include "../components/header.php" ?>
         </header>
 
-        <nav class="navbar navbar-expand-md category-custom fixed-top">
+        <nav class="navbar navbar-expand-md category-custom w-100 fixed-top">
             <?php include "../components/category.php" ?>
         </nav>
 

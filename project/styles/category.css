@@ -1,34 +1,10 @@
 /* ------------------ category ------------------ */
 .category-custom {
-    width: 100%;
-/*    justify-content: space-between;*/
-/*    align-items: center;*/
-/*    color: var(--font_color);*/
-/*    text-decoration: none;*/
-/*    list-style: none;*/
-/*    height: 100px;*/
-/*    padding: 0 5%;*/
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     opacity: 0.85;
     z-index: 2 !important;
     transform: translateY(80px);
     transition: transform 0.1s ease, background-color 0.1s ease, color 0.1s ease;
-    background-color: white;
-=======
     background: var(--category_color);
-    z-index: 2 !important;
-    transform: translateY(80px);
-    transition: transform 0.1s ease, background-color 0.1s ease, color 0.1s ease;
-    font-size: 18px;
->>>>>>> Stashed changes
-=======
-    background: var(--category_color);
-    z-index: 2 !important;
-    transform: translateY(80px);
-    transition: transform 0.1s ease, background-color 0.1s ease, color 0.1s ease;
-    font-size: 18px;
->>>>>>> Stashed changes
 }
 
 .category-custom.scrolled {
@@ -39,6 +15,10 @@
 
 .category-custom.scrolled a {
     color: var(--header_font);
+}
+
+.category-custom.scrolled a:hover{
+    color: var(--hover_color1);
 }
 
 .dropdown-custom{
@@ -54,56 +34,6 @@
     box-shadow: none !important;
 }
 
-
-/*.category.scrolled a:hover{*/
-/*    color: var(--hover_color1);*/
-/*}*/
-/*.category_group {*/
-/*    position: relative;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    text-align: center;*/
-/*    padding: 10px 20px;*/
-/*}*/
-
-/*.category_group a {*/
-/*    text-decoration: none;*/
-/*    color: inherit;*/
-/*    transition: all 0.3s ease;*/
-/*}*/
-
-/*.category_group a:hover {*/
-/*    color: var(--hover_color2);*/
-/*    background: var(--hover_bg2);*/
-/*}*/
-
-/*.category_group ul {*/
-/*    display: none;*/
-/*    position: absolute;*/
-/*    left:0;*/
-/*    background-color: var(--category_color);*/
-/*    padding: 15px 0;*/
-/*    text-align: center;*/
-/*    z-index: 98;*/
-/*}*/
-
-/*.category_group:hover ul {*/
-/*    display: flex;*/
-/*    color: var(--hover_color2);*/
-/*    width: 100%;*/
-/*}*/
-
-/*.category_group ul li {*/
-/*    list-style: none;*/
-/*    padding: 0 20px;*/
-/*}*/
-
-/*.dropdown{*/
-/*    background: var(--hover_bg2);*/
-/*}*/
-
 .category-custom {
     text-align: center !important;
     justify-content: center;
@@ -114,5 +44,6 @@
     color: var(--header_color);
 }
 
-
-
+.accordion-custom:after{
+    display: none !important;
+}
