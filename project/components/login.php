@@ -14,11 +14,11 @@
                         </div>
                         <div class="mb-2 mt-2">
                             <label for="Email" class="form-label login-form-label">Email</label>
-                            <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+                            <input type="email" class="form-control" id="Email" aria-describedby="Email" placeholder="Email">
                         </div>
                         <div class="mb-2">
                             <label for="Password" class="form-label login-form-label">Heslo</label>
-                            <input type="password" class="form-control" id="Password">
+                            <input type="password" class="form-control" id="Password" aria-describedby="Password" placeholder="Heslo">
                             <p><a href="#" class="login-form-label link-light">Zabudol si heslo?</a></p>
                         </div>
                         <button type="submit" class="btn bg-white w-100 mt-5 mb-2">LOGIN</button>
