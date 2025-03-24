@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../styles/footer.css">
     <script src="../javaScript/animate.js"></script>
 </head>
-    <body class="bg-dark bg-gradient">
+    <body class="bg-dark">
         <header class="navbar navbar-expand-md fixed-top shadow header-custom">
             <?php include "../components/header.php" ?>
         </header>

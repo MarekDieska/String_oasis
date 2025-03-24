@@ -7,7 +7,7 @@
 }
 
 :root{
-    --font_color: black;
+    --font_color: #a6a8c8;
     --font_logo: white;
 
     --header_color: #4c1a1a;
@@ -21,7 +21,10 @@
     --input_color: rgba(255, 255, 255, 0.71);
     --input_font: #6C4837;
 
-    --category_color: rgb(244, 244, 244);
+    --category_color: rgb(55, 10, 10);
+    --category_font: rgb(186, 186, 186);
+
+    --card_color: rgb(119, 120, 133);
 
     --bg_color1: #e4e4e4;
     --bg_color2: white;
@@ -51,6 +54,12 @@
     color: white;
     background-color: var(--login_color);
 }
+
+.text_color {
+    color: var(--font_color)
+}
+
+
 
 
 

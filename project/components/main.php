@@ -1,9 +1,9 @@
 <article class="row justify-content-center align-items-center position-relative
                 w-100 text-center grad">
-<!--    <component class="hidden">-->
-<!--        <img src="../images/home_background.jpg" alt="photo" width=100%>-->
-<!--    </component>-->
-    <h1 class="position-relative hidden">
+    <component class="hidden w-100 text-center opacity-50 position-relative">
+        <img src="../images/home_background.svg" alt="photo" width=70%>
+    </component>
+    <h1 class="position-relative hidden text_color">
         "Struny vašich snov, melódia vášho srdca."
     </h1>
 </article>
