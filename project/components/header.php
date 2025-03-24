@@ -2,7 +2,7 @@
     <div class="row d-flex justify-content-between align-items-center w-100">
 
         <div class="col-md-4 col-6 d-flex align-items-center">
-            <a href="#" class="navbar-brand d-flex align-items-center m-0 p-0">
+            <a href="../pages/index.php" class="navbar-brand d-flex align-items-center m-0 p-0">
                 <img src="../images/logo.svg" alt="Logo" width="60">
                 <p class="mb-0 p-0 ms-2 fs-3 logo-p">String<br>Oasis</p>
             </a>
