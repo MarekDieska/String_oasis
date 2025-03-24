@@ -21,7 +21,7 @@
                             <input type="password" class="form-control" id="Password" aria-describedby="Password" placeholder="Heslo">
                             <p><a href="#" class="login-form-label link-light">Zabudol si heslo?</a></p>
                         </div>
-                        <button type="submit" class="btn bg-white w-100 mt-5 mb-2">LOGIN</button>
+                        <button type="submit" class="btn text-black bg-white w-100 mt-5 mb-2">LOGIN</button>
                         <p><a href="#" class="login-form-label link-light justify-content-center d-flex">Registrácia</a></p>
                     </form>
                 </div>
