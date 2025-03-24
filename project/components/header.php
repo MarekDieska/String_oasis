@@ -22,7 +22,7 @@
         <div class="col-md-4 col-6 d-flex justify-content-end align-items-center">
             <ul class="d-flex list-unstyled fs-3 m-0">
                 <li class="ms-4"><a class="link-custom" href="#">Košík</a></li>
-                <li class="ms-4"><a class="link-custom" href="#">Účet</a></li>
+                <li class="ms-4"><a class="link-custom" data-bs-toggle="modal" data-bs-target="#login_form">Účet</a></li>
                 <li class="ms-4"><a class="link-custom" href="#">&#x2661</a></li>
             </ul>
         </div>
