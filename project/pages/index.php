@@ -26,8 +26,8 @@
             <?php include "../components/main.php"?>
         </main>
 
-        <footer class="foot">
-            <p>--info o nas--</p>
+        <footer>
+            <?php include "../components/footer.php"?>
         </footer>
 
         <script src="../js/bootstrap.bundle.min.js"></script>
