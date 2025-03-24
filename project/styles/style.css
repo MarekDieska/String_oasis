@@ -47,6 +47,11 @@
     opacity: 1;
 }
 
+.login-form-color {
+    color: white;
+    background-color: var(--login_color);
+}
+
 
 
 
