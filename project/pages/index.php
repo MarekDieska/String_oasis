@@ -22,7 +22,7 @@
             <?php include "../components/category.php" ?>
         </nav>
 
-        <main>
+        <main class="container">
             <?php include "../components/main.php"?>
         </main>
 
