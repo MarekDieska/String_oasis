@@ -6,3 +6,7 @@
     color: var(--font_color) !important; /* Zmení farbu odkazov */
     text-decoration: none; /* Odstráni podčiarknutie */
 }
+
+.product-detail {
+    height: 95vh;
+}
