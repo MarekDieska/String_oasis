@@ -66,19 +66,6 @@
                     </div>
                 </div>
             </div>
-
-            <div class="btn-group-vertical" role="group">
-                <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-1" autocomplete="off" checked>
-                <label class="btn btn-outline-danger" for="vbtn-1">hviezdy</label>
-                <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-2" autocomplete="off">
-                <label class="btn btn-outline-danger" for="vbtn-2">hviezdy</label>
-                <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-3" autocomplete="off">
-                <label class="btn btn-outline-danger" for="vbtn-3">hviezdy</label>
-                <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-4" autocomplete="off">
-                <label class="btn btn-outline-danger" for="vbtn-4">hviezdy</label>
-                <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-5" autocomplete="off">
-                <label class="btn btn-outline-danger" for="vbtn-5">hviezdy</label>
-            </div>
         </div>
     </div>
     <div class="col-9 bg-blue">
