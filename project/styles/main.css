@@ -42,3 +42,7 @@
 .container_pre_zlavy, .container_pre_platne{
     height: 300px;
 }
+
+.background-image {
+    margin-left: 12%;
+}
