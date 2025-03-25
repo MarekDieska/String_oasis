@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+    <link href="../fonts/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="../fonts/fontawesome/css/solid.css" rel="stylesheet" />
     <script src="../js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/header.css">
@@ -25,7 +27,7 @@
     <?php include "../components/category.php" ?>
 </nav>
 
-<main class="container">
+<main class="container" style="margin-top: 140px">
     <?php include "../components/main_detail.php"?>
 </main>
 

@@ -8,5 +8,14 @@
 }
 
 .product-detail {
-    height: 95vh;
+    width: 60vh;
+}
+
+.border-custom {
+    border-color: var(--header_color);
+    border-width: 10px !important;
+}
+
+.rating-color{
+    color: #c5674b !important;
 }
