@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/category.css">
-    <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/main_filter.css">
     <script src="../javaScript/animate.js"></script>
 </head>
-<body>
+<body class="bg-dark">
 <header class="navbar navbar-expand-md fixed-top shadow header-custom">
     <?php include "../components/header.php" ?>
 </header>
@@ -23,7 +23,7 @@
     <?php include "../components/category.php" ?>
 </nav>
 
-<main class="container">
+<main class="container main-f-custom" style="margin-top: 140px">
     <?php include "../components/main_filter.php"?>
 </main>
 
