@@ -16,6 +16,10 @@
     border-width: 10px !important;
 }
 
-.rating-color{
+.rating-color {
     color: #c5674b !important;
+}
+
+.detail_large_text {
+    font-size: 48px;
 }
