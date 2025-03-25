@@ -7,7 +7,7 @@
 }
 
 :root{
-    --font_color: #e9e9ff;
+    --font_color: #f0f0ff;
     --font_logo: white;
 
     --header_color: #4c1a1a;
@@ -34,6 +34,8 @@
 
     --login_color : #9c3b3b;
 
+    --filter-bg: rgb(34, 37, 41);
+    --slider-thumb: #9c3b3b;
 
 }
 

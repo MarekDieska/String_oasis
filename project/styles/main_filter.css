@@ -1,0 +1,14 @@
+ .side-filter-custom{
+     border-right: 1px solid #eaeaea;
+     padding: 2%;
+ }
+
+ .main-f-custom{
+     margin-left: 0;
+     padding-left: 10px;
+     color: var(--font_color);
+ }
+
+.thumb-custom::-webkit-slider-thumb {
+     background: var(--slider-thumb);
+ }
