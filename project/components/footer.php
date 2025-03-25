@@ -12,7 +12,7 @@
         </div>
     </div>
     <div class="col-12 order-1 col-md-4 order-md-2 d-flex align-items-center justify-content-center flex-column">
-        <a href="#" class="navbar-brand d-flex align-items-center">
+        <a href="../pages/index.php" class="navbar-brand d-flex align-items-center">
             <img src="../images/logo.svg" alt="Logo" width="60">
             <p class="mb-0 p-0 ms-2 fs-3 logo-p">String<br>Oasis</p>
         </a>

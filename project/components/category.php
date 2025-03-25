@@ -11,10 +11,10 @@
                 </h1>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body d-flex flex-column">
-                        <a href="#">elektrické</a>
-                        <a href="#">elektro-akustické</a>
-                        <a href="#">klasické</a>
-                        <a href="#">detské</a>
+                        <a href="../pages/filters_page.php">elektrické</a>
+                        <a href="../pages/filters_page.php">elektro-akustické</a>
+                        <a href="../pages/filters_page.php">klasické</a>
+                        <a href="../pages/filters_page.php">detské</a>
                     </div>
                 </div>
             </div>
@@ -26,8 +26,8 @@
                 </h1>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body d-flex flex-column">
-                        <a href="#">4 strunové</a>
-                        <a href="#">5 strunové</a>
+                        <a href="../pages/filters_page.php">4 strunové</a>
+                        <a href="../pages/filters_page.php">5 strunové</a>
                     </div>
                 </div>
             </div>
@@ -39,28 +39,34 @@
                 </h1>
                 <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body d-flex flex-column">
-                        <a href="#">ukulele</a>
-                        <a href="#">banjo</a>
-                        <a href="#">mandolína</a>
-                        <a href="#">kora</a>
+                        <a href="../pages/filters_page.php">ukulele</a>
+                        <a href="../pages/filters_page.php">banjo</a>
+                        <a href="../pages/filters_page.php">mandolína</a>
+                        <a href="../pages/filters_page.php">kora</a>
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h1 class="accordion-header">
-                <button class="accordion-button collapsed accordion-custom" type="button">
-                    Reproduktory a kombá
-                </button>
+                    <a href="../pages/filters_page.php">
+                        <button class="accordion-button collapsed accordion-custom" type="button">
+                            Reproduktory a kombá
+                        </button>
+                    </a>
             </div>
             <div class="accordion-item">
-                <button class="accordion-button collapsed accordion-custom" type="button">
-                    Príslušenstvo
-                </button>
+                <a href="../pages/filters_page.php">
+                    <button class="accordion-button collapsed accordion-custom" type="button">
+                        Príslušenstvo
+                    </button>
+                </a>
             </div>
             <div class="accordion-item">
-                <button class="accordion-button collapsed accordion-custom" type="button">
-                    Platne
-                </button>
+                <a href="../pages/filters_page.php">
+                    <button class="accordion-button collapsed accordion-custom" type="button">
+                        Platne
+                    </button>
+                </a>
             </div>
         </div>
     </div>
@@ -71,7 +77,7 @@
     <button class="navbar-toggler menu-custom" type="button"
             data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <img src="../images/menu.svg" alt="" height="25">
     </button>
 
 
@@ -84,11 +90,11 @@
                 <p class="m-0">GITARY</p>
             </a>
             <ul id="gitaryCollapse" class="collapse position-absolute w-100 mt-2 bg-white rounded dropdown-custom">
-                <li>elektrické</li>
-                <li>elektro-akustické</li>
-                <li>akustické</li>
-                <li>klasické</li>
-                <li>detské</li>
+                <li><a href="../pages/filters_page.php">elektrické</a></li>
+                <li><a href="../pages/filters_page.php">elektro-akustické</a></li>
+                <li><a href="../pages/filters_page.php">akustické</a></li>
+                <li><a href="../pages/filters_page.php">klasické</a></li>
+                <li><a href="../pages/filters_page.php">detské</a></li>
             </ul>
         </div>
 
@@ -98,8 +104,8 @@
                 <p class="m-0  ">BASGITARY</p>
             </a>
             <ul id="basgitaryCollapse" class="collapse position-absolute w-100 mt-2 bg-white rounded dropdown-custom">
-                <li>4 strunové</li>
-                <li>5 strunové</li>
+                <li><a href="../pages/filters_page.php">4 strunové</a></li>
+                <li><a href="../pages/filters_page.php">5 strunové</a></li>
             </ul>
         </div>
 
@@ -109,29 +115,29 @@
                 <p class="m-0  ">INÉ STRUNY</p>
             </a>
             <ul id="ineStrunyCollapse" class="collapse position-absolute w-100 mt-2 bg-white rounded dropdown-custom">
-                <li>ukulele</li>
-                <li>banjo</li>
-                <li>mandolína</li>
-                <li>kora</li>
+                <li><a href="../pages/filters_page.php">ukulele</a></li>
+                <li><a href="../pages/filters_page.php">banjo</a></li>
+                <li><a href="../pages/filters_page.php">mandolína</a></li>
+                <li><a href="../pages/filters_page.php">kora</a></li>
             </ul>
         </div>
 
         <div class="m-0 col-2 d-flex flex-column">
-            <a href="#" class="d-flex flex-column">
+            <a href="../pages/filters_page.php" class="d-flex flex-column">
                 <img src="../images/kombo.svg" alt="gitary" height="70" class="d-none d-md-block">
                 <p class="m-0  ">KOMBÁ</p>
             </a>
         </div>
 
         <div class="m-0 col-2 d-flex flex-column">
-            <a href="#" class="d-flex flex-column">
+            <a href="../pages/filters_page.php" class="d-flex flex-column">
                 <img src="../images/kabel.svg" alt="gitary" height="70" class="d-none d-md-block">
                 <p class="m-0  ">PRÍSLUŠENSTVO</p>
             </a>
         </div>
 
         <div class="m-0 col-2 d-flex flex-column">
-            <a href="#" class="d-flex flex-column">
+            <a href="../pages/filters_page.php" class="d-flex flex-column">
                 <img src="../images/platna.svg" alt="gitary" height="70" class="d-none d-md-block">
                 <p class="m-0  ">PLATNE</p>
             </a>
