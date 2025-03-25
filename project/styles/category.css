@@ -45,3 +45,8 @@
 .accordion-custom:after{
     display: none !important;
 }
+
+.accordion_color {
+    color: white;
+    background-color: var(--accordion-color);
+}

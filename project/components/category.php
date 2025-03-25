@@ -3,13 +3,13 @@
     <!--ked je mala obrazovka -->
     <div class="collapse navbar-collapse" id="navbarNav">
         <div class="d-flex d-md-none flex-column accordion accordion-flush accordion-custom" id="accordionFlushExample">
-            <div class="accordion-item">
+            <div class="accordion-item accordion_color">
                 <h1 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <button class="accordion-button collapsed accordion_color" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                         Gitary
                     </button>
                 </h1>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div id="flush-collapseOne" class="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body d-flex flex-column">
                         <a href="../pages/filters_page.php">elektrické</a>
                         <a href="../pages/filters_page.php">elektro-akustické</a>
@@ -18,26 +18,26 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item accordion_color">
                 <h1 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <button class="accordion-button collapsed accordion_color border-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                         Basgitary
                     </button>
                 </h1>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div id="flush-collapseTwo" class="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body d-flex flex-column">
                         <a href="../pages/filters_page.php">4 strunové</a>
                         <a href="../pages/filters_page.php">5 strunové</a>
                     </div>
                 </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item accordion_color">
                 <h1 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <button class="accordion-button collapsed accordion_color border-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                         Iné strunové nástroje
                     </button>
                 </h1>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div id="flush-collapseThree" class="accordion-collapse collapse bg-dark" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body d-flex flex-column">
                         <a href="../pages/filters_page.php">ukulele</a>
                         <a href="../pages/filters_page.php">banjo</a>
@@ -46,24 +46,24 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item accordion_color">
                 <h1 class="accordion-header">
                     <a href="../pages/filters_page.php">
-                        <button class="accordion-button collapsed accordion-custom" type="button">
+                        <button class="accordion-button collapsed accordion_color border-0" type="button">
                             Reproduktory a kombá
                         </button>
                     </a>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item accordion_color">
                 <a href="../pages/filters_page.php">
-                    <button class="accordion-button collapsed accordion-custom" type="button">
+                    <button class="accordion-button collapsed accordion_color border-0" type="button">
                         Príslušenstvo
                     </button>
                 </a>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item accordion_color">
                 <a href="../pages/filters_page.php">
-                    <button class="accordion-button collapsed accordion-custom" type="button">
+                    <button class="accordion-button collapsed accordion_color" type="button">
                         Platne
                     </button>
                 </a>
