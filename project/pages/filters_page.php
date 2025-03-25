@@ -25,21 +25,8 @@
     <?php include "../components/category.php" ?>
 </nav>
 
-<main class="main-f-custom" style="margin-top: 140px">
-    <div class="d-flex flex-row">
-        <button class="btn btn-danger rounded-pill d-block d-md-none  position-fixed start-0 m-3 float-filter-custom" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-            <img src="../images/filter.svg" alt="" width="20">
-        </button>
-
-        <div class="offcanvas offcanvas-start off-custom overflow-auto p-3 pt-5 pb-5" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-            <?php include "../components/main_filter.php"?>
-        </div>
-        <div class="d-none d-md-block">
-            <?php include "../components/main_filter.php"?>
-        </div>
-
-        <?php include "../components/main_filter_r.php"?>
-    </div>
+<main class="container main-f-custom" style="margin-top: 140px">
+    <?php include "../components/main_filter.php"?>
 </main>
 
 <footer>
