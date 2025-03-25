@@ -71,7 +71,7 @@
             <div class="d-flex flex-column mt-5">
                 <h5>Hodnotenie: </h5>
 
-                <div class="d-flex justify-content-center flex-column m-4 mt-3">
+                <div class="d-flex justify-content-center flex-column ms-5 mt-3">
                     <div class="btn-group-vertical" role="group">
                         <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-1" autocomplete="off" checked>
                         <label class="btn btn-outline-danger hv-custom" for="vbtn-1">

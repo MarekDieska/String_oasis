@@ -6,20 +6,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'LibreBaskerVille-Regular';
-    src: url('../fonts/LibreBaskerville-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'LibreBaskerVille-Italic';
-    src: url('../fonts/LibreBaskerville-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 :root{
     --font_color: #f0f0ff;
     --font_logo: white;
@@ -58,10 +44,6 @@
     padding: 0;
     font-family: 'Jaini', cursive;
 }
-
-
-
-
 
 .hidden {
     opacity: 0;
