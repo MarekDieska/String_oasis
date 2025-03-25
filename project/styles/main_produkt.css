@@ -1,0 +1,8 @@
+.breadcrumb {
+    --bs-breadcrumb-divider-color: var(--font_color);  /* Farba oddeľovača */
+}
+
+.breadcrumb-item a {
+    color: var(--font_color) !important; /* Zmení farbu odkazov */
+    text-decoration: none; /* Odstráni podčiarknutie */
+}

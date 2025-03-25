@@ -9,7 +9,7 @@
 
 
 <section class="container_pre_zlavy">
-    <h2 class="zlava">Zľavy</h2>
+    <h2 class="zlava text_color">Zľavy</h2>
     <div class="produkty-container d-flex gap-3 p-10">
         <a class="link-custom" href="../pages/produkt_detail.php">
             <div class="card produkt">
@@ -92,7 +92,7 @@
 </section>
 
 <section class="container_pre_platne">
-    <h2 class="zlava">Platne</h2>
+    <h2 class="zlava text_color">Platne</h2>
     <div class="produkty-container d-flex gap-3 p-10">
         <a class="link-custom" href="../pages/produkt_detail.php">
             <div class="card produkt">
