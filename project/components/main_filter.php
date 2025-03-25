@@ -66,6 +66,56 @@
                     </div>
                 </div>
             </div>
+
+
+            <div class="d-flex flex-column mt-5">
+                <h5>Hodnotenie: </h5>
+
+                <div class="d-flex justify-content-center flex-column ms-5 mt-3">
+                    <div class="btn-group-vertical" role="group">
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-1" autocomplete="off" checked>
+                        <label class="btn btn-outline-danger hv-custom" for="vbtn-1">
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star rating-color"></i>
+                        </label>
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-2" autocomplete="off">
+                        <label class="btn btn-outline-danger hv-custom" for="vbtn-2">
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star rating-color2"></i>
+                        </label>
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-3" autocomplete="off">
+                        <label class="btn btn-outline-danger hv-custom" for="vbtn-3">
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star rating-color2"></i>
+                            <i class="fa fa-star rating-color2"></i>
+                        </label>
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-4" autocomplete="off">
+                        <label class="btn btn-outline-danger hv-custom" for="vbtn-4">
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star rating-color2"></i>
+                            <i class="fa fa-star rating-color2"></i>
+                            <i class="fa fa-star rating-color2"></i>
+                        </label>
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-5" autocomplete="off">
+                        <label class="btn btn-outline-danger hv-custom" for="vbtn-5">
+                            <i class="fa fa-star rating-color"></i>
+                            <i class="fa fa-star rating-color2"></i>
+                            <i class="fa fa-star rating-color2"></i>
+                            <i class="fa fa-star rating-color2"></i>
+                            <i class="fa fa-star rating-color2"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="col-9 bg-blue">
