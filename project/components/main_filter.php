@@ -74,43 +74,27 @@
                 <div class="btn-group-vertical" role="group">
                     <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-1" autocomplete="off">
                     <label class="btn btn-outline-danger hv-custom" for="vbtn-1">
-                        <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
+                        <?php include "../components/stars5.php" ?>
                     </label>
                     <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-2" autocomplete="off">
                     <label class="btn btn-outline-danger hv-custom" for="vbtn-2">
-                        <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color2"></i>
+                        <?php include "../components/stars4.php" ?>
+
                     </label>
                     <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-3" autocomplete="off">
                     <label class="btn btn-outline-danger hv-custom" for="vbtn-3">
-                        <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color2"></i>
-                        <i class="fa fa-star rating-color2"></i>
+                        <?php include "../components/stars3.php" ?>
+
                     </label>
                     <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-4" autocomplete="off">
                     <label class="btn btn-outline-danger hv-custom" for="vbtn-4">
-                        <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color2"></i>
-                        <i class="fa fa-star rating-color2"></i>
-                        <i class="fa fa-star rating-color2"></i>
+                        <?php include "../components/stars2.php" ?>
+
                     </label>
                     <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-5" autocomplete="off">
                     <label class="btn btn-outline-danger hv-custom" for="vbtn-5">
-                        <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color2"></i>
-                        <i class="fa fa-star rating-color2"></i>
-                        <i class="fa fa-star rating-color2"></i>
-                        <i class="fa fa-star rating-color2"></i>
+                        <?php include "../components/stars1.php" ?>
+
                     </label>
                     <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-6" autocomplete="off" checked>
                     <label class="btn btn-outline-danger hv-custom" for="vbtn-6">
@@ -124,31 +108,31 @@
             <h4>Veľkosť gitary</h4>
             <div class="p-3">
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="check1">
+                    <input class="form-check-input" type="radio" name="size" value="" id="check1">
                     <label class="form-check-label" for="check1">
                         Junior
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="check2">
+                    <input class="form-check-input" type="radio" name="size" value="" id="check2">
                     <label class="form-check-label" for="check2">
                         3/4
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="check3">
+                    <input class="form-check-input" type="radio" name="size" value="" id="check3">
                     <label class="form-check-label" for="check3">
                         7/8
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="check4">
+                    <input class="form-check-input" type="radio" name="size" value="" id="check4">
                     <label class="form-check-label" for="check4">
                         4/4
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="check5">
+                    <input class="form-check-input" type="radio" name="size" value="" id="check5">
                     <label class="form-check-label" for="check5">
                         Full size
                     </label>
@@ -158,7 +142,7 @@
 
         <div class="d-flex flex-column mt-5">
             <h4>Značka</h4>
-            <div class="overflow-auto f-scroll p-3">
+            <div class=" p-3">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="zn1">
                     <label class="form-check-label" for="zn1">

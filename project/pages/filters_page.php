@@ -34,11 +34,12 @@
         <div class="offcanvas offcanvas-start off-custom overflow-auto p-3 pt-5 pb-5 bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
             <?php include "../components/main_filter.php"?>
         </div>
-        <div class="d-none d-md-block line-custom">
+        <div class="d-none d-md-flex line-custom">
             <?php include "../components/main_filter.php"?>
         </div>
 
         <?php include "../components/main_filter_r.php"?>
+
     </div>
 </main>
 
