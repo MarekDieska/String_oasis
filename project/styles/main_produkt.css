@@ -20,6 +20,22 @@
     color: #c5674b !important;
 }
 
+.rating-color{
+    color: #ffffff !important;
+}
+
+.rating-color2{
+    color: #000000 !important;
+}
+
 .detail_large_text {
     font-size: 48px;
+}
+
+.reviews::-webkit-scrollbar {
+    display: none;
+}
+
+.overflow-y-scroll::-webkit-scrollbar {
+    display:none;
 }

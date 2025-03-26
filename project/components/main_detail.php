@@ -117,4 +117,179 @@
     <hr class="text_color mt-5">
 
     <h1 class="mt-md-3 text_color align-items-left">Recenzie</h1>
+
+</div>
+
+<div class="overflow-auto reviews">
+    <div class="row flex-row flex-nowrap">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card text-bg-success">
+                <div class="card-header">
+                    <div class="ratings hidden">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title " style="height: 20px;">Určite odporúčam</h4>
+                    <hr>
+                    <p class="overflow-y-scroll fs-5 card-text fs-5" style="height: 180px">Táto gitara mi spoľahlivo slúži už niekoľoko rokov a
+                    zatiaľ som s ňou nemal žiadne väčšie problémy. Môj najobľúbenejší atribút na tejto gitare
+                    , samozrejme okrem zvuku, je jej vzhľad. Takáto gitara poteší každého milovníka hudby,
+                    od začiatočníka až po profesionála.</p>
+                    <div class="card-footer bg-transparent">
+                        <h5 class="mb-0">Silvester</h5>
+                        <p class="fs-5 opacity-50 mb-0">2 týždne dozadu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card text-bg-success">
+                <div class="card-header">
+                    <div class="ratings hidden">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title " style="height: 20px;">Skvelá pre začiatočníkov</h4>
+                    <hr>
+                    <p class="overflow-y-scroll fs-5 card-text" style="height: 180px">Moje hudobné začiatky boli
+                    práve s touto gitarou. Dneska vypredávam koncerty. Na túto gitaru mám iba samé dobré
+                    spomienky</p>
+                    <div class="card-footer bg-transparent">
+                        <h5 class="mb-0">Alexandra</h5>
+                        <p class="fs-5 opacity-50 mb-0">3 mesiace dozadu</p>
+                    </div>
+                </div>
+            </div>
+        </div><div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card text-bg-danger">
+                <div class="card-header">
+                    <div class="ratings hidden">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color2"></i>
+                        <i class="fa fa-star rating-color2"></i>
+                        <i class="fa fa-star rating-color2"></i>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title" style="height: 20px;">Určite neodporúčam</h4>
+                    <hr>
+                    <p class="overflow-y-scroll fs-5 card-text" style="height: 180px">Táto gitara mi nespoľahlivo slúži len pár týždňov a
+                        zatiaľ som s ňou mala samé problémy. Môj najmenej obľúvený atribút na tejto gitare
+                        , samozrejme okrem zvuku, je jej vzhľad. Takáto gitara nepoteší väčšinu milovníkov hudby,
+                        od začiatočníka až po profesionála.</p>
+                    <div class="card-footer bg-transparent">
+                        <h5 class="mb-0">Gabriela</h5>
+                        <p class="fs-5 opacity-50 mb-0">5 mesiacov dozadu</p>
+                    </div>
+                </div>
+            </div>
+        </div><div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card text-bg-success">
+                <div class="card-header">
+                    <div class="ratings hidden">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color2"></i>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title " style="height: 20px;">Príliš drahá</h4>
+                    <hr>
+                    <p class="overflow-y-scroll fs-5 card-text" style="height: 180px">Ako študent si takúto
+                    gitaru určite nemôžem dovoliť, nabudúce by so zvolil lacnejšiu voľbu.
+                    Táto gitara je síce skvelá pre začiatočníkov, ale človek to musí myslieť vážne</p>
+                    <div class="card-footer bg-transparent">
+                        <h5 class="mb-0">Marek</h5>
+                        <p class="fs-5 opacity-50 mb-0">6 mesiacov dozadu</p>
+                    </div>
+                </div>
+            </div>
+        </div><div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card text-bg-success">
+                <div class="card-header">
+                    <div class="ratings hidden">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title " style="height: 20px;">To je ono!!</h4>
+                    <hr>
+                    <p class="overflow-y-scroll fs-5 card-text" style="height: 180px">Hľadala som.
+                        Veľmi dlho som hľadala takú gitaru, čo mi bude plne vyhovovať po každej stránke.
+                        Krásna melódia, povrch, jemnosť zvuku... Neviem si ju vynachváliť. Určite stojí za zváženie!</p>
+                    <div class="card-footer bg-transparent">
+                        <h5 class="mb-0">Viktória</h5>
+                        <p class="fs-5 opacity-50 mb-0">11 mesiacov dozadu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card text-bg-success">
+                <div class="card-header">
+                    <div class="ratings hidden">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title " style="height: 20px;">Určite odporúčam</h4>
+                    <hr>
+                    <p class="overflow-y-scroll fs-5 card-text" style="height: 180px">Táto gitara mi spoľahlivo slúži už niekoľoko rokov a
+                        zatiaľ som s ňou nemal žiadne väčšie problémy. Môj najobľúbenejší atribút na tejto gitare
+                        , samozrejme okrem zvuku, je jej vzhľad. Takáto gitara poteší každého milovníka hudby,
+                        od začiatočníka až po profesionála.</p>
+                    <div class="card-footer bg-transparent">
+                        <h5 class="mb-0">Silvester</h5>
+                        <p class="fs-5 opacity-50 mb-0">16 mesiacov dozadu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card text-bg-danger">
+                <div class="card-header">
+                    <div class="ratings hidden">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color2"></i>
+                        <i class="fa fa-star rating-color2"></i>
+                        <i class="fa fa-star rating-color2"></i>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title " style="height: 20px;">Určite odporúčam</h4>
+                    <hr>
+                    <p class="overflow-y-scroll fs-5 card-text" style="height: 180px">Táto gitara mi spoľahlivo slúži už niekoľoko rokov a
+                        zatiaľ som s ňou nemal žiadne väčšie problémy. Môj najobľúbenejší atribút na tejto gitare
+                        , samozrejme okrem zvuku, je jej vzhľad. Takáto gitara poteší každého milovníka hudby,
+                        od začiatočníka až po profesionála.</p>
+                    <div class="card-footer bg-transparent">
+                        <h5 class="mb-0">Silvester</h5>
+                        <p class="fs-5 opacity-50 mb-0">2 roky dozadu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
