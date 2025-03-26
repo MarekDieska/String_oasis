@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../javaScript/change_user_icon.js"></script>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/category.css">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/footer.css">
+    <link href="../fonts/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="../fonts/fontawesome/css/solid.css" rel="stylesheet" />
     <script src="../javaScript/animate.js"></script>
 </head>
     <body class="bg-dark">

@@ -31,11 +31,12 @@
             <img src="../images/filter.svg" alt="" width="30">
         </button>
 
-        <div class="offcanvas offcanvas-start off-custom overflow-auto p-3 pt-5 pb-5 bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-            <?php include "../components/main_filter.php"?>
-        </div>
         <div class="d-none d-md-flex line-custom">
-            <?php include "../components/main_filter.php"?>
+            <?php include "../components/radio_desc.php";?>
+        </div>
+
+        <div class="offcanvas offcanvas-start off-custom overflow-auto p-3 pt-5 pb-5 bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <?php include "../components/main_filter.php";?>
         </div>
 
         <?php include "../components/main_filter_r.php"?>

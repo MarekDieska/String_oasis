@@ -5,11 +5,11 @@
         <div class="mb-4">
             <div class="d-flex flex-row gap-2 align-items-center mb-2" >
                 <h5 style="margin-bottom: 2px;">Cena do:</h5>
-                <span id="priceValue1">5000</span>€
+                <span id="priceValue">5000</span>€
             </div>
 
             <div class="price-slider-container bg-transparent">
-                <input type="range" class="form-range bg-transparent thumb-custom mt-0" id="priceRange1" min="0" max="5000" step="100" value="5000">
+                <input type="range" class="form-range bg-transparent thumb-custom mt-0" id="priceRange" min="0" max="5000" step="100" value="5000">
             </div>
 
             <div class="d-flex justify-content-between mt-0">
@@ -17,7 +17,7 @@
                 <span>5000€</span>
             </div>
         </div>
-        <label for="priceRange"></label>
+        <label for="priceRange2"></label>
 
 
         <div>
@@ -72,26 +72,26 @@
 
             <div class="d-flex justify-content-center flex-column m-4 mt-3">
                 <div class="btn-group-vertical" role="group">
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-1" autocomplete="off">
+                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-1">
                     <label class="btn btn-outline-danger hv-custom" for="vbtn-1">
                         <?php include "../components/stars5.php" ?>
                     </label>
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-2" autocomplete="off">
+                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-2">
                     <label class="btn btn-outline-danger hv-custom" for="vbtn-2">
                         <?php include "../components/stars4.php" ?>
 
                     </label>
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-3" autocomplete="off">
+                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-3">
                     <label class="btn btn-outline-danger hv-custom" for="vbtn-3">
                         <?php include "../components/stars3.php" ?>
 
                     </label>
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-4" autocomplete="off">
+                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-4">
                     <label class="btn btn-outline-danger hv-custom" for="vbtn-4">
                         <?php include "../components/stars2.php" ?>
 
                     </label>
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-5" autocomplete="off">
+                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-5">
                     <label class="btn btn-outline-danger hv-custom" for="vbtn-5">
                         <?php include "../components/stars1.php" ?>
 
@@ -108,32 +108,32 @@
             <h4>Veľkosť gitary</h4>
             <div class="p-3">
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="size_offcanvas" value="" id="check1_offcanvas">
-                    <label class="form-check-label" for="check1_offcanvas">
+                    <input class="form-check-input" type="radio" name="size_desktop" value="" id="check1_desktop">
+                    <label class="form-check-label" for="check1_desktop">
                         Junior
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="size_offcanvas" value="" id="check2_offcanvas">
-                    <label class="form-check-label" for="check2_offcanvas">
+                    <input class="form-check-input" type="radio" name="size_desktop" value="" id="check2_desktop">
+                    <label class="form-check-label" for="check2_desktop">
                         3/4
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="size_offcanvas" value="" id="check3_offcanvas">
-                    <label class="form-check-label" for="check3_offcanvas">
+                    <input class="form-check-input" type="radio" name="size_desktop" value="" id="check3_desktop">
+                    <label class="form-check-label" for="check3_desktop">
                         7/8
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="size_offcanvas" value="" id="check4_offcanvas">
-                    <label class="form-check-label" for="check4_offcanvas">
+                    <input class="form-check-input" type="radio" name="size_desktop" value="" id="check4_desktop">
+                    <label class="form-check-label" for="check4_desktop">
                         4/4
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="size_offcanvas" value="" id="check5_offcanvas">
-                    <label class="form-check-label" for="check5_offcanvas">
+                    <input class="form-check-input" type="radio" name="size_desktop" value="" id="check5_desktop">
+                    <label class="form-check-label" for="check5_desktop">
                         Full size
                     </label>
                 </div>
@@ -154,7 +154,7 @@
     </div>
 </div>
 <script>
-    document.getElementById('priceRange1').addEventListener('input', function(e) {
-        document.getElementById('priceValue1').textContent = e.target.value;
+    document.getElementById('priceRange').addEventListener('input', function(e) {
+        document.getElementById('priceValue').textContent = e.target.value;
     });
 </script>
