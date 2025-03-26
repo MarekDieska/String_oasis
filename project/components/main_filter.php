@@ -5,7 +5,7 @@
         <div class="mb-4">
             <div class="d-flex flex-row gap-2 align-items-center mb-2" >
                 <h5 style="margin-bottom: 2px;">Cena do:</h5>
-                <span id="priceValue">2500</span>€
+                <span id="priceValue">5000</span>€
             </div>
 
             <div class="price-slider-container bg-transparent">
@@ -220,10 +220,7 @@
                     </label>
                 </div>
             </div>
-
         </div>
-
-
     </div>
 </div>
 

@@ -16,7 +16,7 @@
     overflow-x: auto;
 }
 
-/* Štýl kariet */
+
 .produkt {
     display: flex;
     flex-direction: column;
