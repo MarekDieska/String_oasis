@@ -32,9 +32,9 @@
             </div>
 
             <div class="col-6 d-flex justify-content-end p-0 pt-0 pb-0">
-                    <h1 class="">
-                        <a class="link-offset-1 link-light" href="#">250,23 €</a>
-                    </h1>
+                <h1 class="">
+                    <a class="link-offset-1 link-light" href="#">250,23 €</a>
+                </h1>
             </div>
         </div>
 
@@ -117,11 +117,11 @@
         <br><br>
         <i>Farba:</i> <br>Sunburst
         <br><br>
-    <i>Počet pražcov:</i> <br>20
+        <i>Počet pražcov:</i> <br>20
         <br><br>
-    <i>Elektronika:</i> <br>Predzosilňovač s 3-pásmovým ekvalizérom a zabudovanou ladičkou
+        <i>Elektronika:</i> <br>Predzosilňovač s 3-pásmovým ekvalizérom a zabudovanou ladičkou
         <br><br>
-    <i>Kobylka:</i> <br>Palisander pre optimálny prenos vibrácií
+        <i>Kobylka:</i> <br>Palisander pre optimálny prenos vibrácií
     </h3>
 
     <hr class="text_color mt-5">
@@ -148,9 +148,9 @@
                     <h4 class="card-title " style="height: 20px;">Určite odporúčam</h4>
                     <hr>
                     <p class="overflow-y-scroll fs-5 card-text fs-5" style="height: 180px">Táto gitara mi spoľahlivo slúži už niekoľoko rokov a
-                    zatiaľ som s ňou nemal žiadne väčšie problémy. Môj najobľúbenejší atribút na tejto gitare
-                    , samozrejme okrem zvuku, je jej vzhľad. Takáto gitara poteší každého milovníka hudby,
-                    od začiatočníka až po profesionála.</p>
+                        zatiaľ som s ňou nemal žiadne väčšie problémy. Môj najobľúbenejší atribút na tejto gitare
+                        , samozrejme okrem zvuku, je jej vzhľad. Takáto gitara poteší každého milovníka hudby,
+                        od začiatočníka až po profesionála.</p>
                     <div class="card-footer bg-transparent">
                         <h5 class="mb-0">Silvester</h5>
                         <p class="fs-5 opacity-50 mb-0">2 týždne dozadu</p>
@@ -173,8 +173,8 @@
                     <h4 class="card-title " style="height: 20px;">Skvelá pre začiatočníkov</h4>
                     <hr>
                     <p class="overflow-y-scroll fs-5 card-text" style="height: 180px">Moje hudobné začiatky boli
-                    práve s touto gitarou. Dneska vypredávam koncerty. Na túto gitaru mám iba samé dobré
-                    spomienky</p>
+                        práve s touto gitarou. Dneska vypredávam koncerty. Na túto gitaru mám iba samé dobré
+                        spomienky</p>
                     <div class="card-footer bg-transparent">
                         <h5 class="mb-0">Alexandra</h5>
                         <p class="fs-5 opacity-50 mb-0">3 mesiace dozadu</p>
@@ -220,8 +220,8 @@
                     <h4 class="card-title " style="height: 20px;">Príliš drahá</h4>
                     <hr>
                     <p class="overflow-y-scroll fs-5 card-text" style="height: 180px">Ako študent si takúto
-                    gitaru určite nemôžem dovoliť, nabudúce by so zvolil lacnejšiu voľbu.
-                    Táto gitara je síce skvelá pre začiatočníkov, ale človek to musí myslieť vážne</p>
+                        gitaru určite nemôžem dovoliť, nabudúce by so zvolil lacnejšiu voľbu.
+                        Táto gitara je síce skvelá pre začiatočníkov, ale človek to musí myslieť vážne</p>
                     <div class="card-footer bg-transparent">
                         <h5 class="mb-0">Marek</h5>
                         <p class="fs-5 opacity-50 mb-0">6 mesiacov dozadu</p>
