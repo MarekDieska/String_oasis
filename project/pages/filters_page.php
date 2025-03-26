@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link href="../fonts/fontawesome/css/fontawesome.css" rel="stylesheet" />
     <link href="../fonts/fontawesome/css/solid.css" rel="stylesheet" />
+    <link href="../fonts/fontawesome/css/regular.css" rel="stylesheet"/>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/header.css">

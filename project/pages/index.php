@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../styles/footer.css">
     <link href="../fonts/fontawesome/css/fontawesome.css" rel="stylesheet" />
     <link href="../fonts/fontawesome/css/solid.css" rel="stylesheet" />
+    <link href="../fonts/fontawesome/css/regular.css" rel="stylesheet" />
     <script src="../javaScript/animate.js"></script>
 </head>
     <body class="bg-dark">
