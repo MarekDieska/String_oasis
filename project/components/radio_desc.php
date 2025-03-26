@@ -149,6 +149,60 @@
                         Alvarez
                     </label>
                 </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="zn2">
+                    <label class="form-check-label" for="zn2">
+                        Fender
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="zn3">
+                    <label class="form-check-label" for="zn3">
+                        Gipson
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="zn4">
+                    <label class="form-check-label" for="zn4">
+                        Ibanez
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="zn5">
+                    <label class="form-check-label" for="zn5">
+                        Mahalo
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="zn6">
+                    <label class="form-check-label" for="zn6">
+                        Ortega
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="zn7">
+                    <label class="form-check-label" for="zn7">
+                        Pasadena
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="zn8">
+                    <label class="form-check-label" for="zn8">
+                        Takamine
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="zn9">
+                    <label class="form-check-label" for="zn9">
+                        Taylor
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="zn10">
+                    <label class="form-check-label" for="zn10">
+                        Yamaha
+                    </label>
+                </div>
             </div>
         </div>
     </div>
