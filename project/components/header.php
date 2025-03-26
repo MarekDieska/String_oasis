@@ -21,7 +21,7 @@
 
         <div class="col-md-4 col-6 d-flex justify-content-end align-items-center">
             <ul class="d-flex list-unstyled fs-3 m-0">
-                <li class="ms-4"><i class="link-custom text_color fa fa-cart-shopping" href="#"></i></li>
+                <li class="ms-4"><a href="../pages/cart_page.php"><i class="link-custom text_color fa fa-cart-shopping" href="#"></i></a></li>
                 <li class="ms-4"><i id="userIcon" class="link-custom text_color fa-regular fa-user" data-bs-toggle="modal" data-bs-target="#login_form"></i></li>
                 <li class="ms-4"><i class="link-custom text_color fa-regular fa-heart" href="#"></i></li>
             </ul>

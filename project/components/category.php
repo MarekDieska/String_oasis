@@ -143,5 +143,4 @@
             </a>
         </div>
     </div>
-    <script src="../javaScript/category_scroll.js"></script>
 </div>

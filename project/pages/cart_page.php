@@ -13,29 +13,29 @@
     <link rel="stylesheet" href="../styles/category.css">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/main_cart.css">
     <link href="../fonts/fontawesome/css/fontawesome.css" rel="stylesheet" />
     <link href="../fonts/fontawesome/css/solid.css" rel="stylesheet" />
     <link href="../fonts/fontawesome/css/regular.css" rel="stylesheet" />
     <script src="../javaScript/animate.js"></script>
 </head>
-    <body class="bg-dark">
-        <header class="navbar navbar-expand-md fixed-top shadow header-custom">
-            <?php include "../components/header.php" ?>
-        </header>
+<body class="bg-dark">
+<header class="navbar navbar-expand-md fixed-top shadow header-custom">
+    <?php include "../components/header.php" ?>
+</header>
 
-        <div class="filler-custom"></div>
-        <nav class="navbar navbar-expand-md category-custom w-100 sticky-md-top">
-            <?php include "../components/category.php" ?>
-        </nav>
+<nav class="navbar navbar-expand-md category-custom w-100 fixed-top">
+    <?php include "../components/category.php" ?>
+</nav>
 
-        <main class="container">
-            <?php include "../components/main.php"?>
-        </main>
+<main class="container-fluid" style="margin-top: 140px">
+    <?php include "../components/main_cart.php"?>
+</main>
 
-        <footer>
-            <?php include "../components/footer.php"?>
-        </footer>
-    </body>
+<footer>
+    <?php include "../components/footer.php"?>
+</footer>
+</body>
 
-    <?php include "../components/login.php" ?>
+<?php include "../components/login.php" ?>
 </html>
