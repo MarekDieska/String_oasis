@@ -1,5 +1,6 @@
-<div class="row">
-    <div class="col-md-6 product-detail">
+<div class="row justify-content-between m-4 align-items-center">
+
+    <div class="col-12 col-md-6 d-flex flex-column product-detail">
         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb text_color">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../pages/index.php">Domov</a></li>
@@ -8,16 +9,18 @@
             </ol>
         </nav>
 
-        <div class="card border-custom border-5">
-            <img src="../images/product_guitar.jpg" class="card-img-top" alt="...">
+        <div class="card border-custom border-5 mx-auto">
+            <img src="../images/product_guitar.jpg" class="img-fluid img-big" alt="...">
         </div>
     </div>
 
-    <div class="col-md-6 text_color d-flex flex-column mt-4 ms-lg-5">
-        <p class="fs-1 pt-1">HarmonyTone Sunset D-50</p>
+
+
+    <div class="col-12 col-md-6 text_color d-flex flex-column">
+        <p class="fs-1 pt-1 mt-4">HarmonyTone Sunset D-50</p>
         <h5>HarmonyTone Sunset D-50 je perfektná pre začínajúcich aj pokročilých hudobníkov, ktorí hľadajú spoľahlivý nástroj s výborným zvukom a luxusným vzhľadom.</h5>
 
-        <div class="row w-100 mb-md-4">
+        <div class="row mb-md-4">
             <div class="col-6 d-flex align-items-center">
                 <div class="ratings hidden">
                     <i class="fa fa-star rating-color"></i>
@@ -28,29 +31,29 @@
                 </div>
             </div>
 
-            <div class="col-6 d-flex justify-content-end">
+            <div class="col-6 d-flex justify-content-end p-0 pt-0 pb-0">
                     <h1 class="">
                         <a class="link-offset-1 link-light" href="#">250,23 €</a>
                     </h1>
             </div>
         </div>
 
-        <h3 class="mt-md-1">Farba: </h3>
+        <h3 class="mt-md-0 mb-3">Farba: </h3>
 
-        <div class="row p-md-4 mb-3 mb-md-0 d-flex justify-content-center align-items-center">
-            <div class="col-4 d-flex justify-content-center">
+        <div class="row mb-3 mb-md-0 d-flex justify-content-center align-items-center pb-4">
+            <div class="col-4 d-flex justify-content-end">
                 <div class="card">
-                    <img src="../images/brown_variant.jpg" class="card-img-top" alt="...">
+                    <img src="../images/brown_variant.jpg" class="card-img-top card-img-custom" alt="...">
                 </div>
             </div>
-            <div class="col-4 d-flex justify-content-center">
+            <div class="col-4  d-flex justify-content-center">
                 <div class="card">
-                    <img src="../images/red_variant.jpg" class="card-img-top" alt="...">
+                    <img src="../images/red_variant.jpg" class="card-img-top card-img-custom" alt="...">
                 </div>
             </div>
-            <div class="col-4 d-flex justify-content-center">
+            <div class="col-4 d-flex justify-content-start">
                 <div class="card">
-                    <img src="../images/black-variant.jpg" class="card-img-top" alt="...">
+                    <img src="../images/black-variant.jpg" class="card-img-top card-img-custom" alt="...">
                 </div>
             </div>
         </div>
@@ -61,9 +64,16 @@
 
     </div>
 
-    <hr class="text_color mt-5">
+</div>
+
+
+
+
+<div class="row m-5">
+
+    <hr class="text_color mt-5 mb-5">
     <h1 class="text_color detail_large_text mt-md-1">HarmonyTone Sunset D-50</h1>
-    <h5 class="text_color" style="font-family: 'Times New Roman', sans-serif;">HarmonyTone Sunset D-50
+    <h5 class="text_color m-4" style="font-family: 'Times New Roman', sans-serif;">HarmonyTone Sunset D-50
         HarmonyTone Sunset D-50 je kvalitná elektro-akustická gitara, ktorá kombinuje klasický dizajn s moderným spracovaním. Jej telo je vyrobené z výberového mahagónu, ktorý zabezpečuje hlboký, bohatý tón s teplými basmi a jasnými výškami. Vrchná doska zo smreku pridáva rezonanciu a dynamiku, vďaka čomu je ideálna pre hráčov všetkých úrovní.
         <br><br>
         Výnimočný sunburst lak dodáva gitare elegantný a nadčasový vzhľad, zatiaľ čo ergonomický výrez umožňuje jednoduchý prístup k vyšším pražcom. Integrovaný predzosilňovač s ekvalizérom a zabudovanou ladičkou zaručuje, že váš zvuk bude vždy presný a vyvážený, či už hráte doma, v štúdiu alebo na pódiu.
@@ -120,7 +130,8 @@
 
 </div>
 
-<div class="overflow-auto reviews">
+
+<div class="overflow-auto reviews m-5">
     <div class="row flex-row flex-nowrap">
         <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="card text-bg-success">

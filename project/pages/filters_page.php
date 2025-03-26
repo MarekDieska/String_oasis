@@ -26,7 +26,7 @@
     <?php include "../components/category.php" ?>
 </nav>
 
-<main class="main-f-custom" style="margin-top: 140px">
+<main class="main-p-custom" style="margin-top: 140px">
     <div class="d-flex flex-row">
         <button class="btn btn-danger rounded-pill d-block d-md-none  position-fixed end-0 m-2 float-filter-custom" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
             <img src="../images/filter.svg" alt="" width="30">

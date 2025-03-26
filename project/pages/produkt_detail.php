@@ -28,7 +28,7 @@
     <?php include "../components/category.php" ?>
 </nav>
 
-<main class="container" style="margin-top: 140px">
+<main class="container-fluid main-f-custom" style="margin: 140px 0 0 0">
     <?php include "../components/main_detail.php"?>
 </main>
 

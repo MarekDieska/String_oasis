@@ -7,13 +7,12 @@
     text-decoration: none; /* Odstráni podčiarknutie */
 }
 
-.product-detail {
-    width: 60vh;
-}
-
 .border-custom {
     border-color: var(--header_color);
     border-width: 10px !important;
+    height: 100%;
+    max-height: 600px;
+    aspect-ratio: 9/10;
 }
 
 .rating-color {
@@ -38,4 +37,20 @@
 
 .overflow-y-scroll::-webkit-scrollbar {
     display:none;
+}
+
+.main-f-custom{
+    color: var(--font_color);
+}
+
+.img-big{
+    height: 500px;
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+    max-width: 600px;
+}
+
+.card-img-custom{
+    max-width: 250px;
 }
