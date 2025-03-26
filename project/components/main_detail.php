@@ -40,17 +40,17 @@
         <div class="row p-md-4 mb-3 mb-md-0 d-flex justify-content-center align-items-center">
             <div class="col-4 d-flex justify-content-center">
                 <div class="card">
-                    <img src="../images/bg.jpg" class="card-img-top" alt="...">
+                    <img src="../images/brown_variant.jpg" class="card-img-top" alt="...">
                 </div>
             </div>
             <div class="col-4 d-flex justify-content-center">
                 <div class="card">
-                    <img src="../images/bg.jpg" class="card-img-top" alt="...">
+                    <img src="../images/red_variant.jpg" class="card-img-top" alt="...">
                 </div>
             </div>
             <div class="col-4 d-flex justify-content-center">
                 <div class="card">
-                    <img src="../images/bg.jpg" class="card-img-top" alt="...">
+                    <img src="../images/black-variant.jpg" class="card-img-top" alt="...">
                 </div>
             </div>
         </div>
