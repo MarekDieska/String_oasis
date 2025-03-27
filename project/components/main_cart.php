@@ -1,24 +1,27 @@
-<div class="row justify-content-center">
-<!--    <div class="col but-back position-absolute">-->
-<!--        <a class="btn btn-secondary m-5">späť na nákup</a>-->
-<!--    </div>-->
+<div class="row justify-content-center align-items-center">
+    <div class="col-2 d-flex justify-content-center">
+        <a class="btn btn-secondary but-back">späť na nákup</a>
+    </div>
 
-    <button class="btn btn-secondary circle-custom rounded-pill">1</button>
-    <button class="btn btn-secondary arrow-custom "><i class="fa fa-arrow-right m-0"></i></button>
-    <a href="../pages/cart_page2.php" class="btn btn-secondary circle-custom rounded-pill">2</a>
-    <button class="btn btn-secondary arrow-custom "><i class="fa fa-arrow-right m-0"></i></button>
-    <button class="btn btn-secondary circle-custom rounded-pill">3</button>
-    <button class="btn btn-secondary arrow-custom "><i class="fa fa-arrow-right m-0"></i></button>
-    <button class="btn btn-secondary circle-custom rounded-pill">4</button>
-    <button class="btn btn-secondary arrow-custom "><i class="fa fa-arrow-right m-0"></i></button>
-    <button class="btn btn-secondary circle-custom rounded-pill"><i class="fa-regular fa-circle-check"></i></button>
+    <div class="col-8 d-flex flex-row justify-content-center align-items-center">
+        <button class="btn btn-secondary circle-custom rounded-pill">1</button>
+        <button class="btn btn-secondary arrow-custom "><i class="fa fa-arrow-right m-0"></i></button>
+        <a href="../pages/cart_page2.php" class="btn btn-secondary circle-custom rounded-pill">2</a>
+        <button class="btn btn-secondary arrow-custom "><i class="fa fa-arrow-right m-0"></i></button>
+        <button class="btn btn-secondary circle-custom rounded-pill">3</button>
+        <button class="btn btn-secondary arrow-custom "><i class="fa fa-arrow-right m-0"></i></button>
+        <button class="btn btn-secondary circle-custom rounded-pill">4</button>
+        <button class="btn btn-secondary arrow-custom "><i class="fa fa-arrow-right m-0"></i></button>
+        <button class="btn btn-secondary circle-custom rounded-pill"><i class="fa-regular fa-circle-check"></i></button>
+    </div>
 
+    <div class="col-2"></div>
 </div>
 
 <div class="row mt-5">
     <div class="col flex-column cart-slider justify-content-center overflow-auto">
 
-        <div class="cart-product bg-light">
+        <div class="cart-product">
             <div class="d-flex flex-row align-items-center justify-content-between">
                 <img src="../images/g4.png" width="60" alt="">
                 <div class="d-flex flex-column cart-prod-txt">
@@ -35,7 +38,7 @@
             </div>
         </div>
 
-        <div class="cart-product bg-light">
+        <div class="cart-product">
             <div class="d-flex flex-row align-items-center justify-content-between">
                 <img src="../images/g4.png" width="60" alt="">
                 <div class="d-flex flex-column cart-prod-txt">
@@ -52,7 +55,7 @@
             </div>
         </div>
 
-        <div class="cart-product bg-light">
+        <div class="cart-product">
             <div class="d-flex flex-row align-items-center justify-content-between">
                 <img src="../images/g4.png" width="60" alt="">
                 <div class="d-flex flex-column cart-prod-txt">
@@ -69,7 +72,7 @@
             </div>
         </div>
 
-        <div class="cart-product bg-light">
+        <div class="cart-product">
             <div class="d-flex flex-row align-items-center justify-content-between">
                 <img src="../images/g4.png" width="60" alt="">
                 <div class="d-flex flex-column cart-prod-txt">
@@ -86,7 +89,7 @@
             </div>
         </div>
 
-        <div class="cart-product bg-light">
+        <div class="cart-product">
             <div class="d-flex flex-row align-items-center justify-content-between">
                 <img src="../images/g4.png" width="60" alt="">
                 <div class="d-flex flex-column cart-prod-txt">

@@ -1,5 +1,5 @@
 .but-back{
-    top: 100px;
+    height: 40px;
 }
 
 .circle-custom{
@@ -10,6 +10,8 @@
 }
 .cart-product{
     margin-bottom: 20px;
+    background: #e3e3e3;
+    border-radius: 10px;
 }
 .cart-prod-txt{
     max-width: 300px;
@@ -18,6 +20,7 @@
 .cart-prod-cost{
     padding-right: 30px;
     padding-top: 5px;
+    font-size: 26px;
 }
 
 .fa-xmark{
