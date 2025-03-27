@@ -1,11 +1,11 @@
 <div class="row justify-content-center">
 <!--    <div class="col but-back position-absolute">-->
-<!--        <a class="btn btn-secondary m-5">späť na nákup</a>-->
+<!--        <button class="btn btn-secondary m-5">späť na nákup</button>-->
 <!--    </div>-->
 
     <button class="btn btn-secondary circle-custom rounded-pill">1</button>
     <button class="btn btn-secondary arrow-custom "><i class="fa fa-arrow-right m-0"></i></button>
-    <a href="../pages/cart_page2.php" class="btn btn-secondary circle-custom rounded-pill">2</a>
+    <button class="btn btn-secondary circle-custom rounded-pill">2</button>
     <button class="btn btn-secondary arrow-custom "><i class="fa fa-arrow-right m-0"></i></button>
     <button class="btn btn-secondary circle-custom rounded-pill">3</button>
     <button class="btn btn-secondary arrow-custom "><i class="fa fa-arrow-right m-0"></i></button>
@@ -16,7 +16,7 @@
 </div>
 
 <div class="row mt-5">
-    <div class="col flex-column cart-slider justify-content-center overflow-auto">
+    <div class="col flex-column cart-slider justify-content-center mt-0 overflow-auto">
 
         <div class="cart-product bg-light">
             <div class="d-flex flex-row align-items-center justify-content-between">
