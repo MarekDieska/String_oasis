@@ -35,6 +35,11 @@
     height: 400px;
 }
 
+/*cart_page_2*/
+.cart-slider::-webkit-scrollbar {
+    display:none;
+}
+
 .total-custom{
     margin-bottom: -100px;
     height: 500px;
