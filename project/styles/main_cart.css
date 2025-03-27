@@ -33,17 +33,13 @@
 .cart-slider{
     margin-top: 40px;
     height: 400px;
-}
-
-/*cart_page_2*/
-.cart-slider::-webkit-scrollbar {
-    display:none;
+    max-width: 100%;
 }
 
 .total-custom{
     margin-bottom: -100px;
     height: 500px;
-    width: 70%;
+    width: 80%;
     background: grey;
 }
 
@@ -56,4 +52,19 @@
     width: 40px;
     background: transparent;
     border:none;
+}
+
+/*cart_page_2*/
+.cart-slider::-webkit-scrollbar {
+    display:none;
+}
+
+.cart-product-small{
+    margin-bottom: 20px;
+    background: #e3e3e3;
+    border-radius: 10px;
+}
+
+.cart_text {
+    max-width: 500px;
 }
