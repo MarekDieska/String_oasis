@@ -72,32 +72,32 @@
 
             <div class="d-flex justify-content-center flex-column m-4 mt-3">
                 <div class="btn-group-vertical" role="group">
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-1">
-                    <label class="btn btn-outline-danger hv-custom" for="vbtn-1">
+                    <input type="radio" class="btn-check" name="vbtn-radio2" id="vbtn-11">
+                    <label class="btn btn-outline-danger hv-custom" for="vbtn-11">
                         <?php include "../components/stars5.php" ?>
                     </label>
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-2">
-                    <label class="btn btn-outline-danger hv-custom" for="vbtn-2">
+                    <input type="radio" class="btn-check" name="vbtn-radio2" id="vbtn-22">
+                    <label class="btn btn-outline-danger hv-custom" for="vbtn-22">
                         <?php include "../components/stars4.php" ?>
 
                     </label>
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-3">
-                    <label class="btn btn-outline-danger hv-custom" for="vbtn-3">
+                    <input type="radio" class="btn-check" name="vbtn-radio2" id="vbtn-33">
+                    <label class="btn btn-outline-danger hv-custom" for="vbtn-33">
                         <?php include "../components/stars3.php" ?>
 
                     </label>
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-4">
-                    <label class="btn btn-outline-danger hv-custom" for="vbtn-4">
+                    <input type="radio" class="btn-check" name="vbtn-radio2" id="vbtn-44">
+                    <label class="btn btn-outline-danger hv-custom" for="vbtn-44">
                         <?php include "../components/stars2.php" ?>
 
                     </label>
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-5">
-                    <label class="btn btn-outline-danger hv-custom" for="vbtn-5">
+                    <input type="radio" class="btn-check" name="vbtn-radio2" id="vbtn-55">
+                    <label class="btn btn-outline-danger hv-custom" for="vbtn-55">
                         <?php include "../components/stars1.php" ?>
 
                     </label>
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-6" autocomplete="off" checked>
-                    <label class="btn btn-outline-danger hv-custom" for="vbtn-6">
+                    <input type="radio" class="btn-check" name="vbtn-radio2" id="vbtn-66" autocomplete="off" checked>
+                    <label class="btn btn-outline-danger hv-custom" for="vbtn-66">
                         všetky ohodnotenia
                     </label>
                 </div>

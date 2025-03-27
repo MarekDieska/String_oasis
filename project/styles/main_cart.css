@@ -1,7 +1,5 @@
 .but-back{
-    position: absolute;
-    margin-left: 4%;
-    top: 150px;
+    top: 100px;
 }
 
 .circle-custom{
@@ -37,7 +35,7 @@
 .total-custom{
     margin-bottom: -100px;
     height: 500px;
-    width: 70%;
+    width: 60%;
     background: grey;
 }
 

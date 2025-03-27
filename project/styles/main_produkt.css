@@ -11,7 +11,7 @@
     border-color: var(--header_color);
     border-width: 10px !important;
     height: 100%;
-    max-height: 80vh;
+    max-height: 70vh;
     aspect-ratio: 9/10;
 }
 

@@ -1,7 +1,7 @@
 <div class="container-fluid m-5 m-md-2 m-lg-4">
     <div class="row row-cols-1 row-cols-lg-2 flex-row justify-content-between align-items-center">
         <div class="col">
-            <h1>Elektrické gitary</h1>
+            <h1 class="title-filter">Elektrické gitary</h1>
         </div>
         <div class="col d-flex flex-column flex-sm-row
             justify-content-start justify-content-lg-end align-items-center">
@@ -42,6 +42,9 @@
                     <div class="favorite-btn text-center">
                         <p>&#x2661</p>
                     </div>
+                    <div class="cart-btn text-center">
+                        <p>+</p>
+                    </div>
                     <div class="text-custom">
                         <h5 class="t1-custom">Gibson SG Standard Electric Guitar Heritage Cherry</h5>
                         <div class="t2-hv">
@@ -63,6 +66,9 @@
                     </div>
                     <div class="favorite-btn text-center">
                         <p>&#x2661</p>
+                    </div>
+                    <div class="cart-btn text-center">
+                        <p>+</p>
                     </div>
                     <div class="text-custom">
                         <h5 class="t1-custom">Fender Squier Affinity Series Stratocaster Lake Placid Blue</h5>
@@ -86,6 +92,9 @@
                     <div class="favorite-btn text-center">
                         <p>&#x2661</p>
                     </div>
+                    <div class="cart-btn text-center">
+                        <p>+</p>
+                    </div>
                     <div class="text-custom">
                         <h5 class="t1-custom">Vintage 1963 Gibson Barney Kessel Sunburst Finish</h5>
                         <div class="t2-hv">
@@ -107,6 +116,9 @@
                     </div>
                     <div class="favorite-btn text-center">
                         <p>&#x2661</p>
+                    </div>
+                    <div class="cart-btn text-center">
+                        <p>+</p>
                     </div>
                     <div class="text-custom">
                         <h5 class="t1-custom">Fender American Professional Jazzmaster Silverburst</h5>
@@ -130,6 +142,9 @@
                     <div class="favorite-btn text-center">
                         <p>&#x2661</p>
                     </div>
+                    <div class="cart-btn text-center">
+                        <p>+</p>
+                    </div>
                     <div class="text-custom">
                         <h5 class="t1-custom">Neal Moser Guitar</h5>
                         <div class="t2-hv">
@@ -152,6 +167,9 @@
                     <div class="favorite-btn text-center">
                         <p>&#x2661</p>
                     </div>
+                    <div class="cart-btn text-center">
+                        <p>+</p>
+                    </div>
                     <div class="text-custom">
                         <h5 class="t1-custom">James Tyler Classic Burning Water</h5>
                         <div class="t2-hv">
@@ -172,6 +190,9 @@
                     </div>
                     <div class="favorite-btn text-center">
                         <p>&#x2661</p>
+                    </div>
+                    <div class="cart-btn text-center">
+                        <p>+</p>
                     </div>
                     <div class="text-custom">
                         <h5 class="t1-custom">Gibson SG Standard Electric Guitar Heritage Cherry</h5>
@@ -195,6 +216,9 @@
                     <div class="favorite-btn text-center">
                         <p>&#x2661</p>
                     </div>
+                    <div class="cart-btn text-center">
+                        <p>+</p>
+                    </div>
                     <div class="text-custom">
                         <h5 class="t1-custom">Fender Squier Affinity Series Stratocaster Lake Placid Blue</h5>
                         <div class="t2-hv">
@@ -217,6 +241,9 @@
                     <div class="favorite-btn text-center">
                         <p>&#x2661</p>
                     </div>
+                    <div class="cart-btn text-center">
+                        <p>+</p>
+                    </div>
                     <div class="text-custom">
                         <h5 class="t1-custom">Vintage 1963 Gibson Barney Kessel Sunburst Finish</h5>
                         <div class="t2-hv">
@@ -238,6 +265,9 @@
                     </div>
                     <div class="favorite-btn text-center">
                         <p>&#x2661</p>
+                    </div>
+                    <div class="cart-btn text-center">
+                        <p>+</p>
                     </div>
                     <div class="text-custom">
                         <h5 class="t1-custom">Fender American Professional Jazzmaster Silverburst</h5>
@@ -261,6 +291,9 @@
                     <div class="favorite-btn text-center">
                         <p>&#x2661</p>
                     </div>
+                    <div class="cart-btn text-center">
+                        <p>+</p>
+                    </div>
                     <div class="text-custom">
                         <h5 class="t1-custom">Neal Moser Guitar</h5>
                         <div class="t2-hv">
@@ -282,6 +315,9 @@
                     </div>
                     <div class="favorite-btn text-center">
                         <p>&#x2661</p>
+                    </div>
+                    <div class="cart-btn text-center">
+                        <p>+</p>
                     </div>
                     <div class="text-custom">
                         <h5 class="t1-custom">James Tyler Classic Burning Water</h5>
@@ -305,6 +341,9 @@
                     <div class="favorite-btn text-center">
                         <p>&#x2661</p>
                     </div>
+                    <div class="cart-btn text-center">
+                        <p>+</p>
+                    </div>
                     <div class="text-custom">
                         <h5 class="t1-custom">Gibson SG Standard Electric Guitar Heritage Cherry</h5>
                         <div class="t2-hv">
@@ -326,6 +365,9 @@
                     </div>
                     <div class="favorite-btn text-center">
                         <p>&#x2661</p>
+                    </div>
+                    <div class="cart-btn text-center">
+                        <p>+</p>
                     </div>
                     <div class="text-custom">
                         <h5 class="t1-custom">Fender Squier Affinity Series Stratocaster Lake Placid Blue</h5>
@@ -349,6 +391,9 @@
                     <div class="favorite-btn text-center">
                         <p>&#x2661</p>
                     </div>
+                    <div class="cart-btn text-center">
+                        <p>+</p>
+                    </div>
                     <div class="text-custom">
                         <h5 class="t1-custom">Vintage 1963 Gibson Barney Kessel Sunburst Finish</h5>
                         <div class="t2-hv">
@@ -370,6 +415,9 @@
                     </div>
                     <div class="favorite-btn text-center">
                         <p>&#x2661</p>
+                    </div>
+                    <div class="cart-btn text-center">
+                        <p>+</p>
                     </div>
                     <div class="text-custom">
                         <h5 class="t1-custom">Fender American Professional Jazzmaster Silverburst</h5>

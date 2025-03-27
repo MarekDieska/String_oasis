@@ -1,6 +1,6 @@
-<div class="row d-flex justify-content-center flex-row">
-    <div class="col but-back">
-        <button class="btn btn-secondary">späť na nákup</button>
+<div class="row justify-content-center">
+    <div class="col but-back position-absolute">
+        <button class="btn btn-secondary m-5">späť na nákup</button>
     </div>
 
     <button class="btn btn-secondary circle-custom rounded-pill">1</button>
@@ -16,7 +16,7 @@
 </div>
 
 <div class="row mt-5">
-    <div class="col d-flex flex-column cart-slider overflow-auto">
+    <div class="col d-flex flex-column cart-slider justify-content-center overflow-auto">
 
         <div class="cart-product bg-light">
             <div class="d-flex flex-row align-items-center justify-content-between">
@@ -105,7 +105,7 @@
 
 
     </div>
-    <div class="col d-flex justify-content-center align-items-end">
+    <div class="col d-flex  justify-content-center align-items-end">
         <div class="total-custom">
 
         </div>

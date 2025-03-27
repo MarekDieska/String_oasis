@@ -111,11 +111,8 @@
     object-fit: contain;
 }
 
-.favorite-btn {
+.favorite-btn, .cart-btn {
     position: absolute;
-    top: -10px;
-    right: -10px;
-    background: #8c2323;
     border: none;
     border-radius: 50%;
     width: 40px;
@@ -126,12 +123,26 @@
     font-size: 35px;
 }
 
-.favorite-btn:hover p{
+.favorite-btn{
+    background: #8c2323;
+    top: -10px;
+    right: -10px;
+}
+
+.cart-btn{
+    background: #0a53be;
+    top: 40px;
+    right: -10px;
+    font-family: "Times New Roman", serif;
+}
+
+
+.favorite-btn:hover p, .cart-btn:hover p{
     transform: scale(1.2);
     transition: all 0.3s ease;
 }
 
-.favorite-btn p{
+.favorite-btn p, .cart-btn p{
     padding-top: 15px;
     color: var(--font_color);
 }
@@ -192,4 +203,8 @@
 
 .div-c1{
     padding-top: 60px;
+}
+
+.title-filter{
+    color: var(--font_color);
 }
