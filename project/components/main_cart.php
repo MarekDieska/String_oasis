@@ -19,7 +19,7 @@
 </div>
 
 <div class="row mt-5">
-    <div class="col flex-column cart-slider justify-content-center overflow-auto">
+    <div class="col-7 cart-slider justify-content-end overflow-auto">
 
         <div class="cart-product">
             <div class="d-flex flex-row align-items-center justify-content-between">
@@ -108,8 +108,8 @@
 
 
     </div>
-    <div class="col d-flex  justify-content-center align-items-end">
-        <div class="total-custom">
+    <div class="col-5 d-flex  justify-content-center align-items-end">
+        <div class="total-custom rounded-1">
 
         </div>
     </div>

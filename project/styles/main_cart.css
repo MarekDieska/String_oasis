@@ -12,6 +12,7 @@
     margin-bottom: 20px;
     background: #e3e3e3;
     border-radius: 10px;
+    margin-left: 5%;
 }
 .cart-prod-txt{
     max-width: 300px;
@@ -31,7 +32,6 @@
 
 .cart-slider{
     margin-top: 40px;
-    margin-left: 100px;
     height: 400px;
 }
 
@@ -43,7 +43,7 @@
 .total-custom{
     margin-bottom: -100px;
     height: 500px;
-    width: 60%;
+    width: 70%;
     background: grey;
 }
 
