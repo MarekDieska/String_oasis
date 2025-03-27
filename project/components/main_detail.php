@@ -145,14 +145,13 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <h4 class="card-title " style="height: 20px;">Určite odporúčam</h4>
+                    <h4 class="card-title " style="height: 20px;">Jednoznačne odporúčam</h4>
                     <hr>
-                    <p class="overflow-y-scroll fs-5 card-text fs-5" style="height: 180px">Táto gitara mi spoľahlivo slúži už niekoľoko rokov a
-                        zatiaľ som s ňou nemal žiadne väčšie problémy. Môj najobľúbenejší atribút na tejto gitare
-                        , samozrejme okrem zvuku, je jej vzhľad. Takáto gitara poteší každého milovníka hudby,
-                        od začiatočníka až po profesionála.</p>
+                    <p class="overflow-y-scroll fs-5 card-text fs-5" style="height: 180px">Jediné miesto široko ďaleko, kde som našla gitaru tohto modelu.
+                        Vysnívaná gitara s nádherným, čistým zvukom. Vychádzajú z nej tie najkrajšie melódie, rovnako krásne ako je
+                        jej vzhľad. Nádherné kvalitné drevo, ručná výroba, jednoducho, každý by si ju zamiloval. Jednoznačne odporúčam. </p>
                     <div class="card-footer bg-transparent">
-                        <h5 class="mb-0">Silvester</h5>
+                        <h5 class="mb-0">Miška</h5>
                         <p class="fs-5 opacity-50 mb-0">2 týždne dozadu</p>
                     </div>
                 </div>
@@ -264,39 +263,34 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <h4 class="card-title " style="height: 20px;">Jednoznačne odporúčam</h4>
+                    <h4 class="card-title " style="height: 20px;">Pozitívne</h4>
                     <hr>
-                    <p class="overflow-y-scroll fs-5 card-text" style="height: 180px">Jediné miesto široko ďaleko, kde som našla gitaru tohto modelu.
-                        Vysnívaná gitara s nádherným, čistým zvukom. Vychádzajú z nej tie najkrajšie melódie, rovnako krásne ako je
-                        jej vzhľad. Nádherné kvalitné drevo, ručná výroba, jednoducho, každý by si ju zamiloval. Jednoznačne odporúčam.</p>
+                    <p class="overflow-y-scroll fs-5 card-text" style="height: 180px">Priatelia, určite vrelo odporúčam.
+                        Dovoľte mi informovať vás, že táto bass gitara má veľmi dobré hĺbky. Vypichol by som aj kvalitné prślušenstvo
+                        ako napríklad koaxiálny kábel.</p>
 
                     <div class="card-footer bg-transparent">
-                        <h5 class="mb-0">Miška</h5>
+                        <h5 class="mb-0">cisco_4ever</h5>
                         <p class="fs-5 opacity-50 mb-0">16 mesiacov dozadu</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="card text-bg-danger">
+            <div class="card text-bg-success">
                 <div class="card-header">
                     <div class="ratings hidden">
-                        <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color"></i>
-                        <i class="fa fa-star rating-color2"></i>
-                        <i class="fa fa-star rating-color2"></i>
-                        <i class="fa fa-star rating-color2"></i>
+                        <?php include "../components/stars4.php"?>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h4 class="card-title " style="height: 20px;">Určite odporúčam</h4>
+                    <h4 class="card-title " style="height: 20px;">Kvalitka</h4>
                     <hr>
-                    <p class="overflow-y-scroll fs-5 card-text" style="height: 180px">Táto gitara mi spoľahlivo slúži už niekoľoko rokov a
-                        zatiaľ som s ňou nemal žiadne väčšie problémy. Môj najobľúbenejší atribút na tejto gitare
-                        , samozrejme okrem zvuku, je jej vzhľad. Takáto gitara poteší každého milovníka hudby,
-                        od začiatočníka až po profesionála.</p>
+                    <p class="overflow-y-scroll fs-5 card-text" style="height: 180px">Najskôr som si chcela kúpiť klavír ale tá harfa hrala ako po masle.
+                    Škoda farebnej kombinácie ale dá sa to prežiť. Odporúčam skôr pre mierne pokročilých a pokročilých. Najviac
+                    ma prekvalip darček s kolaboráciou s GEMMA. Kvalitný prívesok. ;)</p>
                     <div class="card-footer bg-transparent">
-                        <h5 class="mb-0">Silvester</h5>
+                        <h5 class="mb-0">Princezna45</h5>
                         <p class="fs-5 opacity-50 mb-0">2 roky dozadu</p>
                     </div>
                 </div>
