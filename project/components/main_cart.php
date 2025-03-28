@@ -1,3 +1,5 @@
+<?php include "../components/variables.php";?>
+
 <div class="row justify-content-center align-items-center">
     <div class="d-none d-md-flex col-2 justify-content-center">
         <a class="btn btn-secondary but-back"><i class="fa fa-arrow-left m-0"></i> na nákup</a>
@@ -40,13 +42,14 @@
 <div class="row">
     <div class="col-12 col-md-7 cart-slider overflow-auto">
 
+        <?php for( $i = 0; $i < 6; $i++):?>
         <div class="cart-product m-3 me-md-0">
             <div class="d-flex flex-row align-items-center justify-content-between">
-                <img src="../images/g4.png" width="60" alt="">
+                <img src="<?php echo $obrazkyProduktov[$i % count($obrazkyProduktov)]; ?>" width="60" alt="">
 
-                <div class="d-flex flex-column flex-sm-row align-items-center">
+                <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between w-100">
                     <div class="d-flex flex-column cart-prod-txt">
-                        <h5>Fender American Professional Jazzmaster Silverburst</h5>
+                        <h5><?php echo $nazvyProduktov[$i % count($cenyProduktov)]; ?></h5>
                         <h6>elektrická gitara</h6>
                     </div>
 
@@ -63,102 +66,7 @@
                 <i class="fa fa-xmark"></i>
             </div>
         </div>
-
-        <div class="cart-product m-3 me-md-0">
-            <div class="d-flex flex-row align-items-center justify-content-between">
-                <img src="../images/g4.png" width="60" alt="">
-
-                <div class="d-flex flex-column flex-sm-row align-items-center">
-                    <div class="d-flex flex-column cart-prod-txt">
-                        <h5>Fender American Professional Jazzmaster Silverburst</h5>
-                        <h6>elektrická gitara</h6>
-                    </div>
-
-                    <div class="d-flex flex-row align-items-center justify-content-between">
-                        <div class="d-flex flex-row p-3">
-                            <i class="fa fa-minus p-2"></i>
-                            <h5 class="pt-1">1</h5>
-                            <i class="fa fa-plus p-2"></i>
-                        </div>
-                        <h4 class="pt-1 cart-prod-cost">1899€</h4>
-                    </div>
-                </div>
-
-                <i class="fa fa-xmark"></i>
-            </div>
-        </div>
-
-        <div class="cart-product m-3 me-md-0">
-            <div class="d-flex flex-row align-items-center justify-content-between">
-                <img src="../images/g4.png" width="60" alt="">
-
-                <div class="d-flex flex-column flex-sm-row align-items-center">
-                    <div class="d-flex flex-column cart-prod-txt">
-                        <h5>Fender American Professional Jazzmaster Silverburst</h5>
-                        <h6>elektrická gitara</h6>
-                    </div>
-
-                    <div class="d-flex flex-row align-items-center justify-content-between">
-                        <div class="d-flex flex-row p-3">
-                            <i class="fa fa-minus p-2"></i>
-                            <h5 class="pt-1">1</h5>
-                            <i class="fa fa-plus p-2"></i>
-                        </div>
-                        <h4 class="pt-1 cart-prod-cost">1899€</h4>
-                    </div>
-                </div>
-
-                <i class="fa fa-xmark"></i>
-            </div>
-        </div>
-
-        <div class="cart-product m-3 me-md-0">
-            <div class="d-flex flex-row align-items-center justify-content-between">
-                <img src="../images/g4.png" width="60" alt="">
-
-                <div class="d-flex flex-column flex-sm-row align-items-center">
-                    <div class="d-flex flex-column cart-prod-txt">
-                        <h5>Fender American Professional Jazzmaster Silverburst</h5>
-                        <h6>elektrická gitara</h6>
-                    </div>
-
-                    <div class="d-flex flex-row align-items-center justify-content-between">
-                        <div class="d-flex flex-row p-3">
-                            <i class="fa fa-minus p-2"></i>
-                            <h5 class="pt-1">1</h5>
-                            <i class="fa fa-plus p-2"></i>
-                        </div>
-                        <h4 class="pt-1 cart-prod-cost">1899€</h4>
-                    </div>
-                </div>
-
-                <i class="fa fa-xmark"></i>
-            </div>
-        </div>
-
-        <div class="cart-product m-3 me-md-0">
-            <div class="d-flex flex-row align-items-center justify-content-between">
-                <img src="../images/g4.png" width="60" alt="">
-
-                <div class="d-flex flex-column flex-sm-row align-items-center">
-                    <div class="d-flex flex-column cart-prod-txt">
-                        <h5>Fender American Professional Jazzmaster Silverburst</h5>
-                        <h6>elektrická gitara</h6>
-                    </div>
-
-                    <div class="d-flex flex-row align-items-center justify-content-between">
-                        <div class="d-flex flex-row p-3">
-                            <i class="fa fa-minus p-2"></i>
-                            <h5 class="pt-1">1</h5>
-                            <i class="fa fa-plus p-2"></i>
-                        </div>
-                        <h4 class="pt-1 cart-prod-cost">1899€</h4>
-                    </div>
-                </div>
-
-                <i class="fa fa-xmark"></i>
-            </div>
-        </div>
+        <?php endfor;?>
     </div>
 
 
