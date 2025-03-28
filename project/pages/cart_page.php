@@ -32,7 +32,7 @@
     <?php include "../components/main_cart.php"?>
 </main>
 
-<footer>
+<footer style="margin-top: 0">
     <?php include "../components/footer.php"?>
 </footer>
 </body>
