@@ -1,3 +1,5 @@
+<?php include "../components/variables.php"?>
+
 <div class="side-filter-custom">
     <div>
         <h2 class="text-center pb-5">FILTROVAŤ</h2>
@@ -17,52 +19,18 @@
                 <span>5000€</span>
             </div>
         </div>
-        <label for="priceRange2"></label>
+        <label for="priceRange"></label>
 
 
         <div>
             <h4>Typ strunového nástroja</h4>
             <div class="p-3">
-                <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" id="typ1">
-                    <label for="typ1">Elektrické gitary</label>
-                </div>
-                <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" id="typ2">
-                    <label for="typ2">Elektro-akustické gitary</label>
-                </div>
-                <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" id="typ4">
-                    <label for="typ4">Akustické gitary</label>
-                </div>
-                <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" id="typ5">
-                    <label for="typ5">Klasické gitary</label>
-                </div>
-                <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" id="typ6">
-                    <label for="typ6">Detské gitary</label>
-                </div>
-                <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" id="typ7">
-                    <label for="typ7">Basgitary</label>
-                </div>
-                <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" id="typ8">
-                    <label for="typ8">Ukulele</label>
-                </div>
-                <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" id="typ9">
-                    <label for="typ9">Banjo</label>
-                </div>
-                <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" id="typ10">
-                    <label for="typ10">Mandolína</label>
-                </div>
-                <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" id="typ11">
-                    <label for="typ11">Kora</label>
-                </div>
+                <?php for($i = 0; $i < count($typy); $i++): ?>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="typ<?php echo $i?>">
+                        <label for="typ<?php echo $i?>"><?php echo $typy[$i]?></label>
+                    </div>
+                <?php endfor;?>
             </div>
         </div>
 
@@ -72,32 +40,15 @@
 
             <div class="d-flex justify-content-center flex-column m-4 mt-3">
                 <div class="btn-group-vertical" role="group">
-                    <input type="radio" class="btn-check" name="vbtn-radio2" id="vbtn-11">
-                    <label class="btn btn-outline-danger hv-custom" for="vbtn-11">
-                        <?php include "../components/stars5.php" ?>
-                    </label>
-                    <input type="radio" class="btn-check" name="vbtn-radio2" id="vbtn-22">
-                    <label class="btn btn-outline-danger hv-custom" for="vbtn-22">
-                        <?php include "../components/stars4.php" ?>
+                    <?php for($i = 1; $i < 6; $i++):?>
+                        <input type="radio" class="btn-check" name="vbtn-radio2" id="vbtn-<?php echo $i?>2" autocomplete="off">
+                        <label class="btn btn-outline-danger hv-custom" for="vbtn-<?php echo $i?>2">
+                            <?php include "../components/stars".$i.".php" ?>
+                        </label>
+                    <?php endfor;?>
 
-                    </label>
-                    <input type="radio" class="btn-check" name="vbtn-radio2" id="vbtn-33">
-                    <label class="btn btn-outline-danger hv-custom" for="vbtn-33">
-                        <?php include "../components/stars3.php" ?>
-
-                    </label>
-                    <input type="radio" class="btn-check" name="vbtn-radio2" id="vbtn-44">
-                    <label class="btn btn-outline-danger hv-custom" for="vbtn-44">
-                        <?php include "../components/stars2.php" ?>
-
-                    </label>
-                    <input type="radio" class="btn-check" name="vbtn-radio2" id="vbtn-55">
-                    <label class="btn btn-outline-danger hv-custom" for="vbtn-55">
-                        <?php include "../components/stars1.php" ?>
-
-                    </label>
-                    <input type="radio" class="btn-check" name="vbtn-radio2" id="vbtn-66" autocomplete="off" checked>
-                    <label class="btn btn-outline-danger hv-custom" for="vbtn-66">
+                    <input type="radio" class="btn-check" name="vbtn-radio2" id="vbtn-62" autocomplete="off" checked>
+                    <label class="btn btn-outline-danger hv-custom" for="vbtn-62">
                         všetky ohodnotenia
                     </label>
                 </div>
@@ -107,100 +58,25 @@
         <div class="d-flex flex-column mt-5">
             <h4>Veľkosť gitary</h4>
             <div class="p-3">
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="size_desktop" value="" id="check1_desktop">
-                    <label class="form-check-label" for="check1_desktop">
-                        Junior
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="size_desktop" value="" id="check2_desktop">
-                    <label class="form-check-label" for="check2_desktop">
-                        3/4
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="size_desktop" value="" id="check3_desktop">
-                    <label class="form-check-label" for="check3_desktop">
-                        7/8
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="size_desktop" value="" id="check4_desktop">
-                    <label class="form-check-label" for="check4_desktop">
-                        4/4
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="size_desktop" value="" id="check5_desktop">
-                    <label class="form-check-label" for="check5_desktop">
-                        Full size
-                    </label>
-                </div>
+                <?php for($i = 0; $i < count($velkosti); $i++):?>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="size_offcanvas" value="" id="check<?php echo $i?>_offcanvas">
+                        <label class="form-check-label" for="check<?php echo $i?>_offcanvas">
+                            <?php echo $velkosti[$i]?>
+                        </label>
+                    </div>
+                <?php endfor;?>
             </div>
         </div>
 
         <div class="d-flex flex-column mt-5">
             <h4>Značka</h4>
             <div class=" p-3">
+
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="zn1">
                     <label class="form-check-label" for="zn1">
                         Alvarez
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="zn2">
-                    <label class="form-check-label" for="zn2">
-                        Fender
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="zn3">
-                    <label class="form-check-label" for="zn3">
-                        Gipson
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="zn4">
-                    <label class="form-check-label" for="zn4">
-                        Ibanez
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="zn5">
-                    <label class="form-check-label" for="zn5">
-                        Mahalo
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="zn6">
-                    <label class="form-check-label" for="zn6">
-                        Ortega
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="zn7">
-                    <label class="form-check-label" for="zn7">
-                        Pasadena
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="zn8">
-                    <label class="form-check-label" for="zn8">
-                        Takamine
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="zn9">
-                    <label class="form-check-label" for="zn9">
-                        Taylor
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="zn10">
-                    <label class="form-check-label" for="zn10">
-                        Yamaha
                     </label>
                 </div>
             </div>

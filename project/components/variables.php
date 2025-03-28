@@ -34,4 +34,25 @@ $hodnoteniaProduktov = [
     "../components/stars4.php",
     "../components/stars5.php",
 ];
+
+$typy = [
+    "Elektrické gitary",
+    "Elektro-akustické gitary",
+    "Akustické gitary",
+    "Klasické gitary",
+    "Detské gitary",
+    "Basgitary",
+    "Ukulele",
+    "Banjo",
+    "Mandolína",
+    "Kora",
+];
+
+$velkosti = [
+    "Junior",
+    "3/4",
+    "7/8",
+    "4/4",
+    "Full size",
+]
 ?>
