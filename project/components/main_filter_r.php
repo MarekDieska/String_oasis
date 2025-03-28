@@ -1,3 +1,41 @@
+<?php
+$nazvyProduktov = [
+    "Gibson SG Standard Electric Guitar Heritage Cherry",
+    "Fender Squier Affinity Series Stratocaster Lake Placid Blue",
+    "Vintage 1963 Gibson Barney Kessel Sunburst Finish",
+    "Fender American Professional Jazzmaster Silverburst",
+    "Neal Moser Guitar",
+    "James Tyler Classic Burning Water",
+];
+
+$cenyProduktov = [
+    "1799€",
+    "233€",
+    "4999€",
+    "1899€",
+    "650€",
+    "930€",
+];
+
+
+$obrazkyProduktov = [
+    "../images/gi1.png",
+    "../images/g2.png",
+    "../images/g3.png",
+    "../images/g4.png",
+    "../images/g5.png",
+    "../images/g6.png",
+];
+
+$hodnoteniaProduktov = [
+    "../components/stars5.php",
+    "../components/stars3.php",
+    "../components/stars5.php",
+    "../components/stars4.php",
+    "../components/stars5.php",
+];
+?>
+
 <div class="container-fluid m-5 m-md-2 m-lg-4">
     <div class="row row-cols-1 row-cols-lg-2 flex-row justify-content-between align-items-center">
         <div class="col">
@@ -29,409 +67,35 @@
                 </label>
             </div>
         </div>
-
     </div>
 
     <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 prod-row">
-        <div class="col d-flex justify-content-center p-3 r-custom">
-            <a href="../pages/produkt_detail.php">
-                <div class="card products-card d-flex flex-col">
-                    <div class="product-image">
-                        <img class="card-photo " src="../images/gi1.png" alt="Product">
-                    </div>
-                    <div class="favorite-btn text-center">
-                        <p>&#x2661</p>
-                    </div>
-                    <div class="cart-btn text-center">
-                        <p>+</p>
-                    </div>
-                    <div class="text-custom">
-                        <h5 class="t1-custom">Gibson SG Standard Electric Guitar Heritage Cherry</h5>
-                        <div class="t2-hv">
-                            <div>
-                                <?php include "../components/stars5.php" ?>
+        <?php for ($i = 0; $i < 16; $i++): ?>
+            <div class="col d-flex justify-content-center p-3 r-custom">
+                <a href="../pages/produkt_detail.php">
+                    <div class="card products-card d-flex flex-col">
+                        <div class="product-image">
+                            <img class="card-photo " src="<?php echo $obrazkyProduktov[$i % count($obrazkyProduktov)]; ?>" alt="<?php echo $nazvyProduktov[$i % count($nazvyProduktov)]; ?>">
+                        </div>
+                        <div class="favorite-btn text-center">
+                            <p>&#x2661</p>
+                        </div>
+                        <div class="cart-btn text-center">
+                            <p>+</p>
+                        </div>
+                        <div class="text-custom">
+                            <h5 class="t1-custom"><?php echo $nazvyProduktov[$i % count($nazvyProduktov)]; ?></h5>
+                            <div class="t2-hv">
+                                <div>
+                                    <?php include $hodnoteniaProduktov[$i % count($hodnoteniaProduktov)]; ?>
+                                </div>
+                                <h4 class="t2-custom"><?php echo $cenyProduktov[$i % count($cenyProduktov)]; ?></h4>
                             </div>
-                            <h4 class="t2-custom">1799€</h4>
                         </div>
                     </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col d-flex justify-content-center p-3 r-custom">
-            <a href="../pages/produkt_detail.php">
-                <div class="card products-card">
-                    <div class="product-image">
-                        <img class="card-photo" src="../images/g2.png" alt="Product">
-                    </div>
-                    <div class="favorite-btn text-center">
-                        <p>&#x2661</p>
-                    </div>
-                    <div class="cart-btn text-center">
-                        <p>+</p>
-                    </div>
-                    <div class="text-custom">
-                        <h5 class="t1-custom">Fender Squier Affinity Series Stratocaster Lake Placid Blue</h5>
-                        <div class="t2-hv">
-                            <div>
-                                <?php include "../components/stars3.php" ?>
-                            </div>
-                            <h4 class="t2-custom">233€</h4>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col d-flex justify-content-center p-3 r-custom">
-            <a href="../pages/produkt_detail.php">
-                <div class="card products-card">
-                    <div class="product-image">
-                        <img class="card-photo" src="../images/g3.png" alt="Product">
-                    </div>
-                    <div class="favorite-btn text-center">
-                        <p>&#x2661</p>
-                    </div>
-                    <div class="cart-btn text-center">
-                        <p>+</p>
-                    </div>
-                    <div class="text-custom">
-                        <h5 class="t1-custom">Vintage 1963 Gibson Barney Kessel Sunburst Finish</h5>
-                        <div class="t2-hv">
-                            <div>
-                                <?php include "../components/stars5.php" ?>
-                            </div>
-                            <h4 class="t2-custom">4999€</h4>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col d-flex justify-content-center p-3 r-custom">
-            <a href="../pages/produkt_detail.php">
-                <div class="card products-card">
-                    <div class="product-image">
-                        <img class="card-photo" src="../images/g4.png" alt="Product">
-                    </div>
-                    <div class="favorite-btn text-center">
-                        <p>&#x2661</p>
-                    </div>
-                    <div class="cart-btn text-center">
-                        <p>+</p>
-                    </div>
-                    <div class="text-custom">
-                        <h5 class="t1-custom">Fender American Professional Jazzmaster Silverburst</h5>
-                        <div class="t2-hv">
-                            <div>
-                                <?php include "../components/stars4.php" ?>
-                            </div>
-                            <h4 class="t2-custom">1899€</h4>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col d-flex justify-content-center p-3 r-custom">
-            <a href="../pages/produkt_detail.php">
-                <div class="card products-card">
-                    <div class="product-image">
-                        <img class="card-photo" src="../images/g5.png" alt="Product">
-                    </div>
-                    <div class="favorite-btn text-center">
-                        <p>&#x2661</p>
-                    </div>
-                    <div class="cart-btn text-center">
-                        <p>+</p>
-                    </div>
-                    <div class="text-custom">
-                        <h5 class="t1-custom">Neal Moser Guitar</h5>
-                        <div class="t2-hv">
-                            <div>
-                                <?php include "../components/stars5.php" ?>
-                            </div>
-                            <h4 class="t2-custom">650€</h4>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col d-flex justify-content-center p-3 r-custom">
-            <a href="../pages/produkt_detail.php">
-                <div class="card products-card">
-                    <div class="product-image">
-                        <img class="card-photo" src="../images/g6.png" alt="Product">
-                    </div>
-                    <div class="favorite-btn text-center">
-                        <p>&#x2661</p>
-                    </div>
-                    <div class="cart-btn text-center">
-                        <p>+</p>
-                    </div>
-                    <div class="text-custom">
-                        <h5 class="t1-custom">James Tyler Classic Burning Water</h5>
-                        <div class="t2-hv">
-                            <div>
-                                <?php include "../components/stars5.php" ?>
-                            </div>
-                            <h4 class="t2-custom">930€</h4>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col d-flex justify-content-center p-3 r-custom">
-            <a href="../pages/produkt_detail.php">
-                <div class="card products-card d-flex flex-col">
-                    <div class="product-image">
-                        <img class="card-photo " src="../images/gi1.png" alt="Product">
-                    </div>
-                    <div class="favorite-btn text-center">
-                        <p>&#x2661</p>
-                    </div>
-                    <div class="cart-btn text-center">
-                        <p>+</p>
-                    </div>
-                    <div class="text-custom">
-                        <h5 class="t1-custom">Gibson SG Standard Electric Guitar Heritage Cherry</h5>
-                        <div class="t2-hv">
-                            <div>
-                                <?php include "../components/stars5.php" ?>
-                            </div>
-                            <h4 class="t2-custom">1799€</h4>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col d-flex justify-content-center p-3 r-custom">
-            <a href="../pages/produkt_detail.php">
-                <div class="card products-card">
-                    <div class="product-image">
-                        <img class="card-photo" src="../images/g2.png" alt="Product">
-                    </div>
-                    <div class="favorite-btn text-center">
-                        <p>&#x2661</p>
-                    </div>
-                    <div class="cart-btn text-center">
-                        <p>+</p>
-                    </div>
-                    <div class="text-custom">
-                        <h5 class="t1-custom">Fender Squier Affinity Series Stratocaster Lake Placid Blue</h5>
-                        <div class="t2-hv">
-                            <div>
-                                <?php include "../components/stars4.php" ?>
-                            </div>
-                            <h4 class="t2-custom">233€</h4>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col d-flex justify-content-center p-3 r-custom">
-            <a href="../pages/produkt_detail.php">
-                <div class="card products-card">
-                    <div class="product-image">
-                        <img class="card-photo" src="../images/g3.png" alt="Product">
-                    </div>
-                    <div class="favorite-btn text-center">
-                        <p>&#x2661</p>
-                    </div>
-                    <div class="cart-btn text-center">
-                        <p>+</p>
-                    </div>
-                    <div class="text-custom">
-                        <h5 class="t1-custom">Vintage 1963 Gibson Barney Kessel Sunburst Finish</h5>
-                        <div class="t2-hv">
-                            <div>
-                                <?php include "../components/stars5.php" ?>
-                            </div>
-                            <h4 class="t2-custom">4999€</h4>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col d-flex justify-content-center p-3 r-custom">
-            <a href="../pages/produkt_detail.php">
-                <div class="card products-card">
-                    <div class="product-image">
-                        <img class="card-photo" src="../images/g4.png" alt="Product">
-                    </div>
-                    <div class="favorite-btn text-center">
-                        <p>&#x2661</p>
-                    </div>
-                    <div class="cart-btn text-center">
-                        <p>+</p>
-                    </div>
-                    <div class="text-custom">
-                        <h5 class="t1-custom">Fender American Professional Jazzmaster Silverburst</h5>
-                        <div class="t2-hv">
-                            <div>
-                                <?php include "../components/stars5.php" ?>
-                            </div>
-                            <h4 class="t2-custom">1899€</h4>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col d-flex justify-content-center p-3 r-custom">
-            <a href="../pages/produkt_detail.php">
-                <div class="card products-card">
-                    <div class="product-image">
-                        <img class="card-photo" src="../images/g5.png" alt="Product">
-                    </div>
-                    <div class="favorite-btn text-center">
-                        <p>&#x2661</p>
-                    </div>
-                    <div class="cart-btn text-center">
-                        <p>+</p>
-                    </div>
-                    <div class="text-custom">
-                        <h5 class="t1-custom">Neal Moser Guitar</h5>
-                        <div class="t2-hv">
-                            <div>
-                                <?php include "../components/stars5.php" ?>
-                            </div>
-                            <h4 class="t2-custom">650€</h4>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col d-flex justify-content-center p-3 r-custom">
-            <a href="../pages/produkt_detail.php">
-                <div class="card products-card">
-                    <div class="product-image">
-                        <img class="card-photo" src="../images/g6.png" alt="Product">
-                    </div>
-                    <div class="favorite-btn text-center">
-                        <p>&#x2661</p>
-                    </div>
-                    <div class="cart-btn text-center">
-                        <p>+</p>
-                    </div>
-                    <div class="text-custom">
-                        <h5 class="t1-custom">James Tyler Classic Burning Water</h5>
-                        <div class="t2-hv">
-                            <div>
-                                <?php include "../components/stars5.php" ?>
-                            </div>
-                            <h4 class="t2-custom">930€</h4>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col d-flex justify-content-center p-3 r-custom">
-            <a href="../pages/produkt_detail.php">
-                <div class="card products-card d-flex flex-col">
-                    <div class="product-image">
-                        <img class="card-photo " src="../images/gi1.png" alt="Product">
-                    </div>
-                    <div class="favorite-btn text-center">
-                        <p>&#x2661</p>
-                    </div>
-                    <div class="cart-btn text-center">
-                        <p>+</p>
-                    </div>
-                    <div class="text-custom">
-                        <h5 class="t1-custom">Gibson SG Standard Electric Guitar Heritage Cherry</h5>
-                        <div class="t2-hv">
-                            <div>
-                                <?php include "../components/stars5.php" ?>
-                            </div>
-                            <h4 class="t2-custom">1799€</h4>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col d-flex justify-content-center p-3 r-custom">
-            <a href="../pages/produkt_detail.php">
-                <div class="card products-card">
-                    <div class="product-image">
-                        <img class="card-photo" src="../images/g2.png" alt="Product">
-                    </div>
-                    <div class="favorite-btn text-center">
-                        <p>&#x2661</p>
-                    </div>
-                    <div class="cart-btn text-center">
-                        <p>+</p>
-                    </div>
-                    <div class="text-custom">
-                        <h5 class="t1-custom">Fender Squier Affinity Series Stratocaster Lake Placid Blue</h5>
-                        <div class="t2-hv">
-                            <div>
-                                <?php include "../components/stars4.php" ?>
-                            </div>
-                            <h4 class="t2-custom">233€</h4>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col d-flex justify-content-center p-3 r-custom">
-            <a href="../pages/produkt_detail.php">
-                <div class="card products-card">
-                    <div class="product-image">
-                        <img class="card-photo" src="../images/g3.png" alt="Product">
-                    </div>
-                    <div class="favorite-btn text-center">
-                        <p>&#x2661</p>
-                    </div>
-                    <div class="cart-btn text-center">
-                        <p>+</p>
-                    </div>
-                    <div class="text-custom">
-                        <h5 class="t1-custom">Vintage 1963 Gibson Barney Kessel Sunburst Finish</h5>
-                        <div class="t2-hv">
-                            <div>
-                                <?php include "../components/stars5.php" ?>
-                            </div>
-                            <h4 class="t2-custom">4999€</h4>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col d-flex justify-content-center p-3 r-custom">
-            <a href="../pages/produkt_detail.php">
-                <div class="card products-card">
-                    <div class="product-image">
-                        <img class="card-photo" src="../images/g4.png" alt="Product">
-                    </div>
-                    <div class="favorite-btn text-center">
-                        <p>&#x2661</p>
-                    </div>
-                    <div class="cart-btn text-center">
-                        <p>+</p>
-                    </div>
-                    <div class="text-custom">
-                        <h5 class="t1-custom">Fender American Professional Jazzmaster Silverburst</h5>
-                        <div class="t2-hv">
-                            <div>
-                                <?php include "../components/stars5.php" ?>
-                            </div>
-                            <h4 class="t2-custom">1899€</h4>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
+                </a>
+            </div>
+        <?php endfor; ?>
     </div>
 
     <div class="row mt-5">
