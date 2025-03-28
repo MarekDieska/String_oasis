@@ -1,3 +1,5 @@
+<?php include "../components/variables.php"?>
+
 <div class="side-filter-custom">
     <div>
         <h2 class="text-center pb-5">FILTROVAŤ</h2>
@@ -17,52 +19,18 @@
                 <span>5000€</span>
             </div>
         </div>
-        <label for="priceRange"></label>
+        <label for="priceRange1"></label>
 
 
         <div>
             <h4>Typ strunového nástroja</h4>
             <div class="p-3">
-                <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" id="typ1">
-                    <label for="typ1">Elektrické gitary</label>
-                </div>
-                <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" id="typ2">
-                    <label for="typ2">Elektro-akustické gitary</label>
-                </div>
-                <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" id="typ4">
-                    <label for="typ4">Akustické gitary</label>
-                </div>
-                <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" id="typ5">
-                    <label for="typ5">Klasické gitary</label>
-                </div>
-                <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" id="typ6">
-                    <label for="typ6">Detské gitary</label>
-                </div>
-                <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" id="typ7">
-                    <label for="typ7">Basgitary</label>
-                </div>
-                <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" id="typ8">
-                    <label for="typ8">Ukulele</label>
-                </div>
-                <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" id="typ9">
-                    <label for="typ9">Banjo</label>
-                </div>
-                <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" id="typ10">
-                    <label for="typ10">Mandolína</label>
-                </div>
-                <div class="form-check mb-2">
-                    <input class="form-check-input" type="checkbox" id="typ11">
-                    <label for="typ11">Kora</label>
-                </div>
+                <?php for($i = 0; $i < count($typy); $i++): ?>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="typ<?php echo $i?>">
+                        <label for="typ<?php echo $i?>"><?php echo $typy[$i]?></label>
+                    </div>
+                <?php endfor;?>
             </div>
         </div>
 
@@ -72,30 +40,13 @@
 
             <div class="d-flex justify-content-center flex-column m-4 mt-3">
                 <div class="btn-group-vertical" role="group">
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-1" autocomplete="off">
-                    <label class="btn btn-outline-danger hv-custom" for="vbtn-1">
-                        <?php include "../components/stars5.php" ?>
+                    <?php for($i = 1; $i < 6; $i++):?>
+                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-<?php echo $i?>" autocomplete="off">
+                    <label class="btn btn-outline-danger hv-custom" for="vbtn-<?php echo $i?>">
+                        <?php include "../components/stars".$i.".php" ?>
                     </label>
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-2" autocomplete="off">
-                    <label class="btn btn-outline-danger hv-custom" for="vbtn-2">
-                        <?php include "../components/stars4.php" ?>
+                    <?php endfor;?>
 
-                    </label>
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-3" autocomplete="off">
-                    <label class="btn btn-outline-danger hv-custom" for="vbtn-3">
-                        <?php include "../components/stars3.php" ?>
-
-                    </label>
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-4" autocomplete="off">
-                    <label class="btn btn-outline-danger hv-custom" for="vbtn-4">
-                        <?php include "../components/stars2.php" ?>
-
-                    </label>
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-5" autocomplete="off">
-                    <label class="btn btn-outline-danger hv-custom" for="vbtn-5">
-                        <?php include "../components/stars1.php" ?>
-
-                    </label>
                     <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-6" autocomplete="off" checked>
                     <label class="btn btn-outline-danger hv-custom" for="vbtn-6">
                         všetky ohodnotenia
@@ -107,42 +58,21 @@
         <div class="d-flex flex-column mt-5">
             <h4>Veľkosť gitary</h4>
             <div class="p-3">
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="size_offcanvas" value="" id="check1_offcanvas">
-                    <label class="form-check-label" for="check1_offcanvas">
-                        Junior
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="size_offcanvas" value="" id="check2_offcanvas">
-                    <label class="form-check-label" for="check2_offcanvas">
-                        3/4
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="size_offcanvas" value="" id="check3_offcanvas">
-                    <label class="form-check-label" for="check3_offcanvas">
-                        7/8
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="size_offcanvas" value="" id="check4_offcanvas">
-                    <label class="form-check-label" for="check4_offcanvas">
-                        4/4
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="size_offcanvas" value="" id="check5_offcanvas">
-                    <label class="form-check-label" for="check5_offcanvas">
-                        Full size
-                    </label>
-                </div>
+                <?php for($i = 0; $i < count($velkosti); $i++):?>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="size_offcanvas" value="" id="check<?php echo $i?>_offcanvas">
+                        <label class="form-check-label" for="check<?php echo $i?>_offcanvas">
+                            <?php echo $velkosti[$i]?>
+                        </label>
+                    </div>
+                <?php endfor;?>
             </div>
         </div>
 
         <div class="d-flex flex-column mt-5">
             <h4>Značka</h4>
             <div class=" p-3">
+
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="zn1">
                     <label class="form-check-label" for="zn1">
