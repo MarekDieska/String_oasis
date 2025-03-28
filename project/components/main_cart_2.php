@@ -15,183 +15,145 @@
 
 </div>
 
+<div class="row justify-content-center">
+</div>
+
 <div class="row mt-5">
-    <div class="col-3 flex-column cart-slider justify-content-center mt-0 overflow-auto">
-        <div class="cart-product bg-light">
-            <div class="d-flex flex-row align-items-center justify-content-between">
-                <img src="../images/g4.png" width="60" alt="">
-                <div class="d-flex flex-column cart-prod-txt">
-                    <h4>Fender American Professional Jazzmaster Silverburst</h4>
-                    <h5>eliektrická gitara</h5>
+    <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0 justify-content-center">
+        <h4 class="text_color cart_text">Doprava</h4>
+        <div class="cart-slider justify-content-center mt-0 overflow-y-scroll overflow-x-hidden">
+            <div class="cart-product-small bg-light">
+                <div class="d-flex flex-row ms-3 w-100 align-items-center">
+                    <i class="fa-solid fa-box-open fa-2x"></i>
+                    <div class="d-flex w-100 flex-column cart-prod-txt">
+                        <h4 class="ms-3">Packeta</h4>
+                        <h5 class="ms-3">Výdajné miesto a Z-box</h5>
+                    </div>
+                    <h4 class="cart-prod-cost d-flex w-100 me-0 justify-content-end">18,50€</h4>
+                    <i class="fa fa-xmark me-2 d-flex justify-content-center"></i>
                 </div>
-                <div class="d-flex flex-row p-3">
-                    <i class="fa fa-minus p-2"></i>
-                    <h5 class="pt-1">1</h5>
-                    <i class="fa fa-plus p-2"></i>
-                </div>
-                <h4 class="pt-1 cart-prod-cost">1899€</h4>
-                <i class="fa fa-xmark"></i>
             </div>
-        </div>
-
-        <div class="cart-product bg-light">
-            <div class="d-flex flex-row align-items-center justify-content-between">
-                <img src="../images/g4.png" width="60" alt="">
-                <div class="d-flex flex-column cart-prod-txt">
-                    <h4>Fender American Professional Jazzmaster Silverburst</h4>
-                    <h5>eliektrická gitara</h5>
+            <div class="cart-product-small bg-light">
+                <div class="d-flex flex-row ms-3 w-100 align-items-center">
+                    <i class="fa-solid fa-box-open fa-2x"></i>
+                    <div class="d-flex w-100 flex-column cart-prod-txt">
+                        <h4 class="ms-3">Slovenská pošta</h4>
+                        <h5 class="ms-3">Výdajné miesto</h5>
+                    </div>
+                    <h4 class="cart-prod-cost d-flex w-100 me-0 justify-content-end">12,50€</h4>
+                    <i class="fa fa-xmark me-2 d-flex justify-content-center"></i>
                 </div>
-                <div class="d-flex flex-row p-3">
-                    <i class="fa fa-minus p-2"></i>
-                    <h5 class="pt-1">1</h5>
-                    <i class="fa fa-plus p-2"></i>
-                </div>
-                <h4 class="pt-1 cart-prod-cost">1899€</h4>
-                <i class="fa fa-xmark"></i>
             </div>
-        </div>
-
-        <div class="cart-product bg-light">
-            <div class="d-flex flex-row align-items-center justify-content-between">
-                <img src="../images/g4.png" width="60" alt="">
-                <div class="d-flex flex-column cart-prod-txt">
-                    <h4>Fender American Professional Jazzmaster Silverburst</h4>
-                    <h5>eliektrická gitara</h5>
+            <div class="cart-product-small bg-light">
+                <div class="d-flex flex-row ms-3 w-100 align-items-center">
+                    <i class="fa-solid fa-box-open fa-2x"></i>
+                    <div class="d-flex w-100 flex-column cart-prod-txt">
+                        <h4 class="ms-3">AlzaBox</h4>
+                        <h5 class="ms-3">Výdajné miesto a Z-box</h5>
+                    </div>
+                    <h4 class="cart-prod-cost d-flex w-100 me-0 justify-content-end">25,50€</h4>
+                    <i class="fa fa-xmark me-2 d-flex justify-content-center"></i>
                 </div>
-                <div class="d-flex flex-row p-3">
-                    <i class="fa fa-minus p-2"></i>
-                    <h5 class="pt-1">1</h5>
-                    <i class="fa fa-plus p-2"></i>
-                </div>
-                <h4 class="pt-1 cart-prod-cost">1899€</h4>
-                <i class="fa fa-xmark"></i>
             </div>
-        </div>
-
-        <div class="cart-product bg-light">
-            <div class="d-flex flex-row align-items-center justify-content-between">
-                <img src="../images/g4.png" width="60" alt="">
-                <div class="d-flex flex-column cart-prod-txt">
-                    <h4>Fender American Professional Jazzmaster Silverburst</h4>
-                    <h5>eliektrická gitara</h5>
+            <div class="cart-product-small bg-light">
+                <div class="d-flex flex-row ms-3 w-100 align-items-center">
+                    <i class="fa-solid fa-box-open fa-2x"></i>
+                    <div class="d-flex w-100 flex-column cart-prod-txt">
+                        <h4 class="ms-3">String Oasis</h4>
+                        <h5 class="ms-3">Vyzdvihnutie v predajni</h5>
+                    </div>
+                    <h4 class="cart-prod-cost d-flex w-100 me-0 justify-content-end">3,50€</h4>
+                    <i class="fa fa-xmark me-2 d-flex justify-content-center"></i>
                 </div>
-                <div class="d-flex flex-row p-3">
-                    <i class="fa fa-minus p-2"></i>
-                    <h5 class="pt-1">1</h5>
-                    <i class="fa fa-plus p-2"></i>
-                </div>
-                <h4 class="pt-1 cart-prod-cost">1899€</h4>
-                <i class="fa fa-xmark"></i>
             </div>
-        </div>
-
-        <div class="cart-product bg-light">
-            <div class="d-flex flex-row align-items-center justify-content-between">
-                <img src="../images/g4.png" width="60" alt="">
-                <div class="d-flex flex-column cart-prod-txt">
-                    <h4>Fender American Professional Jazzmaster Silverburst</h4>
-                    <h5>eliektrická gitara</h5>
+            <div class="cart-product-small bg-light">
+                <div class="d-flex flex-row ms-3 w-100 align-items-center">
+                    <i class="fa-solid fa-box-open fa-2x"></i>
+                    <div class="d-flex w-100 flex-column cart-prod-txt">
+                        <h4 class="ms-3">GooglePay</h4>
+                        <h5 class="ms-3">platba vopred</h5>
+                    </div>
+                    <h4 class="cart-prod-cost d-flex w-100 me-0 justify-content-end">10,50€</h4>
+                    <i class="fa fa-xmark me-2 d-flex justify-content-center"></i>
                 </div>
-                <div class="d-flex flex-row p-3">
-                    <i class="fa fa-minus p-2"></i>
-                    <h5 class="pt-1">1</h5>
-                    <i class="fa fa-plus p-2"></i>
+            </div>
+            <div class="cart-product-small bg-light">
+                <div class="d-flex flex-row ms-3 w-100 align-items-center">
+                    <i class="fa-solid fa-box-open fa-2x"></i>
+                    <div class="d-flex w-100 flex-column cart-prod-txt">
+                        <h4 class="ms-3">GooglePay</h4>
+                        <h5 class="ms-3">platba vopred</h5>
+                    </div>
+                    <h4 class="cart-prod-cost d-flex w-100 me-0 justify-content-end">10,50€</h4>
+                    <i class="fa fa-xmark me-2 d-flex justify-content-center"></i>
                 </div>
-                <h4 class="pt-1 cart-prod-cost">1899€</h4>
-                <i class="fa fa-xmark"></i>
             </div>
         </div>
     </div>
 
-    <div class="col-3 flex-column cart-slider justify-content-center mt-0 overflow-auto">
-        <div class="cart-product bg-light">
-            <div class="d-flex flex-row align-items-center justify-content-between">
-                <img src="../images/g4.png" width="60" alt="">
-                <div class="d-flex flex-column cart-prod-txt">
-                    <h4>Fender American Professional Jazzmaster Silverburst</h4>
-                    <h5>eliektrická gitara</h5>
+    <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0 justify-content-center">
+        <h4 class="text_color cart_text">Spôsob platby</h4>
+        <div class="cart-slider justify-content-center mt-0 overflow-y-scroll overflow-x-hidden">
+            <div class="cart-product-small bg-light">
+                <div class="d-flex flex-row ms-3 w-100 align-items-center">
+                    <i class="fa-regular fa-credit-card fa-2x"></i>
+                    <div class="d-flex w-100 flex-column cart-prod-txt">
+                        <h4 class="ms-3">Visa</h4>
+                        <h5 class="ms-3">platba vopred</h5>
+                    </div>
+                    <h4 class="cart-prod-cost d-flex w-100 justify-content-end">8,00€</h4>
+                    <i class="fa fa-xmark me-2 d-flex justify-content-center"></i>
                 </div>
-                <div class="d-flex flex-row p-3">
-                    <i class="fa fa-minus p-2"></i>
-                    <h5 class="pt-1">1</h5>
-                    <i class="fa fa-plus p-2"></i>
+            </div>
+            <div class="cart-product-small bg-light">
+                <div class="d-flex flex-row ms-3 w-100 align-items-center">
+                    <i class="fa-regular fa-credit-card fa-2x"></i>
+                    <div class="d-flex w-100 flex-column cart-prod-txt">
+                        <h4 class="ms-3">GooglePay</h4>
+                        <h5 class="ms-3">platba vopred</h5>
+                    </div>
+                    <h4 class="cart-prod-cost d-flex w-100 me-0 justify-content-end">10,50€</h4>
+                    <i class="fa fa-xmark me-2 d-flex justify-content-center"></i>
                 </div>
-                <h4 class="pt-1 cart-prod-cost">1899€</h4>
-                <i class="fa fa-xmark"></i>
+            </div>
+            <div class="cart-product-small bg-light">
+                <div class="d-flex flex-row ms-3 w-100 align-items-center">
+                    <i class="fa-regular fa-credit-card fa-2x"></i>
+                    <div class="d-flex w-100 flex-column cart-prod-txt">
+                        <h4 class="ms-3">GooglePay</h4>
+                        <h5 class="ms-3">platba vopred</h5>
+                    </div>
+                    <h4 class="cart-prod-cost d-flex w-100 me-0 justify-content-end">10,50€</h4>
+                    <i class="fa fa-xmark me-2 d-flex justify-content-center"></i>
+                </div>
+            </div>
+            <div class="cart-product-small bg-light">
+                <div class="d-flex flex-row ms-3 w-100 align-items-center">
+                    <i class="fa-regular fa-credit-card fa-2x"></i>
+                    <div class="d-flex w-100 flex-column cart-prod-txt">
+                        <h4 class="ms-3">GooglePay</h4>
+                        <h5 class="ms-3">platba vopred</h5>
+                    </div>
+                    <h4 class="cart-prod-cost d-flex w-100 me-0 justify-content-end">10,50€</h4>
+                    <i class="fa fa-xmark me-2 d-flex justify-content-center"></i>
+                </div>
+            </div>
+            <div class="cart-product-small bg-light">
+                <div class="d-flex flex-row ms-3 w-100 align-items-center">
+                    <i class="fa-regular fa-credit-card fa-2x"></i>
+                    <div class="d-flex w-100 flex-column cart-prod-txt">
+                        <h4 class="ms-3">GooglePay</h4>
+                        <h5 class="ms-3">platba vopred</h5>
+                    </div>
+                    <h4 class="cart-prod-cost d-flex w-100 me-0 justify-content-end">10,50€</h4>
+                    <i class="fa fa-xmark me-2 d-flex justify-content-center"></i>
+                </div>
             </div>
         </div>
+    </div>
 
-        <div class="cart-product bg-light">
-            <div class="d-flex flex-row align-items-center justify-content-between">
-                <img src="../images/g4.png" width="60" alt="">
-                <div class="d-flex flex-column cart-prod-txt">
-                    <h4>Fender American Professional Jazzmaster Silverburst</h4>
-                    <h5>eliektrická gitara</h5>
-                </div>
-                <div class="d-flex flex-row p-3">
-                    <i class="fa fa-minus p-2"></i>
-                    <h5 class="pt-1">1</h5>
-                    <i class="fa fa-plus p-2"></i>
-                </div>
-                <h4 class="pt-1 cart-prod-cost">1899€</h4>
-                <i class="fa fa-xmark"></i>
-            </div>
-        </div>
-
-        <div class="cart-product bg-light">
-            <div class="d-flex flex-row align-items-center justify-content-between">
-                <img src="../images/g4.png" width="60" alt="">
-                <div class="d-flex flex-column cart-prod-txt">
-                    <h4>Fender American Professional Jazzmaster Silverburst</h4>
-                    <h5>eliektrická gitara</h5>
-                </div>
-                <div class="d-flex flex-row p-3">
-                    <i class="fa fa-minus p-2"></i>
-                    <h5 class="pt-1">1</h5>
-                    <i class="fa fa-plus p-2"></i>
-                </div>
-                <h4 class="pt-1 cart-prod-cost">1899€</h4>
-                <i class="fa fa-xmark"></i>
-            </div>
-        </div>
-
-        <div class="cart-product bg-light">
-            <div class="d-flex flex-row align-items-center justify-content-between">
-                <img src="../images/g4.png" width="60" alt="">
-                <div class="d-flex flex-column cart-prod-txt">
-                    <h4>Fender American Professional Jazzmaster Silverburst</h4>
-                    <h5>eliektrická gitara</h5>
-                </div>
-                <div class="d-flex flex-row p-3">
-                    <i class="fa fa-minus p-2"></i>
-                    <h5 class="pt-1">1</h5>
-                    <i class="fa fa-plus p-2"></i>
-                </div>
-                <h4 class="pt-1 cart-prod-cost">1899€</h4>
-                <i class="fa fa-xmark"></i>
-            </div>
-        </div>
-
-        <div class="cart-product bg-light">
-            <div class="d-flex flex-row align-items-center justify-content-between">
-                <img src="../images/g4.png" width="60" alt="">
-                <div class="d-flex flex-column cart-prod-txt">
-                    <h4>Fender American Professional Jazzmaster Silverburst</h4>
-                    <h5>eliektrická gitara</h5>
-                </div>
-                <div class="d-flex flex-row p-3">
-                    <i class="fa fa-minus p-2"></i>
-                    <h5 class="pt-1">1</h5>
-                    <i class="fa fa-plus p-2"></i>
-                </div>
-                <h4 class="pt-1 cart-prod-cost">1899€</h4>
-                <i class="fa fa-xmark"></i>
-            </div>
-        </div>
-
-    <div class="col-6 d-flex  justify-content-center align-items-end">
+    <div class="col-12 col-lg-4 mt-5 mt-lg-0 d-flex justify-content-center align-items-end">
         <div class="total-custom">
-
         </div>
     </div>
 </div>

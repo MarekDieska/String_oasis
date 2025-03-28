@@ -76,6 +76,21 @@
     border:none;
 }
 
+/*cart_page_2*/
+.cart-slider::-webkit-scrollbar {
+    display:none;
+}
+
+.cart-product-small{
+    margin-bottom: 20px;
+    background: #e3e3e3;
+    border-radius: 10px;
+}
+
+.cart_text {
+    max-width: 500px;
+}
+
 
 .btn.disabled{
     opacity: 0.3;
