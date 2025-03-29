@@ -59,7 +59,7 @@
         </div>
 
         <div class="row d-flex justify-content-center m-3 align-items-center">
-            <button type="button" class="btn btn-danger">Pridať do košíka</button>
+            <a type="button" href="../pages/cart_page.php" class="btn btn-danger">Pridať do košíka</a>
         </div>
 
     </div>

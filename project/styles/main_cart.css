@@ -15,6 +15,11 @@
     width: 50px;
     font-size: 25px;
     font-family: "lor", serif;
+    background-color: #5c636a;
+}
+
+.circle-custom:hover {
+    background-color: #5c636a;
 }
 
 .circle-box-custom{
