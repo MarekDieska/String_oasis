@@ -65,16 +65,15 @@
                 <div class="col-12">
                     <div class="mb-0">
                         <label class="form-label fw-bold mt-0">Obrázky</label>
-                        <div class="drop-zone p-5 text-center border rounded mb-1 bg-dark">
-                            <div class="drop-zone-thumb"></div>
-                            <p class="mb-0 text-light">Drag&Drop alebo vyhľadať</p>
+                        <div class="input-group mb-3">
+                            <input type="file" class="form-control form-control-lg bg-dark text_color" id="addProductImage">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="d-flex justify-content-end gap-2 mt-2 mb-3">
-                <button type="button" class="btn btn-outline-secondary">Zrušiť</button>
-                <button type="button" class="btn btn-outline-danger">Vyčistiť</button>
+                <a type="button" href="../pages/index.php" class="btn btn-outline-secondary">Zrušiť</a>
+                <button type="reset" class="btn btn-outline-danger">Vyčistiť</button>
                 <button type="submit" class="btn btn-primary">Pridať produkt</button>
             </div>
         </form>
@@ -103,7 +102,7 @@
                             <option value="6">Platne</option>
                         </select>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-2">
                         <select class="form-select">
                             <option value="">Podkategória</option>
                             <option value="1">Elektrické</option>
@@ -113,6 +112,15 @@
                             <option value="5">Detské</option>
                         </select>
                     </div>
+                    <div class="card bg-dark text_color align-items-center">
+                        <button class="btn btn-outline-primary w-100 mb-3">Hľadať</button>
+                        <img src="../images/product_guitar.jpg" style="width:75%; height: auto" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">HarmonyTone Sunset D-50</h5>
+                            <p class="card-text">HarmonyTone Sunset D-50 je perfektná pre začinajúcich aj pokročilých hudobníkov, ktorí
+                            hľadajú spoľahlivý nástroj s výbroným zvukom a luxusným vzhľadom.</p>
+                        </div>
+                    </div>
                     <div class="d-flex justify-content-end gap-2">
                         <button type="button" class="btn btn-secondary">Zrušiť</button>
                         <button type="submit" class="btn btn-danger">Odstrániť produkt</button>
@@ -121,4 +129,10 @@
             </div>
         </div>
     </div>
+</div>
+
+<hr class="text_color mt-3 mb-4">
+
+<div class="row w-100 justify-content-center p-5 mb-2">
+    <a type="button" href="../pages/index.php" class="btn btn-success p-2 fs-5">Dokončiť</a>
 </div>
