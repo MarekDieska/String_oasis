@@ -61,11 +61,11 @@ include "../components/variables.php"?>
 
 
 
-<div class="row m-2 m-md-5">
+<div class="row m-2">
 
     <hr class="text_color mt-5 mb-5">
     <h1 class="text_color detail_large_text mt-md-1">HarmonyTone Sunset D-50</h1>
-    <h5 class="text_color mt-4 m-md-4" style="font-family: 'Times New Roman', sans-serif;">HarmonyTone Sunset D-50
+    <h5 class="text_color mt-4" style="font-family: 'Times New Roman', sans-serif;">HarmonyTone Sunset D-50
         HarmonyTone Sunset D-50 je kvalitná elektro-akustická gitara, ktorá kombinuje klasický dizajn s moderným spracovaním. Jej telo je vyrobené z výberového mahagónu, ktorý zabezpečuje hlboký, bohatý tón s teplými basmi a jasnými výškami. Vrchná doska zo smreku pridáva rezonanciu a dynamiku, vďaka čomu je ideálna pre hráčov všetkých úrovní.
         <br><br>
         Výnimočný sunburst lak dodáva gitare elegantný a nadčasový vzhľad, zatiaľ čo ergonomický výrez umožňuje jednoduchý prístup k vyšším pražcom. Integrovaný predzosilňovač s ekvalizérom a zabudovanou ladičkou zaručuje, že váš zvuk bude vždy presný a vyvážený, či už hráte doma, v štúdiu alebo na pódiu.
@@ -105,8 +105,8 @@ include "../components/variables.php"?>
 </div>
 
 
-<div class="overflow-auto reviews ">
-    <div class="row flex-row flex-nowrap m-5">
+<div class="overflow-auto reviews">
+    <div class="row flex-row flex-nowrap">
 
         <?php foreach($hodnotenia as $recenzia): ?>
             <div class="col-lg-3 col-md-6 col-sm-12">
