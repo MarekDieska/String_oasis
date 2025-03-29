@@ -49,9 +49,6 @@
 }
 
 
-
-
-
 .hidden {
     opacity: 0;
     transition: all 3s;
@@ -71,7 +68,9 @@
 }
 
 
-
+.filler-custom{
+    height: 80px;
+}
 
 
 

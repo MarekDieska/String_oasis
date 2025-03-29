@@ -83,13 +83,14 @@
 
 
     <!--ked je velka obrazovka -->
-    <div class="category-scroll row d-none d-md-flex w-100">
+    <div class="category-scroll row d-none d-md-flex w-100" id="categoryGroup">
         <div class="m-0 col-2 d-flex flex-column position-relative">
             <a href="#" data-bs-toggle="collapse" data-bs-target="#gitaryCollapse" class="d-flex flex-column">
                 <img src="../images/git.svg" alt="gitary" height="70" class="d-none d-md-block">
                 <p class="m-0">GITARY</p>
             </a>
-            <ul id="gitaryCollapse" class="collapse position-absolute w-100 mt-2 bg-white rounded dropdown-custom">
+            <ul id="gitaryCollapse" class="collapse position-absolute w-100 pt-2 pb-2 p-0 dropdown-custom"
+                data-bs-parent="#categoryGroup">
                 <li><a href="../pages/filters_page.php">elektrické</a></li>
                 <li><a href="../pages/filters_page.php">elektro-akustické</a></li>
                 <li><a href="../pages/filters_page.php">akustické</a></li>
@@ -98,12 +99,13 @@
             </ul>
         </div>
 
-        <div class="m-0 col-2 d-flex flex-column  position-relative">
+        <div class="m-0 col-2 d-flex flex-column position-relative">
             <a href="#" data-bs-toggle="collapse" data-bs-target="#basgitaryCollapse" class="d-flex flex-column">
-                <img src="../images/bass.svg" alt="gitary" height="70" class="d-none d-md-block">
-                <p class="m-0  ">BASGITARY</p>
+                <img src="../images/bass.svg" alt="basgitary" height="70" class="d-none d-md-block">
+                <p class="m-0">BASGITARY</p>
             </a>
-            <ul id="basgitaryCollapse" class="collapse position-absolute w-100 mt-2 bg-white rounded dropdown-custom">
+            <ul id="basgitaryCollapse" class="collapse position-absolute w-100 pt-2 pb-2 p-0 dropdown-custom"
+                data-bs-parent="#categoryGroup">
                 <li><a href="../pages/filters_page.php">4 strunové</a></li>
                 <li><a href="../pages/filters_page.php">5 strunové</a></li>
             </ul>
@@ -114,7 +116,8 @@
                 <img src="../images/banjo.svg" alt="gitary" height="70" class="d-none d-md-block">
                 <p class="m-0  ">INÉ STRUNY</p>
             </a>
-            <ul id="ineStrunyCollapse" class="collapse position-absolute w-100 mt-2 bg-white rounded dropdown-custom">
+            <ul id="ineStrunyCollapse" class="collapse position-absolute w-100 pt-2 pb-2 p-0 dropdown-custom"
+                data-bs-parent="#categoryGroup">
                 <li><a href="../pages/filters_page.php">ukulele</a></li>
                 <li><a href="../pages/filters_page.php">banjo</a></li>
                 <li><a href="../pages/filters_page.php">mandolína</a></li>

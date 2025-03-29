@@ -24,7 +24,9 @@
             <?php include "../components/header.php" ?>
         </header>
 
-        <nav class="navbar navbar-expand-md category-custom w-100 fixed-top">
+        <div class="filler-custom"></div>
+
+        <nav class="navbar navbar-expand-md category-custom w-100 fixed-top sticky-md-top ">
             <?php include "../components/category.php" ?>
         </nav>
 
