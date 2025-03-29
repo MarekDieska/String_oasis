@@ -118,4 +118,84 @@ $znacky = [
     "Yamaha"
 ];
 
+$detaily = [
+    "../images/detail_1.png",
+    "../images/detail_2.jpg",
+    "../images/detail_3.jpg",
+    "../images/detail_4.png",
+];
+
+$farby = [
+    "../images/brown_variant.jpg",
+    "../images/red_variant.jpg",
+    "../images/black-variant.jpg"
+
+];
+
+$hodnotenia = [
+    [
+        "nadpis" => "Jednoznačne odporúčam",
+        "text" => "Jediné miesto široko ďaleko, kde som našla gitaru tohto modelu. Vysnívaná gitara s nádherným, čistým zvukom. Vychádzajú z nej tie najkrajšie melódie.",
+        "autor" => "Miška",
+        "cas" => "2 týždne dozadu",
+        "farba" => "success",
+        "hviezdy" => "../components/stars5.php",
+        "uspech" => "success"
+    ],
+    [
+        "nadpis" => "Skvelá pre začiatočníkov",
+        "text" => "Moje hudobné začiatky boli práve s touto gitarou. Dneska vypredávam koncerty. Na túto gitaru mám iba samé dobré spomienky.",
+        "autor" => "Alexandra",
+        "cas" => "3 mesiace dozadu",
+        "farba" => "success",
+        "hviezdy" => "../components/stars5.php",
+        "uspech" => "success",
+    ],
+    [
+        "nadpis" => "Určite neodporúčam",
+        "text" => "Táto gitara mi nespoľahlivo slúži len pár týždňov a zatiaľ som s ňou mala samé problémy...",
+        "autor" => "Gabriela",
+        "cas" => "5 mesiacov dozadu",
+        "farba" => "danger",
+        "hviezdy" => "../components/stars2.php",
+        "uspech" => "danger"
+    ],
+    [
+        "nadpis" => "Príliš drahá",
+        "text" => "Ako študent si takúto gitaru určite nemôžem dovoliť, nabudúce by so zvolil lacnejšiu voľbu...",
+        "autor" => "Marek",
+        "cas" => "6 mesiacov dozadu",
+        "farba" => "success",
+        "hviezdy" => "../components/stars4.php",
+        "uspech" => "success"
+    ],
+    [
+        "nadpis" => "To je ono!!",
+        "text" => "Hľadala som. Veľmi dlho som hľadala takú gitaru, čo mi bude plne vyhovovať...",
+        "autor" => "Viktória",
+        "cas" => "11 mesiacov dozadu",
+        "farba" => "success",
+        "hviezdy" => "../components/stars5.php",
+        "uspech" => "success"
+    ],
+    [
+        "nadpis" => "Pozitívne",
+        "text" => "Priatelia, určite vrelo odporúčam. Dovoľte mi informovať vás, že táto bass gitara má veľmi dobré hĺbky...",
+        "autor" => "cisco_4ever",
+        "cas" => "16 mesiacov dozadu",
+        "farba" => "success",
+        "hviezdy" => "../components/stars5.php",
+        "uspech" => "success"
+    ],
+    [
+        "nadpis" => "Kvalitka",
+        "text" => "Najskôr som si chcela kúpiť klavír ale tá harfa hrala ako po masle...",
+        "autor" => "Princezna45",
+        "cas" => "2 roky dozadu",
+        "farba" => "success",
+        "hviezdy" => "../components/stars4.php",
+        "uspech" => "success"
+    ]
+];
+
 ?>

@@ -1,20 +1,12 @@
 <?php include "../components/variables.php";?>
 
-<div class="row justify-content-center align-items-center">
-    <div class="d-none d-md-flex col-2 justify-content-center">
-        <a class="btn btn-secondary but-back"><i class="fa fa-arrow-left m-0"></i> na nákup</a>
-    </div>
-
-    <div class="col-12 col-md-8 d-none d-sm-flex flex-row justify-content-center align-items-center">
-
+<div class="row justify-content-center align-items-center pt-4">
+    <div class="col-12 d-none d-sm-flex flex-row justify-content-center align-items-center">
         <div class="d-flex align-items-center flex-column  circle-box-custom">
             <button class="btn btn-secondary circle-custom-big rounded-pill"><i class="fa-regular fa-circle-check"></i></button>
             <h6>hotovo</h6>
         </div>
-
     </div>
-
-    <div class="col-2"></div>
 </div>
 
 <div class="row justify-content-center text-center p-5">

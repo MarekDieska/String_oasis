@@ -1,13 +1,8 @@
 <?php include "../components/variables.php";?>
 
 <div class="row justify-content-center align-items-center">
-    <div class="d-none d-md-flex col-2 justify-content-center">
-        <a class="btn btn-secondary but-back"><i class="fa fa-arrow-left m-0"></i> na nákup</a>
-    </div>
 
-    <h1 class="d-flex d-sm-none text-light ps-5">Nákupný košík</h1>
-
-    <div class="col-12 col-md-8 d-none d-sm-flex flex-row justify-content-center align-items-center">
+    <div class="col-12 d-none d-sm-flex flex-row justify-content-center align-items-center">
 
         <div class="d-flex align-items-center flex-column circle-box-custom">
             <button class="btn btn-secondary circle-custom rounded-pill">1</button>
@@ -36,7 +31,6 @@
 
     </div>
 
-    <div class="col-2"></div>
 </div>
 
 <div class="row">

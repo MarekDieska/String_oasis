@@ -2,7 +2,9 @@
 
 <div class="row justify-content-center align-items-center">
     <div class="d-none d-md-flex col-2 justify-content-center">
-        <a class="btn btn-secondary but-back"><i class="fa fa-arrow-left m-0"></i> na nákup</a>
+        <a class="btn btn-secondary but-back" href="../pages/filters_page.php">
+            <i class="fa fa-arrow-left m-0"></i> na nákup
+        </a>
     </div>
 
     <h1 class="d-flex d-sm-none text-light ps-5">Nákupný košík</h1>
@@ -49,17 +51,17 @@
 
                 <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between w-100">
                     <div class="d-flex flex-column cart-prod-txt">
-                        <h5><?php echo $nazvyProduktov[$i % count($cenyProduktov)]; ?></h5>
+                        <h5><?php echo $nazvyProduktov[$i % count($nazvyProduktov)]; ?></h5>
                         <h6>elektrická gitara</h6>
                     </div>
 
                     <div class="d-flex flex-row align-items-center justify-content-between">
                         <div class="d-flex flex-row p-3">
-                            <i class="fa fa-minus p-2"></i>
-                            <h5 class="pt-1">1</h5>
-                            <i class="fa fa-plus p-2"></i>
+                            <i class="btn fa fa-minus p-2"></i>
+                            <h5 class="pt-1 px-1">1</h5>
+                            <i class="btn fa fa-plus p-2"></i>
                         </div>
-                        <h4 class="pt-1 cart-prod-cost">1899€</h4>
+                        <h4 class="pt-1 cart-prod-cost txt-custom2"><?php echo $cenyProduktov[$i % count($cenyProduktov)]; ?></h4>
                     </div>
                 </div>
 
