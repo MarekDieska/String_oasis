@@ -57,3 +57,7 @@
 .bg-acc{
     background: var(--header_color);
 }
+
+.nav-div{
+    width: 90%;
+}

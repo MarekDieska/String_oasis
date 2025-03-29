@@ -1,4 +1,4 @@
-<div class="m-0 w-100 d-flex justify-content-end justify-content-ml-center">
+<div class="m-0 d-flex justify-content-end justify-content-md-between nav-div">
 
     <!--ked je mala obrazovka -->
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -83,7 +83,8 @@
 
 
     <!--ked je velka obrazovka -->
-    <div class="category-scroll row d-none d-md-flex w-100" id="categoryGroup">
+    <div class="row d-none d-md-flex w-100" id="categoryGroup">
+
         <div class="m-0 col-2 d-flex flex-column position-relative">
             <a href="#" data-bs-toggle="collapse" data-bs-target="#gitaryCollapse" class="d-flex flex-column">
                 <img src="../images/git.svg" alt="gitary" height="70" class="d-none d-md-block">

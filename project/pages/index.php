@@ -26,7 +26,7 @@
 
         <div class="filler-custom"></div>
 
-        <nav class="navbar navbar-expand-md category-custom w-100 fixed-top sticky-md-top ">
+        <nav class="navbar navbar-expand-md category-custom fixed-top sticky-md-top">
             <?php include "../components/category.php" ?>
         </nav>
 
