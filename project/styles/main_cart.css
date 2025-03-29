@@ -22,10 +22,17 @@
     height: 70px;
     width: 70px;
     font-size: 30px;
-    background-color: #658165;
+    background-color: #73a573;
 }
 
-.circle-custom:hover, .circle-custom-big:hover {
+.circle-custom-big:hover {
+    height: 70px;
+    width: 70px;
+    font-size: 30px;
+    background-color: #58bd58;
+}
+
+.circle-custom:hover {
     background-color: #5c636a;
 }
 

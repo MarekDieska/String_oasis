@@ -82,14 +82,14 @@
     <div class="d-flex justify-content-center col-md-3">
         <div class="p-3">
             <div class="card">
-                <img src="../images/bg.jpg" class="card-img-top" alt="...">
+                <img src="../images/detail_1.png" class="card-img-top" alt="...">
             </div>
         </div>
     </div>
     <div class="d-flex justify-content-center col-md-3">
         <div class="p-3 ">
             <div class="card">
-                <img src="../images/bg.jpg" class="card-img-top" alt="...">
+                <img src="../images/detail_2.png" class="card-img-top" alt="...">
             </div>
         </div>
     </div>
