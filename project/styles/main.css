@@ -14,6 +14,7 @@
 
 .produkty-container {
     overflow-x: auto;
+    height: 350px;
 }
 
 
@@ -23,13 +24,18 @@
     align-items: center;
     justify-content: center;
 
-    width: 150px;
-    height: 200px;
+    width: 200px;
+    height: 300px;
+
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 25px;
 
     background: var(--card_color);
     border-radius: 10px;
     flex-shrink: 0;
 }
+
 
 .zlava{
     margin-bottom: 20px;
@@ -39,10 +45,26 @@
     display: none;
 }
 
-.container_pre_zlavy, .container_pre_platne{
-    height: 300px;
-}
-
 .background-image {
     margin-left: 12%;
+}
+
+.pas::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(23, 26, 28);
+    z-index: -1;
+}
+
+.pas{
+    position: relative;
+    display: flex;
+}
+
+.sirka{
+    width: 180px;
 }

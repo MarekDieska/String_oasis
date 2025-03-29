@@ -13,9 +13,10 @@
     <link rel="stylesheet" href="../styles/category.css">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/main_filter.css">
     <link href="../fonts/fontawesome/css/fontawesome.css" rel="stylesheet" />
     <link href="../fonts/fontawesome/css/solid.css" rel="stylesheet" />
-    <link href="../fonts/fontawesome/css/regular.css" rel="stylesheet" />
+    <link href="../fonts/fontawesome/css/regular.css" rel="stylesheet"/>
     <script src="../javaScript/animate.js"></script>
 </head>
     <body class="bg-dark">
@@ -23,12 +24,11 @@
             <?php include "../components/header.php" ?>
         </header>
 
-        <div class="filler-custom"></div>
-        <nav class="navbar navbar-expand-md category-custom w-100 sticky-md-top">
+        <nav class="navbar navbar-expand-md category-custom w-100 fixed-top">
             <?php include "../components/category.php" ?>
         </nav>
 
-        <main class="container">
+        <main class="container-fluid">
             <?php include "../components/main.php"?>
         </main>
 

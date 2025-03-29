@@ -24,7 +24,7 @@
     --category_color: rgb(55, 10, 10);
     --category_font: rgb(186, 186, 186);
 
-    --card_color: rgb(119, 120, 133);
+    --card_color: rgba(119, 120, 133, 0.62);
     --card_font_color: #d8d8d8;
 
     --bg_color1: #e4e4e4;
