@@ -73,12 +73,14 @@
             <h4>Značka</h4>
             <div class=" p-3">
 
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="zn1">
-                    <label class="form-check-label" for="zn1">
-                        Alvarez
-                    </label>
-                </div>
+                <?php for($i = 0; $i < count($znacky); $i++):?>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="zn<?php echo $i?>">
+                        <label class="form-check-label" for="zn<?php echo $i?>">
+                            <?php echo $znacky[$i]?>
+                        </label>
+                    </div>
+                <?php endfor;?>
             </div>
         </div>
     </div>
