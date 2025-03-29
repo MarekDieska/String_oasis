@@ -1,4 +1,5 @@
 <?php include "../components/variables.php"?>
+<?php include "../components/plusModal.php"?>
 
 <div class="container-fluid m-5 m-md-2 m-lg-4">
     <div class="row row-cols-1 row-cols-lg-2 flex-row justify-content-between align-items-center">
@@ -36,7 +37,6 @@
     <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 prod-row">
         <?php for ($i = 0; $i < 16; $i++): ?>
             <div class="col d-flex justify-content-center p-3 r-custom">
-                <a href="../pages/produkt_detail.php">
                     <div class="card products-card d-flex flex-col">
                         <div class="product-image">
                             <img class="card-photo " src="<?php echo $obrazkyProduktov[$i % count($obrazkyProduktov)]; ?>" alt="<?php echo $nazvyProduktov[$i % count($nazvyProduktov)]; ?>">
@@ -44,9 +44,10 @@
                         <div class="favorite-btn text-center">
                             <p>&#x2661</p>
                         </div>
-                        <div class="cart-btn text-center">
+                        <div class="cart-btn text-center" type="button" data-bs-toggle="modal" data-bs-target="#plusModal">
                             <p>+</p>
                         </div>
+                        <a href="../pages/produkt_detail.php">
                         <div class="text-custom">
                             <h5 class="t1-custom"><?php echo $nazvyProduktov[$i % count($nazvyProduktov)]; ?></h5>
                             <div class="t2-hv">
@@ -56,8 +57,8 @@
                                 <h4 class="t2-custom"><?php echo $cenyProduktov[$i % count($cenyProduktov)]; ?></h4>
                             </div>
                         </div>
+                        </a>
                     </div>
-                </a>
             </div>
         <?php endfor; ?>
     </div>

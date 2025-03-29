@@ -105,4 +105,17 @@ $hodnoteniaP = [
     "../components/stars4.php",
 ];
 
+$znacky = [
+    "Alvarez",
+    "Fender",
+    "Gipson",
+    "Ibanez",
+    "Mahalo",
+    "Ortega",
+    "Pasadena",
+    "Takamine",
+    "Taylor",
+    "Yamaha"
+];
+
 ?>

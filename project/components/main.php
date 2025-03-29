@@ -1,4 +1,5 @@
 <?php include "../components/variables.php"?>
+<?php include "../components/plusModal.php"?>
 
 <article class="row justify-content-center align-items-center position-relative
                 w-100 text-center grad">
@@ -22,7 +23,7 @@
                         <div class="favorite-btn text-center">
                             <p>&#x2661</p>
                         </div>
-                        <div class="cart-btn text-center">
+                        <div class="cart-btn text-center" type="button" data-bs-toggle="modal" data-bs-target="#plusModal">
                             <p>+</p>
                         </div>
                         <div class="text-custom sirka">
@@ -47,7 +48,6 @@
 
     <div class="produkty-container d-flex">
         <?php for($i = 0; $i < 10; $i++):?>
-            <a class="link-custom" href="../pages/produkt_detail.php">
                 <div class="pas">
                     <div class="card produkt mt-3">
                         <div class="product-image">
@@ -56,10 +56,11 @@
                         <div class="favorite-btn text-center">
                             <p>&#x2661</p>
                         </div>
-                        <div class="cart-btn text-center">
+                        <div class="cart-btn text-center" type="button" data-bs-toggle="modal" data-bs-target="#plusModal">
                             <p>+</p>
                         </div>
-                        <div class="text-custom sirka">
+                        <a class="link-custom" href="../pages/produkt_detail.php">
+                        <div class="text-custom sirka pt-3">
                             <h5 class="t1-custom"><?php echo $nazvyP[$i % count($nazvyP)]; ?></h5>
                             <div class="t2-hv">
                                 <div>
@@ -68,9 +69,10 @@
                                 <h4 class="t2-custom"><?php echo $cenyP[$i % count($cenyP)]; ?></h4>
                             </div>
                         </div>
+                        </a>
                     </div>
                 </div>
-            </a>
         <?php endfor;?>
     </div>
 </section>
+
