@@ -72,6 +72,9 @@
     height: 80px;
 }
 
+.placeholder-black::placeholder {
+ color: black !important;
+}
 
 
 
