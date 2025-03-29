@@ -15,12 +15,12 @@
         </div>
         <button class="btn btn-secondary arrow-custom "><i class="fa fa-arrow-right m-0"></i></button>
         <div class="d-flex align-items-center flex-column  circle-box-custom">
-            <button class="btn btn-secondary circle-custom rounded-pill disabled">2</button>
+            <button class="btn btn-secondary circle-custom rounded-pill">2</button>
             <h6 class="text-light txt-custom">Doprava</h6>
         </div>
         <button class="btn btn-secondary arrow-custom "><i class="fa fa-arrow-right m-0"></i></button>
         <div class="d-flex align-items-center flex-column  circle-box-custom">
-            <button class="btn btn-secondary circle-custom rounded-pill disabled">3</button>
+            <button class="btn btn-secondary circle-custom rounded-pill">3</button>
             <h6 class="text-light txt-custom">Údaje</h6>
         </div>
         <button class="btn btn-secondary arrow-custom "><i class="fa fa-arrow-right m-0"></i></button>
