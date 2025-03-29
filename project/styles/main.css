@@ -5,8 +5,20 @@
 }
 
 .grad{
-    height: 100vh;
+    height: 70vh;
 }
+
+@media (max-width: 768px) {
+    .grad img{
+        width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    .grad img{
+        width: 70%;
+    }
+}
+
 
 .grad h1{
     z-index: 1;

@@ -43,7 +43,7 @@
 </div>
 
 <div class="row ms-lg-4">
-    <div class="col-12 col-md-6 col-lg-4 p-5 ps-md-5 pe-md-2 mb-5 p-lg-2 justify-content-center">
+    <div class="col-12 col-md-6 col-lg-4 p-5 ps-md-5 pe-md-4 mb-5 p-lg-2 justify-content-center">
         <h4 class="text_color cart_text">Doprava</h4>
         <div class="cart-slider justify-content-center mt-0 overflow-y-scroll overflow-x-hidden mx-custom">
             <div class="cart-product-small bg-light">
@@ -192,6 +192,11 @@
                     <h5>Kupóny</h5>
                     <h5>-40€</h5>
                 </div>
+                <div class="d-flex justify-content-between align-items-center m-3">
+                    <h5>Doprava</h5>
+                    <h5>20€</h5>
+                </div>
+
             </div>
 
             <div class="d-flex flex-column align-items-center">
@@ -202,7 +207,7 @@
                 <hr class="line2-custom">
                 <div class="d-flex justify-content-between align-items-center w-100 m-3 p-3 pb-0 mt-1 pt-0">
                     <h4>Súčet</h4>
-                    <h4>960€</h4>
+                    <h4>980€</h4>
                 </div>
                 <a href="../pages/cart_page3.php" class="btn mt-0 btn-dark mb-4">Pokračovať na vyplnenie údajov</a>
             </div>

@@ -2,7 +2,7 @@
 
 <article class="row justify-content-center align-items-center position-relative
                 w-100 text-center grad">
-    <img class="background-image hidden w-75 text-center opacity-25 position-absolute" src="../images/home_background.svg" alt="photo" width=70%>
+    <img class="background-image hidden text-center opacity-25 position-absolute" src="../images/home_background.svg" alt="photo" width=70%>
     <h1 class="position-relative hidden text_color">
         "Struny vašich snov, melódia vášho srdca."
     </h1>
@@ -51,7 +51,7 @@
                 <div class="pas">
                     <div class="card produkt mt-3">
                         <div class="product-image">
-                            <img class="card-photo " src="<?php echo $obrazkyProduktov[$i % count($obrazkyProduktov)]; ?>" alt="<?php echo $nazvyProduktov[$i % count($nazvyProduktov)]; ?>">
+                            <img class="card-photo " src="<?php echo $obrazkyP[$i % count($obrazkyP)]; ?>" alt="<?php echo $nazvyP[$i % count($nazvyP)]; ?>">
                         </div>
                         <div class="favorite-btn text-center">
                             <p>&#x2661</p>
@@ -60,12 +60,12 @@
                             <p>+</p>
                         </div>
                         <div class="text-custom sirka">
-                            <h5 class="t1-custom"><?php echo $nazvyProduktov[$i % count($nazvyProduktov)]; ?></h5>
+                            <h5 class="t1-custom"><?php echo $nazvyP[$i % count($nazvyP)]; ?></h5>
                             <div class="t2-hv">
                                 <div>
-                                    <?php include $hodnoteniaProduktov[$i % count($hodnoteniaProduktov)]; ?>
+                                    <?php include $hodnoteniaP[$i % count($hodnoteniaP)]; ?>
                                 </div>
-                                <h4 class="t2-custom"><?php echo $cenyProduktov[$i % count($cenyProduktov)]; ?></h4>
+                                <h4 class="t2-custom"><?php echo $cenyP[$i % count($cenyP)]; ?></h4>
                             </div>
                         </div>
                     </div>

@@ -18,7 +18,14 @@
     background-color: #5c636a;
 }
 
-.circle-custom:hover {
+.circle-custom-big{
+    height: 70px;
+    width: 70px;
+    font-size: 30px;
+    background-color: #658165;
+}
+
+.circle-custom:hover, .circle-custom-big:hover {
     background-color: #5c636a;
 }
 

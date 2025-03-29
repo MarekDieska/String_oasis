@@ -120,6 +120,10 @@
                     <h5>Kupóny</h5>
                     <h5>-40€</h5>
                 </div>
+                <div class="d-flex justify-content-between align-items-center m-3">
+                    <h5>Doprava</h5>
+                    <h5>20€</h5>
+                </div>
             </div>
 
             <div class="d-flex flex-column align-items-center">
@@ -130,9 +134,9 @@
                 <hr class="line2-custom">
                 <div class="d-flex justify-content-between align-items-center w-100 m-3 p-3 pb-0 mt-1 pt-0">
                     <h4>Súčet</h4>
-                    <h4>960€</h4>
+                    <h4>980€</h4>
                 </div>
-                <a href="../pages/cart_page2.php" class="btn mt-0 btn-dark mb-4">Pokračovať na výber dopravy</a>
+                <a href="../pages/cart_page4.php" class="btn mt-0 btn-dark mb-4">Skontrolovať údaje</a>
             </div>
 
         </div>

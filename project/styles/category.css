@@ -20,7 +20,7 @@
     }
 }
 
-.category-custom a {
+.category-custom a{
     text-decoration: none;
     color: var(--category_font);
 }
@@ -53,3 +53,7 @@
     background-color: var(--accordion-color);
 }
 
+
+.bg-acc{
+    background: var(--header_color);
+}
