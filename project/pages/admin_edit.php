@@ -25,7 +25,7 @@
 </header>
 
 <main class="container-fluid" style="padding-top: 50px">
-    <?php include "../components/main_admin.php"?>
+    <?php include "../components/edit.php"?>
 </main>
 
 <footer style="margin-top: 0;">
