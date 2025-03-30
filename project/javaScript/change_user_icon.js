@@ -52,14 +52,12 @@ document.addEventListener('DOMContentLoaded', function() {
         surname.classList.add('d-none');
     }
 
-    // Pri načítaní stránky zisti stav sessionStorage
     if (sessionStorage.getItem('userLoggedIn')) {
         changeIconToLoggedIn();
     } else {
         changeIconToLoggedOut();
     }
 
-    // Kliknutie na tlačidlo prihlásenia
     if (loginButton) {
         loginButton.addEventListener('click', function(event) {
             event.preventDefault();
@@ -68,7 +66,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Kliknutie na tlačidlo odhlásenia
     if (logoutButton) {
         logoutButton.addEventListener('click', function(event) {
             event.preventDefault();
