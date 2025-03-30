@@ -76,5 +76,7 @@
  color: black !important;
 }
 
-
+select, textarea{
+    background: #bebebf !important;
+}
 

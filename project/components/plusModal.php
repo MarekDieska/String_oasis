@@ -7,7 +7,7 @@
             </div>
             <div class="modal-body">
                 <div class="d-flex flex-column align-items-center">
-                    <img src="../images/p4.png" alt="Produkt" class="img-fluid" width="100">
+                    <img src="../images/product_guitar.jpg" alt="Produkt" class="img-fluid" width="100">
 
                     <div class="d-flex flex-row">
                         <button class="btn btn-outline-secondary p-2 rounded-0" type="button">
@@ -20,12 +20,12 @@
                     </div>
 
                     <h4 class="mt-3" id="productName">
-                        "Midnight Echoes - Vinyl Special Edition"
+                        HarmonyTone Sunset D-50
                     </h4>
                     <p id="productPrice" class="mb-3">
                         Cena:
                         <span id="priceValue">
-                            29.50€
+                            250,23 €
                         </span>
                     </p>
                     <div class="d-flex justify-content-between w-100">

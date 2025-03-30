@@ -40,31 +40,31 @@
                 <div class="row mb-3">
                     <div class="col-md-6">
                         <label for="meno" class="text_color form-label">Meno</label>
-                        <input type="text" class="form-control" id="meno" placeholder="Meno">
+                        <input type="text" class="form-control placeholder-black" id="meno" placeholder="Meno">
                     </div>
                     <div class="col-md-6">
                         <label for="ulica" class="text_color form-label">Ulica + Číslo domu</label>
-                        <input type="text" class="form-control" id="ulica" placeholder="Ulica 123/45">
+                        <input type="text" class="form-control placeholder-black" id="ulica" placeholder="Ulica 123/45">
                     </div>
                 </div>
                 <div class="row mb-3">
                     <div class="col-md-6">
                         <label for="priezvisko" class="text_color form-label">Priezvisko</label>
-                        <input type="text" class="form-control" id="priezvisko" placeholder="Priezvisko">
+                        <input type="text" class="form-control placeholder-black" id="priezvisko" placeholder="Priezvisko">
                     </div>
                     <div class="col-md-4">
                         <label for="mesto" class="text_color form-label">Mesto</label>
-                        <input type="text" class="form-control" id="mesto" placeholder="Mesto">
+                        <input type="text" class="form-control placeholder-black" id="mesto" placeholder="Mesto">
                     </div>
                     <div class="col-md-2">
                         <label for="psc" class="text_color form-label">PSČ</label>
-                        <input type="text" class="form-control" id="psc" placeholder="00000">
+                        <input type="text" class="form-control placeholder-black" id="psc" placeholder="00000">
                     </div>
                 </div>
                 <div class="row mb-3">
                     <div class="col-md-6">
                         <label for="email" class="text_color form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="priklad@gmail.com">
+                        <input type="email" class="form-control placeholder-black" id="email" placeholder="priklad@gmail.com">
                     </div>
                     <div class="col-md-6">
                         <label for="krajina" class="text_color form-label">Krajina</label>
@@ -81,11 +81,11 @@
                 <div class="row mb-3">
                     <div class="col-md-6">
                         <label for="telefon" class="text_color form-label">Telefónne číslo</label>
-                        <input type="tel" class="form-control" id="telefon" placeholder="+421000000">
+                        <input type="tel" class="form-control placeholder-black" id="telefon" placeholder="+421000000">
                     </div>
                     <div class="col-md-6">
                         <label for="poznamka" class="text_color form-label">Poznámka k objednávke</label>
-                        <textarea class="form-control" id="poznamka" rows="3" placeholder="Vaše poznámky pre nás"></textarea>
+                        <textarea class="form-control placeholder-black" id="poznamka" rows="3" placeholder="Vaše poznámky pre nás"></textarea>
                     </div>
                 </div>
                 <div class="mb-3 form-check">

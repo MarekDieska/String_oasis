@@ -22,7 +22,7 @@
         <h2>Pomoc</h2>
         <p>Mapa</p>
         <p>Rýchle otázky</p>
-        <p>Reklamácie</p>
-        <p>Vrátenie tovaru</p>
+        <p>Reklamácie  a vrátenie tovaru</p>
+        <p>Pomoc od našich odborných poradcov</p>
     </div>
 </div>
