@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6d846a00-728e-4f75-9902-178be0760ed5" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/components/category.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2uXTvPgQpxThbnKltKdq9CDmgH9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.Unnamed.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.category.php.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.header.php.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.index.php.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.login.php.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.main.php.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.main_detail.php.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cooke/Documents/Song_oasis/Song_oasis/project/images&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\cooke\Documents\Song_oasis\Song_oasis\project\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cooke\Documents\Song_oasis\Song_oasis\project\images" />
+      <recent name="C:\Users\cooke\Documents\Song_oasis\Song_oasis\project\javaScript" />
+      <recent name="C:\Users\cooke\Documents\Song_oasis\Song_oasis\project\fonts" />
+      <recent name="C:\Users\cooke\Documents\Song_oasis\Song_oasis\project\fonts\fontawesome" />
+      <recent name="C:\Users\cooke\Documents\Song_oasis\Song_oasis\project\fonts\fontawesome-free-6.7.2-web" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/project/pages/index.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-PS-243.25659.45" />
+        <option value="bundled-php-predefined-a98d8de5180a-1ec7b7818973-com.jetbrains.php.sharedIndexes-PS-243.25659.45" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="StructureViewState">
+    <option name="selectedTab" value="PHP" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6d846a00-728e-4f75-9902-178be0760ed5" name="Changes" comment="" />
+      <created>1742394149621</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742394149621</updated>
+      <workItem from="1742394151227" duration="516000" />
+      <workItem from="1742651411365" duration="12729000" />
+      <workItem from="1742675768830" duration="8737000" />
+      <workItem from="1742821324562" duration="8599000" />
+      <workItem from="1742834831842" duration="4707000" />
+      <workItem from="1742855476181" duration="5756000" />
+      <workItem from="1742891846662" duration="2777000" />
+      <workItem from="1742895015010" duration="5537000" />
+      <workItem from="1742914988349" duration="4045000" />
+      <workItem from="1742920256171" duration="5549000" />
+      <workItem from="1742929410944" duration="17214000" />
+      <workItem from="1742983624121" duration="1430000" />
+      <workItem from="1742986461470" duration="7224000" />
+      <workItem from="1742993940339" duration="6158000" />
+      <workItem from="1743013198268" duration="13018000" />
+      <workItem from="1743082001221" duration="5440000" />
+      <workItem from="1743087726128" duration="9401000" />
+      <workItem from="1743181857433" duration="11444000" />
+      <workItem from="1743245736610" duration="30848000" />
+      <workItem from="1743327305179" duration="10808000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
