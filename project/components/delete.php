@@ -39,7 +39,7 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-end gap-2">
-                        <button type="button" class="btn btn-secondary">Zrušiť</button>
+                        <a type="button" href="../pages/admin.php" class="btn btn-secondary">Zrušiť</a>
                         <button type="submit" class="btn btn-danger">Odstrániť produkt</button>
                     </div>
                 </form>
