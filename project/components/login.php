@@ -26,7 +26,7 @@
                             </div>
                         </div>
                         <button id="loginButton" type="submit" class="btn text-black bg-white w-100 mt-5 mb-2">LOGIN</button>
-                        <a type="button" href="../pages/admin.php" class="btn text-black bg-primary-subtle w-100 mb-2 d-none" id="adminButton">Stránka pre admina</a>
+                        <a type="button" href="../pages/admin_add.php" class="btn text-black bg-primary-subtle w-100 mb-2 d-none" id="adminButton">Stránka pre admina</a>
                         <button type="button" class="btn text-black bg-white w-100 mb-2 d-none" id="logoutButton">Odhlásiť sa</button>
                         <p><a class="login-form-label link-light justify-content-center d-flex" id="registerButton">Registrácia</a></p>
                         <p><a class="btn text-black bg-white w-100 mb-2 d-none" id="finishRegister">Registrovať</a></p>
