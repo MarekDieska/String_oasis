@@ -25,9 +25,9 @@
                                 <p><a href="#" class="login-form-label link-light" id="pass_rec">Zabudol si heslo?</a></p>
                             </div>
                         </div>
-                        <button id="loginButton" type="submit" class="btn text-black bg-white w-100 mt-5 mb-2">LOGIN</button>
+                        <button id="loginButton" type="submit" class="btn text-black bg-white w-100 mt-5 mb-2">Prihlásiť sa</button>
                         <a type="button" href="../pages/admin.php" class="btn text-black bg-primary-subtle w-100 mb-2 d-none" id="adminButton">Stránka pre admina</a>
-                        <a type="button" href="../pages/index.php" class="btn text-black bg-white w-100 mb-2 d-none" id="logoutButton">Odhlásiť sa</a>
+                        <a type="button" href="../pages/index.php" class="btn text-black bg-white w-100 mb-2 logout-action" id="logoutButtonModal">Odhlásiť sa</a>
                         <p><a class="login-form-label link-light justify-content-center d-flex" id="registerButton">Registrácia</a></p>
                         <p><a class="btn text-black bg-white w-100 mb-2 d-none" id="finishRegister">Registrovať</a></p>
                     </form>
@@ -36,4 +36,3 @@
         </div>
     </div>
 </section>
-

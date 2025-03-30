@@ -3,7 +3,6 @@
 </div>
 
 <section class="row d-flex align-items-center justify-content-center admin-main">
-
     <div class="col-12 col-md-4">
         <a href="../pages/admin_add.php" class="link-custom">
             <div class="card bg-dark border-success text-light m-3 pick-custom text-center">
@@ -64,14 +63,6 @@
     <hr class="text_color mt-4">
 
     <div class="d-flex w-100 justify-content-center p-4">
-        <a href="../pages/index.php" type="button" class="btn text_color btn-primary w-50 mt-0" id="logoutButton">Odhlásiť sa</a>
+        <a href="../pages/index.php" class="btn text_color btn-primary w-50 mt-0 logout-action" id="logoutButtonAdminPage">Odhlásiť sa</a>
     </div>
-
 </section>
-
-
-
-
-
-
-
