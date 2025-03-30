@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
         logoutButton.addEventListener('click', function(event) {
             event.preventDefault();
             changeIconToLoggedOut();
+            window.location.href = "../pages/index.php";
             bootstrap.Modal.getInstance(loginModal).hide();
         });
     }
