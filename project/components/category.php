@@ -3,6 +3,10 @@
     <!--ked je mala obrazovka -->
     <div class="collapse navbar-collapse" id="navbarNav">
         <div class="d-flex d-md-none flex-column accordion accordion-flush accordion-custom" id="accordionFlush">
+            <label class="search w-100 p-3">
+                <input type="text" placeholder="Hľadať podľa názvu..." class="form-control input-custom rounded-pill border-0">
+            </label>
+
             <div class="accordion-item accordion_color">
                 <h1 class="accordion-header">
                     <button class="accordion-button collapsed accordion_color" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -68,6 +72,7 @@
                     </button>
                 </a>
             </div>
+
         </div>
     </div>
 

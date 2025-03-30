@@ -50,10 +50,12 @@
                 <img src="<?php echo $obrazkyProduktov[$i % count($obrazkyProduktov)]; ?>" width="60" alt="">
 
                 <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between w-100">
-                    <div class="d-flex flex-column cart-prod-txt">
-                        <h5><?php echo $nazvyProduktov[$i % count($nazvyProduktov)]; ?></h5>
-                        <h6>elektrická gitara</h6>
-                    </div>
+                    <a href="../pages/produkt_detail.php" class="link-custom text-black">
+                        <div class="d-flex flex-column cart-prod-txt">
+                            <h5><?php echo $nazvyProduktov[$i % count($nazvyProduktov)]; ?></h5>
+                            <h6>elektrická gitara</h6>
+                        </div>
+                    </a>
 
                     <div class="d-flex flex-row align-items-center justify-content-between">
                         <div class="d-flex flex-row p-3">

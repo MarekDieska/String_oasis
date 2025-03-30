@@ -1,7 +1,9 @@
 <?php
 include "../components/variables.php"?>
+<?php include "../components/plusModal.php"?>
 
-<section class="row justify-content-between align-items-center">
+
+<section class="row justify-content-between align-items-center p-4">
 
     <div class="col-12 col-md-6 d-flex flex-column product-detail">
         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb text_color">
@@ -52,7 +54,7 @@ include "../components/variables.php"?>
 
 
         <div class="row d-flex justify-content-center m-3 align-items-center">
-            <a type="button" href="../pages/cart_page.php" class="btn btn-danger">Pridať do košíka</a>
+            <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#plusModal">Pridať do košíka</a>
         </div>
 
     </div>
@@ -106,7 +108,7 @@ include "../components/variables.php"?>
 </section>
 
 
-<section class="overflow-auto reviews">
+<section class="overflow-auto reviews p-2">
     <div class="row flex-row flex-nowrap">
 
         <?php foreach($hodnotenia as $recenzia): ?>

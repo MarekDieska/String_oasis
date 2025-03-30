@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/main_filter.css">
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/main.css">
     <script src="../javaScript/animate.js"></script>
 </head>
 <body class="bg-dark">

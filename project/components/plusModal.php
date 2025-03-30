@@ -1,5 +1,5 @@
 <div class="modal fade" id="plusModal" aria-labelledby="plusModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-centered text-black">
         <div class="modal-content">
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="plusModalLabel">Pridať do košíka</h1>
@@ -10,9 +10,13 @@
                     <img src="../images/p4.png" alt="Produkt" class="img-fluid" width="100">
 
                     <div class="d-flex flex-row">
-                        <i class="fa fa-minus p-2"></i>
-                        <h5 class="pt-1">1</h5>
-                        <i class="fa fa-plus p-2"></i>
+                        <button class="btn btn-outline-secondary p-2 rounded-0" type="button">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                        <input class="form-control text-center p-2 input-plus-minus rounded-0" value="1" min="1">
+                        <button class="btn btn-outline-secondary p-2 rounded-0" type="button">
+                            <i class="fa fa-plus"></i>
+                        </button>
                     </div>
 
                     <h4 class="mt-3" id="productName">
