@@ -66,7 +66,7 @@
                     <div class="mb-0">
                         <label class="form-label fw-bold mt-0">Obrázky</label>
                         <div class="input-group mb-3">
-                            <input type="file" class="form-control form-control-lg bg-dark text_color" id="addProductImage">
+                            <input type="file" class="form-control form-control-lg bg-dark text_color" id="addProductImage" multiple>
                         </div>
                     </div>
                 </div>

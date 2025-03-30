@@ -217,4 +217,56 @@ $hodnotenia = [
     ]
 ];
 
+$dopravy = [
+    "Packeta",
+    "Alzabox",
+    "Slovenská pošta",
+    "String Oasis",
+    "Slovenská pošta",
+    "DPD",
+];
+
+$dopravy2 = [
+    "výdajné miesto Z-box",
+    "výdajné miesto Alza-box",
+    "výdajné miesto BalíkoBOX",
+    "vyzdvihnutie na predajni",
+    "kuriér na adresu",
+    "kuriér na adresu",
+];
+
+$dopravyCeny = [
+    "1,50€",
+    "2,50€",
+    "3,00€",
+    "zadarmo",
+    "5,00€",
+    "3,00€"
+];
+
+
+$platby = [
+    "Visa",
+    "Mastercard",
+    "Google Pay",
+    "Amex",
+    "dobierka",
+];
+
+$platby2 = [
+    "platba vopred",
+    "platba vopred",
+    "platba vopred",
+    "platba vopred",
+    "platba na dobierku",
+];
+
+$platbyCeny = [
+    "zadarmo",
+    "2,50€",
+    "zadarmo",
+    "5,00€",
+    "3,00€"
+]
+
 ?>

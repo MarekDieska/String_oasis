@@ -64,7 +64,7 @@
                             <div class="col-md-6 d-inline-block">
                                 <label class="form-label fw-bold text_color">Obrázok produktu</label>
                                 <div class="input-group">
-                                    <input type="file" class="form-control bg-dark text_color">
+                                    <input type="file" class="form-control bg-dark text_color" multiple>
                                 </div>
                                 <div class="d-flex w-100 justify-content-center">
                                     <img src="../images/product_guitar.jpg" style="width:70%; height:auto" class="mt-3 img-fluid" alt="Produkt">
