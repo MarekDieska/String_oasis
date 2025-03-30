@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="sk">
 <head>
-    <title>Song Oasis</title>
+    <title>String Oasis</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/main_produkt.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <script src="../javaScript/animate.js"></script>
 </head>
 <body class="bg-dark">
