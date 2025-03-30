@@ -46,4 +46,10 @@
             </div>
         </div>
     </div>
+
+    <hr class="text_color">
+
+    <div class="d-flex w-100 justify-content-center align-items-center p-3 pb-4">
+        <a type="button" href="../pages/admin.php" class="btn btn-success w-75 p-1 fs-5">Dokončiť</a>
+    </div>
 </section>
