@@ -1,5 +1,5 @@
 <div class="col-12 txt-custom3 d-flex justify-content-center">
-    <h2 class="text-light">Stránka správcu e-shopu Song Oasis</h2>
+    <h2 class="text-light">Stránka správcu e-shopu String Oasis</h2>
 </div>
 
 <section class="row d-flex align-items-center justify-content-center admin-main">
@@ -31,9 +31,42 @@
         </a>
     </div>
 
+    <hr class="text_color">
+
+    <div class="mt-4 text_color p-5">
+        <h2>Pridanie Admina</h2>
+        <form>
+            <div class="form-group text_color">
+                <label for="adminUsername">Používateľské meno</label>
+                <input type="text" class="form-control placeholder-black" id="adminUsername" placeholder="Zadajte používateľské meno" required>
+            </div>
+            <div class="form-group">
+                <label for="adminEmail">Email</label>
+                <input type="email" class="form-control placeholder-black" id="adminEmail" placeholder="Zadajte email" required>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Pridať Admina</button>
+        </form>
+    </div>
+
+    <hr class="text_color mt-4">
+
+    <div class="mt-4 text_color p-5">
+        <h2>Odstránenie Admina</h2>
+        <form>
+            <div class="form-group text_color">
+                <label for="adminToRemove">Používateľské meno admina</label>
+                <input type="text" class="form-control placeholder-black" id="adminToRemove" placeholder="Zadajte používateľské meno admina" required>
+            </div>
+            <button type="submit" class="btn btn-danger mt-2">Odstrániť Admina</button>
+        </form>
+    </div>
+
+    <hr class="text_color mt-4">
+
     <div class="d-flex w-100 justify-content-center p-4">
         <a href="../pages/index.php" type="button" class="btn text_color btn-primary w-50 mt-0" id="logoutButton">Odhlásiť sa</a>
     </div>
+
 </section>
 
 
