@@ -17,6 +17,7 @@
     <link href="../fonts/fontawesome/css/fontawesome.css" rel="stylesheet" />
     <link href="../fonts/fontawesome/css/solid.css" rel="stylesheet" />
     <link href="../fonts/fontawesome/css/regular.css" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <script src="../javaScript/animate.js"></script>
 </head>
     <body class="bg-dark">
