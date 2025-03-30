@@ -1,6 +1,6 @@
 <?php include "../components/variables.php";?>
 
-<div class="row justify-content-center align-items-center">
+<section class="row justify-content-center align-items-center">
 
     <div class="col-12 d-none d-sm-flex flex-row justify-content-center align-items-center">
 
@@ -31,9 +31,9 @@
 
     </div>
 
-</div>
+</section>
 
-<div class="row">
+<section class="row">
     <div class="col-12 col-md-7 align-items-start justify-content-center p-3 p-sm-5 pe-md-0">
         <div class="mt-0">
             <form>
@@ -135,4 +135,4 @@
 
         </div>
     </div>
-</div>
+</section>

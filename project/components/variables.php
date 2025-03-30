@@ -132,6 +132,12 @@ $farby = [
 
 ];
 
+$nazvyFarieb = [
+    "Hnedá",
+    "Tmavočervená",
+    "Čierna"
+];
+
 $hodnotenia = [
     [
         "nadpis" => "Jednoznačne odporúčam",

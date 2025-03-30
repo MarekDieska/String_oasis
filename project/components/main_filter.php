@@ -1,6 +1,6 @@
 <?php include "../components/variables.php"?>
 
-<div class="side-filter-custom">
+<section class="side-filter-custom">
     <div>
         <h2 class="text-center pb-5">FILTROVAŤ</h2>
 
@@ -83,7 +83,7 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 <script>
     document.getElementById('priceRange1').addEventListener('input', function(e) {
         document.getElementById('priceValue1').textContent = e.target.value;

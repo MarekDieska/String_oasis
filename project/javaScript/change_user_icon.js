@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let pasRec = document.getElementById('pass_rec');
     let finishButton = document.getElementById('finishRegister');
     let siteInfo = document.getElementById('siteInfo');
+    let adminButton = document.getElementById('adminButton');
 
     function changeIconToLoggedIn() {
         userIcon.classList.remove('fa-regular', 'fa-user');
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         pasRec.classList.add('d-none');
         registerButton.classList.add('d-none');
         siteInfo.classList.add('d-none');
+        adminButton.classList.remove('d-none');
         sessionStorage.setItem('userLoggedIn', 'true');
     }
 
@@ -28,7 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
         logoutButton.classList.add('d-none');
         siteInfo.classList.remove('d-none');
         registerButton.classList.remove('d-none');
-        sessionStorage.removeItem('userLoggedIn'); // Odstránenie zo sessionStorage
+        adminButton.classList.add('d-none');
+        sessionStorage.removeItem('userLoggedIn');
     }
 
     function changeToRegister() {

@@ -1,6 +1,6 @@
 <?php include "../components/variables.php";?>
 
-<div class="row justify-content-center align-items-center">
+<section class="row justify-content-center align-items-center">
     <div class="d-none d-md-flex col-2 justify-content-center">
         <a class="btn btn-secondary but-back" href="../pages/filters_page.php">
             <i class="fa fa-arrow-left m-0"></i> na nákup
@@ -39,9 +39,9 @@
     </div>
 
     <div class="col-2"></div>
-</div>
+</section>
 
-<div class="row">
+<section class="row">
     <div class="col-12 col-md-7 cart-slider overflow-auto">
 
         <?php for( $i = 0; $i < 6; $i++):?>
@@ -105,4 +105,4 @@
 
         </div>
     </div>
-</div>
+</section>

@@ -1,6 +1,6 @@
 <?php include "../components/variables.php";?>
 
-<div class="row justify-content-center align-items-center">
+<section class="row justify-content-center align-items-center">
 
     <div class="col-12 d-none d-sm-flex flex-row justify-content-center align-items-center">
 
@@ -31,9 +31,9 @@
 
     </div>
 
-</div>
+</section>
 
-<div class="row">
+<section class="row">
     <div class="col-12 col-md-7 align-items-start justify-content-center ps-5 pe-5 pe-md-0 text-light">
         <h3 class="mb-3 pt-4 pb-2  opacity-75">Kontrola údajov</h3>
 
@@ -121,4 +121,4 @@
 
         </div>
     </div>
-</div>
+</section>

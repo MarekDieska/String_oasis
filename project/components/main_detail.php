@@ -1,7 +1,7 @@
 <?php
 include "../components/variables.php"?>
 
-<div class="row justify-content-between m-4 align-items-center">
+<section class="row justify-content-between align-items-center">
 
     <div class="col-12 col-md-6 d-flex flex-column product-detail">
         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb text_color">
@@ -30,7 +30,7 @@ include "../components/variables.php"?>
                 </div>
             </div>
 
-            <div class="col-6 d-flex justify-content-end p-0 pt-0 pb-0">
+            <div class="col-6 d-flex justify-content-end p-3 pt-0 pb-0">
                 <h1 class="">
                     <a class="link-offset-1 link-light" href="#">250,23 €</a>
                 </h1>
@@ -43,9 +43,10 @@ include "../components/variables.php"?>
 
             <?php for($i = 0; $i < 3; $i++): ?>
             <div class="col-4 d-flex justify-content-end">
-                <div class="card">
+                <figure class="card justify-content-center align-items-center">
                     <img src="<?php echo $farby[$i]?>" class="card-img-top card-img-custom" alt="...">
-                </div>
+                    <figcaption><?php echo $nazvyFarieb[$i]?></figcaption>
+                </figure>
             </div>
             <?php endfor;?>
 
@@ -56,12 +57,12 @@ include "../components/variables.php"?>
 
     </div>
 
-</div>
+</section>
 
 
 
 
-<div class="row m-2">
+<section class="row m-2">
 
     <hr class="text_color mt-5 mb-5">
     <h1 class="text_color detail_large_text mt-md-1">HarmonyTone Sunset D-50</h1>
@@ -102,10 +103,10 @@ include "../components/variables.php"?>
 
     <h1 class="mt-md-3 text_color align-items-left">Recenzie</h1>
 
-</div>
+</section>
 
 
-<div class="overflow-auto reviews">
+<section class="overflow-auto reviews">
     <div class="row flex-row flex-nowrap">
 
         <?php foreach($hodnotenia as $recenzia): ?>
@@ -132,4 +133,4 @@ include "../components/variables.php"?>
         <?php endforeach;?>
 
     </div>
-</div>
+</section>

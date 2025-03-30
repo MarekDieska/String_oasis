@@ -1,4 +1,4 @@
-<div class="card mt-5 bg-dark border-success-subtle text_color">
+<section class="card mt-5 bg-dark border-success-subtle text_color">
     <div class="text-center m-3">
         <div class="card-header text_colors">Admin - Pridanie produktu</div>
         <form id="productForm">
@@ -78,11 +78,11 @@
             </div>
         </form>
     </div>
-</div>
+</section>
 
 <hr class="text_color mt-5 mb-2">
 
-<div class="row w-100 justify-content-center">
+<section class="row w-100 justify-content-center">
     <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center p-5">
         <div class="card bg-dark border-danger text-dark w-100">
             <div class="card-header text-center text_color">Admin - Odstránenie produktu</div>
@@ -129,10 +129,10 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <hr class="text_color mt-3 mb-4">
 
-<div class="row w-100 justify-content-center p-5 mb-2">
+<section class="row w-100 justify-content-center p-5 mb-2">
     <a type="button" href="../pages/index.php" class="btn btn-success p-2 fs-5">Dokončiť</a>
-</div>
+</section>
