@@ -16,7 +16,7 @@
             <img src="../images/logo.svg" alt="Logo" width="60">
             <p class="mb-0 p-0 ms-2 fs-3 logo-p">String<br>Oasis</p>
         </a>
-        <p class="d-none d-md-flex fs-6 m-3">© 2025 String Oasis. Všetky práva vyhradené.</p>
+        <p class="d-none d-md-flex fs-6 m-3">2025 String Oasis.</p>
     </div>
     <div class="col-6 col-md-4 order-3 text-center">
         <h2>Pomoc</h2>

@@ -5,18 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d846a00-728e-4f75-9902-178be0760ed5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-idea.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/untitled.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wireframe/Domov_login.png" beforeDir="false" afterPath="$PROJECT_DIR$/Wireframe/Domov_login.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wireframe/Domov_logout.png" beforeDir="false" afterPath="$PROJECT_DIR$/Wireframe/Domov_logout.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wireframe/Domov_register.png" beforeDir="false" afterPath="$PROJECT_DIR$/Wireframe/Domov_register.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
-    <execution />
+  <component name="ComposerConfigs">
+    <option name="configs">
+      <option value="$PROJECT_DIR$/song_oasis_laravel/composer.json" />
+    </option>
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <phar pharPath="C:\ProgramData\ComposerSetup\bin\composer.phar" />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -32,7 +40,186 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/components/category.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\php-8.4.4\php.exe" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/uri-template" />
+      <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/vendor/league/config" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/composer" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/league/config" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/spatie/backtrace" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/spatie/flare-client-php" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/spatie/ignition" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/spatie/laravel-ignition" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/laravel/pint" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/laravel/sail" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/guzzlehttp/uri-template" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/song_oasis_laravel/vendor/graham-campbell/result-type" />
+    </include_path>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
@@ -42,30 +229,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.Unnamed.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.category.php.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.header.php.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.index.php.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.login.php.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.main.php.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.main_detail.php.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/cooke/Documents/Song_oasis/Song_oasis/project/images&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.Unnamed.executor": "Debug",
+    "JavaScript Debug.category.php.executor": "Debug",
+    "JavaScript Debug.header.php.executor": "Debug",
+    "JavaScript Debug.index.php.executor": "Debug",
+    "JavaScript Debug.login.php.executor": "Debug",
+    "JavaScript Debug.main.php.executor": "Debug",
+    "JavaScript Debug.main_detail.php.executor": "Debug",
+    "PHPUnit.song_oasis_laravel.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/cooke/Documents/Song_oasis/Song_oasis/project",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php.composer",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\cooke\Documents\Song_oasis\Song_oasis\project\images" />
@@ -78,8 +266,12 @@
       <recent name="C:\Users\cooke\Documents\Song_oasis\Song_oasis\project\fonts\fontawesome-free-6.7.2-web" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.Unnamed">
     <configuration name="Unnamed" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/project/pages/index.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="song_oasis_laravel" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/song_oasis_laravel/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
       <method v="2" />
     </configuration>
   </component>
@@ -122,15 +314,28 @@
       <workItem from="1743181857433" duration="11444000" />
       <workItem from="1743245736610" duration="30848000" />
       <workItem from="1743327305179" duration="10808000" />
-      <workItem from="1743438512010" duration="20000" />
-      <workItem from="1743455860737" duration="154000" />
-      <workItem from="1743583653534" duration="9502000" />
-      <workItem from="1743699137055" duration="559000" />
-      <workItem from="1743715410190" duration="483000" />
+      <workItem from="1743353150612" duration="832000" />
+      <workItem from="1743595015967" duration="757000" />
+      <workItem from="1743595790555" duration="215000" />
+      <workItem from="1743596015886" duration="1047000" />
+      <workItem from="1743597991081" duration="733000" />
+      <workItem from="1743598743459" duration="1859000" />
+      <workItem from="1743671440921" duration="2428000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

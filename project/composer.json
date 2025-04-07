@@ -1,0 +1,12 @@
+{
+    "name": "project/so_composer",
+    "description": "composer pre string oasis",
+    "autoload": {
+        "psr-4": {
+            "Project\\SoComposer\\": "src/"
+        }
+    },
+    "require": {
+        "laravel/framework": "^9.52"
+    }
+}
