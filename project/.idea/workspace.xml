@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d846a00-728e-4f75-9902-178be0760ed5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bootstrap/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wireframe/Domov_login.png" beforeDir="false" afterPath="$PROJECT_DIR$/Wireframe/Domov_login.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wireframe/Domov_logout.png" beforeDir="false" afterPath="$PROJECT_DIR$/Wireframe/Domov_logout.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wireframe/Domov_register.png" beforeDir="false" afterPath="$PROJECT_DIR$/Wireframe/Domov_register.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +32,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/components/category.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\php-8.4.4\php.exe" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
@@ -42,30 +42,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript Debug.Unnamed.executor": "Debug",
-    "JavaScript Debug.category.php.executor": "Debug",
-    "JavaScript Debug.header.php.executor": "Debug",
-    "JavaScript Debug.index.php.executor": "Debug",
-    "JavaScript Debug.login.php.executor": "Debug",
-    "JavaScript Debug.main.php.executor": "Debug",
-    "JavaScript Debug.main_detail.php.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Merging main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/cooke/Documents/Song_oasis/Song_oasis/project/images",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.Unnamed.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.category.php.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.header.php.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.index.php.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.login.php.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.main.php.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.main_detail.php.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cooke/Documents/Song_oasis/Song_oasis/project/images&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\cooke\Documents\Song_oasis\Song_oasis\project\images" />
@@ -122,6 +122,11 @@
       <workItem from="1743181857433" duration="11444000" />
       <workItem from="1743245736610" duration="30848000" />
       <workItem from="1743327305179" duration="10808000" />
+      <workItem from="1743438512010" duration="20000" />
+      <workItem from="1743455860737" duration="154000" />
+      <workItem from="1743583653534" duration="9502000" />
+      <workItem from="1743699137055" duration="559000" />
+      <workItem from="1743715410190" duration="483000" />
     </task>
     <servers />
   </component>
