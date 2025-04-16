@@ -15,7 +15,7 @@ include "../components/variables.php"?>
         </nav>
 
         <div class="card border-custom border-5 mx-auto">
-            <img src="../images/product_guitar.jpg" class="img-fluid img-big" alt="...">
+            <img src="../images/product_guitar.jpg" class="img-fluid img-big" alt="fotka svetlohnedej drevenej akustickej gitary z predu">
         </div>
     </div>
 
@@ -46,7 +46,7 @@ include "../components/variables.php"?>
             <?php for($i = 0; $i < 3; $i++): ?>
             <div class="col-4 d-flex justify-content-end">
                 <figure class="card justify-content-center align-items-center">
-                    <img src="<?php echo $farby[$i]?>" class="card-img-top card-img-custom" alt="...">
+                    <img src="<?php echo $farby[$i]?>" class="card-img-top card-img-custom" alt="gitara s inou farbou">
                     <figcaption><?php echo $nazvyFarieb[$i]?></figcaption>
                 </figure>
             </div>
@@ -78,7 +78,7 @@ include "../components/variables.php"?>
         <div class="d-flex justify-content-center col-md-3">
             <div class="p-3">
                 <div class="card">
-                    <img src="<?php echo $detaily[$i]?>" class="card-img-top" alt="...">
+                    <img src="<?php echo $detaily[$i]?>" class="card-img-top" alt="detailnejší záber gitary">
                 </div>
             </div>
         </div>
