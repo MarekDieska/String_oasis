@@ -1,0 +1,82 @@
+/* spolocne nastavenia pre cely subor */
+@font-face {
+    font-family: 'Jaini';
+    src: url('../../../Jaini-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --font_color: #f0f0ff;
+    --font_logo: white;
+
+    --header_color: #4c1a1a;
+    --header_font: #cfcfcf;
+
+    --hover_color1: #ffffff;
+    --hover_color2: rgb(9, 11, 58);
+    --hover_bg2: rgba(9, 11, 58, 0.1);
+
+    --input_border: #ccc;
+    --input_color: rgba(255, 255, 255, 0.71);
+    --input_font: #6C4837;
+
+    --category_color: rgb(55, 10, 10);
+    --category_font: rgb(186, 186, 186);
+
+    --card_color: rgba(119, 120, 133, 0.62);
+    --card_font_color: #d8d8d8;
+
+    --bg_color1: #e4e4e4;
+    --bg_color2: white;
+
+    --footer_color: #4c1a1a;
+    --footer_text: #CCC;
+
+    --login_color : #9c3b3b;
+
+    --filter-bg: rgb(34, 37, 41);
+    --slider-thumb: #9c3b3b;
+
+    --accordion-color: rgb(55, 10, 10);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Jaini', cursive;
+}
+
+
+.hidden {
+    opacity: 0;
+    transition: all 3s;
+}
+
+.show {
+    opacity: 1;
+}
+
+.login-form-color {
+    color: white;
+    background-color: var(--login_color);
+}
+
+.text_color {
+    color: var(--font_color)
+}
+
+
+.filler-custom{
+    height: 80px;
+}
+
+.placeholder-black::placeholder {
+ color: black !important;
+}
+
+select, textarea{
+    background: #bebebf !important;
+}
+
