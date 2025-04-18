@@ -1,4 +1,4 @@
-<div class="container-fluid m-5 m-md-2 m-lg-4">
+<div class="container-fluid m-2 m-lg-4">
     <div class="row row-cols-1 row-cols-lg-2 flex-row justify-content-between align-items-center">
         <div class="col">
             <h1 class="title-filter">Elektrické gitary</h1>

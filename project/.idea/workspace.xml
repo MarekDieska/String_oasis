@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d846a00-728e-4f75-9902-178be0760ed5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/untitled.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/main_filter.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/main_filter.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/main_filter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/main_filter.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/main_filter_r.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/main_filter_r.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/radio_desc.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/admin_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/admin_add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/admin_delete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/admin_delete.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/admin_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/admin_edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/cart_page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/cart_page.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/cart_page2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/cart_page2.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/cart_page3.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/cart_page3.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/cart_page4.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/cart_page4.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/cart_page5.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/cart_page5.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/filters_page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/filters_page.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/produkt_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/produkt_detail.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="6d846a00-728e-4f75-9902-178be0760ed5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

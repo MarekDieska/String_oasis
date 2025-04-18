@@ -37,7 +37,7 @@
             @include('components.main_filter', ['isOffcanvas' => false])
         </div>
 
-        <div class="offcanvas offcanvas-start off-custom overflow-auto p-3 pt-5 pb-5 bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas offcanvas-start off-custom overflow-auto p-2 pt-5 pb-5 bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
             @include('components.main_filter', ['isOffcanvas' => true])
         </div>
 
