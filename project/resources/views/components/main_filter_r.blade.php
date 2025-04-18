@@ -3,29 +3,24 @@
         <div class="col d-flex justify-content-center p-3 r-custom">
             <div class="card products-card d-flex flex-column">
 
-                {{-- Product Image --}}
                 <div class="product-image">
                     <img class="card-photo"
                          src="{{ $obrazkyProduktov[$i % count($obrazkyProduktov)] }}"
                          alt="{{ $nazvyProduktov[$i % count($nazvyProduktov)] }}">
                 </div>
 
-                {{-- Favorite Button --}}
                 <div class="favorite-btn text-center">
                     <p>&#x2661;</p>
                 </div>
 
-                {{-- Cart Button (Opens Modal) --}}
-                <div class="cart-btn text-center" type="button" data-bs-toggle="modal" data-bs-target="#plusModal">
+                <a class="cart-btn text-center" type="button" data-bs-toggle="modal" data-bs-target="#plusModal">
                     <p>+</p>
-                </div>
+                </a>
 
-                {{-- Product Title (Link to Product Detail) --}}
                 <a href="{{ route('produkt_detail') }}">
                     <div class="text-custom">
                         <h5 class="t1-custom">{{ $nazvyProduktov[$i % count($nazvyProduktov)] }}</h5>
 
-                        {{-- Display Rating --}}
                         <div class="star-rating">
                             @php
                                 $rating = $hodnoteniaProduktov[$i % count($hodnoteniaProduktov)];
@@ -39,7 +34,6 @@
                             @endfor
                         </div>
 
-                        {{-- Product Price --}}
                         <h4 class="t2-custom">{{ $cenyProduktov[$i % count($cenyProduktov)] }}</h4>
                     </div>
                 </a>

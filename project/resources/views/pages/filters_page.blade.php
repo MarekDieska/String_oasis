@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="{{asset("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css")}}" rel="stylesheet">
-    <link href="{{asset("https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css")}}" rel="stylesheet">
-    <script src="{{asset("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js")}}"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <link href="{{ asset('fonts/fontawesome/css/fontawesome.css') }}" rel="stylesheet">
     <link href="{{ asset('fonts/fontawesome/css/solid.css') }}" rel="stylesheet">
@@ -34,11 +34,11 @@
         </button>
 
         <div class="d-none d-md-flex line-custom">
-            @include('components.radio_desc')
+            @include('components.main_filter', ['isOffcanvas' => false])
         </div>
 
         <div class="offcanvas offcanvas-start off-custom overflow-auto p-3 pt-5 pb-5 bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-            @include('components.main_filter')
+            @include('components.main_filter', ['isOffcanvas' => true])
         </div>
 
         @include('components.main_filter_r')
