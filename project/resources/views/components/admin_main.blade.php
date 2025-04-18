@@ -4,7 +4,7 @@
 
 <section class="row d-flex align-items-center justify-content-center admin-main">
     <div class="col-12 col-md-4">
-        <a href="../song_oasis_laravel/public/admin_add.blade.php" class="link-custom">
+        <a href="{{route('admin_add')}}" class="link-custom">
             <div class="card bg-dark border-success text-light m-3 pick-custom text-center">
                 <h3 class="pt-5 pb-2">Pridať produkt</h3>
                 <i class="fa fa-plus fs-3"></i>
@@ -13,7 +13,7 @@
     </div>
 
     <div class="col-12 col-md-4">
-        <a href="../song_oasis_laravel/public/admin_delete.blade.php" class="link-custom">
+        <a href="{{route('admin_delete')}}" class="link-custom">
             <div class="card bg-dark border-danger text-light m-3 pick-custom text-center">
                 <h3 class="pt-5 pb-2">Odobrať produkt</h3>
                 <i class="fa fa-minus fs-3"></i>
@@ -22,7 +22,7 @@
     </div>
 
     <div class="col 12 col-md-4">
-        <a href="../song_oasis_laravel/public/admin_edit.blade.php" class="link-custom">
+        <a href="{{route('admin_edit')}}" class="link-custom">
             <div class="card bg-dark border-warning text-light m-3 pick-custom text-center">
                 <h3 class="pt-5 pb-2">Upraviť produkt</h3>
                 <i class="fa fa-repeat fs-3"></i>
@@ -63,6 +63,6 @@
     <hr class="text_color mt-4">
 
     <div class="d-flex w-100 justify-content-center p-4">
-        <a href="../song_oasis_laravel/public/index.blade.php" class="btn text_color btn-primary w-50 mt-0 logout-action" id="logoutButtonAdminPage">Odhlásiť sa</a>
+        <a href="{{route('/')}}" class="btn text_color btn-primary w-50 mt-0 logout-action" id="logoutButtonAdminPage">Odhlásiť sa</a>
     </div>
 </section>

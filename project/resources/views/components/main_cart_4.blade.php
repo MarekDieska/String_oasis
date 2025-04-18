@@ -116,7 +116,7 @@
                     <h4>Súčet</h4>
                     <h4>980€</h4>
                 </div>
-                <a href="../song_oasis_laravel/public/cart_page5.blade.php" class="btn mt-0 btn-dark mb-4">Objednať s povinnosťou platby</a>
+                <a href="{{route('cart_page5')}}" class="btn mt-0 btn-dark mb-4">Objednať s povinnosťou platby</a>
             </div>
 
         </div>

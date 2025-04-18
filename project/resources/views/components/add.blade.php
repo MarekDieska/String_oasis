@@ -72,7 +72,7 @@
                 </div>
             </div>
             <div class="d-flex justify-content-end gap-2 mt-2 mb-3">
-                <a type="button" href="../song_oasis_laravel/public/admin.blade.php" class="btn btn-outline-secondary">Zrušiť</a>
+                <a type="button" href="{{route('admin')}}" class="btn btn-outline-secondary">Zrušiť</a>
                 <button type="reset" class="btn btn-outline-danger">Vyčistiť</button>
                 <button type="submit" class="btn btn-primary">Pridať produkt</button>
             </div>
@@ -83,5 +83,5 @@
 <hr class="text_color">
 
 <div class="d-flex w-100 justify-content-center align-items-center p-3 pb-4">
-    <a type="button" href="../song_oasis_laravel/public/admin.blade.php" class="btn btn-success w-75 p-1 fs-5">Dokončiť</a>
+    <a type="button" href="{{route('admin')}}" class="btn btn-success w-75 p-1 fs-5">Dokončiť</a>
 </div>

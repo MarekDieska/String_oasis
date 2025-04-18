@@ -21,21 +21,21 @@
 </head>
 <body class="bg-dark">
 <header class="navbar navbar-expand-md fixed-top shadow header-custom">
-    <?php include "../components/header.blade.php" ?>
+    @include("../components/header")
 </header>
 
 <nav class="navbar navbar-expand-md category-custom w-100 fixed-top">
-    <?php include "../components/category.blade.php" ?>
+    @include("../components/category")
 </nav>
 
 <main class="container-fluid main-f-custom" style="margin: 140px 0 0 0">
-    <?php include "../components/main_detail.blade.php" ?>
+    @include("../components/main_detail")
 </main>
 
 <footer>
-    <?php include "../components/footer.blade.php" ?>
+    @include("../components/footer")
 </footer>
 </body>
 
-<?php include "../components/login.blade.php" ?>
+    @include("../components/login")
 </html>

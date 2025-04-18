@@ -1,91 +1,40 @@
-<?php include "../components/variables.blade.php"?>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 prod-row">
 
-<section class="side-filter-custom">
-    <div>
-        <h2 class="text-center pb-5">FILTROVAŤ</h2>
+    {{-- Loop through the products --}}
+    @for ($i = 0; $i < 16; $i++)
 
-        <div class="mb-4">
-            <div class="d-flex flex-row gap-2 align-items-center mb-2" >
-                <h5 style="margin-bottom: 2px;">Cena do:</h5>
-                <span id="priceValue1">5000</span>€
-            </div>
+        <div class="col d-flex justify-content-center p-3 r-custom">
 
-            <div class="price-slider-container bg-transparent">
-                <input type="range" class="form-range bg-transparent thumb-custom mt-0" id="priceRange1" min="0" max="5000" step="100" value="5000">
-            </div>
+            <div class="card products-card d-flex flex-column">
 
-            <div class="d-flex justify-content-between mt-0">
-                <span>0€</span>
-                <span>5000€</span>
-            </div>
-        </div>
-        <label for="priceRange1"></label>
-
-
-        <div>
-            <h4>Typ strunového nástroja</h4>
-            <div class="p-3">
-                <?php for($i = 0; $i < count($typy); $i++): ?>
-                    <div class="form-check mb-2">
-                        <input class="form-check-input" type="checkbox" id="typ<?php echo $i?>">
-                        <label for="typ<?php echo $i?>"><?php echo $typy[$i]?></label>
-                    </div>
-                <?php endfor;?>
-            </div>
-        </div>
-
-
-        <div class="d-flex flex-column mt-5">
-            <h4>Hodnotenie: </h4>
-
-            <div class="d-flex justify-content-center flex-column m-4 mt-3">
-                <div class="btn-group-vertical" role="group">
-                    <?php for($i = 1; $i < 6; $i++):?>
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-<?php echo $i?>" autocomplete="off">
-                    <label class="btn btn-outline-danger hv-custom" for="vbtn-<?php echo $i?>">
-                        <?php include "../components/stars".$i.".php" ?>
-                    </label>
-                    <?php endfor;?>
-
-                    <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-6" autocomplete="off" checked>
-                    <label class="btn btn-outline-danger hv-custom" for="vbtn-6">
-                        všetky ohodnotenia
-                    </label>
+                {{-- Product Image --}}
+                <div class="product-image">
+                    <img class="card-photo"
+                         src="{{ $obrazkyProduktov[$i % count($obrazkyProduktov)] }}"
+                         alt="{{ $nazvyProduktov[$i % count($nazvyProduktov)] }}">
                 </div>
-            </div>
-        </div>
 
-        <div class="d-flex flex-column mt-5">
-            <h4>Veľkosť gitary</h4>
-            <div class="p-3">
-                <?php for($i = 0; $i < count($velkosti); $i++):?>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="size_offcanvas" value="" id="check<?php echo $i?>_offcanvas">
-                        <label class="form-check-label" for="check<?php echo $i?>_offcanvas">
-                            <?php echo $velkosti[$i]?>
-                        </label>
-                    </div>
-                <?php endfor;?>
-            </div>
-        </div>
-
-        <div class="d-flex flex-column mt-5">
-            <h4>Značka</h4>
-            <div class=" p-3">
-                <?php for($i = 0; $i < count($znacky); $i++):?>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="zn<?php echo $i?>">
-                    <label class="form-check-label" for="zn<?php echo $i?>">
-                        <?php echo $znacky[$i]?>
-                    </label>
+                {{-- Favorite Button --}}
+                <div class="favorite-btn text-center">
+                    <p>&#x2661;</p>
                 </div>
-                <?php endfor;?>
+
+                {{-- Cart Button (Opens Modal) --}}
+                <div class="cart-btn text-center" type="button" data-bs-toggle="modal" data-bs-target="#plusModal">
+                    <p>+</p>
+                </div>
+
+                {{-- Product Title (Link to Product Detail) --}}
+                <a href="{{ route('produkt_detail') }}">
+                    <div class="text-custom">
+                        <h5 class="t1-custom">{{ $nazvyProduktov[$i % count($nazvyProduktov)] }}</h5>
+                    </div>
+                </a>
+
             </div>
+
         </div>
-    </div>
-</section>
-<script>
-    document.getElementById('priceRange1').addEventListener('input', function(e) {
-        document.getElementById('priceValue1').textContent = e.target.value;
-    });
-</script>
+
+    @endfor
+
+</div>

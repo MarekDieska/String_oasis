@@ -21,7 +21,7 @@
                     <div class="cart-btn text-center" type="button" data-bs-toggle="modal" data-bs-target="#plusModal">
                         <p>+</p>
                     </div>
-                    <a class="link-custom" href="{{ url('produkt_detail') }}">
+                    <a class="link-custom" href="{{ route('produkt_detail') }}">
                         <div class="text-custom sirka">
                             <h5 class="t1-custom">{{ $nazov }}</h5>
                             <div class="t2-hv">
@@ -55,7 +55,7 @@
                     <div class="cart-btn text-center" type="button" data-bs-toggle="modal" data-bs-target="#plusModal">
                         <p>+</p>
                     </div>
-                    <a class="link-custom" href="{{ url('produkt_detail') }}">
+                    <a class="link-custom" href="{{ route('produkt_detail') }}">
                         <div class="text-custom sirka pt-3">
                             <h5 class="t1-custom">{{ $nazov }}</h5>
                             <div class="t2-hv">

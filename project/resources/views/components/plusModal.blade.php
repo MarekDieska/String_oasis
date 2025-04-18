@@ -32,7 +32,7 @@
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                             Späť na nákup
                         </button>
-                        <a href="{{url('../pages/cart_page.blade.php')}}" type="button" class="btn btn-success">
+                        <a href="{{route('cart_page')}}" type="button" class="btn btn-success">
                             Do košíka
                         </a>
                     </div>

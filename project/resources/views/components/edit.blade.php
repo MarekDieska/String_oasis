@@ -67,7 +67,7 @@
                                     <input type="file" class="form-control bg-dark text_color" multiple>
                                 </div>
                                 <div class="d-flex w-100 justify-content-center">
-                                    <img src="../images/product_guitar.jpg" style="width:70%; height:auto" class="mt-3 img-fluid" alt="Produkt">
+                                    <img src="{{asset("/public/images/product_guitar.jpg")}}" style="width:70%; height:auto" class="mt-3 img-fluid" alt="Produkt">
                                 </div>
                             </div>
 
@@ -95,7 +95,7 @@
                         </div>
 
                         <div class="d-flex justify-content-end gap-2">
-                            <a type="button" href="../song_oasis_laravel/public/admin.blade.php" class="btn btn-secondary">Zrušiť</a>
+                            <a type="button" href="{{route("admin")}}" class="btn btn-secondary">Zrušiť</a>
                             <button type="submit" class="btn btn-warning">Upraviť produkt</button>
                         </div>
                     </form>
@@ -107,6 +107,6 @@
     <hr class="text_color">
 
     <div class="d-flex w-100 justify-content-center align-items-center p-3 pb-4">
-        <a type="button" href="../song_oasis_laravel/public/admin.blade.php" class="btn btn-success w-75 p-1 fs-5">Dokončiť</a>
+        <a type="button" href="{{route('admin')}}" class="btn btn-success w-75 p-1 fs-5">Dokončiť</a>
     </div>
 </section>

@@ -18,7 +18,7 @@
                     <div id="flush-collapse{{ $loop->index }}" class="accordion-collapse collapse bg-acc" data-bs-parent="#accordionFlush">
                         <div class="accordion-body d-flex flex-column">
                             @foreach (['elektrické', 'elektro-akustické', 'klasické', 'detské'] as $item)
-                                <a href="{{ url('pages/filters_page') }}">{{ $item }}</a>
+                                <a href="{{ route('filters_page') }}">{{ $item }}</a>
                             @endforeach
                         </div>
                     </div>
@@ -27,21 +27,21 @@
 
             <!-- Static Items -->
             <div class="accordion-item accordion_color">
-                <a href="{{ url('pages/filters_page') }}">
+                <a href="{{ route('filters_page') }}">
                     <button class="accordion-button collapsed accordion_color border-0 accordion-custom" type="button">
                         Reproduktory a kombá
                     </button>
                 </a>
             </div>
             <div class="accordion-item accordion_color">
-                <a href="{{ url('pages/filters_page') }}">
+                <a href="{{ route('filters_page') }}">
                     <button class="accordion-button collapsed accordion_color border-0 accordion-custom" type="button">
                         Príslušenstvo
                     </button>
                 </a>
             </div>
             <div class="accordion-item accordion_color">
-                <a href="{{ url('pages/filters_page') }}">
+                <a href="{{ route('filters_page') }}">
                     <button class="accordion-button collapsed accordion_color accordion-custom" type="button">
                         Platne
                     </button>
@@ -75,7 +75,7 @@
                 @if(count($category['items']) > 0)
                     <ul id="{{ Str::slug($category['name']) }}Collapse" class="collapse position-absolute w-100 pt-2 pb-2 p-0 dropdown-custom" data-bs-parent="#categoryGroup">
                         @foreach ($category['items'] as $item)
-                            <li><a href="{{ url('pages/filters_page') }}">{{ $item }}</a></li>
+                            <li><a href="{{ route('filters_page') }}">{{ $item }}</a></li>
                         @endforeach
                     </ul>
                 @endif

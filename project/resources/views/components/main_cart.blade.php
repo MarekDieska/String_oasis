@@ -2,7 +2,7 @@
 
 <section class="row justify-content-center align-items-center">
     <div class="d-none d-md-flex col-2 justify-content-center">
-        <a class="btn btn-secondary but-back" href="../song_oasis_laravel/public/filters_page.blade.php">
+        <a class="btn btn-secondary but-back" href="{{route('filters_page')}}">
             <i class="fa fa-arrow-left m-0"></i> na nákup
         </a>
     </div>
@@ -50,7 +50,7 @@
                 <img src="<?php echo $obrazkyProduktov[$i % count($obrazkyProduktov)]; ?>" width="60" alt="">
 
                 <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between w-100">
-                    <a href="../song_oasis_laravel/public/produkt_detail.blade.php" class="link-custom text-black">
+                    <a href="{{route("produkt_detail")}}" class="link-custom text-black">
                         <div class="d-flex flex-column cart-prod-txt">
                             <h5><?php echo $nazvyProduktov[$i % count($nazvyProduktov)]; ?></h5>
                             <h6>elektrická gitara</h6>
@@ -102,7 +102,7 @@
                     <h4>Súčet</h4>
                     <h4>960€</h4>
                 </div>
-                <a href="../song_oasis_laravel/public/cart_page2.blade.php" class="btn mt-0 btn-dark mb-4">Pokračovať na výber dopravy</a>
+                <a href="{{route('cart_page2')}}" class="btn mt-0 btn-dark mb-4">Pokračovať na výber dopravy</a>
             </div>
 
         </div>

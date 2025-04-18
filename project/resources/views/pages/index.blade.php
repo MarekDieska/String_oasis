@@ -30,7 +30,7 @@
     </head>
     <body class="bg-dark">
     <header class="navbar navbar-expand-md fixed-top shadow header-custom">
-        @include('components.header')
+        @include("../components/header")
     </header>
 
     <div class="filler-custom"></div>

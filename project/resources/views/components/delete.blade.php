@@ -31,7 +31,7 @@
                     </div>
                     <div class="card bg-dark text_color align-items-center">
                         <button class="btn btn-outline-primary w-100 mb-3">Hľadať</button>
-                        <img src="../images/product_guitar.jpg" style="width:75%; height: auto" class="card-img-top img-fluid" alt="...">
+                        <img src="{{asset("images/product_guitar.jpg")}}" style="width:75%; height: auto" class="card-img-top img-fluid" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">HarmonyTone Sunset D-50</h5>
                             <p class="card-text">HarmonyTone Sunset D-50 je perfektná pre začinajúcich aj pokročilých hudobníkov, ktorí
@@ -39,7 +39,7 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-end gap-2">
-                        <a type="button" href="../song_oasis_laravel/public/admin.blade.php" class="btn btn-secondary">Zrušiť</a>
+                        <a type="button" href="{{route('admin')}}" class="btn btn-secondary">Zrušiť</a>
                         <button type="submit" class="btn btn-danger">Odstrániť produkt</button>
                     </div>
                 </form>
@@ -50,6 +50,6 @@
     <hr class="text_color">
 
     <div class="d-flex w-100 justify-content-center align-items-center p-3 pb-4">
-        <a type="button" href="../song_oasis_laravel/public/admin.blade.php" class="btn btn-success w-75 p-1 fs-5">Dokončiť</a>
+        <a type="button" href="{{route('admin')}}" class="btn btn-success w-75 p-1 fs-5">Dokončiť</a>
     </div>
 </section>
