@@ -4,20 +4,25 @@
     <title>String Oasis</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="../../../public/fonts/fontawesome/css/fontawesome.css" rel="stylesheet"/>
-    <link href="../../../public/fonts/fontawesome/css/solid.css" rel="stylesheet"/>
-    <link href="../../../public/fonts/fontawesome/css/regular.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="../../../public/css/style.css">
-    <link rel="stylesheet" href="../../../public/css/header.css">
-    <link rel="stylesheet" href="../../../public/css/category.css">
-    <link rel="stylesheet" href="../../../public/css/main.css">
-    <link rel="stylesheet" href="../../../public/css/footer.css">
-    <link rel="stylesheet" href="../../../public/css/main_produkt.css">
-    <link rel="icon" type="image/x-icon" href="../../../public/images/favicon.ico">
-    <script src="../../js/animate.js"></script>
+    <link href="{{asset("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css")}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset("https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css")}}">
+    <script src="{{asset("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js")}}"></script>
+
+    <link href="{{ asset('fonts/fontawesome/css/fontawesome.css') }}" rel="stylesheet" />
+    <link href="{{ asset('fonts/fontawesome/css/solid.css') }}" rel="stylesheet" />
+    <link href="{{ asset('fonts/fontawesome/css/regular.css') }}" rel="stylesheet" />
+
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/header.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/category.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/main_produkt.css') }}">
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
+
+    <script src="{{ asset('js/animate.js') }}"></script>
+
 </head>
 <body class="bg-dark">
 <header class="navbar navbar-expand-md fixed-top shadow header-custom">

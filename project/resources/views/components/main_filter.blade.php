@@ -14,17 +14,14 @@
                          alt="{{ $nazvyProduktov[$i % count($nazvyProduktov)] }}">
                 </div>
 
-                {{-- Favorite Button --}}
                 <div class="favorite-btn text-center">
                     <p>&#x2661;</p>
                 </div>
 
-                {{-- Cart Button (Opens Modal) --}}
                 <div class="cart-btn text-center" type="button" data-bs-toggle="modal" data-bs-target="#plusModal">
                     <p>+</p>
                 </div>
 
-                {{-- Product Title (Link to Product Detail) --}}
                 <a href="{{ route('produkt_detail') }}">
                     <div class="text-custom">
                         <h5 class="t1-custom">{{ $nazvyProduktov[$i % count($nazvyProduktov)] }}</h5>

@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\DetailController;
 
 Route::get('/', [ProductController::class, 'showProducts'])->name('index');
 Route::get('/stars/{rating}', [ProductController::class, 'showStars']);
@@ -23,9 +25,7 @@ Route::get('/admin_edit', function () {
     return view('pages.admin_edit');
 })->name('admin_edit');
 
-Route::get('/produkt_detail', function () {
-    return view('pages.produkt_detail');
-})->name('produkt_detail');
+Route::get('/produkt_detail', [DetailController::class, 'showDetails'])->name('produkt_detail');
 
 //category
 Route::get('/filters_page', function () {
@@ -85,22 +85,8 @@ Route::get('/filters_page', function () {
 
 
 //cart
-Route::get('/cart_page', function () {
-    return view('pages.cart_page');
-})->name('cart_page');
-
-Route::get('/cart_page2', function () {
-    return view('pages.cart_page2');
-})->name('cart_page2');
-
-Route::get('/cart_page3', function () {
-    return view('pages.cart_page3');
-})->name('cart_page3');
-
-Route::get('/cart_page4', function () {
-    return view('pages.cart_page4');
-})->name('cart_page4');
-
-Route::get('/cart_page5', function () {
-    return view('pages.cart_page5');
-})->name('cart_page5');
+Route::get('/cart_page', fn() => app(CartController::class)->loadCartView('pages.cart_page'))->name('cart_page');
+Route::get('/cart_page2', fn() => app(CartController::class)->loadCartView('pages.cart_page2'))->name('cart_page2');
+Route::get('/cart_page3', fn() => app(CartController::class)->loadCartView('pages.cart_page3'))->name('cart_page3');
+Route::get('/cart_page4', fn() => app(CartController::class)->loadCartView('pages.cart_page4'))->name('cart_page4');
+Route::get('/cart_page5', fn() => app(CartController::class)->loadCartView('pages.cart_page5'))->name('cart_page5');

@@ -1,4 +1,4 @@
-<?php include "../components/variables.blade.php";?>
+@include("../components/variables")
 
 <section class="row justify-content-center align-items-center">
 

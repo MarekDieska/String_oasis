@@ -1,4 +1,4 @@
-<?php include "../components/variables.blade.php";?>
+@include("../components/variables")
 
 <section class="row justify-content-center align-items-center">
     <div class="d-none d-md-flex col-2 justify-content-center">
@@ -50,7 +50,7 @@
                 <img src="<?php echo $obrazkyProduktov[$i % count($obrazkyProduktov)]; ?>" width="60" alt="">
 
                 <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between w-100">
-                    <a href="{{route("produkt_detail")}}" class="link-custom text-black">
+                    <a href="{{route('produkt_detail')}}" class="link-custom text-black">
                         <div class="d-flex flex-column cart-prod-txt">
                             <h5><?php echo $nazvyProduktov[$i % count($nazvyProduktov)]; ?></h5>
                             <h6>elektrická gitara</h6>

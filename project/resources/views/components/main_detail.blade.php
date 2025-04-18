@@ -1,4 +1,3 @@
-{{-- Include shared components --}}
 @include('components.variables')
 @include('components.plusModal')
 
@@ -93,7 +92,7 @@
                 <div class="card text-bg-{{ $recenzia['uspech'] }}">
                     <div class="card-header">
                         <div class="ratings hidden">
-                            @include($recenzia['hviezdy'])
+                            @include('components.stars', ['rating' => $recenzia['hviezdy']])
                         </div>
                     </div>
                     <div class="card-body">

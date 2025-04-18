@@ -5,40 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d846a00-728e-4f75-9902-178be0760ed5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/untitled.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/DetailController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/blade.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blade.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/admin_main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/admin_main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/delete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/delete.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jaini-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/Jaini-Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/main.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/main_cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/main_cart.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/main_cart_2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/main_cart_2.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/main_cart_3.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/main_cart_3.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/main_cart_4.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/main_cart_4.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/main_cart_5.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/main_cart_5.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/main_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/main_detail.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/main_filter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/main_filter.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/main_filter_r.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/main_filter_r.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/plusModal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/plusModal.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/radio_desc.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/radio_desc.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/admin_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/admin_add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/admin_delete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/admin_delete.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/admin_edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/admin_edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/cart_page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/cart_page.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/cart_page2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/cart_page2.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/cart_page3.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/cart_page3.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/cart_page4.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/cart_page4.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/cart_page5.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/cart_page5.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/filters_page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/filters_page.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/produkt_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/produkt_detail.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -345,11 +325,11 @@
       <recent name="C:\Users\cooke\Documents\Song_oasis\Song_oasis\project\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cooke\Documents\Song_oasis\Song_oasis\project\public\fonts" />
       <recent name="C:\Users\cooke\Documents\Song_oasis\Song_oasis\project\public" />
       <recent name="C:\Users\cooke\Documents\Song_oasis\Song_oasis\project\song_oasis_laravel\resources\views\pages" />
       <recent name="C:\Users\cooke\Documents\Song_oasis\Song_oasis\project\song_oasis_laravel\resources\views" />
       <recent name="C:\Users\cooke\Documents\Song_oasis\Song_oasis\project\song_oasis_laravel\public" />
-      <recent name="C:\Users\cooke\Documents\Song_oasis\Song_oasis\project\song_oasis_laravel\resources\css" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.php">
@@ -417,7 +397,8 @@
       <workItem from="1744805062241" duration="5680000" />
       <workItem from="1744883045318" duration="1597000" />
       <workItem from="1744886182936" duration="989000" />
-      <workItem from="1744968761993" duration="7927000" />
+      <workItem from="1744968761993" duration="8050000" />
+      <workItem from="1744990194052" duration="6096000" />
     </task>
     <servers />
   </component>
