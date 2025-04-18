@@ -13,15 +13,9 @@
     <link href="{{ asset('fonts/fontawesome/css/solid.css') }}" rel="stylesheet">
     <link href="{{ asset('fonts/fontawesome/css/regular.css') }}" rel="stylesheet">
 
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/header.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/category.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/main_filter.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
-    <script src="{{ asset('js/animate.js') }}"></script>
 </head>
 <body class="bg-dark">
 

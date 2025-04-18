@@ -62,15 +62,21 @@
         @foreach ([
             ['name' => 'Gitary', 'icon' => 'git.svg', 'items' => ['elektrické', 'elektro-akustické', 'akustické', 'klasické', 'detské']],
             ['name' => 'Basgitary', 'icon' => 'bass.svg', 'items' => ['4 strunové', '5 strunové']],
-            ['name' => 'Iné strunové nástroje', 'icon' => 'banjo.svg', 'items' => ['ukulele', 'banjo', 'mandolína', 'kora']],
+            ['name' => 'Iné struny', 'icon' => 'banjo.svg', 'items' => ['ukulele', 'banjo', 'mandolína', 'kora']],
             ['name' => 'Kombá', 'icon' => 'kombo.svg', 'items' => []],
             ['name' => 'Príslušenstvo', 'icon' => 'kabel.svg', 'items' => []],
             ['name' => 'Platne', 'icon' => 'platna.svg', 'items' => []]
         ] as $category)
             <div class="m-0 col-2 d-flex flex-column position-relative">
-                <a href="#" data-bs-toggle="collapse" data-bs-target="#{{ Str::slug($category['name']) }}Collapse" class="d-flex flex-column">
+                <a href="{{ route('filters_page') }}"
+                   class="d-flex flex-column"
+                   @if(count($category['items']) > 0)
+                       data-bs-toggle="collapse"
+                   data-bs-target="#{{ Str::slug($category['name']) }}Collapse"
+                    @endif
+                >
                     <img src="{{ asset('images/'.$category['icon']) }}" alt="{{ $category['name'] }}" height="70" class="d-none d-md-block">
-                    <p class="m-0">{{ strtoupper($category['name']) }}</p>
+                    <p class="m-0">{{mb_strtoupper($category['name']) }}</p>
                 </a>
                 @if(count($category['items']) > 0)
                     <ul id="{{ Str::slug($category['name']) }}Collapse" class="collapse position-absolute w-100 pt-2 pb-2 p-0 dropdown-custom" data-bs-parent="#categoryGroup">

@@ -9,15 +9,7 @@
     <link href="{{asset("https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css")}}" rel="stylesheet">
     <script src="{{asset("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js")}}"></script>
 
-    <script src="{{ asset('js/change_user_icon.js') }}"></script>
-    <script src="{{ asset('js/animate.js') }}"></script>
-
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/header.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/category.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/main_filter.css') }}" rel="stylesheet">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <link href="{{ asset('fonts/fontawesome/css/fontawesome.css') }}" rel="stylesheet">
     <link href="{{ asset('fonts/fontawesome/css/solid.css') }}" rel="stylesheet">

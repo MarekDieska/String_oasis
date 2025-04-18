@@ -1,11 +1,3 @@
-/* spolocne nastavenia pre cely subor */
-@font-face {
-    font-family: 'Jaini';
-    src: url('/public/fonts/Jaini-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 :root{
     --font_color: #f0f0ff;
     --font_logo: white;
@@ -80,3 +72,6 @@ select, textarea{
     background: #bebebf !important;
 }
 
+.link-custom{
+    text-decoration:none !important;
+}

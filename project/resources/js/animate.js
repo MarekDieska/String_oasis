@@ -1,3 +1,9 @@
+console.log("JS file loaded");
+
+document.addEventListener('DOMContentLoaded', function() {
+    console.log("DOM fully loaded");
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {

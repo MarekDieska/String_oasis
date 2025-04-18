@@ -22,9 +22,9 @@
 
     <div class="col-6 col-md-4 order-3 text-center">
         <h2>Pomoc</h2>
-        <p><a href="#">Mapa</a></p>
-        <p><a href="#">Rýchle otázky</a></p>
-        <p><a href="#">Reklamácie a vrátenie tovaru</a></p>
-        <p><a href="#">Pomoc od našich odborných poradcov</a></p>
+        <p>Mapa</p>
+        <p>Rýchle otázky</p>
+        <p>Reklamácie a vrátenie tovaru</p>
+        <p>Pomoc od našich odborných poradcov</p>
     </div>
 </div>

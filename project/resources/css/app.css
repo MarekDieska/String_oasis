@@ -1,0 +1,16 @@
+@import 'style.css';
+@import 'header.css';
+@import 'main.css';
+@import 'footer.css';
+@import 'category.css';
+@import 'main_cart.css';
+@import 'main_filter.css';
+@import 'main_produkt.css';
+@import 'admin.css';
+
+@font-face {
+    font-family: 'Jaini';
+    src: url('/public/fonts/Jaini-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
