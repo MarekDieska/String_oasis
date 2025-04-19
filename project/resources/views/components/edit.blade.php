@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.index')
 
 @section('content')
     <section class="w-100 justify-content-center pt-5 pb-3">
@@ -11,7 +11,8 @@
                             <div class="row mb-3">
                                 <div class="col-md-12">
                                     <label class="form-label fw-bold text_color">Názov produktu</label>
-                                    <input type="text" class="form-control text-black placeholder-black" maxlength="100" placeholder="Názov produktu" value="HarmonyTone Sunset D-50">
+                                    <input type="text" class="form-control text-black placeholder-black" maxlength="100"
+                                           placeholder="Názov produktu" value="HarmonyTone Sunset D-50">
                                 </div>
                             </div>
 
@@ -24,7 +25,8 @@
                             <div class="row mb-3">
                                 <div class="col-md-12">
                                     <label class="form-label fw-bold text_color">Popis produktu</label>
-                                    <textarea class="form-control placeholder-black" rows="3" minlength="50" maxlength="500">HarmonyTone Sunset D-50 je perfektná pre začínajúcich aj pokročilých hudobníkov...</textarea>
+                                    <textarea class="form-control placeholder-black" rows="3" minlength="50"
+                                              maxlength="500">HarmonyTone Sunset D-50 je perfektná pre začínajúcich aj pokročilých hudobníkov...</textarea>
                                 </div>
                             </div>
 
@@ -55,11 +57,13 @@
                             <div class="row mb-3">
                                 <div class="col-md-6">
                                     <label class="form-label fw-bold text_color">Cena (€)</label>
-                                    <input type="number" class="form-control placeholder-black" placeholder="Cena €" value="250.23">
+                                    <input type="number" class="form-control placeholder-black" placeholder="Cena €"
+                                           value="250.23">
                                 </div>
                                 <div class="col-md-6">
                                     <label class="form-label fw-bold text_color">Zľava (%)</label>
-                                    <input type="number" class="form-control placeholder-black" placeholder="Zľava %" value="0">
+                                    <input type="number" class="form-control placeholder-black" placeholder="Zľava %"
+                                           value="0">
                                 </div>
                             </div>
 
@@ -70,7 +74,8 @@
                                         <input type="file" class="form-control bg-dark text_color" multiple>
                                     </div>
                                     <div class="d-flex w-100 justify-content-center">
-                                        <img src="{{asset("/public/images/product_guitar.jpg")}}" style="width:70%; height:auto" class="mt-3 img-fluid" alt="Produkt">
+                                        <img src="{{asset("/public/images/product_guitar.jpg")}}"
+                                             style="width:70%; height:auto" class="mt-3 img-fluid" alt="Produkt">
                                     </div>
                                 </div>
 
@@ -80,11 +85,13 @@
                                         <div class="row mb-3">
                                             <div class="row mb-1">
                                                 <label class="form-label fw-bold text_color">Telo</label>
-                                                <input type="text" class="form-control placeholder-black" value="Mahagón so smrekovou vrchnou doskou">
+                                                <input type="text" class="form-control placeholder-black"
+                                                       value="Mahagón so smrekovou vrchnou doskou">
                                             </div>
                                             <div class="row mb-1">
                                                 <label class="form-label fw-bold text_color">Krk</label>
-                                                <input type="text" class="form-control placeholder-black" value="Mahagón s palisandrovým hmatníkom">
+                                                <input type="text" class="form-control placeholder-black"
+                                                       value="Mahagón s palisandrovým hmatníkom">
                                             </div>
                                             <div class="row mb-1">
                                                 <label class="form-label fw-bold text_color">Počet pražcov</label>
@@ -92,8 +99,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-outline-primary mb-0">+ Pridať Parameter</button>
-                                    <button type="button" class="ms-3 btn btn-outline-danger mb-0">Odstrániť Parameter</button>
+                                    <button type="button" class="btn btn-outline-primary mb-0">+ Pridať Parameter
+                                    </button>
+                                    <button type="button" class="ms-3 btn btn-outline-danger mb-0">Odstrániť Parameter
+                                    </button>
                                 </div>
                             </div>
 

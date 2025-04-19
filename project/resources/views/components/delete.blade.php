@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.index')
 
 @section('content')
     <section class="row w-100 justify-content-center">
@@ -8,7 +8,8 @@
                 <div class="card-body">
                     <form id="productForm">
                         <div class="mb-3">
-                            <input type="text" class="form-control text-black placeholder-black" maxlength="100" placeholder="Názov produktu">
+                            <input type="text" class="form-control text-black placeholder-black" maxlength="100"
+                                   placeholder="Názov produktu">
                         </div>
                         <div class="mb-3">
                             <select class="form-select">
@@ -33,10 +34,12 @@
                         </div>
                         <div class="card bg-dark text_color align-items-center">
                             <button class="btn btn-outline-primary w-100 mb-3">Hľadať</button>
-                            <img src="{{asset("images/product_guitar.jpg")}}" style="width:75%; height: auto" class="card-img-top img-fluid" alt="...">
+                            <img src="{{asset("images/product_guitar.jpg")}}" style="width:75%; height: auto"
+                                 class="card-img-top img-fluid" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">HarmonyTone Sunset D-50</h5>
-                                <p class="card-text">HarmonyTone Sunset D-50 je perfektná pre začinajúcich aj pokročilých hudobníkov, ktorí
+                                <p class="card-text">HarmonyTone Sunset D-50 je perfektná pre začinajúcich aj
+                                    pokročilých hudobníkov, ktorí
                                     hľadajú spoľahlivý nástroj s výbroným zvukom a luxusným vzhľadom.</p>
                             </div>
                         </div>

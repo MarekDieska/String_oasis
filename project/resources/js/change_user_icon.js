@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function() {
             button.addEventListener('click', function(event) {
                 event.preventDefault();
                 changeIconToLoggedOut();
-                window.location.href = "../views/layouts/app.blade.php";
+                window.location.href = "../views/layouts/index.blade.php";
                 if(loginModal){
                     bootstrap.Modal.getInstance(loginModal).hide();
                 }

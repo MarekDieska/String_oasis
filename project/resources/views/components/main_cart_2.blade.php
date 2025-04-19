@@ -1,5 +1,5 @@
 @include('components.variables')
-@extends('layouts.app')
+@extends('layouts.index')
 
 @section('content')
     <section class="row justify-content-center align-items-center mt-4">
@@ -99,7 +99,8 @@
                         <h4>Súčet</h4>
                         <h4>980€</h4>
                     </div>
-                    <a href="{{ route('cart_page3') }}" class="btn mt-0 btn-dark mb-4">Pokračovať na vyplnenie údajov</a>
+                    <a href="{{ route('cart_page3') }}" class="btn mt-0 btn-dark mb-4">Pokračovať na vyplnenie
+                        údajov</a>
                 </div>
             </div>
         </div>

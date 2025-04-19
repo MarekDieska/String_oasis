@@ -1,9 +1,10 @@
-@extends('layouts.app')
+@extends('layouts.index')
 @include('components.plusModal')
 
 @section('content')
     <article class="row justify-content-center align-items-center position-relative w-100 text-center grad">
-        <img class="background-image hidden text-center opacity-25 position-absolute" src="{{ asset('images/home_background.svg') }}" alt="photo" width="70%">
+        <img class="background-image hidden text-center opacity-25 position-absolute"
+             src="{{ asset('images/home_background.svg') }}" alt="photo" width="70%">
         <h1 class="position-relative hidden text_color">
             "Struny vašich snov, melódia vášho srdca."
         </h1>
@@ -22,7 +23,8 @@
                         <div class="favorite-btn text-center">
                             <p>&#x2661;</p>
                         </div>
-                        <div class="cart-btn text-center" type="button" data-bs-toggle="modal" data-bs-target="#plusModal">
+                        <div class="cart-btn text-center" type="button" data-bs-toggle="modal"
+                             data-bs-target="#plusModal">
                             <p>+</p>
                         </div>
                         <a class="link-custom" href="{{ route('produkt_detail') }}">
@@ -56,7 +58,8 @@
                         <div class="favorite-btn text-center">
                             <p>&#x2661;</p>
                         </div>
-                        <div class="cart-btn text-center" type="button" data-bs-toggle="modal" data-bs-target="#plusModal">
+                        <div class="cart-btn text-center" type="button" data-bs-toggle="modal"
+                             data-bs-target="#plusModal">
                             <p>+</p>
                         </div>
                         <a class="link-custom" href="{{ route('produkt_detail') }}">

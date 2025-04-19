@@ -1,5 +1,5 @@
 @include("../components/variables")
-@extends('layouts.app')
+@extends('layouts.index')
 
 @section('content')
     <section class="row justify-content-center align-items-center mt-4">
@@ -27,7 +27,8 @@
             </div>
             <button class="btn btn-secondary arrow-custom"><i class="fa fa-arrow-right m-0"></i></button>
             <div class="d-flex align-items-center flex-column  circle-box-custom">
-                <button class="btn btn-secondary circle-custom rounded-pill disabled"><i class="fa-regular fa-circle-check"></i></button>
+                <button class="btn btn-secondary circle-custom rounded-pill disabled"><i
+                        class="fa-regular fa-circle-check"></i></button>
                 <h6>hotovo</h6>
             </div>
 
@@ -46,13 +47,15 @@
                         </div>
                         <div class="col-md-6">
                             <label for="ulica" class="text_color form-label">Ulica + Číslo domu</label>
-                            <input type="text" class="form-control placeholder-black" id="ulica" placeholder="Ulica 123/45">
+                            <input type="text" class="form-control placeholder-black" id="ulica"
+                                   placeholder="Ulica 123/45">
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-md-6">
                             <label for="priezvisko" class="text_color form-label">Priezvisko</label>
-                            <input type="text" class="form-control placeholder-black" id="priezvisko" placeholder="Priezvisko">
+                            <input type="text" class="form-control placeholder-black" id="priezvisko"
+                                   placeholder="Priezvisko">
                         </div>
                         <div class="col-md-4">
                             <label for="mesto" class="text_color form-label">Mesto</label>
@@ -66,7 +69,8 @@
                     <div class="row mb-3">
                         <div class="col-md-6">
                             <label for="email" class="text_color form-label">Email</label>
-                            <input type="email" class="form-control placeholder-black" id="email" placeholder="priklad@gmail.com">
+                            <input type="email" class="form-control placeholder-black" id="email"
+                                   placeholder="priklad@gmail.com">
                         </div>
                         <div class="col-md-6">
                             <label for="krajina" class="text_color form-label">Krajina</label>
@@ -83,16 +87,19 @@
                     <div class="row mb-3">
                         <div class="col-md-6">
                             <label for="telefon" class="text_color form-label">Telefónne číslo</label>
-                            <input type="tel" class="form-control placeholder-black" id="telefon" placeholder="+421000000">
+                            <input type="tel" class="form-control placeholder-black" id="telefon"
+                                   placeholder="+421000000">
                         </div>
                         <div class="col-md-6">
                             <label for="poznamka" class="text_color form-label">Poznámka k objednávke</label>
-                            <textarea class="form-control placeholder-black" id="poznamka" rows="3" placeholder="Vaše poznámky pre nás"></textarea>
+                            <textarea class="form-control placeholder-black" id="poznamka" rows="3"
+                                      placeholder="Vaše poznámky pre nás"></textarea>
                         </div>
                     </div>
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="text_color form-check-input" id="suhlas">
-                        <label class="text_color form-check-label" for="suhlas">Súhlasím so spracovaním osobných údajov</label>
+                        <label class="text_color form-check-label" for="suhlas">Súhlasím so spracovaním osobných
+                            údajov</label>
                     </div>
                 </form>
             </div>

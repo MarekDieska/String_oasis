@@ -1,6 +1,6 @@
 @include('components.variables')
 @include('components.plusModal')
-@extends('layouts.app')
+@extends('layouts.index')
 
 @section('content')
     <section class="row justify-content-between align-items-center p-4">
@@ -15,13 +15,15 @@
             </nav>
 
             <div class="card border-custom border-5 mx-auto">
-                <img src="{{ asset('images/product_guitar.jpg') }}" class="img-fluid img-big" alt="fotka svetlohnedej drevenej akustickej gitary z predu">
+                <img src="{{ asset('images/product_guitar.jpg') }}" class="img-fluid img-big"
+                     alt="fotka svetlohnedej drevenej akustickej gitary z predu">
             </div>
         </div>
 
         <div class="col-12 col-md-6 text_color d-flex flex-column">
             <p class="fs-1 pt-1 mt-4">HarmonyTone Sunset D-50</p>
-            <h5>HarmonyTone Sunset D-50 je perfektná pre začínajúcich aj pokročilých hudobníkov, ktorí hľadajú spoľahlivý nástroj s výborným zvukom a luxusným vzhľadom.</h5>
+            <h5>HarmonyTone Sunset D-50 je perfektná pre začínajúcich aj pokročilých hudobníkov, ktorí hľadajú
+                spoľahlivý nástroj s výborným zvukom a luxusným vzhľadom.</h5>
 
             <div class="row mb-md-4">
                 <div class="col-6 d-flex align-items-center">
@@ -50,7 +52,9 @@
             </div>
 
             <div class="row d-flex justify-content-center m-3 align-items-center">
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#plusModal">Pridať do košíka</button>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#plusModal">Pridať
+                    do košíka
+                </button>
             </div>
         </div>
     </section>
@@ -60,9 +64,14 @@
         <h1 class="text_color detail_large_text mt-md-1">HarmonyTone Sunset D-50</h1>
         <h5 class="text_color mt-4" style="font-family: 'Times New Roman', sans-serif;">
             HarmonyTone Sunset D-50
-            HarmonyTone Sunset D-50 je kvalitná elektro-akustická gitara, ktorá kombinuje klasický dizajn s moderným spracovaním. Jej telo je vyrobené z výberového mahagónu, ktorý zabezpečuje hlboký, bohatý tón s teplými basmi a jasnými výškami. Vrchná doska zo smreku pridáva rezonanciu a dynamiku, vďaka čomu je ideálna pre hráčov všetkých úrovní.
+            HarmonyTone Sunset D-50 je kvalitná elektro-akustická gitara, ktorá kombinuje klasický dizajn s moderným
+            spracovaním. Jej telo je vyrobené z výberového mahagónu, ktorý zabezpečuje hlboký, bohatý tón s teplými
+            basmi a jasnými výškami. Vrchná doska zo smreku pridáva rezonanciu a dynamiku, vďaka čomu je ideálna pre
+            hráčov všetkých úrovní.
             <br><br>
-            Výnimočný sunburst lak dodáva gitare elegantný a nadčasový vzhľad, zatiaľ čo ergonomický výrez umožňuje jednoduchý prístup k vyšším pražcom. Integrovaný predzosilňovač s ekvalizérom a zabudovanou ladičkou zaručuje, že váš zvuk bude vždy presný a vyvážený, či už hráte doma, v štúdiu alebo na pódiu.
+            Výnimočný sunburst lak dodáva gitare elegantný a nadčasový vzhľad, zatiaľ čo ergonomický výrez umožňuje
+            jednoduchý prístup k vyšším pražcom. Integrovaný predzosilňovač s ekvalizérom a zabudovanou ladičkou
+            zaručuje, že váš zvuk bude vždy presný a vyvážený, či už hráte doma, v štúdiu alebo na pódiu.
         </h5>
 
         @for($i = 0; $i < 4; $i++)

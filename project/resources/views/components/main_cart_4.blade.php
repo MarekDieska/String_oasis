@@ -1,5 +1,5 @@
 @include("../components/variables")
-@extends('layouts.app')
+@extends('layouts.index')
 
 @section('content')
     <section class="row justify-content-center align-items-center mt-4">
@@ -27,7 +27,8 @@
             </div>
             <button class="btn btn-secondary arrow-custom"><i class="fa fa-arrow-right m-0"></i></button>
             <div class="d-flex align-items-center flex-column  circle-box-custom">
-                <button class="btn btn-secondary circle-custom rounded-pill disabled"><i class="fa-regular fa-circle-check"></i></button>
+                <button class="btn btn-secondary circle-custom rounded-pill disabled"><i
+                        class="fa-regular fa-circle-check"></i></button>
                 <h6>hotovo</h6>
             </div>
 
@@ -83,7 +84,6 @@
             </div>
 
         </div>
-
 
 
         <div class="col-12 col-md-5 d-flex justify-content-center align-items-end">

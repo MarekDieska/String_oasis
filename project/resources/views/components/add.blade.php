@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.index')
 
 @section('content')
     <section class="card mt-5 mb-3 bg-dark border-success-subtle text_color">
@@ -9,11 +9,13 @@
                     <div class="col-md-8">
                         <div class="mb-2">
                             <label class="form-label fw-bold">Produkt</label>
-                            <input type="text" class="form-control text-black placeholder-black" maxlength="100" placeholder="Názov produktu">
+                            <input type="text" class="form-control text-black placeholder-black" maxlength="100"
+                                   placeholder="Názov produktu">
                         </div>
                         <div class="mb-2">
                             <label class="form-label fw-bold">Popis produktu</label>
-                            <textarea class="form-control placeholder-black" rows="3" minlength="50" maxlength="500" placeholder="Detailný popis produktu"></textarea>
+                            <textarea class="form-control placeholder-black" rows="3" minlength="50" maxlength="500"
+                                      placeholder="Detailný popis produktu"></textarea>
                         </div>
                         <div class="mb-2 parameters-section">
                             <label class="form-label fw-bold">Parametre</label>
@@ -26,7 +28,8 @@
                                         <input type="text" class="form-control placeholder-black" placeholder="Krk">
                                     </div>
                                     <div class="col">
-                                        <input type="text" class="form-control placeholder-black" placeholder="Počet pražcov">
+                                        <input type="text" class="form-control placeholder-black"
+                                               placeholder="Počet pražcov">
                                     </div>
                                 </div>
                             </div>
@@ -69,7 +72,8 @@
                         <div class="mb-0">
                             <label class="form-label fw-bold mt-0">Obrázky</label>
                             <div class="input-group mb-3">
-                                <input type="file" class="form-control form-control-lg bg-dark text_color" id="addProductImage" multiple>
+                                <input type="file" class="form-control form-control-lg bg-dark text_color"
+                                       id="addProductImage" multiple>
                             </div>
                         </div>
                     </div>

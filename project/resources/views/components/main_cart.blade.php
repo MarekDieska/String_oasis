@@ -1,5 +1,5 @@
 @include("../components/variables")
-@extends('layouts.app')
+@extends('layouts.index')
 
 @section('content')
     <section class="row justify-content-center align-items-center mt-4">
@@ -34,7 +34,8 @@
             </div>
             <button class="btn btn-secondary arrow-custom"><i class="fa fa-arrow-right m-0"></i></button>
             <div class="d-flex align-items-center flex-column  circle-box-custom">
-                <button class="btn btn-secondary circle-custom rounded-pill disabled"><i class="fa-regular fa-circle-check"></i></button>
+                <button class="btn btn-secondary circle-custom rounded-pill disabled"><i
+                        class="fa-regular fa-circle-check"></i></button>
                 <h6>hotovo</h6>
             </div>
 
@@ -46,7 +47,9 @@
     <section class="row">
         <div class="col-12 col-md-7 cart-slider overflow-auto">
 
-            <?php for( $i = 0; $i < 6; $i++):?>
+            <?php for ($i = 0;
+                       $i < 6;
+                       $i++): ?>
             <div class="cart-product m-3 me-md-0">
                 <div class="d-flex flex-row align-items-center justify-content-between">
                     <img src="<?php echo $obrazkyProduktov[$i % count($obrazkyProduktov)]; ?>" width="60" alt="">
@@ -72,7 +75,7 @@
                     <i class="fa fa-xmark"></i>
                 </div>
             </div>
-            <?php endfor;?>
+            <?php endfor; ?>
         </div>
 
 
