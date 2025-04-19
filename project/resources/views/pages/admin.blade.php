@@ -24,7 +24,7 @@
 </header>
 
 <main class="container-fluid" style="padding-top: 50px;">
-    @yield('content')
+    @include('components.admin_main')
 </main>
 
 <footer style="margin-top: 0;">

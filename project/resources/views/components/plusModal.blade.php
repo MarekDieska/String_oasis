@@ -7,7 +7,7 @@
             </div>
             <div class="modal-body">
                 <div class="d-flex flex-column align-items-center">
-                    <img src="{{asset('/public/images/product_guitar.jpg')}}" alt="Produkt" class="img-fluid" width="100">
+                    <img src="{{asset('images/product_guitar.jpg')}}" alt="Produkt" class="img-fluid" width="100">
 
                     <div class="d-flex flex-row">
                         <button class="btn btn-outline-secondary p-2 rounded-0" type="button">

@@ -19,12 +19,12 @@
 
     <div class="col-12 col-md-6 text_color d-flex flex-column">
         <p class="fs-1 pt-1 mt-4">HarmonyTone Sunset D-50</p>
-        <h5>HarmonyTone Sunset D-50 je perfektná pre začínajúcich aj pokročilých hudobníkov...</h5>
+        <h5>HarmonyTone Sunset D-50 je perfektná pre začínajúcich aj pokročilých hudobníkov, ktorí hľadajú spoľahlivý nástroj s výborným zvukom a luxusným vzhľadom.</h5>
 
         <div class="row mb-md-4">
             <div class="col-6 d-flex align-items-center">
                 <div class="ratings hidden">
-                    @include('components.stars')
+                    @include('components.stars', ['rating' => 4])
                 </div>
             </div>
             <div class="col-6 d-flex justify-content-end p-3 pt-0 pb-0">
@@ -57,7 +57,10 @@
     <hr class="text_color mt-5 mb-5">
     <h1 class="text_color detail_large_text mt-md-1">HarmonyTone Sunset D-50</h1>
     <h5 class="text_color mt-4" style="font-family: 'Times New Roman', sans-serif;">
-        HarmonyTone Sunset D-50 je kvalitná elektro-akustická gitara...
+        HarmonyTone Sunset D-50
+        HarmonyTone Sunset D-50 je kvalitná elektro-akustická gitara, ktorá kombinuje klasický dizajn s moderným spracovaním. Jej telo je vyrobené z výberového mahagónu, ktorý zabezpečuje hlboký, bohatý tón s teplými basmi a jasnými výškami. Vrchná doska zo smreku pridáva rezonanciu a dynamiku, vďaka čomu je ideálna pre hráčov všetkých úrovní.
+        <br><br>
+        Výnimočný sunburst lak dodáva gitare elegantný a nadčasový vzhľad, zatiaľ čo ergonomický výrez umožňuje jednoduchý prístup k vyšším pražcom. Integrovaný predzosilňovač s ekvalizérom a zabudovanou ladičkou zaručuje, že váš zvuk bude vždy presný a vyvážený, či už hráte doma, v štúdiu alebo na pódiu.
     </h5>
 
     @for($i = 0; $i < 4; $i++)

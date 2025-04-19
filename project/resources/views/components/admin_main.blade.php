@@ -63,6 +63,6 @@
     <hr class="text_color mt-4">
 
     <div class="d-flex w-100 justify-content-center p-4">
-        <a href="{{route('/')}}" class="btn text_color btn-primary w-50 mt-0 logout-action" id="logoutButtonAdminPage">Odhlásiť sa</a>
+        <a href="{{route('index')}}" class="btn text_color btn-primary w-50 mt-0 logout-action" id="logoutButtonAdminPage">Odhlásiť sa</a>
     </div>
 </section>
