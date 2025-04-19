@@ -2,7 +2,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="row justify-content-center align-items-center">
+    <section class="row justify-content-center align-items-center mt-4">
 
         <div class="col-12 d-none d-sm-flex flex-row justify-content-center align-items-center">
 

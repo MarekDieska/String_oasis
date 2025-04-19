@@ -2,7 +2,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="row justify-content-center align-items-center pt-4">
+    <section class="row justify-content-center align-items-center pt-4 mt-4">
         <div class="col-12 d-none d-sm-flex flex-row justify-content-center align-items-center">
             <div class="d-flex align-items-center flex-column  circle-box-custom">
                 <button class="btn btn-secondary circle-custom-big rounded-pill"><i class="fa-regular fa-circle-check"></i></button>

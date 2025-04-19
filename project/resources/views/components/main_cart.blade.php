@@ -2,7 +2,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="row justify-content-center align-items-center">
+    <section class="row justify-content-center align-items-center mt-4">
         <div class="d-none d-md-flex col-2 justify-content-center">
             <a class="btn btn-secondary but-back" href="{{route('filters_page')}}">
                 <i class="fa fa-arrow-left m-0"></i> na nákup

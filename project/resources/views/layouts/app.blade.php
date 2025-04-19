@@ -27,9 +27,10 @@
 
 <div class="filler-custom"></div>
 
-<nav class="navbar navbar-expand-md category-custom fixed-top sticky-md-top">
+<nav class="navbar navbar-expand-md category-custom fixed-top {{ Route::currentRouteName() === 'index' ? 'sticky-md-top' : '' }}">
     @include('components.category')
 </nav>
+
 
 //container-fluid main-f-custom" style="margin: 140px 0 0 0"
 
