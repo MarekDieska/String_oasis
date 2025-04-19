@@ -1,3 +1,5 @@
+@include('components.plusModal')
+
 <div class="container-fluid m-2 m-lg-4">
     <div class="row row-cols-1 row-cols-lg-2 flex-row justify-content-between align-items-center">
         <div class="col">
@@ -46,9 +48,9 @@
                         <p>&#x2661;</p>
                     </div>
 
-                    <a class="cart-btn text-center" type="button" data-bs-toggle="modal" data-bs-target="#plusModal">
+                    <div class="cart-btn text-center" type="button" data-bs-toggle="modal" data-bs-target="#plusModal">
                         <p>+</p>
-                    </a>
+                    </div>
 
                     <a href="{{ route('produkt_detail') }}">
                         <div class="text-custom">

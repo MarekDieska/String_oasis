@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@include('components.plusModal')
 
 @section('content')
     <article class="row justify-content-center align-items-center position-relative w-100 text-center grad">
