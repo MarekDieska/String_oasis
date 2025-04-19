@@ -31,7 +31,9 @@
     @include('components.category')
 </nav>
 
-<main class="container-fluid ">
+//container-fluid main-f-custom" style="margin: 140px 0 0 0"
+
+<main class="container-fluid">
     @yield('content')
 </main>
 

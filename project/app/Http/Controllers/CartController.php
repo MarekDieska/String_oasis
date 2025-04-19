@@ -85,11 +85,11 @@ class CartController
         ];
 
         return match ($viewName) {
-            'pages.cart_page' => view($viewName)
+            'components.main_cart' => view($viewName)
                 ->with('obrazkyProduktov', $obrazkyProduktov)
                 ->with('nazvyProduktov', $nazvyProduktov)
                 ->with('cenyProduktov', $cenyProduktov),
-            'pages.cart_page2' => view($viewName)
+            'components.main_cart_2' => view($viewName)
                 ->with('dopravy', $dopravy)
                 ->with('dopravy2', $dopravy2)
                 ->with('dopravyCeny', $dopravyCeny)

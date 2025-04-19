@@ -102,7 +102,7 @@ class DetailController
             ]
         ];
 
-        return view('pages.produkt_detail', [
+        return view('components.main_detail', [
             'farby' => $farby,
             'nazvyFarieb' => $nazvyFarieb,
             'detaily' => $detaily,
