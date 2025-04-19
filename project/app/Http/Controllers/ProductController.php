@@ -85,7 +85,7 @@ class ProductController extends Controller
             5, 3, 5, 4, 5, 5, 3, 5, 4
             ];
 
-        return view('pages.index', [
+        return view('components.main', [
             'nazvyProduktov' => $nazvyProduktov,
             'cenyProduktov' => $cenyProduktov,
             'obrazkyProduktov' => $obrazkyProduktov,

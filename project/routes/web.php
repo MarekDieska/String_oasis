@@ -6,7 +6,10 @@ use App\Http\Controllers\CartController;
 use App\Http\Controllers\DetailController;
 
 Route::get('/', [ProductController::class, 'showProducts'])->name('index');
+
 Route::get('/stars/{rating}', [ProductController::class, 'showStars']);
+
+
 
 //admin
 Route::get('/admin', function () {
