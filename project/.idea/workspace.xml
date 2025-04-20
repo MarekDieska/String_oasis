@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d846a00-728e-4f75-9902-178be0760ed5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/blade.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blade.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/untitled.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisteredUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisteredUserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/admin_main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/admin_main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/webroute.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/webroute.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,34 +289,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.Unnamed.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.category.php.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.header.php.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.index.php.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.login.php.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.main.php.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.main_detail.php.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.web.php.executor&quot;: &quot;Debug&quot;,
-    &quot;PHP Script.web.php.executor&quot;: &quot;Debug&quot;,
-    &quot;PHPUnit.song_oasis_laravel.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/cooke/Documents/Song_oasis/Song_oasis/project/song_oasis_laravel/resources/views&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.Unnamed.executor": "Debug",
+    "JavaScript Debug.category.php.executor": "Debug",
+    "JavaScript Debug.header.php.executor": "Debug",
+    "JavaScript Debug.index.php.executor": "Debug",
+    "JavaScript Debug.login.php.executor": "Debug",
+    "JavaScript Debug.main.php.executor": "Debug",
+    "JavaScript Debug.main_detail.php.executor": "Debug",
+    "JavaScript Debug.web.php.executor": "Debug",
+    "PHP Script.web.php.executor": "Debug",
+    "PHPUnit.song_oasis_laravel.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.laravel_idea.run_console_parameters_ask": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "laravel_idea.dialogs.run_console_settings.width": "253",
+    "laravel_idea.dialogs.run_console_settings.x": "513",
+    "laravel_idea.dialogs.run_console_settings.y": "288",
+    "last_opened_file_path": "C:/Users/cooke/Documents/Song_oasis/Song_oasis/project/song_oasis_laravel/resources/views",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\cooke\Documents\Song_oasis\Song_oasis\project\song_oasis_laravel\resources\views" />
@@ -418,7 +417,7 @@
       <workItem from="1744968761993" duration="8050000" />
       <workItem from="1744990194052" duration="6958000" />
       <workItem from="1745048468517" duration="15890000" />
-      <workItem from="1745149408432" duration="11183000" />
+      <workItem from="1745149408432" duration="15075000" />
     </task>
     <servers />
   </component>
