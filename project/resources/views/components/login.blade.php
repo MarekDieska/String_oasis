@@ -1,4 +1,3 @@
-<!-- Login & Register Modal -->
 <div class="modal fade" id="login_form" tabindex="-1" aria-labelledby="login_form_label" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content bg-dark text-white">
@@ -8,7 +7,6 @@
             </div>
 
             <div class="modal-body">
-                <!-- Login Form -->
                 <form method="POST" action="{{ route('login') }}" id="loginForm" @if ($errors->any() && old('_register')) class="d-none" @endif>
                     @csrf
                     <input type="hidden" name="_login" value="true">
@@ -43,7 +41,6 @@
                     <a href="#" class="text-white mt-2 d-none" id="backToLogin">Už máš účet? Prihlás sa!</a>
                 </div>
 
-                <!-- Registration Form -->
                 <form method="POST" action="{{ route('register') }}" id="registerForm" class="@if (!old('_register')) d-none @endif mt-3">
                     @csrf
                     <input type="hidden" name="_register" value="true">
@@ -90,7 +87,6 @@
     </div>
 </div>
 
-<!-- JavaScript to control modal behavior -->
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         @if ($errors->any())

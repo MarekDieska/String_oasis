@@ -8,6 +8,7 @@ use App\Http\Controllers\DetailController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\RegisteredUserController;
+use App\Http\Controllers\AdminRoleController;
 
 Route::middleware(['auth'])->get('/dashboard', [DashboardController::class, 'showDashboard'])->name('dashboard');
 
@@ -104,5 +105,8 @@ Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('l
 Route::post('/login', [AuthenticatedSessionController::class, 'store']);
 Route::get('/register', [RegisteredUserController::class, 'create'])->name('register');
 Route::post('/register', [RegisteredUserController::class, 'store']);
+
+Route::post('/admin/add-role', [AdminRoleController::class, 'assignAdmin'])->name('admin.assign');
+Route::post('/admin/remove-role', [AdminRoleController::class, 'removeAdmin'])->name('admin.remove');
 
 require __DIR__.'/auth.php';

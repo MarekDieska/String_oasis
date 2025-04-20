@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6d846a00-728e-4f75-9902-178be0760ed5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/admin_main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/admin_main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/webroute.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/webroute.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2025_04_20_145006_remove_role_from_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2025_04_20_145006_remove_role_from_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diagram_StringOasis.png" beforeDir="false" />
