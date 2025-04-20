@@ -109,4 +109,6 @@ Route::post('/register', [RegisteredUserController::class, 'store']);
 Route::post('/admin/add-role', [AdminRoleController::class, 'assignAdmin'])->name('admin.assign');
 Route::post('/admin/remove-role', [AdminRoleController::class, 'removeAdmin'])->name('admin.remove');
 
+Route::put('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
+
 require __DIR__.'/auth.php';

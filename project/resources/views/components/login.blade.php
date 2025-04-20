@@ -52,7 +52,7 @@
 
                     <div class="mb-2">
                         <label for="surname" class="form-label">Priezvisko</label>
-                        <input type="text" name="surname" class="form-control" value="{{ old('surname') }}">
+                        <input type="text" name="surname" class="form-control" required value="{{ old('surname') }}">
                     </div>
 
                     <div class="mb-2">

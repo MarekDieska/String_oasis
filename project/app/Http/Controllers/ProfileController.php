@@ -1,60 +1,38 @@
 <?php
-
 namespace App\Http\Controllers;
 
-use App\Http\Requests\ProfileUpdateRequest;
-use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Redirect;
-use Illuminate\View\View;
+use App\Models\User;
 
 class ProfileController extends Controller
 {
-    /**
-     * Display the user's profile form.
-     */
-    public function edit(Request $request): View
+    public function update(Request $request)
     {
-        return view('profile.edit', [
-            'user' => $request->user(),
-        ]);
-    }
+        $user = auth()->user();
 
-    /**
-     * Update the user's profile information.
-     */
-    public function update(ProfileUpdateRequest $request): RedirectResponse
-    {
-        $request->user()->fill($request->validated());
-
-        if ($request->user()->isDirty('email')) {
-            $request->user()->email_verified_at = null;
-        }
-
-        $request->user()->save();
-
-        return Redirect::route('profile.edit')->with('status', 'profile-updated');
-    }
-
-    /**
-     * Delete the user's account.
-     */
-    public function destroy(Request $request): RedirectResponse
-    {
-        $request->validateWithBag('userDeletion', [
-            'password' => ['required', 'current_password'],
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'surname' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'telefon' => 'nullable|string|max:20',
+            'ulica_cislo' => 'nullable|string|max:255',
+            'mesto' => 'nullable|string|max:255',
+            'psc' => 'nullable|numeric',
+            'krajina' => 'nullable|string|max:255',
         ]);
 
-        $user = $request->user();
+        $user->name = $validated['name'];
+        $user->surname = $validated['surname'];
+        $user->email = $validated['email'];
+        $user->phone = $validated['telefon'];
+        $user->street_number = $validated['ulica_cislo'];
+        $user->city = $validated['mesto'];
+        $user->psc = $validated['psc'];
+        $user->country = $validated['krajina'];
 
-        Auth::logout();
+        $user->save();
 
-        $user->delete();
-
-        $request->session()->invalidate();
-        $request->session()->regenerateToken();
-
-        return Redirect::to('/');
+        return back()->with('success', 'Profil bol aktualizovaný.');
     }
 }
