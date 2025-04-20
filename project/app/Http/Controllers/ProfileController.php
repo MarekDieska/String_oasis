@@ -18,7 +18,7 @@ class ProfileController extends Controller
             'telefon' => 'nullable|string|max:20',
             'ulica_cislo' => 'nullable|string|max:255',
             'mesto' => 'nullable|string|max:255',
-            'psc' => 'nullable|numeric',
+            'psc' => 'nullable|string|max:6',
             'krajina' => 'nullable|string|max:255',
         ]);
 
