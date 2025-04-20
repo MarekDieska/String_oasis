@@ -20,7 +20,7 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
 
 </head>
-<body class="bg-dark">
+<body class="bg-dark" data-user="@auth auth @else guest @endauth" data-status="{{ session('status') }}">
 <header class="navbar navbar-expand-md fixed-top shadow header-custom">
     @include("../components/header")
 </header>

@@ -25,7 +25,32 @@
         <div class="col-md-4 col-6 d-flex justify-content-end align-items-center">
             <ul class="d-flex list-unstyled fs-3 m-0 justify-content-end">
                 <li class="marg-bug"><a href="{{ route('cart_page') }}"><i class="link-custom text_color fa fa-cart-shopping"></i></a></li>
-                <li class="marg-bug"><i id="userIcon" class="link-custom text_color fa-regular fa-user" data-bs-toggle="modal" data-bs-target="#login_form"></i></li>
+                @guest
+                    <li class="marg-bug">
+                        <!-- Shows modal on click for guests -->
+                        <i class="link-custom text_color fa-regular fa-user" data-bs-toggle="modal" data-bs-target="#login_form"></i>
+                    </li>
+                @endguest
+
+                @auth
+                    <li class="marg-bug dropdown">
+                        <!-- Dropdown for authenticated users -->
+                        <a class="link-custom text_color dropdown-toggle fs-3" href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="userDropdown">
+                            <li>
+                                <a class="dropdown-item" href="{{ route('dashboard') }}">Dashboard</a>
+                            </li>
+                            <li>
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+                                    <button class="dropdown-item">Odhlásiť sa</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                @endauth
                 <li class="marg-bug"><i class="link-custom text_color fa-regular fa-heart"></i></li>
             </ul>
         </div>

@@ -5,6 +5,11 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\DetailController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\Auth\RegisteredUserController;
+
+Route::middleware(['auth'])->get('/dashboard', [DashboardController::class, 'showDashboard'])->name('dashboard');
 
 Route::get('/', [ProductController::class, 'showProducts'])->name('index');
 
@@ -94,3 +99,10 @@ Route::get('/cart_page2', fn() => app(CartController::class)->loadCartView('comp
 Route::get('/cart_page3', fn() => app(CartController::class)->loadCartView('components.main_cart_3'))->name('cart_page3');
 Route::get('/cart_page4', fn() => app(CartController::class)->loadCartView('components.main_cart_4'))->name('cart_page4');
 Route::get('/cart_page5', fn() => app(CartController::class)->loadCartView('components.main_cart_5'))->name('cart_page5');
+
+Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('login');
+Route::post('/login', [AuthenticatedSessionController::class, 'store']);
+Route::get('/register', [RegisteredUserController::class, 'create'])->name('register');
+Route::post('/register', [RegisteredUserController::class, 'store']);
+
+require __DIR__.'/auth.php';
