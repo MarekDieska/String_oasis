@@ -48,6 +48,11 @@
                                     <button class="dropdown-item">Odhlásiť sa</button>
                                 </form>
                             </li>
+                            @if (Auth::user() && Auth::user()->hasRole('admin'))
+                                <li>
+                                    <a class="dropdown-item" href="{{ route('admin') }}">Admin</a>
+                                </li>
+                            @endif
                         </ul>
                     </li>
                 @endauth
