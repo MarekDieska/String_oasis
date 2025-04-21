@@ -8,6 +8,7 @@ class Subcategory extends Model
 {
     protected $table = 'subcategories';
     public $timestamps = false;
+    public $fillable = ['name', 'category_id'];
 
     public function category()
     {
