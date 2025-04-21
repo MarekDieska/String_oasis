@@ -48,4 +48,21 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function profil()
+    {
+        return $this->hasOne(Profile::class, 'user_id');
+    }
+
+    public function kosik()
+    {
+        return $this->hasMany(Cart::class, 'user_id');
+    }
+
+
+//    public function roles()
+//    {
+//        return $this->belongsToMany(Role::class, 'model_has_roles', 'model_id', 'role_id')
+//            ->wherePivot('model_type', '=', self::class);
+//    }
 }

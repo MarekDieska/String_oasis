@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d846a00-728e-4f75-9902-178be0760ed5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/components/input.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2025_04_20_151407_create_produkty_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2025_04_20_151407_create_produkty_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/main_cart_2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/main_cart_2.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -326,11 +328,11 @@
       <recent name="C:\Users\cooke\Documents\Song_oasis\Song_oasis\project\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vikil\Documents\GitHub\String_oasis\project\database\migrations" />
       <recent name="C:\Users\cooke\Documents\Song_oasis\Song_oasis\project\resources\views\components" />
       <recent name="C:\Users\vikil\Documents\GitHub\String_oasis\project\resources\fonts" />
       <recent name="C:\Users\vikil\Documents\GitHub\String_oasis\project\resources" />
       <recent name="C:\Users\cooke\Documents\Song_oasis\Song_oasis\project\public\fonts" />
-      <recent name="C:\Users\cooke\Documents\Song_oasis\Song_oasis\project\public" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">

@@ -33,6 +33,6 @@ class ProfileController extends Controller
 
         $user->save();
 
-        return back()->with('success', 'Profil bol aktualizovaný.');
+        return back()->with('success', 'Profile bol aktualizovaný.');
     }
 }

@@ -122,17 +122,17 @@ return new class extends Migration
         Schema::dropIfExists('podkategorie');
         Schema::dropIfExists('kategorie');
 
-        Schema::dropIfExists('Polozka');
-        Schema::dropIfExists('Objednavka');
+        Schema::dropIfExists('Item');
+        Schema::dropIfExists('Order');
         Schema::dropIfExists('Detail');
-        Schema::dropIfExists('Platba');
-        Schema::dropIfExists('Doprava');
-        Schema::dropIfExists('Kosik');
-        Schema::dropIfExists('Profil');
-        Schema::dropIfExists('Obrazok');
+        Schema::dropIfExists('Payment');
+        Schema::dropIfExists('Delivery');
+        Schema::dropIfExists('Cart');
+        Schema::dropIfExists('Profile');
+        Schema::dropIfExists('Photo');
         Schema::dropIfExists('Parameter');
-        Schema::dropIfExists('Produkt');
-        Schema::dropIfExists('Podkategoria');
-        Schema::dropIfExists('Kategoria');
+        Schema::dropIfExists('Product');
+        Schema::dropIfExists('Subcategory');
+        Schema::dropIfExists('Category');
     }
 };

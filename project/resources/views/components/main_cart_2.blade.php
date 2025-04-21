@@ -4,7 +4,7 @@
 @section('content')
     <section class="row justify-content-center align-items-center mt-4">
         <div class="col-12 d-none d-sm-flex flex-row justify-content-center align-items-center">
-            @foreach (['Košík', 'Doprava', 'Údaje', 'Kontrola', 'hotovo'] as $index => $step)
+            @foreach (['Košík', 'Delivery', 'Údaje', 'Kontrola', 'hotovo'] as $index => $step)
                 <div class="d-flex align-items-center flex-column circle-box-custom">
                     <button class="btn btn-secondary circle-custom rounded-pill {{ $index > 1 ? 'disabled' : '' }}">
                         {{ $index == 4 ? '' : $index + 1 }}
@@ -24,7 +24,7 @@
     </section>
 
     <section class="row ms-lg-4">
-        {{-- Doprava --}}
+        {{-- Delivery --}}
         <div class="col-12 col-md-6 col-lg-4 p-5 ps-md-5 pe-md-4 mb-5 p-lg-2 justify-content-center">
             <h4 class="text_color cart_text">Doprava</h4>
             <div class="cart-slider justify-content-center mt-0 overflow-y-scroll overflow-x-hidden mx-custom">
@@ -46,7 +46,7 @@
             </div>
         </div>
 
-        {{-- Platba --}}
+        {{-- Payment --}}
         <div class="col-12 col-md-6 col-lg-4 p-5 ps-md-2 pe-md-5 p-lg-2 justify-content-center">
             <h4 class="text_color cart_text">Spôsob platby</h4>
             <div class="cart-slider justify-content-center mt-0 overflow-y-scroll overflow-x-hidden mx-custom">
