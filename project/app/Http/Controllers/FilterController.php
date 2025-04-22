@@ -33,7 +33,7 @@ class FilterController extends Controller{
 
         $p_categories = Category::whereHas('subcategories.products')->distinct()->get();
         $p_brands = Product::distinct()->pluck('brand');
-        $p_ratings = Product::distinct()->pluck('stars');
+        $p_ratings = Product::select('stars')->distinct()->orderBy('stars', 'asc')->pluck('stars');
         return view('pages.filters_page', compact('p_products', 'p_categories', 'p_brands', 'p_ratings'));
     }
 }
