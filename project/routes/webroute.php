@@ -1,18 +1,20 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProductController;
-use App\Http\Controllers\CartController;
-use App\Http\Controllers\DetailController;
-use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\AdminRoleController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\RegisteredUserController;
-use App\Http\Controllers\AdminRoleController;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DetailController;
+use App\Http\Controllers\FilterController;
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\Route;
 
 Route::middleware(['auth'])->get('/dashboard', [DashboardController::class, 'showDashboard'])->name('dashboard');
 
-Route::get('/', [ProductController::class, 'showProducts'])->name('index');
+Route::get('/', [IndexController::class, 'show'])->name('index');
 
 Route::get('/stars/{rating}', [ProductController::class, 'showStars']);
 
@@ -37,61 +39,22 @@ Route::get('/admin_edit', function () {
 
 Route::get('/produkt_detail', [DetailController::class, 'showDetails'])->name('produkt_detail');
 
-//category
-Route::get('/filters_page', function () {
-    return view('pages.filters_page', [
-        'typy' => [
-            'Gitara',
-            'Basgitara',
-            'Iné struny',
-            'Kombá',
-            'Príslušenstvo',
-            'Platne',
-        ],
-        'velkosti' => [
-            '1/4',
-            '1/2',
-            '3/4',
-            '7/8',
-            '4/4',
-        ],
-        'znacky' => [
-            'Fender',
-            'Gibson',
-            'Yamaha',
-            'Ibanez',
-            'PRS',
-            'Taylor',
-        ],
-        'nazvyProduktov' => [
-            "Gibson SG Standard Electric Guitar Heritage Cherry",
-            "Fender Squier Affinity Series Stratocaster Lake Placid Blue",
-            "Vintage 1963 Gibson Barney Kessel Sunburst Finish",
-            "Fender American Professional Jazzmaster Silverburst",
-            "Neal Moser Guitar",
-            "James Tyler Classic Burning Water",
-        ],
-        'obrazkyProduktov' => [
-            "../images/gi1.png",
-            "../images/g2.png",
-            "../images/g3.png",
-            "../images/g4.png",
-            "../images/g5.png",
-            "../images/g6.png",
-        ],
-        'hodnoteniaProduktov' => [
-            5, 3, 5, 4, 5
-        ],
-        'cenyProduktov' => [
-            "1799€",
-            "233€",
-            "4999€",
-            "1899€",
-            "650€",
-            "930€",
-        ]
-    ]);
-})->name('filters_page');
+
+Route::get('/filters_page', [FilterController::class, 'showFilters'])->name('filters_page');
+
+//Route::get('/filters_page', function () {
+//    return view('pages.filters_page', [
+//
+//        'obrazkyProduktov' => [
+//            "../images/gi1.png",
+//            "../images/g2.png",
+//            "../images/g3.png",
+//            "../images/g4.png",
+//            "../images/g5.png",
+//            "../images/g6.png",
+//        ],
+//    ]);
+//})->name('filters_page');
 
 
 //cart

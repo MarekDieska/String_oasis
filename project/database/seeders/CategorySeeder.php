@@ -13,11 +13,29 @@ class CategorySeeder extends Seeder
      */
     public function run(): void
     {
-        Category::create(['name' => 'Gitary']);
-        Category::create(['name' => 'Basgitary']);
-        Category::create(['name' => 'Iné struny']);
-        Category::create(['name' => 'Kombá']);
-        Category::create(['name' => 'Príslušenstvo']);
-        Category::create(['name' => 'Platne']);
+        Category::create([
+            'name' => 'Gitary',
+            'url' => 'git.svg'
+        ]);
+        Category::create([
+            'name' => 'Basgitary',
+            'url' => 'bass.svg'
+        ]);
+        Category::create([
+            'name' => 'Iné struny',
+            'url' => 'banjo.svg'
+        ]);
+        Category::create([
+            'name' => 'Kombá',
+            'url' => 'kombo.svg'
+        ]);
+        Category::create([
+            'name' => 'Príslušenstvo',
+            'url' => 'kabel.svg'
+        ]);
+        Category::create([
+            'name' => 'Platne',
+            'url' => 'platna.svg'
+        ]);
     }
 }

@@ -14,11 +14,11 @@
         <h2 class="zlava text_color pt-5">Zľavy</h2>
 
         <div class="produkty-container d-flex">
-            @foreach($nazvyProduktov as $i => $nazov)
+            @foreach($products as $product)
                 <div class="pas">
                     <div class="card produkt mt-3">
                         <div class="product-image">
-                            <img class="card-photo" src="{{ $obrazkyProduktov[$i] ?? '' }}" alt="{{ $nazov }}">
+                            <img class="card-photo" src="{{ asset('images/' . $product->image) }}" alt="{{ $product->name }}">
                         </div>
                         <div class="favorite-btn text-center">
                             <p>&#x2661;</p>
@@ -27,15 +27,14 @@
                              data-bs-target="#plusModal">
                             <p>+</p>
                         </div>
-                        <a class="link-custom" href="{{ route('produkt_detail') }}">
+                        <a class="link-custom" href="{{ route('produkt_detail', ['product' => $product->id]) }}">
                             <div class="text-custom sirka">
-                                <h5 class="t1-custom">{{ $nazov }}</h5>
+                                <h5 class="t1-custom">{{ $product->name }}</h5>
                                 <div class="t2-hv">
                                     <div>
-                                        {{-- Pass the rating dynamically --}}
-                                        @include('components.stars', ['rating' => $hodnoteniaProduktov[$i] ?? 0])
+                                        @include('components.stars', ['rating' => $product->stars])
                                     </div>
-                                    <h4 class="t2-custom">{{ $cenyProduktov[$i] ?? '—' }}</h4>
+                                    <h4 class="t2-custom">{{ number_format($product->price, 0, ',', ' ') }} €</h4>
                                 </div>
                             </div>
                         </a>
@@ -49,33 +48,34 @@
         <h2 class="zlava text_color pt-5">Platne</h2>
 
         <div class="produkty-container d-flex">
-            @foreach($nazvyP as $i => $nazov)
-                <div class="pas">
-                    <div class="card produkt mt-3">
-                        <div class="product-image">
-                            <img class="card-photo" src="{{ $obrazkyP[$i] ?? '' }}" alt="{{ $nazov }}">
-                        </div>
-                        <div class="favorite-btn text-center">
-                            <p>&#x2661;</p>
-                        </div>
-                        <div class="cart-btn text-center" type="button" data-bs-toggle="modal"
-                             data-bs-target="#plusModal">
-                            <p>+</p>
-                        </div>
-                        <a class="link-custom" href="{{ route('produkt_detail') }}">
-                            <div class="text-custom sirka pt-3">
-                                <h5 class="t1-custom">{{ $nazov }}</h5>
-                                <div class="t2-hv">
-                                    <div>
-                                        {{-- Include the dynamic rating for each vinyl --}}
-                                        @include('components.stars', ['rating' => $hodnoteniaP[$i] ?? 0])
-                                    </div>
-                                    <h4 class="t2-custom">{{ $cenyP[$i] ?? '—' }}</h4>
-                                </div>
-                            </div>
-                        </a>
+            @foreach($products as $product)
+            @if($product->category === 'platne')
+            <div class="pas">
+                <div class="card produkt mt-3">
+                    <div class="product-image">
+                        <img class="card-photo" src="{{ asset('images/' . $product->image) }}" alt="{{ $product->name }}">
                     </div>
+                    <div class="favorite-btn text-center">
+                        <p>&#x2661;</p>
+                    </div>
+                    <div class="cart-btn text-center" type="button" data-bs-toggle="modal"
+                         data-bs-target="#plusModal">
+                        <p>+</p>
+                    </div>
+                    <a class="link-custom" href="{{ route('produkt_detail', ['product' => $product->id])}}">
+                        <div class="text-custom sirka pt-3">
+                            <h5 class="t1-custom">{{ $product->name }}</h5>
+                            <div class="t2-hv">
+                                <div>
+                                    @include('components.stars', ['rating' => $product->rating])
+                                </div>
+                                <h4 class="t2-custom">{{ number_format($product->price, 0, ',', ' ') }} €</h4>
+                            </div>
+                        </div>
+                    </a>
                 </div>
+            </div>
+            @endif
             @endforeach
         </div>
     </section>

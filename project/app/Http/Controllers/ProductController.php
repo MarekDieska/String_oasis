@@ -80,22 +80,7 @@ class ProductController extends Controller
             "../images/p8.png",
             "../images/p9.png",
         ];
-
-        $hodnoteniaP = [
-            5, 3, 5, 4, 5, 5, 3, 5, 4
-            ];
-
-        return view('components.main', [
-            'nazvyProduktov' => $nazvyProduktov,
-            'cenyProduktov' => $cenyProduktov,
-            'obrazkyProduktov' => $obrazkyProduktov,
-            'hodnoteniaProduktov' => $hodnoteniaProduktov,
-            'nazvyP' => $nazvyP,
-            'cenyP' => $cenyP,
-            'obrazkyP' => $obrazkyP,
-            'hodnoteniaP' => $hodnoteniaP,
-        ]);
-    }
+        }
 }
 
 

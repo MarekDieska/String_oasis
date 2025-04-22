@@ -37,12 +37,13 @@ return new class extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('url');
         });
 
         Schema::create('subcategories', function (Blueprint $table) {
             $table->id();
             $table->foreignId('category_id')->constrained('categories')->onDelete('cascade');
-            $table->string('name');
+            $table->string('name')->nullable();
         });
 
         Schema::create('products', function (Blueprint $table) {

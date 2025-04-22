@@ -19,67 +19,85 @@
             </div>
         </div>
 
-        <div>
-            <h4>Typ strunového nástroja</h4>
-            <div class="p-3">
-                @foreach($typy as $i => $typ)
-                    <div class="form-check mb-2">
-                        <input class="form-check-input" type="checkbox" id="{{ $isOffcanvas ? 'typ' . $i . '_offcanvas' : 'typ' . $i }}">
-                        <label for="{{ $isOffcanvas ? 'typ' . $i . '_offcanvas' : 'typ' . $i }}">{{ $typ }}</label>
-                    </div>
-                @endforeach
-            </div>
-        </div>
+        <form method="GET" action="{{ route('filters_page') }}">
+            <input type="hidden" name="subcategory" value="{{ request('subcategory') }}">
+            <input type="hidden" name="rating" value="{{ request('rating') }}">
+            <input type="hidden" name="brand[]" value="{{ implode(',', (array) request('brand')) }}">
 
-        <div class="d-flex flex-column mt-5">
-            <h4>Hodnotenie: </h4>
-            <div class="d-flex justify-content-center flex-column m-4 mt-3">
-                <div class="btn-group-vertical" role="group">
-                    @for($i = 1; $i <= 5; $i++)
-                        <input type="radio" class="btn-check" name="vbtn-radio2" id="{{ $isOffcanvas ? 'vbtn-' . $i . '_offcanvas' : 'vbtn-' . $i }}2" autocomplete="off">
-                        <label class="btn btn-outline-danger hv-custom" for="{{ $isOffcanvas ? 'vbtn-' . $i . '_offcanvas' : 'vbtn-' . $i }}2">
-                            @include("components.stars", ['rating' => $i])
-                        </label>
-                    @endfor
-
-                    <input type="radio" class="btn-check" name="vbtn-radio2" id="{{ $isOffcanvas ? 'vbtn-62_offcanvas' : 'vbtn-62' }}" autocomplete="off" checked>
-                    <label class="btn btn-outline-danger hv-custom" for="{{ $isOffcanvas ? 'vbtn-62_offcanvas' : 'vbtn-62' }}">všetky ohodnotenia</label>
+            <div>
+                <h4>Typ strunového nástroja</h4>
+                <div class="p-3">
+                    @foreach($p_categories as $i => $p_category)
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox"
+                                   name="cat[]" value="{{ $p_category->id }}"
+                                   onchange="this.form.submit()"
+                                   id="{{ $isOffcanvas ? 'typ' . $i . '_offcanvas' : 'typ' . $i }}"
+                                {{ in_array($p_category->id, (array) request('cat')) ? 'checked' : '' }}>
+                            <label for="{{ $isOffcanvas ? 'typ' . $i . '_offcanvas' : 'typ' . $i }}">
+                                {{ $p_category->name }}
+                            </label>
+                        </div>
+                    @endforeach
                 </div>
             </div>
-        </div>
+        </form>
 
-        <div class="d-flex flex-column mt-5">
-            <h4>Veľkosť gitary</h4>
-            <div class="p-3">
-                @foreach($velkosti as $i => $velkost)
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="size_offcanvas" id="{{ $isOffcanvas ? 'check' . $i . '_offcanvas' : 'check' . $i }}">
-                        <label class="form-check-label" for="{{ $isOffcanvas ? 'check' . $i . '_offcanvas' : 'check' . $i }}">
-                            {{ $velkost }}
-                        </label>
-                    </div>
-                @endforeach
-            </div>
-        </div>
+        <form method="GET" action="{{ route('filters_page') }}">
+            <input type="hidden" name="subcategory" value="{{ request('subcategory') }}">
+            <input type="hidden" name="brand[]" value="{{ implode(',', (array) request('brand')) }}">
+            <input type="hidden" name="cat[]" value="{{ implode(',', (array) request('cat')) }}">
 
-        <div class="d-flex flex-column mt-5">
-            <h4>Značka</h4>
-            <div class="p-3">
-                @foreach($znacky as $i => $znacka)
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="{{ $isOffcanvas ? 'zn' . $i . '_offcanvas' : 'zn' . $i }}">
-                        <label class="form-check-label" for="{{ $isOffcanvas ? 'zn' . $i . '_offcanvas' : 'zn' . $i }}">
-                            {{ $znacka }}
-                        </label>
+            <div class="d-flex flex-column mt-5">
+                <h4>Hodnotenie: </h4>
+                <div class="d-flex justify-content-center flex-column m-4 mt-3">
+                    <div class="btn-group-vertical" role="group">
+                        @foreach($p_ratings as $rating)
+                            <input type="radio" class="btn-check" name="rating" value="{{ $rating }}"
+                                   id="{{ $isOffcanvas ? 'vbtn-' . $rating . '_offcanvas' : 'vbtn-' . $rating }}"
+                                   onchange="this.form.submit()"
+                                {{ request('rating') == $rating ? 'checked' : '' }}
+                            >
+                            <label class="btn btn-outline-danger hv-custom" for="{{ $isOffcanvas ? 'vbtn-' . $rating . '_offcanvas' : 'vbtn-' . $rating }}">
+                                @include("components.stars", ['rating' => $rating])
+                            </label>
+                        @endforeach
+
+                        <input type="radio" class="btn-check" name="rating" value=""
+                               id="{{ $isOffcanvas ? 'vbtn-62_offcanvas' : 'vbtn-62' }}"
+                               onchange="this.form.submit()"
+                            {{ request('rating') == null ? 'checked' : '' }}>
+                        <label class="btn btn-outline-danger hv-custom" for="{{ $isOffcanvas ? 'vbtn-62_offcanvas' : 'vbtn-62' }}">všetky ohodnotenia</label>
                     </div>
-                @endforeach
+                </div>
             </div>
-        </div>
+        </form>
+
+        <form method="GET" action="{{ route('filters_page') }}">
+            <input type="hidden" name="subcategory" value="{{ request('subcategory') }}">
+            <input type="hidden" name="rating" value="{{ request('rating') }}">
+            <input type="hidden" name="cat[]" value="{{ implode(',', (array) request('cat')) }}">
+
+
+            <div class="d-flex flex-column mt-5">
+                <h4>Značka</h4>
+                <div class="p-3">
+                    @foreach($p_brands as $i => $brand)
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                                   name="brand[]" value="{{ $brand }}"
+                                   id="{{ $isOffcanvas ? 'zn' . $i . '_offcanvas' : 'zn' . $i }}"
+                                   {{ in_array($brand, (array) request('brand')) ? 'checked' : '' }}
+                                   onchange="this.form.submit()"
+                                   >
+                            <label class="form-check-label" for="{{ $isOffcanvas ? 'zn' . $i . '_offcanvas' : 'zn' . $i }}">
+                                {{ $brand }}
+                            </label>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </form>
     </div>
 </div>
 
-<script>
-    document.getElementById('{{ $isOffcanvas ? "priceRangeOffcanvas" : "priceRange" }}').addEventListener('input', function (e) {
-        document.getElementById('priceValue').textContent = e.target.value;
-    });
-</script>
