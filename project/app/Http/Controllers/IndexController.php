@@ -10,7 +10,9 @@ class IndexController extends Controller
 {
     public function show()
     {
+        $subPlatne = Category::where('name', 'Platne')->first()->subcategories()->first()->id;
+        $platne = Product::where('subcategory_id', $subPlatne)->take(20)->get();
         $products = Product::take(20)->get();
-        return view('components.main', compact('products'));
+        return view('components.main', compact('products', 'platne'));
     }
 }

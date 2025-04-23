@@ -69,7 +69,7 @@ class SubcategorySeeder extends Seeder
         ]);
         Subcategory::create([
             'name' => NULL,
-            'category_id' => Category::where('name', 'Príslušenstvo')->first()->id
+            'category_id' => Category::where('name', 'Klavíre')->first()->id
         ]);
         Subcategory::create([
             'name' => NULL,

@@ -30,8 +30,8 @@ class CategorySeeder extends Seeder
             'url' => 'kombo.svg'
         ]);
         Category::create([
-            'name' => 'Príslušenstvo',
-            'url' => 'kabel.svg'
+            'name' => 'Klavíre',
+            'url' => 'piano.svg'
         ]);
         Category::create([
             'name' => 'Platne',

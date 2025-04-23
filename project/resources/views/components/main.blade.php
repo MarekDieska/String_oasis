@@ -48,8 +48,7 @@
         <h2 class="zlava text_color pt-5">Platne</h2>
 
         <div class="produkty-container d-flex">
-            @foreach($products as $product)
-            @if($product->category === 'platne')
+            @foreach($platne as $product)
             <div class="pas">
                 <div class="card produkt mt-3">
                     <div class="product-image">
@@ -67,7 +66,7 @@
                             <h5 class="t1-custom">{{ $product->name }}</h5>
                             <div class="t2-hv">
                                 <div>
-                                    @include('components.stars', ['rating' => $product->rating])
+                                    @include('components.stars', ['rating' => $product->stars])
                                 </div>
                                 <h4 class="t2-custom">{{ number_format($product->price, 0, ',', ' ') }} €</h4>
                             </div>
@@ -75,7 +74,6 @@
                     </a>
                 </div>
             </div>
-            @endif
             @endforeach
         </div>
     </section>
