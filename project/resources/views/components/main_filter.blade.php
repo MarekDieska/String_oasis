@@ -13,12 +13,12 @@
                 <div class="price-slider-container bg-transparent">
                     <input type="range" class="form-range bg-transparent thumb-custom mt-0"
                            id="{{ $isOffcanvas ? 'priceRangeOffcanvas' : 'priceRange' }}"
-                           min="0" max="5000" step="100" value="{{ request('p', 5000) }}"
+                           min="100" max="5000" step="100" value="{{ request('p', 5000) }}"
                            name="p" onchange="this.form.submit()">
                 </div>
 
                 <div class="d-flex justify-content-between mt-0">
-                    <span>0€</span>
+                    <span>100€</span>
                     <span>5000€</span>
                 </div>
             </div>

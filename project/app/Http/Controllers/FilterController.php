@@ -18,6 +18,17 @@ class FilterController extends Controller{
         $sortBy = $request->get('s');
         $sortDirection = $request->get('z');
 
+        $s = Subcategory::with('category')->find($subcategory);
+
+        if ($s) {
+            if ($s->category->name == 'Gitary' || $s->category->name == 'Basgitary') {
+                $title = $s->name . ' ' . $s->category->name ;
+            } elseif ($s->name) {
+                $title = $s->name;
+            } else
+                $title = $s->category->name;
+        }
+
         $query = Product::query();
 
         $query->where('subcategory_id', $subcategory);
@@ -48,12 +59,12 @@ class FilterController extends Controller{
                     $query->orderBy('created_at', 'desc');
                     break;
             }
-        } 
+        }
 
-        $p_products = $query->paginate(16);
+        $p_products = $query->simplePaginate(16)->appends($request->except('page'));
 
-        $p_brands = Product::distinct()->pluck('brand');
-        $p_ratings = Product::select('stars')->distinct()->orderBy('stars', 'asc')->pluck('stars');
-        return view('pages.filters_page', compact('p_products', 'p_brands', 'p_ratings'));
+        $p_brands = Product::where('subcategory_id', $subcategory)->distinct()->pluck('brand');
+        $p_ratings = Product::where('subcategory_id', $subcategory)->select('stars')->distinct()->orderBy('stars', 'asc')->pluck('stars');
+        return view('pages.filters_page', compact('p_products', 'p_brands', 'p_ratings','title'));
     }
 }
