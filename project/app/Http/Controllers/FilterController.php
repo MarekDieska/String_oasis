@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Subcategory;
 use Illuminate\Routing\Controller;
 use App\Models\Product;
 use Illuminate\Http\Request;
@@ -13,7 +14,6 @@ class FilterController extends Controller{
         $subcategory = $request->get('subcategory');
         $rating = $request->get('rating');
         $brand = $request->get('brand');
-        $cat  = $request->get('cat');
 
         $query = Product::query();
 
@@ -25,15 +25,11 @@ class FilterController extends Controller{
         if ($brand) {
             $query->whereIn('brand', $brand);
         }
-        if ($cat) {
-            $query->whereIn('subcategory_id', $cat);
-        }
 
         $p_products = $query->paginate(16);
 
-        $p_categories = Category::whereHas('subcategories.products')->distinct()->get();
         $p_brands = Product::distinct()->pluck('brand');
         $p_ratings = Product::select('stars')->distinct()->orderBy('stars', 'asc')->pluck('stars');
-        return view('pages.filters_page', compact('p_products', 'p_categories', 'p_brands', 'p_ratings'));
+        return view('pages.filters_page', compact('p_products', 'p_brands', 'p_ratings'));
     }
 }

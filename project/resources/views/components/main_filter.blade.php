@@ -20,33 +20,29 @@
         </div>
 
         <form method="GET" action="{{ route('filters_page') }}">
-            <input type="hidden" name="subcategory" value="{{ request('subcategory') }}">
-            <input type="hidden" name="rating" value="{{ request('rating') }}">
-            <input type="hidden" name="brand[]" value="{{ implode(',', (array) request('brand')) }}">
 
             <div>
                 <h4>Typ strunového nástroja</h4>
                 <div class="p-3">
-                    @foreach($p_categories as $i => $p_category)
-                        <div class="form-check mb-2">
-                            <input class="form-check-input" type="checkbox"
-                                   name="cat[]" value="{{ $p_category->id }}"
-                                   onchange="this.form.submit()"
-                                   id="{{ $isOffcanvas ? 'typ' . $i . '_offcanvas' : 'typ' . $i }}"
-                                {{ in_array($p_category->id, (array) request('cat')) ? 'checked' : '' }}>
-                            <label for="{{ $isOffcanvas ? 'typ' . $i . '_offcanvas' : 'typ' . $i }}">
-                                {{ $p_category->name }}
-                            </label>
-                        </div>
+                    @foreach($categories as $category)
+                        @foreach($category->subcategories as $i => $subcategory)
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="radio"
+                                       name="subcategory" value="{{ $subcategory->id }}"
+                                       onchange="this.form.submit()"
+                                       id="{{ $isOffcanvas ? 'typ' . $i . '_offcanvas' : 'typ' . $i }}"
+                                    {{ request('subcategory') == $subcategory->id ? 'checked' : '' }}>
+                                <label for="{{ $isOffcanvas ? 'typ' . $i . '_offcanvas' : 'typ' . $i }}">
+                                    {{ $subcategory->name }}
+                                    @if($category->name !== 'Iné struny')
+                                        {{ strtolower($category->name) }}
+                                    @endif
+                                </label>
+                            </div>
+                        @endforeach
                     @endforeach
                 </div>
             </div>
-        </form>
-
-        <form method="GET" action="{{ route('filters_page') }}">
-            <input type="hidden" name="subcategory" value="{{ request('subcategory') }}">
-            <input type="hidden" name="brand[]" value="{{ implode(',', (array) request('brand')) }}">
-            <input type="hidden" name="cat[]" value="{{ implode(',', (array) request('cat')) }}">
 
             <div class="d-flex flex-column mt-5">
                 <h4>Hodnotenie: </h4>
@@ -71,13 +67,6 @@
                     </div>
                 </div>
             </div>
-        </form>
-
-        <form method="GET" action="{{ route('filters_page') }}">
-            <input type="hidden" name="subcategory" value="{{ request('subcategory') }}">
-            <input type="hidden" name="rating" value="{{ request('rating') }}">
-            <input type="hidden" name="cat[]" value="{{ implode(',', (array) request('cat')) }}">
-
 
             <div class="d-flex flex-column mt-5">
                 <h4>Značka</h4>
@@ -89,7 +78,7 @@
                                    id="{{ $isOffcanvas ? 'zn' . $i . '_offcanvas' : 'zn' . $i }}"
                                    {{ in_array($brand, (array) request('brand')) ? 'checked' : '' }}
                                    onchange="this.form.submit()"
-                                   >
+                            >
                             <label class="form-check-label" for="{{ $isOffcanvas ? 'zn' . $i . '_offcanvas' : 'zn' . $i }}">
                                 {{ $brand }}
                             </label>
@@ -100,4 +89,3 @@
         </form>
     </div>
 </div>
-
