@@ -7,6 +7,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-document.getElementById('{{ $isOffcanvas ? "priceRangeOffcanvas" : "priceRange" }}').addEventListener('input', function (e) {
-    document.getElementById('priceValue').textContent = e.target.value;
-});
+

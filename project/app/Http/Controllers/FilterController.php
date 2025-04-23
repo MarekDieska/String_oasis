@@ -14,6 +14,7 @@ class FilterController extends Controller{
         $subcategory = $request->get('subcategory');
         $rating = $request->get('rating');
         $brand = $request->get('brand');
+        $priceMax = $request->get('price');
 
         $query = Product::query();
 
@@ -24,6 +25,10 @@ class FilterController extends Controller{
         }
         if ($brand) {
             $query->whereIn('brand', $brand);
+        }
+
+        if ($priceMax) {
+            $query->where('price', '<=', $priceMax);
         }
 
         $p_products = $query->paginate(16);

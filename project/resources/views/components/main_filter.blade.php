@@ -1,16 +1,20 @@
 <div class="side-filter-custom">
     <div>
+        <form method="GET" action="{{ route('filters_page') }}">
+
         <h2 class="text-center pb-5">FILTROVAŤ</h2>
 
         <div class="mb-4">
             <div class="d-flex flex-row gap-2 align-items-center mb-2">
                 <h5 class="mb-0">Cena do:</h5>
-                <span id="priceValue">5000</span>€
+                <span id="priceValue">{{ request('price', 5000) }}</span>€
             </div>
 
             <div class="price-slider-container bg-transparent">
                 <input type="range" class="form-range bg-transparent thumb-custom mt-0"
-                       id="{{ $isOffcanvas ? 'priceRangeOffcanvas' : 'priceRange' }}" min="0" max="5000" step="100" value="5000">
+                       id="{{ $isOffcanvas ? 'priceRangeOffcanvas' : 'priceRange' }}"
+                       min="0" max="5000" step="100" value="{{ request('price', 5000) }}"
+                       name="price" onchange="this.form.submit()">
             </div>
 
             <div class="d-flex justify-content-between mt-0">
@@ -18,8 +22,6 @@
                 <span>5000€</span>
             </div>
         </div>
-
-        <form method="GET" action="{{ route('filters_page') }}">
 
             <div>
                 <h4>Typ strunového nástroja</h4>

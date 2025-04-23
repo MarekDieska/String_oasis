@@ -7,9 +7,7 @@
     <list default="true" id="6d846a00-728e-4f75-9902-178be0760ed5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FilterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FilterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/filters.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/filters.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/main_filter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/main_filter.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/filters_page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/filters_page.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
