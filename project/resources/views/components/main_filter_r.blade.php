@@ -3,7 +3,7 @@
 <div class="container-fluid m-2 m-lg-4">
     <div class="row row-cols-1 row-cols-lg-2 flex-row justify-content-between align-items-center">
         <div class="col">
-            <h1 class="title-filter">Elektrické gitary</h1>
+            <h1 class="title-filter">{{ ucwords(strtolower($title)) }}</h1>
         </div>
         <div class="col d-flex flex-column flex-sm-row
              justify-content-start justify-content-lg-end align-items-center">
@@ -89,22 +89,8 @@
         @endforeach
     </div>
     <div class="row mt-5">
-        <div class="d-flex justify-content-center">
-            <ul class="pagination dark-custom">
-                <li class="page-item">
-                    <a class="page-link" href="#">
-                        <span>&laquo;</span>
-                    </a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#">
-                        <span>&raquo;</span>
-                    </a>
-                </li>
-            </ul>
+        <div class="d-flex justify-content-center dark-custom">
+            {{ $p_products->links() }}
         </div>
     </div>
 </div>
