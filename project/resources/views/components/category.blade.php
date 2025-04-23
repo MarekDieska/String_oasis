@@ -23,7 +23,7 @@
                              data-bs-parent="#accordionFlush">
                             <div class="accordion-body d-flex flex-column">
                                 @foreach ($category->subcategories as $subcategory)
-                                    <a href="{{ route('filters_page', ['subcategory' => $subcategory->id]) }}">
+                                    <a href="{{ route('filters_page', ['sub' => $subcategory->id]) }}">
                                         {{ $subcategory->name }}
                                     </a>
                                 @endforeach
@@ -32,7 +32,7 @@
                     </div>
                 @else
                     <div class="accordion-item accordion_color">
-                        <a href="{{ route('filters_page', ['category' => $category->id]) }}">
+                        <a href="{{ route('filters_page', ['sub' => $category->subcategories->first()->id]) }}">
                             <button class="accordion-button collapsed accordion_color border-0 accordion-custom" type="button">
                                 {{ $category->name }}
                             </button>
@@ -52,7 +52,7 @@
     <div class="row d-none d-md-flex w-100" id="categoryGroup">
         @foreach ($categories as $category)
             <div class="m-0 col-2 d-flex flex-column position-relative">
-                <a href="{{ route('filters_page', ['subcategory' => $category->subcategories->first()->id]) }}"
+                <a href="{{ route('filters_page', ['sub' => $category->subcategories->first()->id]) }}"
                    class="d-flex flex-column"
                    @if($category->subcategories->first()->name)
                        data-bs-toggle="collapse"
@@ -68,7 +68,7 @@
                         data-bs-parent="#categoryGroup">
                         @foreach ($category->subcategories as $subcategory)
                             <li>
-                                <a href="{{ route('filters_page', ['subcategory' => $subcategory->id]) }}">
+                                <a href="{{ route('filters_page', ['sub' => $subcategory->id]) }}">
                                     {{ $subcategory->name }}
                                 </a>
                             </li>

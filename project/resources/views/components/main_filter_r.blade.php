@@ -7,29 +7,50 @@
         </div>
         <div class="col d-flex flex-column flex-sm-row
              justify-content-start justify-content-lg-end align-items-center">
-            <h5 class="pt-2">Zoradiť podľa:</h5>
-            <div class="btn-group sort-custom" role="group">
-                <input type="radio" class="btn-check" name="sortovanie" id="sort1" checked>
-                <label class="btn btn-outline-secondary" for="sort1">Názvu</label>
+            <h5 class="pt-2 title-filter">Zoradiť podľa:</h5>
 
-                <input type="radio" class="btn-check" name="sortovanie" id="sort2">
-                <label class="btn btn-outline-secondary" for="sort2">Ceny</label>
+            <form method="GET" action="{{ route('filters_page') }}">
+                @if(request('p'))
+                    <input type="hidden" name="p" value="{{ request('p') }}">
+                @endif
+                @if(request('sub'))
+                    <input type="hidden" name="sub" value="{{ request('sub') }}">
+                @endif
+                @if(request('r') !== null)
+                    <input type="hidden" name="r" value="{{ request('r') }}">
+                @endif
+                @if(request('b'))
+                    @foreach(request('b') as $brand)
+                        <input type="hidden" name="b[]" value="{{ $brand }}">
+                    @endforeach
+                @endif
 
-                <input type="radio" class="btn-check" name="sortovanie" id="sort3">
-                <label class="btn btn-outline-secondary" for="sort3">Hodnotenia</label>
-            </div>
+                <div class="btn-group sort-custom" role="group">
+                    @foreach(['Názvu', 'Ceny', 'Hodnotenia'] as $i => $nazov)
+                        <input type="radio" class="btn-check" name="s" id="sort{{ $i }}"
+                               value="{{ $i }}"
+                               onchange="this.form.submit()"
+                            {{ request('s') == $i ? 'checked' : '' }}>
+                        <label class="btn btn-outline-secondary" for="sort{{ $i }}">{{ $nazov }}</label>
+                    @endforeach
+                </div>
 
-            <div class="btn-group sort2-custom" role="group">
-                <input type="radio" class="btn-check" name="zoradenie" id="sort11" checked>
-                <label class="btn btn-outline-secondary" for="sort11">
-                    <i class="fa fa-arrow-up-wide-short m-2"></i>
-                </label>
-
-                <input type="radio" class="btn-check" name="zoradenie" id="sort12">
-                <label class="btn btn-outline-secondary" for="sort12">
-                    <i class="fa fa-arrow-up-short-wide m-2"></i>
-                </label>
-            </div>
+                <div class="btn-group sort2-custom" role="group">
+                    @foreach([1, 2] as $z)
+                        <input type="radio" class="btn-check" name="z" id="sort{{ $z + 10 }}"
+                               value="{{ $z }}"
+                               onchange="this.form.submit()"
+                            {{ request('z') == $z ? 'checked' : '' }}>
+                        <label class="btn btn-outline-secondary" for="sort{{ $z + 10 }}">
+                            @if($z == 1)
+                                <i class="fa fa-arrow-up-wide-short m-2"></i>
+                            @else
+                                <i class="fa fa-arrow-up-short-wide m-2"></i>
+                            @endif
+                        </label>
+                    @endforeach
+                </div>
+            </form>
         </div>
     </div>
 

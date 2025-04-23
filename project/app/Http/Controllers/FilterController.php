@@ -11,10 +11,12 @@ use Illuminate\Http\Request;
 class FilterController extends Controller{
     public function showFilters(Request $request){
 
-        $subcategory = $request->get('subcategory');
-        $rating = $request->get('rating');
-        $brand = $request->get('brand');
-        $priceMax = $request->get('price');
+        $subcategory = $request->get('sub');
+        $rating = $request->get('r');
+        $brand = $request->get('b');
+        $priceMax = $request->get('p');
+        $sortBy = $request->get('s');
+        $sortDirection = $request->get('z');
 
         $query = Product::query();
 
@@ -30,6 +32,23 @@ class FilterController extends Controller{
         if ($priceMax) {
             $query->where('price', '<=', $priceMax);
         }
+
+        if ($sortBy !== null) {
+            switch ($sortBy) {
+                case 0:
+                    $query->orderBy('name', $sortDirection == 2 ? 'desc' : 'asc');
+                    break;
+                case 1:
+                    $query->orderBy('price', $sortDirection == 2 ? 'desc' : 'asc');
+                    break;
+                case 2:
+                    $query->orderBy('stars', $sortDirection == 2 ? 'desc' : 'asc');
+                    break;
+                default:
+                    $query->orderBy('created_at', 'desc');
+                    break;
+            }
+        } 
 
         $p_products = $query->paginate(16);
 
