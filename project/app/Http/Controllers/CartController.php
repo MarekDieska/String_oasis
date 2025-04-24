@@ -45,5 +45,9 @@ class CartController extends Controller
         ]);
     }
 
-    // Voliteľne, pridajte ďalšie metódy ako "remove" na odstránenie produktov, "clear" na vyprázdnenie košíka atď.
+    public function show(Request $request){
+
+        return view('components.main_cart');
+    }
+
 }

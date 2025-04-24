@@ -46,18 +46,15 @@
 
     <section class="row">
         <div class="col-12 col-md-7 cart-slider overflow-auto">
-
-            <?php for ($i = 0;
-                       $i < 6;
-                       $i++): ?>
+            @foreach ($cart_products as $prod)
             <div class="cart-product m-3 me-md-0">
                 <div class="d-flex flex-row align-items-center justify-content-between">
-                    <img src="<?php echo $obrazkyProduktov[$i % count($obrazkyProduktov)]; ?>" width="60" alt="">
+                    <img src="{{ 'images/' . $prod->image }}" width="60" alt="">
 
                     <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between w-100">
                         <a href="" class="link-custom text-black">
                             <div class="d-flex flex-column cart-prod-txt">
-                                <h5><?php echo $nazvyProduktov[$i % count($nazvyProduktov)]; ?></h5>
+                                <h5>{{ $prod->name }}</h5>
                                 <h6>elektrická gitara</h6>
                             </div>
                         </a>
@@ -68,14 +65,14 @@
                                 <h5 class="pt-1 px-1">1</h5>
                                 <i class="btn fa fa-plus p-2"></i>
                             </div>
-                            <h4 class="pt-1 cart-prod-cost txt-custom2"><?php echo $cenyProduktov[$i % count($cenyProduktov)]; ?></h4>
+                            <h4 class="pt-1 cart-prod-cost txt-custom2">{{ $prod->price }}></h4>
                         </div>
                     </div>
 
                     <i class="fa fa-xmark"></i>
                 </div>
             </div>
-            <?php endfor; ?>
+            @endforeach
         </div>
 
 

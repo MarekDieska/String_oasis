@@ -44,7 +44,7 @@ Route::get('/filters_page', [FilterController::class, 'showFilters'])->name('fil
 
 
 //cart
-Route::get('/cart_page', fn() => app(CartController::class)->loadCartView('components.main_cart'))->name('cart_page');
+Route::get('/cart_page', [CartController::class, 'show'])->name('cart_page');
 Route::get('/cart_page2', fn() => app(CartController::class)->loadCartView('components.main_cart_2'))->name('cart_page2');
 Route::get('/cart_page3', fn() => app(CartController::class)->loadCartView('components.main_cart_3'))->name('cart_page3');
 Route::get('/cart_page4', fn() => app(CartController::class)->loadCartView('components.main_cart_4'))->name('cart_page4');
