@@ -14,26 +14,27 @@
 
     <section class="row justify-content-center text-center p-5">
         <div class="col-12 col-md-8 p-2">
-            <h2 class="text-light mb-4">Vitaj, {{ $user->name }}!</h2>
+            <h2 class="text-light mb-4">Vitaj, {{ $user->profile->name }}!</h2>
             <form action="{{ route('profile.update') }}" method="POST" class="text_color p-4">
                 @csrf
                 @method('PUT')
 
-                <x-input label="Meno" name="name" :value="$user->name" required />
-                <x-input label="Priezvisko" name="surname" :value="$user->surname" required />
+                <x-input label="Meno" name="name" :value="$user->profile->name" required />
+                <x-input label="Priezvisko" name="surname" :value="$user->profile->surname" required />
                 <x-input label="Email" name="email" type="email" :value="$user->email" required />
-                <x-input label="Telefón" name="telefon" :value="$user->phone" />
+                <x-input label="Telefón" name="phone" :value="$user->profile->phone" />
 
                 <fieldset class="mt-4 mb-3">
                     <legend class="h5 text-light">Adresa</legend>
-                    <x-input label="Ulica a číslo" name="ulica_cislo" :value="$user->street_number" />
-                    <x-input label="Mesto" name="mesto" :value="$user->city" />
-                    <x-input label="PSČ" name="psc" type="number" :value="$user->psc" />
-                    <x-input label="Krajina" name="krajina" :value="$user->country" />
+                    <x-input label="Ulica a číslo" name="street" :value="$user->profile->street" />
+                    <x-input label="Mesto" name="city" :value="$user->profile->city" />
+                    <x-input label="PSČ" name="zip" type="number" :value="$user->profile->zip" />
+                    <x-input label="Krajina" name="country" :value="$user->profile->country" />
                 </fieldset>
 
                 <button type="submit" class="btn btn-light mt-3 w-100">Uložiť zmeny</button>
             </form>
+
 
             <h3 class="text-light mb-4 mt-5 opacity-75" style="font-family: 'Times New Roman', serif">
                 Si prihlásený do služby <b>String Oasis</b>

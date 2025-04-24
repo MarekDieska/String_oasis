@@ -24,49 +24,56 @@
     </section>
 
     <section class="row ms-lg-4">
-        {{-- Delivery --}}
         <div class="col-12 col-md-6 col-lg-4 p-5 ps-md-5 pe-md-4 mb-5 p-lg-2 justify-content-center">
             <h4 class="text_color cart_text">Doprava</h4>
             <div class="cart-slider justify-content-center mt-0 overflow-y-scroll overflow-x-hidden mx-custom">
                 <div class="btn-group d-flex flex-column" role="group">
-                    @for ($i = 0; $i < count($dopravy); $i++)
+                    @foreach ($dopravy as $doprava)
                         <div class="cart-product-small bg-light">
                             <div class="d-flex flex-row ms-3 w-100 align-items-center">
                                 <i class="fa-solid fa-box-open fa-2x"></i>
                                 <div class="d-flex w-100 flex-column cart-prod-txt">
-                                    <h4 class="ms-3">{{ $dopravy[$i] }}</h4>
-                                    <h5 class="ms-3">{{ $dopravy2[$i] }}</h5>
+                                    <h4 class="ms-3">{{ $doprava->name }}</h4>
+                                    <h5 class="ms-3">{{ $doprava->description }}</h5>
                                 </div>
-                                <h4 class="cart-prod-cost d-flex w-100 me-0 justify-content-end">{{ $dopravyCeny[$i] }}</h4>
-                                <i class="fa fa-xmark me-2 d-flex justify-content-center"></i>
+                                <h4 class="cart-prod-cost d-flex me-0 justify-content-end">
+                                    @if ($doprava->price > 0)
+                                        {{ $doprava->price }}€
+                                    @else
+                                        zadarmo
+                                    @endif
+                                </h4>
                             </div>
                         </div>
-                    @endfor
+                    @endforeach
                 </div>
             </div>
         </div>
 
-        {{-- Payment --}}
         <div class="col-12 col-md-6 col-lg-4 p-5 ps-md-2 pe-md-5 p-lg-2 justify-content-center">
-            <h4 class="text_color cart_text">Spôsob platby</h4>
-            <div class="cart-slider justify-content-center mt-0 overflow-y-scroll overflow-x-hidden mx-custom">
-                @for ($i = 0; $i < count($platby); $i++)
+            <h4 class="text_color">Spôsob platby</h4>
+            <div class="cart-slider justify-content-center mt-0 overflow-x-hidden">
+                @foreach ($platby as $platba)
                     <div class="cart-product-small bg-light">
                         <div class="d-flex flex-row ms-3 w-100 align-items-center">
                             <i class="fa-regular fa-credit-card fa-2x"></i>
                             <div class="d-flex w-100 flex-column cart-prod-txt">
-                                <h4 class="ms-3">{{ $platby[$i] }}</h4>
-                                <h5 class="ms-3">{{ $platby2[$i] }}</h5>
+                                <h4 class="ms-3">{{ $platba->name }}</h4>
+                                <h5 class="ms-3">{{ $platba->description }}</h5>
                             </div>
-                            <h4 class="cart-prod-cost d-flex w-100 justify-content-end">{{ $platbyCeny[$i] }}</h4>
-                            <i class="fa fa-xmark me-2 d-flex justify-content-center"></i>
+                            <h4 class="cart-prod-cost d-flex justify-content-end">
+                                @if ($platba->price > 0)
+                                    {{ $platba->price }}€
+                                @else
+                                    zadarmo
+                                @endif
+                            </h4>
                         </div>
                     </div>
-                @endfor
+                @endforeach
             </div>
         </div>
 
-        {{-- Súčet --}}
         <div class="col-12 col-lg-4 d-flex justify-content-center align-items-end">
             <div class="total-custom rounded-1 p-3 d-flex flex-column justify-content-between">
                 <div>
@@ -99,7 +106,7 @@
                         <h4>Súčet</h4>
                         <h4>980€</h4>
                     </div>
-                    <a href="{{ route('cart_page3') }}" class="btn mt-0 btn-dark mb-4">Pokračovať na vyplnenie
+                    <a href="#{{-- route('cart_page3') --}}" class="btn mt-0 btn-dark mb-4">Pokračovať na vyplnenie
                         údajov</a>
                 </div>
             </div>

@@ -28,14 +28,11 @@
     @include('components.category')
 </nav>
 
-
-//container-fluid main-f-custom" style="margin: 140px 0 0 0"
-
 <main class="container-fluid">
     @yield('content')
 </main>
 
-<footer>
+<footer style="margin-top: {{ in_array(Route::currentRouteName(), ['cart_page', 'cart_page2','cart_page3', 'cart_page4', 'cart_page5']) ? '0' : '100px' }};>
     @include('components.footer')
 </footer>
 

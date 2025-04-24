@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Auth;
 
 class CartController extends Controller
 {
+<<<<<<< Updated upstream
     /**
      * AJAX: Add X of product Y to the authenticated user's cart.
      */
@@ -26,6 +27,16 @@ class CartController extends Controller
             'user_id'    => Auth::id(),
             'product_id' => $product->id,
         ]);
+=======
+    public function show(Request $request){
+
+        $user = Auth::check() ? Auth::id() : session('anonymous_user');
+        $cart_products = Cart::with('product')->where('user_id', $user)->get()
+            ->map(function ($item) {
+                $item->product->quantity = $item->quantity;
+                return $item->product;
+            });
+>>>>>>> Stashed changes
 
         // Update quantity in PHP
         $cartItem->quantity = ($cartItem->exists ? $cartItem->quantity : 0)

@@ -4,6 +4,7 @@ use App\Http\Controllers\AdminRoleController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\CartController2;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DetailController;
 use App\Http\Controllers\FilterController;
@@ -45,10 +46,13 @@ Route::get('/filters_page', [FilterController::class, 'showFilters'])->name('fil
 
 //cart
 Route::get('/cart_page', [CartController::class, 'show'])->name('cart_page');
-Route::get('/cart_page2', fn() => app(CartController::class)->loadCartView('components.main_cart_2'))->name('cart_page2');
-Route::get('/cart_page3', fn() => app(CartController::class)->loadCartView('components.main_cart_3'))->name('cart_page3');
-Route::get('/cart_page4', fn() => app(CartController::class)->loadCartView('components.main_cart_4'))->name('cart_page4');
-Route::get('/cart_page5', fn() => app(CartController::class)->loadCartView('components.main_cart_5'))->name('cart_page5');
+Route::get('/cart_page2', [CartController2::class, 'show'])->name('cart_page2');
+//Route::get('/cart_page3', [CartController3::class, 'show'])->name('cart_page3');
+//Route::get('/cart_page4', [CartController4::class, 'show'])->name('cart_page4');
+Route::get('/cart_page5', function () {
+    return view('components.main_cart_5');
+})->name('/cart_page5');
+
 
 Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('login');
 Route::post('/login', [AuthenticatedSessionController::class, 'store']);

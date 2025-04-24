@@ -15,22 +15,24 @@ class ProfileController extends Controller
             'name' => 'required|string|max:255',
             'surname' => 'required|string|max:255',
             'email' => 'required|email|max:255',
-            'telefon' => 'nullable|string|max:20',
-            'ulica_cislo' => 'nullable|string|max:255',
-            'mesto' => 'nullable|string|max:255',
-            'psc' => 'nullable|string|max:6',
-            'krajina' => 'nullable|string|max:255',
+            'phone' => 'nullable|string|max:20',
+            'street' => 'nullable|string|max:255',
+            'city' => 'nullable|string|max:255',
+            'zip' => 'nullable|string|max:6',
+            'country' => 'nullable|string|max:255',
         ]);
 
-        $user->name = $validated['name'];
-        $user->surname = $validated['surname'];
-        $user->email = $validated['email'];
-        $user->phone = $validated['telefon'];
-        $user->street_number = $validated['ulica_cislo'];
-        $user->city = $validated['mesto'];
-        $user->psc = $validated['psc'];
-        $user->country = $validated['krajina'];
+        $user->profile->update([
+            'name' => $validated['name'],
+            'surname' => $validated['surname'],
+            'phone' => $validated['phone'],
+            'street' => $validated['street'],
+            'city' => $validated['city'],
+            'zip' => $validated['zip'],
+            'country' => $validated['country'],
+        ]);
 
+        $user->email = $validated['email'];
         $user->save();
 
         return back()->with('success', 'Profile bol aktualizovaný.');

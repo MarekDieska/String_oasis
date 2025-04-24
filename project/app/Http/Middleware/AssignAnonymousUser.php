@@ -18,7 +18,6 @@ class AssignAnonymousUser
         if(session()->has('anonymous_user')){
             $a_user = User::find(session('anonymous_user'));
             if($a_user){
-                Auth::login($a_user);
                 return $next($request);
             }
         }
@@ -30,7 +29,6 @@ class AssignAnonymousUser
         ]);
 
         session(['anonymous_user' => $a_user->id]);
-        Auth::login($a_user);
         return $next($request);
     }
 }
