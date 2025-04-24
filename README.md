@@ -39,7 +39,7 @@ UML diagram: ->project->diagram_StringOasis.png
 
 [] výber platby
 
-[] zadanie dodacích údajov
+[] zadanie dodacích údajov s validáciou
 
 [] dokončenie objednávky
 
