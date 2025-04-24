@@ -13,5 +13,5 @@ window.addToCart = function(button) {
     var quantity = parseInt(quantityInput.value, 10) || 1;
 
     // 4. Logging for debugging
-    console.log('Produkt pridaný do košíka, ID:', productId, 'Množstvo:', quantity);
+    //console.log('Produkt pridaný do košíka, ID:', productId, 'Množstvo:', quantity);
 };

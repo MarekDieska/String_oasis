@@ -66,7 +66,8 @@
                     <div class="product-image">
                         <img class="card-photo"
                              src="{{ asset('images/' . $product->image) }}"
-                             alt="{{ $product->name }}">
+                             alt="{{ $product->name }}"
+                        loading="lazy">
                     </div>
 
                     <div class="favorite-btn text-center">
