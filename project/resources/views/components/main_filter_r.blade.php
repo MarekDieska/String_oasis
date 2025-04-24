@@ -69,8 +69,14 @@
                         <p>&#x2661;</p>
                     </div>
 
-                    <div class="cart-btn text-center" type="button" data-bs-toggle="modal" data-bs-target="#plusModal"
-                    >
+                    <div class="cart-btn text-center"
+                         type="button"
+                         data-bs-toggle="modal"
+                         data-bs-target="#plusModal"
+                         data-name="{{ $product->name }}"
+                         data-price="{{ $product->price }}"
+                         data-image="{{ asset('images/' . $product->image) }}"
+                         data-id="{{ $product->id }}">
                         <p>+</p>
                     </div>
 

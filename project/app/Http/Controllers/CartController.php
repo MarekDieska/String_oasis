@@ -2,102 +2,48 @@
 
 namespace App\Http\Controllers;
 
-class CartController
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
+
+class CartController extends Controller
 {
-    public function loadCartView($viewName)
+    // Pridanie produktu do košíka
+    public function add(Request $request)
     {
-        $obrazkyProduktov = [
-            "../images/gi1.png",
-            "../images/g2.png",
-            "../images/g3.png",
-            "../images/g4.png",
-            "../images/g5.png",
-            "../images/g6.png",
-        ];
-        $nazvyProduktov = [
-            "Gibson SG Standard Electric Guitar Heritage Cherry",
-            "Fender Squier Affinity Series Stratocaster Lake Placid Blue",
-            "Vintage 1963 Gibson Barney Kessel Sunburst Finish",
-            "Fender American Professional Jazzmaster Silverburst",
-            "Neal Moser Guitar",
-            "James Tyler Classic Burning Water",
-        ];
+        // Validácia prichádzajúcich dát
+        $request->validate([
+            'product_id' => 'required|integer|exists:products,id', // overí, že produkt existuje
+            'quantity' => 'required|integer|min:1', // overí, že množstvo je aspoň 1
+        ]);
 
-        $cenyProduktov = [
-            "1799€",
-            "233€",
-            "4999€",
-            "1899€",
-            "650€",
-            "930€",
-        ];
+        // Získanie údajov o produkte (pre tento príklad sa predpokladá, že máte model Product)
+        $product = \App\Models\Product::find($request->product_id);
 
-        $dopravy = [
-            "Packeta",
-            "Alzabox",
-            "Slovenská pošta",
-            "String Oasis",
-            "Slovenská pošta",
-            "DPD",
-        ];
+        // Získanie existujúceho košíka zo session
+        $cart = Session::get('cart', []);
 
-        $dopravy2 = [
-            "výdajné miesto Z-box",
-            "výdajné miesto Alza-box",
-            "výdajné miesto BalíkoBOX",
-            "vyzdvihnutie na predajni",
-            "kuriér na adresu",
-            "kuriér na adresu",
-        ];
+        // Ak produkt už je v košíku, zaktualizujeme množstvo
+        if (isset($cart[$product->id])) {
+            $cart[$product->id]['quantity'] += $request->quantity;
+        } else {
+            // Ak produkt nie je v košíku, pridáme ho
+            $cart[$product->id] = [
+                'product_id' => $product->id,
+                'name' => $product->name,
+                'price' => $product->price,
+                'quantity' => $request->quantity,
+            ];
+        }
 
-        $dopravyCeny = [
-            "1,50€",
-            "2,50€",
-            "3,00€",
-            "zadarmo",
-            "5,00€",
-            "3,00€"
-        ];
+        // Uloženie košíka do session
+        Session::put('cart', $cart);
 
-
-        $platby = [
-            "Visa",
-            "Mastercard",
-            "Google Pay",
-            "Amex",
-            "dobierka",
-        ];
-
-        $platby2 = [
-            "platba vopred",
-            "platba vopred",
-            "platba vopred",
-            "platba vopred",
-            "platba na dobierku",
-        ];
-
-        $platbyCeny = [
-            "zadarmo",
-            "2,50€",
-            "zadarmo",
-            "5,00€",
-            "3,00€"
-        ];
-
-        return match ($viewName) {
-            'components.main_cart' => view($viewName)
-                ->with('obrazkyProduktov', $obrazkyProduktov)
-                ->with('nazvyProduktov', $nazvyProduktov)
-                ->with('cenyProduktov', $cenyProduktov),
-            'components.main_cart_2' => view($viewName)
-                ->with('dopravy', $dopravy)
-                ->with('dopravy2', $dopravy2)
-                ->with('dopravyCeny', $dopravyCeny)
-                ->with('platby', $platby)
-                ->with('platby2', $platby2)
-                ->with('platbyCeny', $platbyCeny),
-
-            default => view($viewName),
-        };
+        // Vrátenie odpovede, že produkt bol pridaný
+        return response()->json([
+            'message' => 'Product added to cart successfully!',
+            'cart' => $cart,  // Môžete pridať aj aktuálny stav košíka ako odpoveď
+        ]);
     }
+
+    // Voliteľne, pridajte ďalšie metódy ako "remove" na odstránenie produktov, "clear" na vyprázdnenie košíka atď.
 }
