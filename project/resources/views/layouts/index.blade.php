@@ -32,7 +32,7 @@
     @yield('content')
 </main>
 
-<footer style="margin-top: {{ in_array(Route::currentRouteName(), ['cart_page', 'cart_page2','cart_page3', 'cart_page4', 'cart_page5']) ? '0' : '100px' }};>
+<footer style="margin-top: {{ in_array(Route::currentRouteName(), ['cart_page', 'cart_page2','cart_page3', 'cart_page4', 'cart_page5']) ? '0' : '100px' }};">
     @include('components.footer')
 </footer>
 

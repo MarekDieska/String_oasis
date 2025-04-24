@@ -3,44 +3,26 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
-use App\Models\Cart;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Cart;
+
+use Illuminate\Http\Request;
 
 class CartController extends Controller
 {
-<<<<<<< Updated upstream
-    /**
-     * AJAX: Add X of product Y to the authenticated user's cart.
-     */
-    public function add(Request $request)
-    {
-        $data = $request->validate([
-            'product_id' => 'required|integer|exists:products,id',
-            'quantity'   => 'required|integer|min:1',
-        ]);
+    public function add(Request $request){
+
+        $data = $request->validate(['product_id' => 'required|integer|exists:products,id','quantity'   => 'required|integer|min:1',]);
 
         $product = Product::findOrFail($data['product_id']);
 
-        // Fetch existing cart row or create new instance
+
         $cartItem = Cart::firstOrNew([
             'user_id'    => Auth::id(),
             'product_id' => $product->id,
         ]);
-=======
-    public function show(Request $request){
 
-        $user = Auth::check() ? Auth::id() : session('anonymous_user');
-        $cart_products = Cart::with('product')->where('user_id', $user)->get()
-            ->map(function ($item) {
-                $item->product->quantity = $item->quantity;
-                return $item->product;
-            });
->>>>>>> Stashed changes
-
-        // Update quantity in PHP
-        $cartItem->quantity = ($cartItem->exists ? $cartItem->quantity : 0)
-            + $data['quantity'];
+        $cartItem->quantity = ($cartItem->exists ? $cartItem->quantity : 0) + $data['quantity'];
 
         $cartItem->save();
 
@@ -50,25 +32,18 @@ class CartController extends Controller
         ]);
     }
 
-    /**
-     * Show the current user's cart page.
-     */
-    public function show()
-    {
-        $userId = Auth::id();
+    public function show(Request $request){
 
-        $cartProducts = Cart::with('product')
-            ->where('user_id', $userId)
-            ->get()
-            ->map(function($item) {
-                $p = $item->product;
-                $p->quantity = $item->quantity;
-                return $p;
+        $user = Auth::id();
+        $cart_products = Cart::with('product')->where('user_id', $user)->get()
+            ->map(function ($item) {
+                $item->product->quantity = $item->quantity;
+                return $item->product;
             });
 
-        return view('components.main_cart', [
-            'cart_products' => $cartProducts,
-            'isEmpty'       => $cartProducts->isEmpty(),
-        ]);
+        $isEmpty = $cart_products->isEmpty();
+
+        return view('components.main_cart', compact('cart_products', 'isEmpty'));
     }
+
 }
