@@ -1,7 +1,6 @@
 <div class="container-fluid m-0">
     <div class="row d-flex justify-content-between align-items-center w-100">
 
-        <!-- Logo Section -->
         <div class="col-md-4 col-6 d-flex align-items-center">
             <a href="{{ route('index') }}" class="navbar-brand d-flex align-items-center m-0 p-0">
                 <img src="{{ asset('images/logo.svg') }}" alt="Logo" width="60">
@@ -9,11 +8,12 @@
             </a>
         </div>
 
-        <!-- Search and Navigation Links (Visible on Medium and Larger Screens) -->
         <div class="col-md-4 d-none d-md-flex flex-column align-items-center">
-            <label class="search w-100">
-                <input type="text" placeholder="Hľadať podľa názvu..." class="form-control input-custom rounded-pill border-0">
-            </label>
+            <form action="{{ route('filters_page', ['sub' => 0]) }}" method="GET" class="w-100">
+                <label class="search w-100">
+                    <input type="text" name="q" placeholder="Hľadať podľa názvu..." class="form-control input-custom rounded-pill border-0" value="{{ request('q') }}">
+                </label>
+            </form>
             <ul class="navbar-nav d-flex list-unstyled mt-2 mb-0 fs-6">
                 <li class="nav item ms-3"><a class="link-custom" href="#">Mapa</a></li>
                 <li class="nav item ms-3"><a class="link-custom" href="#">FAQ</a></li>
@@ -21,20 +21,17 @@
             </ul>
         </div>
 
-        <!-- Cart, User Icon, and Wishlist (Visible on Small and Medium Screens) -->
         <div class="col-md-4 col-6 d-flex justify-content-end align-items-center">
             <ul class="d-flex list-unstyled fs-3 m-0 justify-content-end">
                 <li class="marg-bug"><a href="{{ route('cart_page') }}"><i class="link-custom text_color fa fa-cart-shopping"></i></a></li>
                 @guest
                     <li class="marg-bug">
-                        <!-- Shows modal on click for guests -->
                         <i class="link-custom text_color fa-regular fa-user" data-bs-toggle="modal" data-bs-target="#login_form"></i>
                     </li>
                 @endguest
 
                 @auth
                     <li class="marg-bug dropdown">
-                        <!-- Dropdown for authenticated users -->
                         <a class="link-custom text_color dropdown-toggle fs-3" href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-user-tie"></i>
                         </a>

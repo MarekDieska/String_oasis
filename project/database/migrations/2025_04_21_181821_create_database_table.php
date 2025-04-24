@@ -55,6 +55,8 @@ return new class extends Migration
             $table->decimal('discount');
             $table->integer('stock');
             $table->decimal('stars');
+            $table->string('description')->nullable();
+            $table->string('image')->nullable();
         });
 
         Schema::create('parameters', function (Blueprint $table) {

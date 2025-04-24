@@ -17,8 +17,13 @@ class FilterController extends Controller{
         $priceMax = $request->get('p');
         $sortBy = $request->get('s');
         $sortDirection = $request->get('z');
+        $search = $request->get('q');
+        $s = null;
 
-        $s = Subcategory::with('category')->find($subcategory);
+        if ($subcategory != 0){
+            $s = Subcategory::with('category')->find($subcategory);
+        }
+
 
         if ($s) {
             if ($s->category->name == 'Gitary' || $s->category->name == 'Basgitary') {
@@ -28,10 +33,16 @@ class FilterController extends Controller{
             } else
                 $title = $s->category->name;
         }
+        else{
+            $title = "Všetky produkty";
+        }
 
         $query = Product::query();
 
-        $query->where('subcategory_id', $subcategory);
+        if ($subcategory != 0){
+            $query->where('subcategory_id', $subcategory);
+        }
+
 
         if ($rating) {
             $query->where('stars', $rating);
@@ -61,10 +72,20 @@ class FilterController extends Controller{
             }
         }
 
+        if($search){
+            $query->where('name', 'ILIKE', '%' . $search . '%');
+        }
         $p_products = $query->simplePaginate(16)->appends($request->except('page'));
 
-        $p_brands = Product::where('subcategory_id', $subcategory)->distinct()->pluck('brand');
-        $p_ratings = Product::where('subcategory_id', $subcategory)->select('stars')->distinct()->orderBy('stars', 'asc')->pluck('stars');
+        if($subcategory != 0){
+            $p_brands = Product::where('subcategory_id', $subcategory)->distinct()->pluck('brand');
+            $p_ratings = Product::where('subcategory_id', $subcategory)->select('stars')->distinct()->orderBy('stars', 'asc')->pluck('stars');
+        }
+        else{
+            $p_brands = Product::distinct()->pluck('brand');
+            $p_ratings = Product::select('stars')->distinct()->orderBy('stars', 'asc')->pluck('stars');
+        }
+
         return view('pages.filters_page', compact('p_products', 'p_brands', 'p_ratings','title'));
     }
 }

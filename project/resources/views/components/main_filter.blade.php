@@ -26,6 +26,17 @@
             <div>
                 <h4>Typ strunového nástroja</h4>
                 <div class="p-3">
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio"
+                               name="sub" value="0"
+                               onchange="this.form.submit()"
+                               id="{{ $isOffcanvas ? 'typ' . '0' . '_offcanvas' : 'typ' . '0' }}"
+                            {{ request('sub') == 0 ? 'checked' : '' }}>
+                        <label for="{{ $isOffcanvas ? 'typ' . '0' . '_offcanvas' : 'typ' . '0' }}">
+                            všetky produkty
+                        </label>
+                    </div>
+
                     @foreach($categories as $category)
                         @foreach($category->subcategories as $i => $subcategory)
                             <div class="form-check mb-2">

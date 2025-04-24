@@ -18,7 +18,7 @@
                 <div class="pas">
                     <div class="card produkt mt-3">
                         <div class="product-image">
-                            <img class="card-photo" src="{{ asset('images/' . $product->image) }}" alt="{{ $product->name }}">
+                            <img class="card-photo" src="{{ asset('images/' . $product->image) }}" alt="{{ $product->image }}">
                         </div>
                         <div class="favorite-btn text-center">
                             <p>&#x2661;</p>
@@ -52,7 +52,7 @@
             <div class="pas">
                 <div class="card produkt mt-3">
                     <div class="product-image">
-                        <img class="card-photo" src="{{ asset('images/' . $product->image) }}" alt="{{ $product->name }}">
+                        <img class="card-photo" src="{{ asset('images/' . $product->image) }}" alt="{{ $product->image }}">
                     </div>
                     <div class="favorite-btn text-center">
                         <p>&#x2661;</p>

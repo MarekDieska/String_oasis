@@ -1,10 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Product;
+use Illuminate\Http\Request;
 
-class DetailController
+class DetailController extends Controller
 {
-    public function showDetails() {
+    public function showDetails(Product $product) {
         $farby = [
             "../images/brown_variant.jpg",
             "../images/red_variant.jpg",
@@ -102,11 +104,13 @@ class DetailController
             ]
         ];
 
+
         return view('components.main_detail', [
             'farby' => $farby,
             'nazvyFarieb' => $nazvyFarieb,
             'detaily' => $detaily,
             'hodnotenia' => $hodnotenia,
+            'product' => $product,
         ]);
     }
 }

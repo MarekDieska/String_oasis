@@ -61,7 +61,7 @@
 
                     <div class="product-image">
                         <img class="card-photo"
-                             src="{{ $product->image }}"
+                             src="{{ asset('images/' . $product->image) }}"
                              alt="{{ $product->name }}">
                     </div>
 
@@ -69,19 +69,20 @@
                         <p>&#x2661;</p>
                     </div>
 
-                    <div class="cart-btn text-center" type="button" data-bs-toggle="modal" data-bs-target="#plusModal">
+                    <div class="cart-btn text-center" type="button" data-bs-toggle="modal" data-bs-target="#plusModal"
+                    >
                         <p>+</p>
                     </div>
 
-                    <a href="{{ route('produkt_detail') }}">
+                    <a href="{{ route('produkt_detail', $product) }}">
                         <div class="text-custom">
-                            <h5 class="t1-custom">{{ $product->name}}</h5>
-
-                            <div class="star-rating">
-                                @include('components.stars', ['rating' => $product->stars])
+                            <h5 class="t1-custom">{{ $product->name }}</h5>
+                            <div class="t2-hv">
+                                <div>
+                                    @include('components.stars', ['rating' => $product->stars])
+                                </div>
+                                <h4 class="t2-custom">{{ number_format($product->price, 0, ',', ' ') }} €</h4>
                             </div>
-
-                            <h4 class="t2-custom">{{ number_format($product->price, 0, ',', ' ') }} €</h4>
                         </div>
                     </a>
                 </div>

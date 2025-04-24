@@ -15,25 +15,25 @@
             </nav>
 
             <div class="card border-custom border-5 mx-auto">
-                <img src="{{ asset('images/product_guitar.jpg') }}" class="img-fluid img-big"
+                <img src="{{ asset('images/' . $product->image) }}" class="img-fluid img-big"
                      alt="fotka svetlohnedej drevenej akustickej gitary z predu">
             </div>
         </div>
 
         <div class="col-12 col-md-6 text_color d-flex flex-column">
-            <p class="fs-1 pt-1 mt-4">HarmonyTone Sunset D-50</p>
-            <h5>HarmonyTone Sunset D-50 je perfektná pre začínajúcich aj pokročilých hudobníkov, ktorí hľadajú
+            <p class="fs-1 pt-1 mt-4">{{ $product->name }}</p>
+            <h5>{{ $product->name }} je perfektná pre začínajúcich aj pokročilých hudobníkov, ktorí hľadajú
                 spoľahlivý nástroj s výborným zvukom a luxusným vzhľadom.</h5>
 
             <div class="row mb-md-4">
                 <div class="col-6 d-flex align-items-center">
                     <div class="ratings hidden">
-                        @include('components.stars', ['rating' => 4])
+                        @include('components.stars', ['rating' => $product->stars])
                     </div>
                 </div>
                 <div class="col-6 d-flex justify-content-end p-3 pt-0 pb-0">
                     <h1>
-                        <a class="link-offset-1 link-light" href="#">250,23 €</a>
+                        <a class="link-offset-1 link-light" href="#">{{ $product->price }} €</a>
                     </h1>
                 </div>
             </div>
@@ -61,10 +61,10 @@
 
     <section class="row m-2">
         <hr class="text_color mt-5 mb-5">
-        <h1 class="text_color detail_large_text mt-md-1">HarmonyTone Sunset D-50</h1>
+        <h1 class="text_color detail_large_text mt-md-1">{{ $product->name }}</h1>
         <h5 class="text_color mt-4" style="font-family: 'Times New Roman', sans-serif;">
-            HarmonyTone Sunset D-50
-            HarmonyTone Sunset D-50 je kvalitná elektro-akustická gitara, ktorá kombinuje klasický dizajn s moderným
+            {{ $product->name }}
+            {{ $product->name }} je kvalitná elektro-akustická gitara, ktorá kombinuje klasický dizajn s moderným
             spracovaním. Jej telo je vyrobené z výberového mahagónu, ktorý zabezpečuje hlboký, bohatý tón s teplými
             basmi a jasnými výškami. Vrchná doska zo smreku pridáva rezonanciu a dynamiku, vďaka čomu je ideálna pre
             hráčov všetkých úrovní.

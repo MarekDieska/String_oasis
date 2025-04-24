@@ -37,24 +37,10 @@ Route::get('/admin_edit', function () {
     return view('components.edit');
 })->name('admin_edit');
 
-Route::get('/produkt_detail', [DetailController::class, 'showDetails'])->name('produkt_detail');
+Route::get('/produkt_detail/{product}', [DetailController::class, 'showDetails'])->name('produkt_detail');
 
 
 Route::get('/filters_page', [FilterController::class, 'showFilters'])->name('filters_page');
-
-//Route::get('/filters_page', function () {
-//    return view('pages.filters_page', [
-//
-//        'obrazkyProduktov' => [
-//            "../images/gi1.png",
-//            "../images/g2.png",
-//            "../images/g3.png",
-//            "../images/g4.png",
-//            "../images/g5.png",
-//            "../images/g6.png",
-//        ],
-//    ]);
-//})->name('filters_page');
 
 
 //cart
