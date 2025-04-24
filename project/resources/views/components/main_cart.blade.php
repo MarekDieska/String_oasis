@@ -52,20 +52,19 @@
                 </div>
             @else
                 @foreach ($cart_products as $prod)
-                    <div class="cart-product m-3 me-md-0">
-                        <div class="d-flex w-100 flex-row align-items-center justify-content-between">
-                            <!-- Left side: Image + Name -->
-                            <div class="d-flex flex-row align-items-center">
+                    <div class="cart-product m-3 me-md-1 d-flex align-items-center">
+
+                        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between w-100">
+                            <a href="#" class="link-custom text-black d-flex flex-row align-items-center">
                                 <img src="{{ asset('images/' . $prod->image) }}" width="60" alt="obrazok produktu {{$prod->name}}" class="me-3">
                                 <h5 class="mb-0">{{ $prod->name }}</h5>
-                            </div>
+                            </a>
+                        </div>
 
-                            <!-- Right side: Input + Price + X -->
-                            <div class="d-flex flex-row align-items-center">
-                                <input type="number" class="form-control text-center p-2 input-plus-minus rounded-0 me-2" value="1" min="1" style="width: 70px;">
-                                <h4 class="mb-0 me-2 cart-prod-cost txt-custom2">{{ $prod->price }}€</h4>
-                                <i class="fa fa-xmark" role="button"></i>
-                            </div>
+                        <div class="d-flex flex-row align-items-center justify-content-between">
+                            <input type="number" class="form-control text-center p-2 input-plus-minus rounded-0 me-2" value="{{ $prod->quantity ?? 1 }}" min="1" style="width: 70px;">
+                            <h4 class="mb-0 me-2 cart-prod-cost txt-custom2">{{ $prod->price }}€</h4>
+                            <i class="fa fa-xmark" role="button"></i>
                         </div>
                     </div>
 

@@ -28,7 +28,7 @@
     @include('components.category')
 </nav>
 
-<main class="container-fluid">
+<main class="container-fluid"  style="margin: 60px 0 0 0">
     @yield('content')
 </main>
 
