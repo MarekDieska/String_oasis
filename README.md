@@ -23,11 +23,11 @@ UML diagram: ->project->diagram_StringOasis.png
 
 [✔️] preusporiadanie produktov (napr. podľa ceny vzostupne/zostupne)
 
-[] zobrazenie konkrétneho produktu - detail produktu
+[✔️] zobrazenie konkrétneho produktu - detail produktu
 
 [] pridanie produktu do košíka (ľubovolné množstvo)
 
-[] plnotextové vyhľadávanie nad katalógom produktov
+[✔️] plnotextové vyhľadávanie nad katalógom produktov
 
 [] zobrazenie nákupného košíka
 
