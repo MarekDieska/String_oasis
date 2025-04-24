@@ -66,12 +66,7 @@
                     <div class="product-image">
                         <img class="card-photo"
                              src="{{ asset('images/' . $product->image) }}"
-                             alt="{{ $product->name }}"
-<<<<<<< Updated upstream
-                        loading="lazy">
-=======
-                            loading="lazy">
->>>>>>> Stashed changes
+                             alt="{{ $product->name }}">
                     </div>
 
                     <div class="favorite-btn text-center">
