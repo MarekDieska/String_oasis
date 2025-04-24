@@ -16,9 +16,10 @@ class CartController extends Controller
 
         $product = Product::findOrFail($data['product_id']);
 
+        $user = Auth::check() ? Auth::id() : session('anonymous_user');
 
         $cartItem = Cart::firstOrNew([
-            'user_id'    => Auth::id(),
+            'user_id'    => $user,
             'product_id' => $product->id,
         ]);
 
@@ -34,7 +35,7 @@ class CartController extends Controller
 
     public function show(Request $request){
 
-        $user = Auth::id();
+        $user = Auth::check() ? Auth::id() : session('anonymous_user');
         $cart_products = Cart::with('product')->where('user_id', $user)->get()
             ->map(function ($item) {
                 $item->product->quantity = $item->quantity;
