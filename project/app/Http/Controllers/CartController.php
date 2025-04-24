@@ -49,15 +49,29 @@ class CartController extends Controller
 
     public function remove($id, Request $request)
     {
-        // Get the user ID
         $user = Auth::check() ? Auth::id() : session('anonymous_user');
 
-        // Find the cart item for the logged-in user and the specified product
         $cartItem = Cart::where('user_id', $user)->where('product_id', $id)->first();
-
-        // If the cart item exists, delete it
         if ($cartItem) {
             $cartItem->delete();
+        }
+
+        return $this->show($request);
+    }
+
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'quantity' => 'required|integer|min:1',
+        ]);
+
+        $user = Auth::check() ? Auth::id() : session('anonymous_user');
+        $cartItem = Cart::where('product_id', $id)
+            ->where('user_id', $user)->first();
+
+        if ($cartItem) {
+            $cartItem->quantity = $request->quantity;
+            $cartItem->save();
         }
 
         return $this->show($request);

@@ -66,6 +66,6 @@ Route::put('/profile/update', [ProfileController::class, 'update'])->name('profi
 
 Route::post('/cart/add', [CartController::class, 'add'])->name('cart.add');
 Route::delete('/cart/remove/{id}', [CartController::class, 'remove'])->name('cart.remove');
-
+Route::put('/cart/update/{id}', [CartController::class, 'update'])->name('cart.update');
 
 require __DIR__.'/auth.php';
