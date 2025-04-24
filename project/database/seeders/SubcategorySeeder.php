@@ -23,10 +23,6 @@ class SubcategorySeeder extends Seeder
             'category_id' => $categoryGitary->id
         ]);
         Subcategory::create([
-            'name' => 'elektro-akustické',
-            'category_id' => $categoryGitary->id
-        ]);
-        Subcategory::create([
             'name' => 'akustické',
             'category_id' => $categoryGitary->id
         ]);
@@ -34,10 +30,7 @@ class SubcategorySeeder extends Seeder
             'name' => 'klasické',
             'category_id' => $categoryGitary->id
         ]);
-        Subcategory::create([
-            'name' => 'detské',
-            'category_id' => $categoryGitary->id
-        ]);
+
         Subcategory::create([
             'name' => '4 strunové',
             'category_id' => $categoryBasgitary->id

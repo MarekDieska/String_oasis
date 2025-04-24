@@ -50,6 +50,10 @@
                         </label>
                     @endforeach
                 </div>
+
+                @if(request('q') !== null)
+                    <input type="hidden" name="q" value="{{ request('q') }}">
+                @endif
             </form>
         </div>
     </div>

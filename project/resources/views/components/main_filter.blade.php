@@ -1,9 +1,13 @@
 <div class="side-filter-custom">
     <div>
+            <h2 class="text-center">FILTROVAŤ</h2>
+
+        <form method="GET" action="{{ route('filters_page') }}" class="d-flex justify-content-center pb-5">
+            <input type="submit" class="btn-check" name="sub" value="0" id="rmv">
+            <label class="btn btn-outline-danger" for="rmv">všetko</label>
+        </form>
+
         <form method="GET" action="{{ route('filters_page') }}">
-
-            <h2 class="text-center pb-5">FILTROVAŤ</h2>
-
             <div class="mb-4">
                 <div class="d-flex flex-row gap-2 align-items-center mb-2">
                     <h5 class="mb-0">Cena do:</h5>
@@ -105,6 +109,9 @@
             @endif
             @if(request('z') !== null)
                 <input type="hidden" name="z" value="{{ request('z') }}">
+            @endif
+            @if(request('q') !== null)
+                <input type="hidden" name="q" value="{{ request('q') }}">
             @endif
         </form>
     </div>

@@ -9,7 +9,8 @@
         </div>
 
         <div class="col-md-4 d-none d-md-flex flex-column align-items-center">
-            <form action="{{ route('filters_page', ['sub' => 0]) }}" method="GET" class="w-100">
+            <form action="{{ route('filters_page') }}" method="GET" class="w-100">
+                <input type="hidden" name="sub" value="0">
                 <label class="search w-100">
                     <input type="text" name="q" placeholder="Hľadať podľa názvu..." class="form-control input-custom rounded-pill border-0" value="{{ request('q') }}">
                 </label>
