@@ -34,7 +34,11 @@
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                             Späť na nákup
                         </button>
-                        <button class="btn btn-success" data-bs-dismiss="modal" id="addToCartBtn" data-product-id="" onclick="addToCart(this)">
+                        <button
+                            id="addToCartBtn"
+                            class="btn btn-success"
+                            data-product-id=""
+                            data-bs-dismiss="modal">
                             Pridať do košíka
                         </button>
                     </div>

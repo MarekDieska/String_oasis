@@ -52,9 +52,27 @@
             </div>
 
             <div class="row d-flex justify-content-center m-3 align-items-center">
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#plusModal">Pridať
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#plusModal"
+                        data-name="{{ $product->name }}"
+                        data-price="{{ $product->price }}"
+                        data-image="{{ asset('images/' . $product->image) }}"
+                        data-id="{{ $product->id }}">Pridať
                     do košíka
                 </button>
+            </div>
+        </div>
+        <div id="cartToast"
+             class="toast align-items-center text-white bg-success border-0 position-fixed bottom-0 end-0"
+             role="alert"
+             aria-live="assertive"
+             aria-atomic="true"
+             data-bs-delay="3000"
+             data-bs-autohide="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    Pridané do košíka!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Zavrieť"></button>
             </div>
         </div>
     </section>

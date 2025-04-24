@@ -7,10 +7,15 @@
     <list default="true" id="6d846a00-728e-4f75-9902-178be0760ed5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Cart.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/add_to_cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/add_to_cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/load_modal_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/load_modal_data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/main.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/main_cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/main_cart.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/main_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/main_detail.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/main_filter_r.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/main_filter_r.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/plusModal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/plusModal.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/webroute.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/webroute.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -426,6 +431,7 @@
       <workItem from="1745427725188" duration="680000" />
       <workItem from="1745438879697" duration="5016000" />
       <workItem from="1745479342500" duration="10016000" />
+      <workItem from="1745525758116" duration="1335000" />
     </task>
     <servers />
   </component>

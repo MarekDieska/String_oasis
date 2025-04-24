@@ -52,31 +52,23 @@
                 </div>
             @else
                 @foreach ($cart_products as $prod)
-                <div class="cart-product m-3 me-md-0">
-                    <div class="d-flex flex-row align-items-center justify-content-between">
-                        <img src="{{ 'images/' . $prod->image }}" width="60" alt="">
+                    <div class="cart-product m-3 me-md-0">
+                        <div class="d-flex w-100 flex-row align-items-center justify-content-between">
+                            <!-- Left side: Image + Name -->
+                            <div class="d-flex flex-row align-items-center">
+                                <img src="{{ asset('images/' . $prod->image) }}" width="60" alt="obrazok produktu {{$prod->name}}" class="me-3">
+                                <h5 class="mb-0">{{ $prod->name }}</h5>
+                            </div>
 
-                        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between w-100">
-                            <a href="" class="link-custom text-black">
-                                <div class="d-flex flex-column cart-prod-txt">
-                                    <h5>{{ $prod->name }}</h5>
-                                    <h6>elektrická gitara</h6>
-                                </div>
-                            </a>
-
-                            <div class="d-flex flex-row align-items-center justify-content-between">
-                                <div class="d-flex flex-row p-3">
-                                    <i class="btn fa fa-minus p-2"></i>
-                                    <h5 class="pt-1 px-1">1</h5>
-                                    <i class="btn fa fa-plus p-2"></i>
-                                </div>
-                                <h4 class="pt-1 cart-prod-cost txt-custom2">{{ $prod->price }}></h4>
+                            <!-- Right side: Input + Price + X -->
+                            <div class="d-flex flex-row align-items-center">
+                                <input type="number" class="form-control text-center p-2 input-plus-minus rounded-0 me-2" value="1" min="1" style="width: 70px;">
+                                <h4 class="mb-0 me-2 cart-prod-cost txt-custom2">{{ $prod->price }}€</h4>
+                                <i class="fa fa-xmark" role="button"></i>
                             </div>
                         </div>
-
-                        <i class="fa fa-xmark"></i>
                     </div>
-                </div>
+
                 @endforeach
             @endif
         </div>

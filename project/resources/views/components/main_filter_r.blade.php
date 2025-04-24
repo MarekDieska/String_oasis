@@ -66,7 +66,8 @@
                     <div class="product-image">
                         <img class="card-photo"
                              src="{{ asset('images/' . $product->image) }}"
-                             alt="{{ $product->name }}">
+                             alt="{{ $product->name }}"
+                            loading="lazy">
                     </div>
 
                     <div class="favorite-btn text-center">
@@ -102,6 +103,21 @@
     <div class="row mt-5">
         <div class="d-flex justify-content-center dark-custom">
             {{ $p_products->links() }}
+        </div>
+    </div>
+
+    <div id="cartToast"
+         class="toast align-items-center text-white bg-success border-0 position-fixed bottom-0 end-0"
+         role="alert"
+         aria-live="assertive"
+         aria-atomic="true"
+         data-bs-delay="3000"
+         data-bs-autohide="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                Pridané do košíka!
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Zavrieť"></button>
         </div>
     </div>
 </div>

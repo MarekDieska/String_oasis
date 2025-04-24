@@ -60,6 +60,7 @@ Route::post('/admin/remove-role', [AdminRoleController::class, 'removeAdmin'])->
 
 Route::put('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
 
-Route::post('/cart/add', [CartController::class, 'add'])->name('cart.add');
+Route::post('/cart/add', [CartController::class, 'add'])
+    ->name('cart.add');
 
 require __DIR__.'/auth.php';
