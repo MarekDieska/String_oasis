@@ -7,6 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 class Profile extends Model
 {
     protected $table = 'profiles';
+    public $timestamps = false;
+    protected $fillable = [
+        'user_id',
+        'name',
+        'surname',
+        'phone',
+        'street',
+        'city',
+        'zip',
+        'country'
+    ];
 
     public function user()
     {

@@ -74,13 +74,14 @@ return new class extends Migration
 
         Schema::create('profiles', function (Blueprint $table) {
             $table->id();
-            $table->string('first_name');
-            $table->string('last_name');
-            $table->string('phone');
-            $table->string('street');
-            $table->string('city');
-            $table->string('zip');
-            $table->string('country');
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
+            $table->string('name');
+            $table->string('surname');
+            $table->string('phone')->nullable();
+            $table->string('street')->nullable();
+            $table->string('city')->nullable();
+            $table->string('zip')->nullable();
+            $table->string('country')->nullable();
         });
 
         Schema::create('deliveries', function (Blueprint $table) {

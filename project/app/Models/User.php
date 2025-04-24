@@ -19,15 +19,9 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
-        'surname',
-        'email',
         'password',
-        'phone',
-        'street_number',
-        'city',
-        'psc',
-        'country',
+        'anonym',
+        'email',
     ];
 
     /**
@@ -49,12 +43,12 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function profil()
+    public function profile()
     {
         return $this->hasOne(Profile::class, 'user_id');
     }
 
-    public function kosik()
+    public function cart()
     {
         return $this->hasMany(Cart::class, 'user_id');
     }

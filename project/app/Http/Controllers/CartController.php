@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\Auth;
+use App\Models\Cart;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
@@ -47,7 +49,13 @@ class CartController extends Controller
 
     public function show(Request $request){
 
-        return view('components.main_cart');
+        $user = Auth::user();
+        $cart_products = Cart::with('product')->where('user_id', $user->id)->get()
+            ->map(function ($item) {
+                $item->product->quantity = $item->quantity;
+                return $item->product;
+            });
+        return view('components.main_cart', compact('cart_products'));
     }
 
 }
