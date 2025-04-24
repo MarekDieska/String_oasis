@@ -1,31 +1,33 @@
-document.querySelector('#plusModal').addEventListener('show.bs.modal', function (event) {
-    var button = event.relatedTarget; // Tlačidlo, ktoré otvorilo modal
-    // Získanie údajov z atribútov tlačidla
-    var productId = button.getAttribute('data-id');
-    var productName = button.getAttribute('data-name');
-    var productPrice = button.getAttribute('data-price');
-    var productImage = button.getAttribute('data-image');
-    var productLink = button.getAttribute('data-link');
+const plusModal = document.querySelector('#plusModal');
 
-    // Nastavenie údajov do modalu
-    var modal = this;
+if (plusModal) {
+    plusModal.addEventListener('show.bs.modal', function (event) {
+        var button = event.relatedTarget; // Tlačidlo, ktoré otvorilo modal
 
-    var productNameElem = modal.querySelector('#modalProductName');
-    if (productNameElem) productNameElem.textContent = productName;
+        // Získanie údajov z atribútov tlačidla
+        var productId = button.getAttribute('data-id');
+        var productName = button.getAttribute('data-name');
+        var productPrice = button.getAttribute('data-price');
+        var productImage = button.getAttribute('data-image');
+        var productLink = button.getAttribute('data-link');
 
-    var productPriceElem = modal.querySelector('#modalProductPrice');
-    if (productPriceElem) productPriceElem.textContent = productPrice + ' €';
+        // Nastavenie údajov do modalu
+        var modal = this;
 
-    var productImageElem = modal.querySelector('#modalProductImage');
-    if (productImageElem) productImageElem.setAttribute('src', productImage);
+        var productNameElem = modal.querySelector('#modalProductName');
+        if (productNameElem) productNameElem.textContent = productName;
 
-    var productLinkElem = modal.querySelector('a#modalProductLink');
-    if (productLinkElem) productLinkElem.setAttribute('href', productLink);
+        var productPriceElem = modal.querySelector('#modalProductPrice');
+        if (productPriceElem) productPriceElem.textContent = productPrice + ' €';
 
-    // Nastavenie údajov na tlačidle "Pridať do košíka"
-    var addToCartBtn = modal.querySelector('#addToCartBtn');
-    if (addToCartBtn) addToCartBtn.setAttribute('data-product-id', productId);
+        var productImageElem = modal.querySelector('#modalProductImage');
+        if (productImageElem) productImageElem.setAttribute('src', productImage);
 
-    //console.log('Otvoreny modal, ID:', productId);
-    
-});
+        var productLinkElem = modal.querySelector('a#modalProductLink');
+        if (productLinkElem) productLinkElem.setAttribute('href', productLink);
+
+        // Nastavenie údajov na tlačidle "Pridať do košíka"
+        var addToCartBtn = modal.querySelector('#addToCartBtn');
+        if (addToCartBtn) addToCartBtn.setAttribute('data-product-id', productId);
+    });
+}

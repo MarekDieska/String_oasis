@@ -47,4 +47,20 @@ class CartController extends Controller
         return view('components.main_cart', compact('cart_products', 'isEmpty'));
     }
 
+    public function remove($id, Request $request)
+    {
+        // Get the user ID
+        $user = Auth::check() ? Auth::id() : session('anonymous_user');
+
+        // Find the cart item for the logged-in user and the specified product
+        $cartItem = Cart::where('user_id', $user)->where('product_id', $id)->first();
+
+        // If the cart item exists, delete it
+        if ($cartItem) {
+            $cartItem->delete();
+        }
+
+        return $this->show($request);
+    }
+
 }
