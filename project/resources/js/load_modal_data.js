@@ -26,5 +26,5 @@ document.querySelector('#plusModal').addEventListener('show.bs.modal', function 
     var addToCartBtn = modal.querySelector('#addToCartBtn');
     if (addToCartBtn) addToCartBtn.setAttribute('data-product-id', productId);
 
-    console.log('Otvoreny modal, ID:', productId);
+    //console.log('Otvoreny modal, ID:', productId);
 });

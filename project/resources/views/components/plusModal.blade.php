@@ -16,7 +16,7 @@
                         <button id="quantityMinus" class="btn btn-outline-secondary p-2 rounded-0" type="button">
                             <i class="fa fa-minus"></i>
                         </button>
-                        <input id="quantityInput" class="form-control text-center p-2 input-plus-minus rounded-0" value="1" min="1">
+                        <input id="quantityInput" type="number" class="form-control text-center p-2 input-plus-minus rounded-0" value="1" min="1">
                         <button id="quantityPlus" class="btn btn-outline-secondary p-2 rounded-0" type="button">
                             <i class="fa fa-plus"></i>
                         </button>
@@ -34,7 +34,7 @@
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                             Späť na nákup
                         </button>
-                        <button class="btn btn-success" id="addToCartBtn" data-product-id="" onclick="addToCart(this)">
+                        <button class="btn btn-success" data-bs-dismiss="modal" id="addToCartBtn" data-product-id="" onclick="addToCart(this)">
                             Pridať do košíka
                         </button>
                     </div>
