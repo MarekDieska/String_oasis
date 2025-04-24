@@ -11,17 +11,17 @@ class DeliverySeeder extends Seeder
         $dopravy = [
             "Packeta",
             "Alzabox",
-            "Slovenská pošta",
-            "String Oasis",
+            "Pošta",
+            "StringOasis",
             "DPD",
         ];
 
         $dopravy2 = [
-            "výdajné miesto Z-box",
-            "výdajné miesto Alza-box",
-            "výdajné miesto BalíkoBOX",
-            "vyzdvihnutie na predajni",
-            "kuriér na adresu",
+            "Z-box",
+            "Alza-box",
+            "BalíkoBOX",
+            "na predajni",
+            "na adresu",
         ];
 
         $dopravyCeny = [

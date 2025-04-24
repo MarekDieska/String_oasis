@@ -17,11 +17,11 @@ class PaymentSeeder extends Seeder
         ];
 
         $platby2 = [
-            "platba vopred",
-            "platba vopred",
-            "platba vopred",
-            "platba vopred",
-            "platba na dobierku",
+            "vopred",
+            "vopred",
+            "vopred",
+            "vopred",
+            "dobierka",
         ];
 
         $platbyCeny = [

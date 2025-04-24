@@ -29,22 +29,21 @@
             <div class="cart-slider justify-content-center mt-0 overflow-y-scroll overflow-x-hidden mx-custom">
                 <div class="btn-group d-flex flex-column" role="group">
                     @foreach ($dopravy as $doprava)
-                        <div class="cart-product-small bg-light">
-                            <div class="d-flex flex-row ms-3 w-100 align-items-center">
-                                <i class="fa-solid fa-box-open fa-2x"></i>
-                                <div class="d-flex w-100 flex-column cart-prod-txt">
-                                    <h4 class="ms-3">{{ $doprava->name }}</h4>
-                                    <h5 class="ms-3">{{ $doprava->description }}</h5>
-                                </div>
-                                <h4 class="cart-prod-cost d-flex me-0 justify-content-end">
-                                    @if ($doprava->price > 0)
-                                        {{ $doprava->price }}€
-                                    @else
-                                        zadarmo
-                                    @endif
-                                </h4>
+                        <label class="cart-product-small bg-light d-flex align-items-center ps-3">
+                            <input type="radio"
+                                   name="doprava"
+                                   value="{{ $doprava->id }}"
+                                   class="form-check-input me-3"
+                                   style="transform: scale(1.5);">
+                            <i class="fa-solid fa-box-open fa-2x me-3"></i>
+                            <div class="d-flex w-100 flex-column cart-prod-txt">
+                                <h4>{{ $doprava->name }}</h4>
+                                <h5>{{ $doprava->description }}</h5>
                             </div>
-                        </div>
+                            <h4 class="cart-prod-cost ms-auto">
+                                {{ $doprava->price > 0 ? $doprava->price . '€' : 'zadarmo' }}
+                            </h4>
+                        </label>
                     @endforeach
                 </div>
             </div>
@@ -54,22 +53,21 @@
             <h4 class="text_color">Spôsob platby</h4>
             <div class="cart-slider justify-content-center mt-0 overflow-x-hidden">
                 @foreach ($platby as $platba)
-                    <div class="cart-product-small bg-light">
-                        <div class="d-flex flex-row ms-3 w-100 align-items-center">
-                            <i class="fa-regular fa-credit-card fa-2x"></i>
-                            <div class="d-flex w-100 flex-column cart-prod-txt">
-                                <h4 class="ms-3">{{ $platba->name }}</h4>
-                                <h5 class="ms-3">{{ $platba->description }}</h5>
-                            </div>
-                            <h4 class="cart-prod-cost d-flex justify-content-end">
-                                @if ($platba->price > 0)
-                                    {{ $platba->price }}€
-                                @else
-                                    zadarmo
-                                @endif
-                            </h4>
+                    <label class="cart-product-small bg-light d-flex align-items-center ps-3">
+                        <input type="radio"
+                               name="platba"
+                               value="{{ $platba->id }}"
+                               class="form-check-input me-3"
+                               style="transform: scale(1.5);">
+                        <i class="fa-regular fa-credit-card fa-2x me-3"></i>
+                        <div class="d-flex w-100 flex-column cart-prod-txt">
+                            <h4>{{ $platba->name }}</h4>
+                            <h5>{{ $platba->description }}</h5>
                         </div>
-                    </div>
+                        <h4 class="cart-prod-cost ms-auto">
+                            {{ $platba->price > 0 ? $platba->price . '€' : 'zadarmo' }}
+                        </h4>
+                    </label>
                 @endforeach
             </div>
         </div>
