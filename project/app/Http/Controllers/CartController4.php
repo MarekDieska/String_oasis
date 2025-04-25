@@ -20,7 +20,12 @@ class CartController4 extends Controller
 {
     public function show(Request $request)
     {
-        return view('components.main_cart_4');
+        $user = User::find($request->user_id);
+        $profile = Profile::find($request->profile_id);
+        $delivery = Delivery::find($request->delivery_id);
+        $payment = Payment::find($request->payment_id);
+
+        return view('components.main_cart_4', compact('user', 'profile', 'delivery', 'payment'));
     }
 
     public function storeData(Request $request)
@@ -42,6 +47,9 @@ class CartController4 extends Controller
         $userId = Auth::check() ? Auth::id() : session('anonymous_user');
         $user = User::find($userId);
 
+        $user->update([
+            'email' => $request->email,
+        ]);
 
         $profileData = [
             'name' => $request->meno,
@@ -93,6 +101,10 @@ class CartController4 extends Controller
 
         Cart::where('user_id', $user->id)->delete();
 
-        return redirect()->route('cart_page4.show');
-    }
+        return redirect()->route('cart_page4.show', [
+            'user_id' => $user->id,
+            'profile_id' => $profile->id,
+            'delivery_id' => $delivery->id,
+            'payment_id' => $payment->id,
+        ]);    }
 }

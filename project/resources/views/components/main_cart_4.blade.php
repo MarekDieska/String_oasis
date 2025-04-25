@@ -43,28 +43,28 @@
             <div class="row pb-2 mb-2 ps-xl-5 pt-4 border-top  border-secondary">
                 <div class="col-12 col-md-3 fw-bold pb-3 pb-md-0">Osobné údaje</div>
                 <div class="col-6 col-md-4 opacity-75">Meno a priezvisko:</div>
-                <div class="col-6 col-md-5">Ján Novák</div>
+                <div class="col-6 col-md-5">{{ $profile->name }}</div>
             </div>
             <div class="row pb-2 mb-2 ps-xl-5">
                 <div class="col-12 col-md-3"></div>
                 <div class="col-6 col-md-4  opacity-75">Email:</div>
-                <div class="col-6 col-md-5">jan.novak@example.com</div>
+                <div class="col-6 col-md-5">{{ $user->email }}</div>
             </div>
             <div class="row pb-2 mb-2 ps-xl-5">
                 <div class="col-12 col-md-3"></div>
                 <div class="col-6 col-md-4  opacity-75">Telefón:</div>
-                <div class="col-6 col-md-5">+421 900 123 456</div>
+                <div class="col-6 col-md-5">{{ $profile->phone }}</div>
             </div>
             <div class="row pb-2 mb-2 ps-xl-5">
                 <div class="col-12 col-md-3"></div>
                 <div class="col-6 col-md-4  opacity-75">Adresa:</div>
-                <div class="col-6 col-md-5">Hlavná 123, 821 09 Bratislava</div>
+                <div class="col-6 col-md-5">{{ $profile->street }}, {{ $profile->zip }}, {{ $user->profile->city }}</div>
             </div>
 
             <div class="row pb-2 mb-2 pt-4 ps-xl-5  border-top  border-secondary">
                 <div class="col-12 col-md-3 fw-bold pb-3 pb-md-0">Doprava</div>
                 <div class="col-6 col-md-4  opacity-75">Spôsob doručenia:</div>
-                <div class="col-6 col-md-5">Kuriér GLS</div>
+                <div class="col-6 col-md-5">{{  $delivery->name }}</div>
             </div>
             <div class="row pb-2 mb-2 ps-xl-5">
                 <div class="col-12 col-md-3"></div>
@@ -80,7 +80,7 @@
             <div class="row pb-4 mb-2 pt-4 ps-xl-5 border-top border-secondary border-bottom">
                 <div class="col-12 col-md-3 fw-bold pb-3 pb-md-0">Platba</div>
                 <div class="col-6 col-md-4 opacity-75">Spôsob platby:</div>
-                <div class="col-6 col-md-5">Platba kartou online</div>
+                <div class="col-6 col-md-5">{{ $payment->name }}, {{ $payment->description }}</div>
             </div>
 
         </div>
@@ -118,7 +118,7 @@
                         <h4>Súčet</h4>
                         <h4>980€</h4>
                     </div>
-                    <a href="{{route('cart_page5')}}" class="btn mt-0 btn-dark mb-4">Objednať s povinnosťou platby</a>
+                    <a href="{{ route('cart_page5') }}" class="btn mt-0 btn-dark mb-4">Objednať s povinnosťou platby</a>
                 </div>
 
             </div>

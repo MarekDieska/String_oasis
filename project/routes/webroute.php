@@ -57,8 +57,7 @@ Route::get('/cart_page4', [CartController4::class, 'show'])->name('cart_page4.sh
 
 Route::get('/cart_page5', function () {
     return view('components.main_cart_5');
-})->name('/cart_page5');
-
+})->name('cart_page5');
 
 Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('login');
 Route::post('/login', [AuthenticatedSessionController::class, 'store']);
