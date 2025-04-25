@@ -24,12 +24,26 @@ class CartController4 extends Controller
         $profile = Profile::find($request->profile_id);
         $delivery = Delivery::find($request->delivery_id);
         $payment = Payment::find($request->payment_id);
+        $s = $request->s;
+        $d = $request->d;
+        $i = $request->i;
+        $m = $request->m;
+        $d_c = $request->d_c;
+        $p_c = $request->p_c;
 
-        return view('components.main_cart_4', compact('user', 'profile', 'delivery', 'payment'));
+        return view('components.main_cart_4', compact('user', 'profile', 'delivery', 'payment', 's', 'd', 'i', 'm', 'd_c', 'p_c'));
     }
 
     public function storeData(Request $request)
     {
+
+        $s = $request->get('s');
+        $d = $request->get('d');
+        $i = $request->get('i');
+        $m = $request->get('m');
+        $d_c = $request->get('d_c');
+        $p_c = $request->get('p_c');
+
         $request->validate([
             'meno' => 'required|string|max:255',
             'priezvisko' => 'required|string|max:255',
@@ -106,5 +120,11 @@ class CartController4 extends Controller
             'profile_id' => $profile->id,
             'delivery_id' => $delivery->id,
             'payment_id' => $payment->id,
+            's' => $s,
+            'd' => $d,
+            'i' => $i,
+            'm' => $m,
+            'd_c' => $d_c,
+            'p_c' => $p_c,
         ]);    }
 }

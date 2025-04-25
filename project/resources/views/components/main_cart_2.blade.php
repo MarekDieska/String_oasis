@@ -3,6 +3,11 @@
 
 @section('content')
     <form id="cartForm" method="GET" action="{{ route('cart_page3') }}">
+        <input type="hidden" name="d" value="{{ request('d') }}">
+        <input type="hidden" name="i" value="{{ request('i') }}">
+        <input type="hidden" name="m" value="{{ request('m') }}">
+        <input type="hidden" name="s" value="{{ request('s')}}">
+
         <section class="row justify-content-center align-items-center mt-4">
             <div class="col-12 d-none d-sm-flex flex-row justify-content-center align-items-center">
                 @foreach (['Košík', 'Delivery', 'Údaje', 'Kontrola', 'hotovo'] as $index => $step)
@@ -37,6 +42,7 @@
                                        class="form-check-input me-3"
                                        style="transform: scale(1.5);"
                                        onchange="updatePrices(this, 'doprava', {{ $doprava->price }})"
+                                       required
                                 >
                                 <i class="fa-solid fa-box-open fa-2x me-3"></i>
                                 <div class="d-flex w-100 flex-column cart-prod-txt">
@@ -64,6 +70,7 @@
                                    class="form-check-input me-3"
                                    style="transform: scale(1.5);"
                                    onchange="updatePrices(this, 'platba', {{ $platba->price }})"
+                                   required
                             >
                             <i class="fa-regular fa-credit-card fa-2x me-3"></i>
                             <div class="d-flex w-100 flex-column cart-prod-txt">

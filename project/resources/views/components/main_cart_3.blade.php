@@ -39,6 +39,12 @@
         @endif
         <input type="hidden" name="doprava" value=" {{ request('doprava') }}">
         <input type="hidden" name="platba" value="{{ request('platba') }}">
+        <input type="hidden" name="d" value="{{ request('d') }}">
+        <input type="hidden" name="i" value="{{ request('i') }}">
+        <input type="hidden" name="m" value="{{ request('m') }}">
+        <input type="hidden" name="s" value="{{ request('s')}}">
+        <input type="hidden" name="d_c" value="{{ request('d_c') }}">
+        <input type="hidden" name="p_c" value="{{ request('p_c')}}">
 
         <section class="row">
             <div class="col-12 col-md-7 align-items-start justify-content-center p-3 p-sm-5 pe-md-0">
@@ -116,31 +122,31 @@
                         <h2 class="subtotal">Zhrnutie:</h2>
                         <div class="d-flex justify-content-between align-items-center m-3">
                             <h5>Medzisúčet</h5>
-                            <h5>1200€</h5>
+                            <h5>{{ number_format($s, 2) }}€</h5>
                         </div>
                         <div class="d-flex justify-content-between align-items-center m-3">
                             <h5>Zľavy</h5>
-                            <h5>-200€</h5>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center m-3">
-                            <h5>Kupóny</h5>
-                            <h5>-40€</h5>
+                            <h5>{{ $d }}%</h5>
                         </div>
                         <div class="d-flex justify-content-between align-items-center m-3">
                             <h5>Doprava</h5>
-                            <h5>20€</h5>
+                            <h5 >{{ $d_c }}€</h5>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center m-3">
+                            <h5>Platba</h5>
+                            <h5> {{ $p_c }}€</h5>
                         </div>
                     </div>
 
                     <div class="d-flex flex-column align-items-center">
                         <div class="d-flex justify-content-between align-items-center w-100 p-3 pb-0 pt-0">
                             <h5>Počet položiek</h5>
-                            <h5>5ks</h5>
+                            <h5>{{ $i }} ks</h5>
                         </div>
                         <hr class="line2-custom">
                         <div class="d-flex justify-content-between align-items-center w-100 m-3 p-3 pb-0 mt-1 pt-0">
                             <h4>Súčet</h4>
-                            <h4>980€</h4>
+                            <h4 id="total"> {{ $m + $d_c + $p_c }} €</h4>
                         </div>
                         <button type="submit" class="btn btn-dark">
                             Skontrolovať údaje
