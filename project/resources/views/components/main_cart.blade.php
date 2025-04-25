@@ -86,12 +86,12 @@
                                     name="quantity"
                                     onchange="this.form.submit()">
                             </form>
-                            <h4 class="mb-0 me-2 cart-prod-cost txt-custom2 pb-1">{{ $prod->price }}€</h4>
+                            <h4 class="mb-0 me-2 cart-prod-cost txt-custom2">{{ $prod->price }}€</h4>
                             <form action="{{ route('cart.remove', $prod->id) }}" method="POST" class="d-inline" id="removeProductForm{{ $prod->id }}">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn p-0 border-0 bg-transparent" id="removeBtn{{ $prod->id }}">
-                                    <i class="fa fa-xmark text-danger pt-2"></i>
+                                    <i class="fa fa-xmark text-danger"></i>
                                 </button>
                             </form>
                         </div>
@@ -124,15 +124,7 @@
                         <h4>Súčet</h4>
                         <h4>{{ number_format($finalValue, 2) }}€</h4>
                     </div>
-                    <button
-                        type="submit"
-                        class="btn mt-0 btn-dark mb-4"
-                        @if ($totalItems < 1)
-                            disabled
-                        @endif
-                    >
-                        Pokračovať na výber dopravy
-                    </button>
+                    <a href="{{ route('cart_page2')}}" class="btn mt-0 btn-dark mb-4">Pokračovať na výber dopravy</a>
                 </div>
             </div>
         </div>
