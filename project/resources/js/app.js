@@ -5,3 +5,4 @@ import './change_numbers_buttons';
 import './load_modal_data';
 import './add_to_cart';
 import './login_handler';
+import './delivery_payment_handler';

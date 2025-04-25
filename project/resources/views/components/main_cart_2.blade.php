@@ -99,7 +99,7 @@
                         <h4>Súčet</h4>
                         <h4>{{-- number_format($finalValue, 2) --}}€</h4>
                     </div>
-                    <a href="{{ route('cart_page3', ['doprava' => request('doprava'), 'platba' => request('platba')]) }}" class="btn mt-0 btn-dark mb-4">
+                    <a id="continueButton" href="{{ route('cart_page3', ['doprava' => request('doprava'), 'platba' => request('platba')]) }}" class="btn mt-0 btn-dark mb-4">
                         Pokračovať na výber dopravy
                     </a>
                 </div>
