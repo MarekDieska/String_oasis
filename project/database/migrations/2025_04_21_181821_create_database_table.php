@@ -111,6 +111,7 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->foreignId('profile_id')->constrained('profiles')->onDelete('cascade');
+            $table->foreignId('detail_id')->constrained('details')->onDelete('cascade');
         });
 
         Schema::create('items', function (Blueprint $table) {

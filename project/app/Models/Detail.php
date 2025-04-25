@@ -7,6 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 class Detail extends Model
 {
     protected $table = 'details';
+    public $timestamps = false;
+    protected $fillable = [
+        'delivery_id',
+        'payment_id',
+        'time',
+        'status',
+        'total',
+        'note'
+    ];
 
     public function delivery()
     {

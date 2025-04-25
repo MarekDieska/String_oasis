@@ -7,6 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Order extends Model
 {
     protected $table = 'orders';
+    public $timestamps = false;
+    protected $fillable = [
+        'profile_id',
+        'detail_id',
+    ];
 
     public function profile()
     {
