@@ -2,8 +2,6 @@
 @extends('layouts.index')
 
 @section('content')
-    <form method="GET" action="{{ route('cart_page3') }}">
-
         <section class="row justify-content-center align-items-center mt-4">
             <div class="col-12 d-none d-sm-flex flex-row justify-content-center align-items-center">
                 @foreach (['Košík', 'Delivery', 'Údaje', 'Kontrola', 'hotovo'] as $index => $step)
@@ -37,7 +35,7 @@
                                        value="{{ $doprava->id }}"
                                        class="form-check-input me-3"
                                        style="transform: scale(1.5);"
-                                       required>
+                                       >
                                 <i class="fa-solid fa-box-open fa-2x me-3"></i>
                                 <div class="d-flex w-100 flex-column cart-prod-txt">
                                     <h4>{{ $doprava->name }}</h4>
@@ -63,7 +61,7 @@
                                    value="{{ $platba->id }}"
                                    class="form-check-input me-3"
                                    style="transform: scale(1.5);"
-                                   required>
+                                   >
                             <i class="fa-regular fa-credit-card fa-2x me-3"></i>
                             <div class="d-flex w-100 flex-column cart-prod-txt">
                                 <h4>{{ $platba->name }}</h4>
@@ -101,7 +99,9 @@
                         <h4>Súčet</h4>
                         <h4>{{-- number_format($finalValue, 2) --}}€</h4>
                     </div>
-                    <a href="{{ route('cart_page3'/*compact($subtotal, $totalItems, $finalValue, $discount))*/) }}" class="btn mt-0 btn-dark mb-4">Pokračovať na výber dopravy</a>
+                    <a href="{{ route('cart_page3', ['doprava' => request('doprava'), 'platba' => request('platba')]) }}" class="btn mt-0 btn-dark mb-4">
+                        Pokračovať na výber dopravy
+                    </a>
                 </div>
             </div>
         </div>

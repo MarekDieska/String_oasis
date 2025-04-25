@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Session;
 class CartController3 extends Controller{
     public function show(Request $request){
 
-        $doprava = $request->doprava;
-        $platba = $request->platba;
+        $doprava = $request->input('doprava');
+        $platba = $request->input('platba');
 
         return view('components.main_cart_3', compact('doprava', 'platba'));
     }

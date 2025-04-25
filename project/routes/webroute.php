@@ -50,7 +50,11 @@ Route::get('/filters_page', [FilterController::class, 'showFilters'])->name('fil
 Route::get('/cart_page', [CartController::class, 'show'])->name('cart_page');
 Route::get('/cart_page2', [CartController2::class, 'show'])->name('cart_page2');
 Route::get('/cart_page3', [CartController3::class, 'show'])->name('cart_page3');
-Route::get('/cart_page4', [CartController4::class, 'show'])->name('cart_page4');
+Route::post('/cart/submit', [CartController4::class, 'storeData'])->name('cart_page4');
+
+Route::get('/cart_page4', [CartController4::class, 'show'])->name('cart_page4.show');
+
+
 Route::get('/cart_page5', function () {
     return view('components.main_cart_5');
 })->name('/cart_page5');
