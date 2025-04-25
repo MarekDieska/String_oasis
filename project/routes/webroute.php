@@ -5,6 +5,8 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\CartController2;
+use App\Http\Controllers\CartController3;
+use App\Http\Controllers\CartController4;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DetailController;
 use App\Http\Controllers\FilterController;
@@ -47,8 +49,8 @@ Route::get('/filters_page', [FilterController::class, 'showFilters'])->name('fil
 //cart
 Route::get('/cart_page', [CartController::class, 'show'])->name('cart_page');
 Route::get('/cart_page2', [CartController2::class, 'show'])->name('cart_page2');
-//Route::get('/cart_page3', [CartController3::class, 'show'])->name('cart_page3');
-//Route::get('/cart_page4', [CartController4::class, 'show'])->name('cart_page4');
+Route::get('/cart_page3', [CartController3::class, 'show'])->name('cart_page3');
+Route::get('/cart_page4', [CartController4::class, 'show'])->name('cart_page4');
 Route::get('/cart_page5', function () {
     return view('components.main_cart_5');
 })->name('/cart_page5');

@@ -40,63 +40,64 @@
         <div class="col-12 col-md-7 align-items-start justify-content-center p-3 p-sm-5 pe-md-0">
             <div class="mt-0">
                 <form>
-                    <div class="row mb-3">
-                        <div class="col-md-6">
-                            <label for="meno" class="text_color form-label">Meno</label>
-                            <input type="text" class="form-control placeholder-black" id="meno" placeholder="Meno">
+                    <div class="row">
+                        <div class="col-md-6 ">
+                            <div class="row mb-3 mt-0">
+                                <label for="meno" class="text_color form-label">Meno</label>
+                                <input type="text" class="form-control placeholder-black" id="meno" placeholder="Meno">
+                            </div>
+
+                            <div class="row mb-3 mt-0">
+                                <label for="priezvisko" class="text_color form-label">Priezvisko</label>
+                                <input type="text" class="form-control placeholder-black" id="priezvisko"
+                                       placeholder="Priezvisko">
+                            </div>
+                            <div class="row mb-3 mt-0">
+                                <label for="email" class="text_color form-label">Email</label>
+                                <input type="email" class="form-control placeholder-black" id="email"
+                                       placeholder="priklad@gmail.com">
+                            </div>
+                            <div class="row mb-3 mt-0">
+                                <label for="telefon" class="text_color form-label">Telefónne číslo</label>
+                                <input type="tel" class="form-control placeholder-black" id="telefon"
+                                       placeholder="+421000000">
+                            </div>
                         </div>
                         <div class="col-md-6">
-                            <label for="ulica" class="text_color form-label">Ulica + Číslo domu</label>
-                            <input type="text" class="form-control placeholder-black" id="ulica"
-                                   placeholder="Ulica 123/45">
+                            <div class="row m-3 me-0">
+                                <label for="ulica" class="text_color form-label">Ulica + Číslo domu</label>
+                                <input type="text" class="form-control placeholder-black" id="ulica"
+                                       placeholder="Ulica 123/45">
+                            </div>
+                            <div class="row m-3 me-0">
+                                <div class="col-9 p-0">
+                                    <label for="mesto" class="text_color form-label ps-3">Mesto</label>
+                                    <input type="text" class="form-control placeholder-black" id="mesto" placeholder="Mesto">
+                                </div>
+                                <div class="col-3 p-0">
+                                    <label for="psc" class="text_color form-label ps-3">PSČ</label>
+                                    <input type="text" class="form-control placeholder-black" id="psc" placeholder="00000">
+                                </div>
+                            </div>
+                            <div class="row m-3 me-0">
+                                <label for="krajina" class="text_color form-label">Krajina</label>
+                                <select class="form-select" id="krajina">
+                                    <option selected>Vyberte krajinu</option>
+                                    <option value="SK">Slovensko</option>
+                                    <option value="CZ">Česko</option>
+                                    <option value="PL">Poľsko</option>
+                                    <option value="HU">Maďarsko</option>
+                                    <option value="AT">Rakúsko</option>
+                                </select>
+                            </div>
+                            <div class="row m-3 me-0">
+                                <label for="poznamka" class="text_color form-label">Poznámka k objednávke</label>
+                                <textarea class="form-control placeholder-black" id="poznamka" rows="3"
+                                          placeholder="Vaše poznámky pre nás"></textarea>
+                            </div>
                         </div>
                     </div>
-                    <div class="row mb-3">
-                        <div class="col-md-6">
-                            <label for="priezvisko" class="text_color form-label">Priezvisko</label>
-                            <input type="text" class="form-control placeholder-black" id="priezvisko"
-                                   placeholder="Priezvisko">
-                        </div>
-                        <div class="col-md-4">
-                            <label for="mesto" class="text_color form-label">Mesto</label>
-                            <input type="text" class="form-control placeholder-black" id="mesto" placeholder="Mesto">
-                        </div>
-                        <div class="col-md-2">
-                            <label for="psc" class="text_color form-label">PSČ</label>
-                            <input type="text" class="form-control placeholder-black" id="psc" placeholder="00000">
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-md-6">
-                            <label for="email" class="text_color form-label">Email</label>
-                            <input type="email" class="form-control placeholder-black" id="email"
-                                   placeholder="priklad@gmail.com">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="krajina" class="text_color form-label">Krajina</label>
-                            <select class="form-select" id="krajina">
-                                <option selected>Vyberte krajinu</option>
-                                <option value="SK">Slovensko</option>
-                                <option value="CZ">Česko</option>
-                                <option value="PL">Poľsko</option>
-                                <option value="HU">Maďarsko</option>
-                                <option value="AT">Rakúsko</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-md-6">
-                            <label for="telefon" class="text_color form-label">Telefónne číslo</label>
-                            <input type="tel" class="form-control placeholder-black" id="telefon"
-                                   placeholder="+421000000">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="poznamka" class="text_color form-label">Poznámka k objednávke</label>
-                            <textarea class="form-control placeholder-black" id="poznamka" rows="3"
-                                      placeholder="Vaše poznámky pre nás"></textarea>
-                        </div>
-                    </div>
-                    <div class="mb-3 form-check">
+                    <div class="m-3 me-0 form-check">
                         <input type="checkbox" class="text_color form-check-input" id="suhlas">
                         <label class="text_color form-check-label" for="suhlas">Súhlasím so spracovaním osobných
                             údajov</label>
