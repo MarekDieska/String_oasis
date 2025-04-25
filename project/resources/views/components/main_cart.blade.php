@@ -124,7 +124,12 @@
                         <h4>Súčet</h4>
                         <h4>{{ number_format($finalValue, 2) }}€</h4>
                     </div>
-                    <a href="{{ route('cart_page2', ['s' => $subtotal, 'd' => $discount, 'i' => $totalItems, 'm' => $finalValue])}}" class="btn mt-0 btn-dark mb-4">Pokračovať na výber dopravy</a>
+                    <a href="{{ route('cart_page2', ['s' => $subtotal, 'd' => $discount, 'i' => $totalItems, 'm' => $finalValue])}}"
+                       class="btn mt-0 btn-dark mb-4
+                       @if ($totalItems < 1)
+                             disabled
+                         @endif
+                         ">Pokračovať na výber dopravy</a>
                 </div>
             </div>
         </div>

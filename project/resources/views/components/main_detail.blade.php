@@ -91,15 +91,15 @@
             zaručuje, že váš zvuk bude vždy presný a vyvážený, či už hráte doma, v štúdiu alebo na pódiu.
         </h5>
 
-        @for($i = 0; $i < 4; $i++)
+        @foreach($product->photos as $photo)
             <div class="d-flex justify-content-center col-md-3">
                 <div class="p-3">
                     <div class="card">
-                        <img src="{{asset('images/' . $product->image)}}" class="card-img-top" alt="detailnejší záber gitary">
+                        <img src="{{asset('images/' . $photo->url)}}" class="card-img-top" alt="detailnejší záber gitary">
                     </div>
                 </div>
             </div>
-        @endfor
+        @endforeach
 
         <hr class="text_color mt-5">
 

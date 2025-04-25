@@ -7,6 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Photo extends Model
 {
     protected $table = 'photos';
+    public $timestamps = false;
+    protected $fillable = [
+        'product_id',
+        'url'
+    ];
 
     public function product()
     {

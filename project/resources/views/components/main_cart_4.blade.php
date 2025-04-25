@@ -43,7 +43,7 @@
             <div class="row pb-2 mb-2 ps-xl-5 pt-4 border-top  border-secondary">
                 <div class="col-12 col-md-3 fw-bold pb-3 pb-md-0">Osobné údaje</div>
                 <div class="col-6 col-md-4 opacity-75">Meno a priezvisko:</div>
-                <div class="col-6 col-md-5">{{ $profile->name }}</div>
+                <div class="col-6 col-md-5">{{ $profile->name }} {{ $profile->surname }}</div>
             </div>
             <div class="row pb-2 mb-2 ps-xl-5">
                 <div class="col-12 col-md-3"></div>

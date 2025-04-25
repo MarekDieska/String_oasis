@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Photo;
 use App\Models\Product;
 use App\Models\Subcategory;
 use App\Models\Category;
@@ -372,5 +373,96 @@ class ProductSeeder extends Seeder
         Product::create(['subcategory_id' => $subC->id, 'name' => 'Ortega R300', 'brand' => 'Ortega', 'price' => 500.00, 'discount' => 0, 'stock' => 2, 'stars' => 4, 'image' => 'classic1.png']);
 
 
+        $products = Product::all();
+
+        foreach ($products as $product) {
+            if (in_array($product->subcategory->id, [1, 2, 3, 4, 5])) {
+                Photo::create([
+                    'product_id' => $product->id,
+                    'url' => 'detail_1.png',
+                ]);
+                Photo::create([
+                    'product_id' => $product->id,
+                    'url' => 'detail_2.jpg',
+                ]);
+                Photo::create([
+                    'product_id' => $product->id,
+                    'url' => 'detail_3.jpg',
+                ]);
+                Photo::create([
+                    'product_id' => $product->id,
+                    'url' => 'detail_4.png',
+                ]);
+            } elseif (in_array($product->subcategory->id, [6, 7, 8, 9])) {
+                Photo::create([
+                    'product_id' => $product->id,
+                    'url' => 'detailUkulele1.jpeg',
+                ]);
+                Photo::create([
+                    'product_id' => $product->id,
+                    'url' => 'detailUkulele2.jpeg',
+                    ]);
+                Photo::create([
+                    'product_id' => $product->id,
+                    'url' => 'detailUkulele3.jpeg',
+                    ]);
+                Photo::create([
+                    'product_id' => $product->id,
+                    'url' => 'detailUkulele4.jpeg',
+                    ]);
+            } elseif ($product->subcategory->id == 10) {
+                Photo::create([
+                    'product_id' => $product->id,
+                    'url' => 'detailCombo1.jpeg',
+                ]);
+                    Photo::create([
+                        'product_id' => $product->id,
+                        'url' => 'detailCombo2.jpeg',
+                    ]);
+                    Photo::create([
+                        'product_id' => $product->id,
+                        'url' => 'detailCombo3.jpeg',
+                    ]);
+                    Photo::create([
+                        'product_id' => $product->id,
+                        'url' => 'detailCombo4.jpeg',
+                    ]);
+                }   elseif ($product->subcategory->id == 11) {
+                Photo::create([
+                    'product_id' => $product->id,
+                    'url' => 'detailPiano1.jpeg',
+                ]);
+                Photo::create([
+                    'product_id' => $product->id,
+                    'url' => 'detailPiano2.jpeg',
+                ]);
+                Photo::create([
+                    'product_id' => $product->id,
+                    'url' => 'detailPiano3.jpeg',
+                ]);
+                Photo::create([
+                    'product_id' => $product->id,
+                    'url' => 'detailPiano4.jpeg',
+                ]);
+            }elseif ($product->subcategory->id == 12) {
+                Photo::create([
+                    'product_id' => $product->id,
+                    'url' => 'detailPlatna1.jpeg',
+                ]);
+                Photo::create([
+                    'product_id' => $product->id,
+                    'url' => 'detailPlatna2.jpeg',
+                ]);
+                Photo::create([
+                    'product_id' => $product->id,
+                    'url' => 'detailPlatna3.jpeg',
+                ]);
+                Photo::create([
+                    'product_id' => $product->id,
+                    'url' => 'detailPlatna4.jpeg',
+                ]);
+            }
+
+        }
     }
 }

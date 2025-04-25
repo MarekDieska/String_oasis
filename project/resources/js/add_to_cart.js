@@ -1,4 +1,3 @@
-// public/js/add_to_cart.js
 document.addEventListener('DOMContentLoaded', () => {
     const addBtn = document.getElementById('addToCartBtn');
 
@@ -42,25 +41,42 @@ document.addEventListener('DOMContentLoaded', () => {
                     try {
                         // try to pretty-print JSON
                         const json = JSON.parse(raw);
-                        errMsg = JSON.stringify(json, null, 2);
+                        errMsg = json.message || 'Neznáma chyba'; // Get the message only
                     } catch {
                         errMsg = raw;
                     }
+
+                    // Trigger the toast with the error message
+                    showErrorToast(errMsg);
                     throw new Error(errMsg);
                 }
 
                 // 6) Parse JSON on success
                 const data = JSON.parse(raw);
 
-                // 7) Show toast notification
+                // 7) Show success toast or any other response
                 const toastEl = document.getElementById('cartToast');
                 new bootstrap.Toast(toastEl, {autohide: true, delay: 3000}).show();
 
                 console.log('Pridané do košíka:', data.cartItem);
             } catch (err) {
                 console.error('Add-to-cart failed:', err);
-                alert('Chyba pri pridávaní do košíka:\n' + err.message);
+                showErrorToast(err.message); // Show the error toast with the error message
             }
         });
     }
 });
+
+// Function to show the error toast
+function showErrorToast(errorMessage) {
+    const toastEl = document.getElementById('loginErrorToast');  // Use the loginErrorToast ID
+    const toastBody = document.getElementById('loginErrorContent');
+
+    toastBody.textContent = errorMessage; // Set error message to toast body
+
+    const toast = new bootstrap.Toast(toastEl, {
+        autohide: true,
+        delay: 5000 // Show the toast for 5 seconds
+    });
+    toast.show(); // Show the toast
+}

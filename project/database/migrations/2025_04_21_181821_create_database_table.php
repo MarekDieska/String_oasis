@@ -66,7 +66,7 @@ return new class extends Migration
             $table->string('value');
         });
 
-        Schema::create('images', function (Blueprint $table) {
+        Schema::create('photos', function (Blueprint $table) {
             $table->id();
             $table->foreignId('product_id')->constrained('products')->onDelete('cascade');
             $table->string('url');
