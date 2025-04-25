@@ -10,22 +10,37 @@
         <form method="GET" action="{{ route('filters_page') }}">
             <div class="mb-4">
                 <div class="d-flex flex-row gap-2 align-items-center mb-2">
-                    <h5 class="mb-0">Cena do:</h5>
-                    <span id="priceValue">{{ request('p', 5000) }}</span>€
+                    <h5 class="mb-0">Cena</h5>
                 </div>
 
-                <div class="price-slider-container bg-transparent">
-                    <input type="range" class="form-range bg-transparent thumb-custom mt-0"
-                           id="{{ $isOffcanvas ? 'priceRangeOffcanvas' : 'priceRange' }}"
-                           min="100" max="5000" step="100" value="{{ request('p', 5000) }}"
-                           name="p" oninput="updatePriceValue(this)" onchange="this.form.submit()">
+                <div class="d-flex gap-3">
+                    <div class="flex-fill">
+                        <label for="priceMin" class="form-label">Od (€)</label>
+                        <input type="number" class="form-control"
+                               id="priceMin"
+                               name="min"
+                               min="0" max="5000" step="1"
+                               value="{{ max(0, min(request('min', 0), 5000)) }}"
+                               onchange="checkPriceRange(this)">
+                    </div>
+
+                    <div class="flex-fill">
+                        <label for="priceMax" class="form-label">Do (€)</label>
+                        <input type="number" class="form-control"
+                               id="priceMax"
+                               name="max"
+                               min="0" max="5000" step="1"
+                               value="{{ max(0, min(request('max', 5000), 5000)) }}"
+                               onchange="checkPriceRange(this)">
+                    </div>
                 </div>
 
-                <div class="d-flex justify-content-between mt-0">
-                    <span>100€</span>
-                    <span>5000€</span>
+                <div class="text-center mt-3">
+                    <button type="submit" class="btn btn-outline-danger">Filtrovať</button>
                 </div>
             </div>
+
+
 
             <div>
                 <h4>Typ strunového nástroja</h4>
@@ -122,3 +137,30 @@
         document.getElementById('priceValue').textContent = slider.value;
     }
 </script>
+
+<script>
+    function checkPriceRange(input) {
+        let minInput = document.getElementById('priceMin');
+        let maxInput = document.getElementById('priceMax');
+
+        let minVal = parseInt(minInput.value);
+        let maxVal = parseInt(maxInput.value);
+
+        if (isNaN(minVal) || minVal < 0) {
+            minVal = 0;
+            minInput.value = 0;
+        }
+
+        if (isNaN(maxVal) || maxVal > 5000) {
+            maxVal = 5000;
+            maxInput.value = 5000;
+        }
+
+        // Ak min > max → obe sa nastavia na 0
+        if (minVal > maxVal) {
+            minInput.value = 0;
+            maxInput.value = 0;
+        }
+    }
+</script>
+

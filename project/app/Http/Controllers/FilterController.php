@@ -8,52 +8,61 @@ use Illuminate\Routing\Controller;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
-class FilterController extends Controller{
-    public function showFilters(Request $request){
-
+class FilterController extends Controller
+{
+    public function showFilters(Request $request)
+    {
         $subcategory = $request->get('sub');
         $rating = $request->get('r');
         $brand = $request->get('b');
-        $priceMax = $request->get('p');
+        $priceMin = $request->get('min');
+        $priceMax = $request->get('max');
         $sortBy = $request->get('s');
         $sortDirection = $request->get('z');
         $search = $request->get('q');
         $s = null;
 
-        if ($subcategory != 0){
+        if ($subcategory != 0) {
             $s = Subcategory::with('category')->find($subcategory);
         }
 
-
         if ($s) {
             if ($s->category->name == 'Gitary' || $s->category->name == 'Basgitary') {
-                $title = $s->name . ' ' . $s->category->name ;
+                $title = $s->name . ' ' . $s->category->name;
             } elseif ($s->name) {
                 $title = $s->name;
-            } else
+            } else {
                 $title = $s->category->name;
-        }
-        else{
+            }
+        } else {
             $title = "Všetky produkty";
         }
 
         $query = Product::query();
 
-        if ($subcategory != 0){
+        if ($subcategory != 0) {
             $query->where('subcategory_id', $subcategory);
         }
-
 
         if ($rating) {
             $query->where('stars', $rating);
         }
-        if ($brand) {
-            $query->whereIn('brand', $brand);
+
+        $priceMin = (int) $request->get('min', 0);
+        $priceMax = (int) $request->get('max', 5000);
+
+// Orezanie do povoleného rozsahu
+        $priceMin = max(0, min(5000, $priceMin));
+        $priceMax = max(0, min(5000, $priceMax));
+
+// Ak je minimum väčšie ako maximum, resetuj
+        if ($priceMin > $priceMax) {
+            $priceMin = 0;
+            $priceMax = 5000;
         }
 
-        if ($priceMax) {
-            $query->where('price', '<=', $priceMax);
-        }
+        $query->whereBetween('price', [$priceMin, $priceMax]);
+
 
         if ($sortBy !== null) {
             switch ($sortBy) {
@@ -72,20 +81,20 @@ class FilterController extends Controller{
             }
         }
 
-        if($search){
+        if ($search) {
             $query->where('name', 'ILIKE', '%' . $search . '%');
         }
+
         $p_products = $query->simplePaginate(16)->appends($request->except('page'));
 
-        if($subcategory != 0){
+        if ($subcategory != 0) {
             $p_brands = Product::where('subcategory_id', $subcategory)->distinct()->pluck('brand');
             $p_ratings = Product::where('subcategory_id', $subcategory)->select('stars')->distinct()->orderBy('stars', 'asc')->pluck('stars');
-        }
-        else{
+        } else {
             $p_brands = Product::distinct()->pluck('brand');
             $p_ratings = Product::select('stars')->distinct()->orderBy('stars', 'asc')->pluck('stars');
         }
 
-        return view('pages.filters_page', compact('p_products', 'p_brands', 'p_ratings','title'));
+        return view('pages.filters_page', compact('p_products', 'p_brands', 'p_ratings', 'title'));
     }
 }
