@@ -15,10 +15,6 @@
     aspect-ratio: 9/10;
 }
 
-.rating-color {
-    color: #c5674b !important;
-}
-
 .rating-color{
     color: #ffffff !important;
 }
@@ -43,14 +39,11 @@
     color: var(--font_color);
 }
 
-.img-big{
-    height: 500px;
-    overflow: hidden;
-    object-fit: cover;
+.img-big {
     width: 100%;
-    max-width: 600px;
-}
-
-.card-img-custom{
-    max-width: 250px;
+    height: auto;
+    max-height: 550px;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
 }

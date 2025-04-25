@@ -88,36 +88,6 @@
 </div>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        @if ($errors->any())
-        const loginModal = new bootstrap.Modal(document.getElementById('login_form'));
-        loginModal.show();
-        @endif
-
-        const registerBtn = document.getElementById('registerButton');
-        const backToLoginBtn = document.getElementById('backToLogin');
-        const loginForm = document.getElementById('loginForm');
-        const registerForm = document.getElementById('registerForm');
-
-        if (registerBtn) {
-            registerBtn.addEventListener('click', function (e) {
-                e.preventDefault();
-                loginForm.classList.add('d-none');
-                registerForm.classList.remove('d-none');
-                registerBtn.classList.add('d-none');
-                backToLoginBtn.classList.remove('d-none');
-            });
-        }
-
-        if (backToLoginBtn) {
-            backToLoginBtn.addEventListener('click', function (e) {
-                e.preventDefault();
-                loginForm.classList.remove('d-none');
-                registerForm.classList.add('d-none');
-                registerBtn.classList.remove('d-none');
-                backToLoginBtn.classList.add('d-none');
-            });
-        }
-    });
+    window.validationErrors = {!! json_encode($errors->all()) !!};
 </script>
 

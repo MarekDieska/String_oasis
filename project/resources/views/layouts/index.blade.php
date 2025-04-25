@@ -30,6 +30,14 @@
 
 <main class="container-fluid"  style="margin: 60px 0 0 0">
     @yield('content')
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1100">
+        <div id="loginErrorToast" class="toast align-items-center text-white bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body" id="loginErrorContent"></div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
 </main>
 
 <footer style="margin-top: {{ in_array(Route::currentRouteName(), ['cart_page', 'cart_page2','cart_page3', 'cart_page4', 'cart_page5']) ? '0' : '100px' }};">
@@ -37,5 +45,6 @@
 </footer>
 
 @include('components.login')
+
 </body>
 </html>

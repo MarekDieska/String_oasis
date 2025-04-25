@@ -1,4 +1,3 @@
-{{-- resources/views/your-view-file.blade.php --}}
 @extends('layouts.index')
 
 @section('content')

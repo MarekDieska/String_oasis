@@ -3,25 +3,24 @@
 @extends('layouts.index')
 
 @section('content')
-    <section class="row justify-content-between align-items-center p-4">
+    <nav class="mt-0 w-25 mb-0" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb text_color">
+        <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="{{ route('index') }}">Domov</a></li>
+            <li class="breadcrumb-item"><a href="{{ route('filters_page') }}">Produkty</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Detail</li>
+        </ol>
+    </nav>
+    <section class="row justify-content-between mt-0">
 
-        <div class="col-12 col-md-6 d-flex flex-column product-detail">
-            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb text_color">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ route('index') }}">Domov</a></li>
-                    <li class="breadcrumb-item"><a href="{{ route('filters_page') }}">Produkty</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Detail</li>
-                </ol>
-            </nav>
-
-            <div class="card border-custom border-5 mx-auto">
+        <div class="col-12 col-md-6 d-flex flex-column product-detail justify-content-center">
+            <div class="card mx-auto">
                 <img src="{{ asset('images/' . $product->image) }}" class="img-fluid img-big"
                      alt="fotka svetlohnedej drevenej akustickej gitary z predu">
             </div>
         </div>
 
         <div class="col-12 col-md-6 text_color d-flex flex-column">
-            <p class="fs-1 pt-1 mt-4">{{ $product->name }}</p>
+            <p class="fs-1 pt-1">{{ $product->name }}</p>
             <h5>{{ $product->name }} je perfektná pre začínajúcich aj pokročilých hudobníkov, ktorí hľadajú
                 spoľahlivý nástroj s výborným zvukom a luxusným vzhľadom.</h5>
 
@@ -96,7 +95,7 @@
             <div class="d-flex justify-content-center col-md-3">
                 <div class="p-3">
                     <div class="card">
-                        <img src="{{ $detaily[$i] }}" class="card-img-top" alt="detailnejší záber gitary">
+                        <img src="{{asset('images/' . $product->image)}}" class="card-img-top" alt="detailnejší záber gitary">
                     </div>
                 </div>
             </div>

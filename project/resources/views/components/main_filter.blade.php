@@ -18,7 +18,7 @@
                     <input type="range" class="form-range bg-transparent thumb-custom mt-0"
                            id="{{ $isOffcanvas ? 'priceRangeOffcanvas' : 'priceRange' }}"
                            min="100" max="5000" step="100" value="{{ request('p', 5000) }}"
-                           name="p" onchange="this.form.submit()">
+                           name="p" oninput="updatePriceValue(this)" onchange="this.form.submit()">
                 </div>
 
                 <div class="d-flex justify-content-between mt-0">
@@ -116,3 +116,9 @@
         </form>
     </div>
 </div>
+
+<script>
+    function updatePriceValue(slider) {
+        document.getElementById('priceValue').textContent = slider.value;
+    }
+</script>
