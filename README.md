@@ -25,27 +25,27 @@ UML diagram: ->project->diagram_StringOasis.png
 
 [✔️] zobrazenie konkrétneho produktu - detail produktu
 
-[] pridanie produktu do košíka (ľubovolné množstvo)
+[✔️] pridanie produktu do košíka (ľubovolné množstvo)
 
 [✔️] plnotextové vyhľadávanie nad katalógom produktov
 
-[] zobrazenie nákupného košíka
+[✔️] zobrazenie nákupného košíka
 
-[] zmena množstva pre daný produkt
+[✔️] zmena množstva pre daný produkt
 
-[] odobratie produktu
+[✔️] odobratie produktu
 
-[] výber dopravy
+[✔️] výber dopravy
 
-[] výber platby
+[✔️] výber platby
 
-[] zadanie dodacích údajov s validáciou
+[✔️] zadanie dodacích údajov s validáciou
 
-[] dokončenie objednávky
+[✔️] dokončenie objednávky
 
-[] umožnenie nákupu bez prihlásenia
+[✔️] umožnenie nákupu bez prihlásenia
 
-[] prenositeľnosť nákupného košíka v prípade prihláseného používateľa
+[✔️] prenositeľnosť nákupného košíka v prípade prihláseného používateľa
 
 [✔️] registrácia používateľa/zákazníka
 
