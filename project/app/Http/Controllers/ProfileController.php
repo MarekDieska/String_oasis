@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
+use App\Models\Profile;
 
 class ProfileController extends Controller
 {
@@ -34,6 +35,7 @@ class ProfileController extends Controller
 
         $user->email = $validated['email'];
         $user->save();
+        $user->assignRole($request->role);
 
         return back()->with('success', 'Profile bol aktualizovaný.');
     }
