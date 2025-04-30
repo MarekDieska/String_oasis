@@ -51,11 +51,9 @@ class FilterController extends Controller
         $priceMin = (int) $request->get('min', 0);
         $priceMax = (int) $request->get('max', 5000);
 
-// Orezanie do povoleného rozsahu
         $priceMin = max(0, min(5000, $priceMin));
         $priceMax = max(0, min(5000, $priceMax));
 
-// Ak je minimum väčšie ako maximum, resetuj
         if ($priceMin > $priceMax) {
             $priceMin = 0;
             $priceMax = 5000;
@@ -85,13 +83,17 @@ class FilterController extends Controller
             $query->where('name', 'ILIKE', '%' . $search . '%');
         }
 
+        $p_brands = (clone $query)->select('brand')->distinct()->pluck('brand');
+
+        if ($brand) {
+            $query->whereIn('brand', $brand);
+        }
+
         $p_products = $query->simplePaginate(16)->appends($request->except('page'));
 
         if ($subcategory != 0) {
-            $p_brands = Product::where('subcategory_id', $subcategory)->distinct()->pluck('brand');
             $p_ratings = Product::where('subcategory_id', $subcategory)->select('stars')->distinct()->orderBy('stars', 'asc')->pluck('stars');
         } else {
-            $p_brands = Product::distinct()->pluck('brand');
             $p_ratings = Product::select('stars')->distinct()->orderBy('stars', 'asc')->pluck('stars');
         }
 
