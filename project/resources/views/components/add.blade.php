@@ -2,34 +2,31 @@
 
 @section('content')
     <section class="card mt-5 mb-3 bg-dark border-success-subtle text_color">
-        <div class="text-center m-3">
-            <div class="card-header text_colors">Admin - Pridanie produktu</div>
-            <form id="productForm">
+        <form method="POST" action="{{ route('add') }}" enctype="multipart/form-data">
+            @csrf
+            <div class="text-center m-3">
+                <div class="card-header text_colors">Admin - Pridanie produktu</div>
                 <div class="row g-4">
                     <div class="col-md-8">
                         <div class="mb-2">
                             <label class="form-label fw-bold">Produkt</label>
                             <input type="text" class="form-control text-black placeholder-black" maxlength="100"
-                                   placeholder="Názov produktu">
+                                   placeholder="Názov produktu" required name="name">
                         </div>
                         <div class="mb-2">
                             <label class="form-label fw-bold">Popis produktu</label>
                             <textarea class="form-control placeholder-black" rows="3" minlength="50" maxlength="500"
-                                      placeholder="Detailný popis produktu"></textarea>
+                                      placeholder="Detailný popis produktu" required name="description"></textarea>
                         </div>
                         <div class="mb-2 parameters-section">
                             <label class="form-label fw-bold">Parametre</label>
                             <div class="parameter-fields">
                                 <div class="row mb-3">
                                     <div class="col">
-                                        <input type="text" class="form-control placeholder-black" placeholder="Telo">
+                                        <input type="text" class="form-control placeholder-black" placeholder="Značka" required name="brand">
                                     </div>
                                     <div class="col">
-                                        <input type="text" class="form-control placeholder-black" placeholder="Krk">
-                                    </div>
-                                    <div class="col">
-                                        <input type="text" class="form-control placeholder-black"
-                                               placeholder="Počet pražcov">
+                                        <input type="number" class="form-control placeholder-black" placeholder="Hodnotenie" min="1" max="5" required name="rating">
                                     </div>
                                 </div>
                             </div>
@@ -41,50 +38,60 @@
                         <div class="mb-2">
                             <label class="form-label fw-bold">Cenové detaily</label>
                             <div class="input-group mb-3">
-                                <input type="number" class="form-control placeholder-black" placeholder="Cena €">
+                                <input type="number" class="form-control placeholder-black" placeholder="Cena €"  min="1" max="5000" required name="price">
                             </div>
                             <div class="input-group mb-3">
-                                <input type="number" class="form-control placeholder-black" placeholder="Zľava %">
+                                <input type="number" class="form-control placeholder-black" placeholder="Zľava %" min="0" max="100" required name="discount">
                             </div>
                         </div>
                         <div class="mb-2">
                             <label class="form-label fw-bold">Kategória</label>
-                            <select class="form-select mb-3">
-                                <option value="">Kategória</option>
-                                <option value="1">Gitara</option>
-                                <option value="2">Basgitara</option>
-                                <option value="3">Iné struny</option>
-                                <option value="4">Kombá</option>
-                                <option value="5">Príslušenstvo</option>
-                                <option value="6">Platne</option>
+                            <select class="form-select mb-2" name="subcategory" required>
+                                <option disabled selected>Vyber podkategóriu</option>
+                                @foreach ($categories as $category)
+                                    @foreach ($category->subcategories as $subcategory)
+                                        <option value="{{ $subcategory->id }}">
+                                            {{
+                                                Str::lower($subcategory->name) .  ($category->name !== 'Iné struny' ? ' ' . Str::lower($category->name) : '')
+                                            }}
+                                        </option>
+                                    @endforeach
+                                @endforeach
                             </select>
-                            <select class="form-select mb-2">
-                                <option value="">Podkategória</option>
-                                <option value="1">Elektrické</option>
-                                <option value="2">Elektro-akustické</option>
-                                <option value="3">Akustické</option>
-                                <option value="4">Klasické</option>
-                                <option value="5">Detské</option>
-                            </select>
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label fw-bold">Kusy na sklade</label>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control placeholder-black" placeholder="Počet ks"  min="1" required name="stock">
+                            </div>
                         </div>
                     </div>
                     <div class="col-12">
-                        <div class="mb-0">
-                            <label class="form-label fw-bold mt-0">Obrázky</label>
-                            <div class="input-group mb-3">
-                                <input type="file" class="form-control form-control-lg bg-dark text_color"
-                                       id="addProductImage" multiple>
+                        <div class="mb-0 row">
+                            <div class="col-md-6 col-12">
+                                <label class="form-label fw-bold mt-0">Hlavný obrázok</label>
+                                <div class="input-group mb-3">
+                                    <input type="file" class="form-control form-control-lg bg-dark text_color"
+                                           id="addProductImage" name="image">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <label class="form-label fw-bold mt-0">Ďalšie obrázky</label>
+                                <div class="input-group mb-3">
+                                    <input type="file" class="form-control form-control-lg bg-dark text_color"
+                                           id="addProductImage" multiple name="images[]">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="d-flex justify-content-end gap-2 mt-2 mb-3">
-                    <a type="button" href="{{route('admin')}}" class="btn btn-outline-secondary">Zrušiť</a>
+                    <a type="button" href="{{route('admin_add')}}" class="btn btn-outline-secondary">Zrušiť</a>
                     <button type="reset" class="btn btn-outline-danger">Vyčistiť</button>
                     <button type="submit" class="btn btn-primary">Pridať produkt</button>
                 </div>
-            </form>
-        </div>
+            </div>
+        </form>
     </section>
 
     <hr class="text_color">

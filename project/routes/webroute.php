@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminPageController;
 use App\Http\Controllers\AdminRoleController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\RegisteredUserController;
@@ -13,6 +14,7 @@ use App\Http\Controllers\FilterController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
+use App\Models\Subcategory;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware(['auth'])->get('/dashboard', [DashboardController::class, 'showDashboard'])->name('dashboard');
@@ -28,9 +30,12 @@ Route::get('/admin', function () {
     return view('components.admin_main');
 })->name('admin');
 
-Route::get('/admin_add', function () {
-    return view('components.add');
-})->name('admin_add');
+Route::get('/admin_add', [AdminPageController::class, 'show'])->name('admin_add');
+Route::post('/add', [AdminPageController::class, 'store'])->name('add');
+
+Route::get('/subcategories/{id}', function ($id) {
+    return Subcategory::where('category_id', $id)->get();
+});
 
 Route::get('/admin_delete', function () {
     return view('components.delete');
