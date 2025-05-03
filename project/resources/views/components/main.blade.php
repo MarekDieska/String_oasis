@@ -5,7 +5,7 @@
     <article class="row justify-content-center align-items-center position-relative w-100 text-center grad">
         <img class="background-image hidden text-center opacity-25 position-absolute"
              src="{{ asset('images/home_background.svg') }}" alt="photo" width="70%">
-        <h1 class="position-relative hidden text_color">
+        <h1 class="position-relative text_color">
             "Struny vašich snov, melódia vášho srdca."
         </h1>
     </article>
@@ -35,12 +35,12 @@
                         </div>
                         <a class="link-custom" href="{{ route('produkt_detail', ['product' => $product->id]) }}">
                             <div class="text-custom sirka">
-                                <h5 class="t1-custom">{{ $product->name }}</h5>
+                                <p class="t1-custom fs-5">{{ $product->name }}</p>
                                 <div class="t2-hv">
                                     <div>
                                         @include('components.stars', ['rating' => $product->stars])
                                     </div>
-                                    <h4 class="t2-custom">{{ number_format($product->price, 0, ',', ' ') }} €</h4>
+                                    <p class="t2-custom fs-4">{{ number_format($product->price, 0, ',', ' ') }} €</p>
                                 </div>
                             </div>
                         </a>
@@ -75,12 +75,12 @@
                     </div>
                     <a class="link-custom" href="{{ route('produkt_detail', ['product' => $product->id])}}">
                         <div class="text-custom sirka pt-3">
-                            <h5 class="t1-custom">{{ $product->name }}</h5>
+                            <p class="t1-custom fs-5">{{ $product->name }}</p>
                             <div class="t2-hv">
                                 <div>
                                     @include('components.stars', ['rating' => $product->stars])
                                 </div>
-                                <h4 class="t2-custom">{{ number_format($product->price, 0, ',', ' ') }} €</h4>
+                                <p class="t2-custom fs-4">{{ number_format($product->price, 0, ',', ' ') }} €</p>
                             </div>
                         </div>
                     </a>

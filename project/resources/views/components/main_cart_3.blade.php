@@ -10,16 +10,16 @@
 
             @foreach ($steps as $index => $step)
                 <div class="d-flex align-items-center flex-column circle-box-custom">
-                    <button class="btn btn-secondary circle-custom rounded-pill {{ $index > 2 ? 'disabled' : '' }}">
+                    <div class="btn btn-secondary circle-custom rounded-pill {{ $index > 2 ? 'disabled' : '' }}">
                         {{ $index < 4 ? $index + 1 : ($index === 4 ? '' : '✔') }}
                         @if ($index === 4)
                             <i class="fa-regular fa-circle-check"></i>
                         @endif
-                    </button>
+                    </div>
                     <h6 class="{{ $index < 4 ? 'text-light txt-custom' : '' }}">{{ $step }}</h6>
                 </div>
                 @if ($index < 4)
-                    <button class="btn btn-secondary arrow-custom"><i class="fa fa-arrow-right m-0"></i></button>
+                    <p class="btn btn-secondary arrow-custom fs-5"><i class="fa fa-arrow-right m-0"></i></p>
                 @endif
             @endforeach
         </div>
@@ -121,32 +121,32 @@
                     <div>
                         <h2 class="subtotal">Zhrnutie:</h2>
                         <div class="d-flex justify-content-between align-items-center m-3">
-                            <h5>Medzisúčet</h5>
-                            <h5>{{ number_format($s, 2) }}€</h5>
+                            <p class="fs-5">Medzisúčet</p>
+                            <p class="fs-5">{{ number_format($s, 2) }}€</p>
                         </div>
                         <div class="d-flex justify-content-between align-items-center m-3">
-                            <h5>Zľavy</h5>
-                            <h5>{{ $d }}%</h5>
+                            <p class="fs-5">Zľavy</p>
+                            <p class="fs-5">{{ $d }}%</p>
                         </div>
                         <div class="d-flex justify-content-between align-items-center m-3">
-                            <h5>Doprava</h5>
-                            <h5 >{{ $d_c }}€</h5>
+                            <p class="fs-5">Doprava</p>
+                            <p class="fs-5">{{ $d_c }}€</p>
                         </div>
                         <div class="d-flex justify-content-between align-items-center m-3">
-                            <h5>Platba</h5>
-                            <h5> {{ $p_c }}€</h5>
+                            <p class="fs-5">Platba</p>
+                            <p class="fs-5"> {{ $p_c }}€</p>
                         </div>
                     </div>
 
                     <div class="d-flex flex-column align-items-center">
                         <div class="d-flex justify-content-between align-items-center w-100 p-3 pb-0 pt-0">
-                            <h5>Počet položiek</h5>
-                            <h5>{{ $i }} ks</h5>
+                            <p class="fs-5">Počet položiek</p>
+                            <p class="fs-5">{{ $i }} ks</p>
                         </div>
                         <hr class="line2-custom">
                         <div class="d-flex justify-content-between align-items-center w-100 m-3 p-3 pb-0 mt-1 pt-0">
-                            <h4>Súčet</h4>
-                            <h4 id="total"> {{ $m + $d_c + $p_c }} €</h4>
+                            <p class="fs-4">Súčet</p>
+                            <p class="fs-4" id="total"> {{ $m + $d_c + $p_c }} €</p>
                         </div>
                         <button type="submit" class="btn btn-dark">
                             Skontrolovať údaje

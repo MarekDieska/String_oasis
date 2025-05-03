@@ -6,7 +6,7 @@
             class="btn btn-danger rounded-pill d-block d-md-none position-fixed end-0 mt-4 ms-2 me-1 float-filter-custom" style="z-index: 1000"
             type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
             aria-controls="offcanvasExample">
-            <img src="{{ asset('images/filter.svg') }}" alt="" width="25">
+            <img src="{{ asset('images/filter.svg') }}" alt="filter_button" width="25">
         </button>
 
         <div class="d-none d-md-flex line-custom">

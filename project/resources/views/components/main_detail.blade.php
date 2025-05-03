@@ -1,4 +1,3 @@
-@include('components.variables')
 @include('components.plusModal')
 @extends('layouts.index')
 
@@ -21,8 +20,8 @@
 
         <div class="col-12 col-md-6 text_color d-flex flex-column">
             <p class="fs-1 pt-1">{{ $product->name }}</p>
-            <h5>{{ $product->name }} je perfektná pre začínajúcich aj pokročilých hudobníkov, ktorí hľadajú
-                spoľahlivý nástroj s výborným zvukom a luxusným vzhľadom.</h5>
+            <p class="fs-5">{{ $product->name }} je perfektná pre začínajúcich aj pokročilých hudobníkov, ktorí hľadajú
+                spoľahlivý nástroj s výborným zvukom a luxusným vzhľadom.</p>
 
             <div class="row mb-md-4">
                 <div class="col-6 d-flex align-items-center">
@@ -37,7 +36,7 @@
                 </div>
             </div>
 
-            <h3 class="mt-md-0 mb-3">Farba: </h3>
+            <p class="mt-md-0 mb-3 fs-3">Farba: </p>
 
             <div class="row mb-3 mb-md-0 d-flex justify-content-center align-items-center pb-4">
                 @for($i = 0; $i < 3; $i++)
@@ -79,7 +78,7 @@
     <section class="row m-2">
         <hr class="text_color mt-5 mb-5">
         <h1 class="text_color detail_large_text mt-md-1">{{ $product->name }}</h1>
-        <h5 class="text_color mt-4" style="font-family: 'Times New Roman', sans-serif;">
+        <p class="text_color mt-4 fs-5" style="font-family: 'Times New Roman', sans-serif;">
             {{ $product->name }}
             {{ $product->name }} je kvalitná elektro-akustická gitara, ktorá kombinuje klasický dizajn s moderným
             spracovaním. Jej telo je vyrobené z výberového mahagónu, ktorý zabezpečuje hlboký, bohatý tón s teplými
@@ -89,7 +88,7 @@
             Výnimočný sunburst lak dodáva gitare elegantný a nadčasový vzhľad, zatiaľ čo ergonomický výrez umožňuje
             jednoduchý prístup k vyšším pražcom. Integrovaný predzosilňovač s ekvalizérom a zabudovanou ladičkou
             zaručuje, že váš zvuk bude vždy presný a vyvážený, či už hráte doma, v štúdiu alebo na pódiu.
-        </h5>
+        </p>
 
         @foreach($product->photos as $photo)
             <div class="d-flex justify-content-center col-md-3">
@@ -103,14 +102,14 @@
 
         <hr class="text_color mt-5">
 
-        <h3 class="text_color text-center mt-1" style="font-family: 'Times New Roman', sans-serif;">
+        <p class="text_color text-center mt-1 fs-3" style="font-family: 'Times New Roman', sans-serif;">
             <i>Telo:</i> <br>Mahagón so smrekovou vrchnou doskou <br><br>
             <i>Krk:</i> <br>Mahagón s palisandrovým hmatníkom <br><br>
             <i>Farba:</i> <br>Sunburst <br><br>
             <i>Počet pražcov:</i> <br>20 <br><br>
             <i>Elektronika:</i> <br>Predzosilňovač s 3-pásmovým EQ a ladičkou <br><br>
             <i>Kobylka:</i> <br>Palisander pre optimálny prenos vibrácií
-        </h3>
+        </p>
 
         <hr class="text_color mt-5">
         <h1 class="mt-md-3 text_color align-items-left">Recenzie</h1>
@@ -127,13 +126,13 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title" style="height: 20px;">{{ $recenzia['nadpis'] }}</h4>
+                            <p class="card-title fs-4" style="height: 20px;">{{ $recenzia['nadpis'] }}</p>
                             <hr>
                             <p class="overflow-y-scroll fs-5 card-text" style="height: 180px">
                                 {{ $recenzia['text'] }}
                             </p>
                             <div class="card-footer bg-transparent">
-                                <h5 class="mb-0">{{ $recenzia['autor'] }}</h5>
+                                <p class="mb-0 fs-5">{{ $recenzia['autor'] }}</p>
                                 <p class="fs-5 opacity-50 mb-0">{{ $recenzia['cas'] }}</p>
                             </div>
                         </div>

@@ -12,18 +12,18 @@
             <div class="col-12 d-none d-sm-flex flex-row justify-content-center align-items-center">
                 @foreach (['Košík', 'Delivery', 'Údaje', 'Kontrola', 'hotovo'] as $index => $step)
                     <div class="d-flex align-items-center flex-column circle-box-custom">
-                        <button class="btn btn-secondary circle-custom rounded-pill {{ $index > 1 ? 'disabled' : '' }}">
+                        <div class="btn btn-secondary circle-custom rounded-pill {{ $index > 1 ? 'disabled' : '' }}">
                             {{ $index == 4 ? '' : $index + 1 }}
                             @if($index == 4)
                                 <i class="fa-regular fa-circle-check"></i>
                             @endif
-                        </button>
+                        </div>
                         <h6 class="text-light txt-custom">{{ $step }}</h6>
                     </div>
                     @if ($index < 4)
-                        <button class="btn btn-secondary arrow-custom">
+                        <p class="btn btn-secondary arrow-custom fs-5">
                             <i class="fa fa-arrow-right m-0"></i>
-                        </button>
+                        </p>
                     @endif
                 @endforeach
             </div>
@@ -31,7 +31,7 @@
 
         <section class="row ms-lg-4">
             <div class="col-12 col-md-4 col-lg-4 p-5 ps-md-5 pe-md-4 p-lg-2 justify-content-center mt-md-4">
-                <h4 class="text_color cart_text">Doprava</h4>
+                <p class="text_color cart_text fs-4">Doprava</p>
                 <div class="cart-slider justify-content-center mt-0 overflow-y-scroll overflow-x-hidden mx-custom">
                     <div class="btn-group d-flex flex-column" role="group">
                         @foreach ($dopravy as $doprava)
@@ -46,12 +46,12 @@
                                 >
                                 <i class="fa-solid fa-box-open fa-2x me-3"></i>
                                 <div class="d-flex w-100 flex-column cart-prod-txt">
-                                    <h4>{{ $doprava->name }}</h4>
-                                    <h5>{{ $doprava->description }}</h5>
+                                    <p class="fs-4">{{ $doprava->name }}</p>
+                                    <p class="fs-5">{{ $doprava->description }}</p>
                                 </div>
-                                <h4 class="cart-prod-cost ms-auto p-0">
+                                <p class="cart-prod-cost ms-auto p-0 fs-4">
                                     {{ $doprava->price > 0 ? $doprava->price . '€' : 'zadarmo' }}
-                                </h4>
+                                </p>
                             </label>
                         @endforeach
                     </div>
@@ -60,7 +60,7 @@
 
             {{-- Platba --}}
             <div class="col-12 col-md-4 col-lg-4 p-5 ps-md-2 pe-md-5 p-lg-2 justify-content-center mt-md-4">
-                <h4 class="text_color">Spôsob platby</h4>
+                <p class="text_color fs-4">Spôsob platby</p>
                 <div class="cart-slider justify-content-center mt-0 overflow-x-hidden">
                     @foreach ($platby as $platba)
                         <label class="cart-product-small bg-light d-flex align-items-center w-100 ps-3 pe-2">
@@ -74,12 +74,12 @@
                             >
                             <i class="fa-regular fa-credit-card fa-2x me-3"></i>
                             <div class="d-flex w-100 flex-column cart-prod-txt">
-                                <h4>{{ $platba->name }}</h4>
-                                <h5>{{ $platba->description }}</h5>
+                                <p class="sf-4">{{ $platba->name }}</p>
+                                <p class="fs-5">{{ $platba->description }}</p>
                             </div>
-                            <h4 class="cart-prod-cost ms-auto p-0">
+                            <p class="cart-prod-cost ms-auto p-0 fs-4">
                                 {{ $platba->price > 0 ? $platba->price . '€' : 'zadarmo' }}
-                            </h4>
+                            </p>
                         </label>
                     @endforeach
                 </div>
@@ -88,34 +88,34 @@
             <div class="col-12 col-md-4 d-flex justify-content-center align-items-end">
                 <div class="total-custom rounded-1 p-3 d-flex flex-column justify-content-between">
                     <div>
-                        <h2 class="subtotal">Zhrnutie:</h2>
+                        <p class="subtotal fs-2">Zhrnutie:</p>
                         <div class="d-flex justify-content-between align-items-center m-3">
-                            <h5>Medzisúčet</h5>
-                            <h5>{{ number_format($s, 2) }}€</h5>
+                            <p class="fs-5">Medzisúčet</p>
+                            <p class="fs-5">{{ number_format($s, 2) }}€</p>
                         </div>
                         <div class="d-flex justify-content-between align-items-center m-3">
-                            <h5>Zľavy</h5>
-                            <h5>{{ $d }}%</h5>
+                            <p class="fs-5">Zľavy</p>
+                            <p class="fs-5">{{ $d }}%</p>
                         </div>
                         <div class="d-flex justify-content-between align-items-center m-3">
-                            <h5>Doprava</h5>
-                            <h5 id="shippingPrice">€</h5>
+                            <p class="fs-5">Doprava</p>
+                            <p class="fs-5" id="shippingPrice">€</p>
                         </div>
                         <div class="d-flex justify-content-between align-items-center m-3">
-                            <h5>Platba</h5>
-                            <h5 id="paymentPrice">€</h5>
+                            <p class="fs-5">Platba</p>
+                            <p class="fs-5" id="paymentPrice">€</p>
                         </div>
                     </div>
 
                     <div class="d-flex flex-column align-items-center">
                         <div class="d-flex justify-content-between align-items-center w-100 p-3 pb-0 pt-0">
-                            <h5>Počet položiek</h5>
-                            <h5>{{ $i }} ks</h5>
+                            <p class="fs-5">Počet položiek</p>
+                            <p class="fs-5">{{ $i }} ks</p>
                         </div>
                         <hr class="line2-custom">
                         <div class="d-flex justify-content-between align-items-center w-100 m-3 p-3 pb-0 mt-1 pt-0">
-                            <h4>Súčet</h4>
-                            <h4 id="total">€</h4>
+                            <p class="fs-4">Súčet</p>
+                            <p class="fs-4" id="total">€</p>
                         </div>
                         <button type="submit" class="btn mt-0 btn-dark mb-4">
                             Pokračovať na výber dopravy

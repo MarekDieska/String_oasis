@@ -7,28 +7,28 @@
         <div class="col-12 d-none d-sm-flex flex-row justify-content-center align-items-center">
 
             <div class="d-flex align-items-center flex-column circle-box-custom">
-                <button class="btn btn-secondary circle-custom rounded-pill">1</button>
+                <div class="btn btn-secondary circle-custom rounded-pill">1</div>
                 <h6 class="text-light txt-custom">Košík</h6>
             </div>
-            <button class="btn btn-secondary arrow-custom "><i class="fa fa-arrow-right m-0"></i></button>
+            <p class="btn btn-secondary arrow-custom fs-5"><i class="fa fa-arrow-right m-0"></i></p>
             <div class="d-flex align-items-center flex-column  circle-box-custom">
-                <button class="btn btn-secondary circle-custom rounded-pill">2</button>
+                <div class="btn btn-secondary circle-custom rounded-pill">2</div>
                 <h6 class="text-light txt-custom">Doprava</h6>
             </div>
-            <button class="btn btn-secondary arrow-custom "><i class="fa fa-arrow-right m-0"></i></button>
+            <p class="btn btn-secondary arrow-custom fs-5"><i class="fa fa-arrow-right m-0"></i></p>
             <div class="d-flex align-items-center flex-column  circle-box-custom">
-                <button class="btn btn-secondary circle-custom rounded-pill">3</button>
+                <div class="btn btn-secondary circle-custom rounded-pill">3</div>
                 <h6 class="text-light txt-custom">Údaje</h6>
             </div>
-            <button class="btn btn-secondary arrow-custom "><i class="fa fa-arrow-right m-0"></i></button>
+            <p class="btn btn-secondary arrow-custom fs-5"><i class="fa fa-arrow-right m-0"></i></p>
             <div class="d-flex align-items-center flex-column  circle-box-custom">
-                <button class="btn btn-secondary circle-custom rounded-pill">4</button>
+                <div class="btn btn-secondary circle-custom rounded-pill">4</div>
                 <h6 class="text-light txt-custom">Kontrola</h6>
             </div>
-            <button class="btn btn-secondary arrow-custom"><i class="fa fa-arrow-right m-0"></i></button>
+            <p class="btn btn-secondary arrow-custom fs-5"><i class="fa fa-arrow-right m-0"></i></p>
             <div class="d-flex align-items-center flex-column  circle-box-custom">
-                <button class="btn btn-secondary circle-custom rounded-pill disabled"><i
-                        class="fa-regular fa-circle-check"></i></button>
+                <div class="btn btn-secondary circle-custom rounded-pill disabled"><i
+                        class="fa-regular fa-circle-check"></i></div>
                 <h6>hotovo</h6>
             </div>
 
@@ -38,7 +38,7 @@
 
     <section class="row">
         <div class="col-12 col-md-7 align-items-start justify-content-center ps-5 pe-5 pe-md-0 text-light">
-            <h3 class="mb-3 pt-4 pb-2  opacity-75">Kontrola údajov</h3>
+            <p class="mb-3 pt-4 pb-2  opacity-75 fs-3">Kontrola údajov</p>
 
             <div class="row pb-2 mb-2 ps-xl-5 pt-4 border-top  border-secondary">
                 <div class="col-12 col-md-3 fw-bold pb-3 pb-md-0">Osobné údaje</div>
@@ -89,34 +89,34 @@
         <div class="col-12 col-md-5 d-flex justify-content-center align-items-end">
             <div class=" total-custom rounded-1 p-3 d-flex flex-column justify-content-between">
                 <div>
-                    <h2 class="subtotal">Zhrnutie:</h2>
+                    <p class="subtotal fs-2">Zhrnutie:</p>
                     <div class="d-flex justify-content-between align-items-center m-3">
-                        <h5>Medzisúčet</h5>
-                        <h5>{{ number_format($s, 2) }}€</h5>
+                        <p class="fs-5">Medzisúčet</p>
+                        <p class="fs-5">{{ number_format($s, 2) }}€</p>
                     </div>
                     <div class="d-flex justify-content-between align-items-center m-3">
-                        <h5>Zľavy</h5>
-                        <h5>{{ $d }}%</h5>
+                        <p class="fs-5">Zľavy</p>
+                        <p class="fs-5">{{ $d }}%</p>
                     </div>
                     <div class="d-flex justify-content-between align-items-center m-3">
-                        <h5>Doprava</h5>
-                        <h5 >{{ $delivery->price }}€</h5>
+                        <p class="fs-5">Doprava</p>
+                        <p class="fs-5">{{ $delivery->price }}€</p>
                     </div>
                     <div class="d-flex justify-content-between align-items-center m-3">
-                        <h5>Platba</h5>
-                        <h5> {{ $payment->price }}€</h5>
+                        <p class="fs-5">Platba</p>
+                        <p class="fs-5"> {{ $payment->price }}€</p>
                     </div>
                 </div>
 
                 <div class="d-flex flex-column align-items-center">
                     <div class="d-flex justify-content-between align-items-center w-100 p-3 pb-0 pt-0">
-                        <h5>Počet položiek</h5>
-                        <h5>{{ $i }} ks</h5>
+                        <p class="fs-5">Počet položiek</p>
+                        <p class="fs-5">{{ $i }} ks</p>
                     </div>
                     <hr class="line2-custom">
                     <div class="d-flex justify-content-between align-items-center w-100 m-3 p-3 pb-0 mt-1 pt-0">
-                        <h4>Súčet</h4>
-                        <h4 id="total"> {{ $m + $delivery->price + $payment->price }} €</h4>
+                        <p class="fs-4">Súčet</p>
+                        <p class="fs-4" id="total"> {{ $m + $delivery->price + $payment->price }} €</p>
                     </div>
                     <a href="{{ route('cart_page5') }}" class="btn mt-0 btn-dark mb-4">Objednať s povinnosťou platby</a>
                 </div>

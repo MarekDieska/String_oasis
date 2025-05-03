@@ -5,9 +5,8 @@
         <div class="col">
             <h1 class="title-filter">{{ ucwords(strtolower($title)) }}</h1>
         </div>
-        <div class="col d-flex flex-column flex-sm-row
-             justify-content-start justify-content-lg-end align-items-center">
-            <h5 class="pt-2 title-filter">Zoradiť podľa:</h5>
+        <div class="col d-flex flex-column flex-sm-row justify-content-start justify-content-lg-end align-items-center">
+            <p class="pt-2 title-filter fs-5">Zoradiť podľa:</p>
 
             <form method="GET" action="{{ route('filters_page') }}">
                 @if(request('p'))
@@ -31,7 +30,7 @@
                                value="{{ $i }}"
                                onchange="this.form.submit()"
                             {{ request('s') == $i ? 'checked' : '' }}>
-                        <label class="btn btn-outline-secondary" for="sort{{ $i }}">{{ $nazov }}</label>
+                        <label class="btn btn-outline-light" for="sort{{ $i }}">{{ $nazov }}</label>
                     @endforeach
                 </div>
 
@@ -41,7 +40,10 @@
                                value="{{ $z }}"
                                onchange="this.form.submit()"
                             {{ request('z') == $z ? 'checked' : '' }}>
-                        <label class="btn btn-outline-secondary" for="sort{{ $z + 10 }}">
+                        <label class="btn btn-outline-light" for="sort{{ $z + 10 }}">
+                            <span class="visually-hidden">
+                                {{ $z == 1 ? 'Vzostupne' : 'Zostupne' }}
+                            </span>
                             @if($z == 1)
                                 <i class="fa fa-arrow-up-wide-short m-2"></i>
                             @else
@@ -62,12 +64,10 @@
         @foreach ($products as $product)
             <div class="col d-flex justify-content-center p-3 r-custom">
                 <div class="card products-card d-flex flex-column">
-
                     <div class="product-image">
                         <img class="card-photo"
                              src="{{ asset('images/' . $product->image) }}"
-                             alt="{{ $product->name }}"
-                            loading="lazy">
+                             alt="{{ $product->name }}">
                     </div>
 
                     <div class="favorite-btn text-center">
@@ -87,12 +87,12 @@
 
                     <a href="{{ route('produkt_detail', $product) }}">
                         <div class="text-custom">
-                            <h5 class="t1-custom">{{ $product->name }}</h5>
+                            <p class="t1-custom fs-5">{{ $product->name }}</p>
                             <div class="t2-hv">
                                 <div>
                                     @include('components.stars', ['rating' => $product->stars])
                                 </div>
-                                <h4 class="t2-custom">{{ number_format($product->price, 0, ',', ' ') }} €</h4>
+                                <p class="t2-custom fs-4">{{ number_format($product->price, 0, ',', ' ') }} €</p>
                             </div>
                         </div>
                     </a>
@@ -100,6 +100,7 @@
             </div>
         @endforeach
     </div>
+
     <div class="row mt-5">
         <div class="d-flex justify-content-center dark-custom">
             {{ $p_products->links() }}
@@ -121,3 +122,16 @@
         </div>
     </div>
 </div>
+
+<style>
+    .visually-hidden {
+        position: absolute !important;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
+</style>

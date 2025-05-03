@@ -3,6 +3,7 @@
 <head>
     <title>String Oasis</title>
     <meta charset="UTF-8">
+    <meta name="description" content="Toto je hlavny layout e-shop stranky navrhnutej na wtech">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
