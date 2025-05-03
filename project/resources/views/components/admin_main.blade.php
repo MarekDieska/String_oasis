@@ -52,7 +52,7 @@
 
         <div class="mt-4 text_color p-5">
             <h2>Pridanie Admina</h2>
-            <form method="POST" action="{{ route('admin.assign') }}">
+            <form method="POST" action="{{ route('users.addRole') }}">
                 @csrf
                 <div class="form-group">
                     <label for="adminEmail">Email admina</label>
@@ -67,7 +67,7 @@
 
         <div class="mt-4 text_color p-5">
             <h2>Odstránenie Admina</h2>
-            <form method="POST" action="{{ route('admin.remove') }}">
+            <form method="POST" action="{{ route('users.deleteRole') }}">
                 @csrf
                 <div class="form-group text_color">
                     <label for="adminToRemove">Email Admina</label>

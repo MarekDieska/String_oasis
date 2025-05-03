@@ -37,6 +37,6 @@ class ProfileController extends Controller
         $user->save();
         $user->assignRole($request->role);
 
-        return back()->with('success', 'Profile bol aktualizovaný.');
+        return back()->with('success', 'Profil bol aktualizovaný.');
     }
 }

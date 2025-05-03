@@ -38,6 +38,34 @@ class UserController extends Controller
 
         $user->assignRole($request->role);
 
-        return redirect()->route('users.index')->with('success', 'User created with role.');
+        return redirect()->route('users.index')->with('Účet vytvorený');
+    }
+
+    public function addRole(Request $request)
+    {
+        $request->validate([
+            'email' => 'required|email|exists:users,email',
+        ]);
+
+        // Find the user based on email
+        $user = User::where('email', $request->email)->first();
+
+        // Assign the role to the user
+        $user->assignRole('admin');
+
+        return back()->with('success', 'Rola pridaná úspešne!');
+    }
+
+    public function deleteRole(Request $request)
+    {
+        $request->validate([
+            'email' => 'required|email|exists:users,email',
+        ]);
+
+        $user = User::where('email', $request->email)->first();
+
+        $user->removeRole('admin');
+
+        return back()->with('success', 'Rola odstránená úspešne');
     }
 }

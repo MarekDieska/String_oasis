@@ -15,6 +15,8 @@ use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Models\Subcategory;
+use App\Http\Controllers\UserController;
+
 use Illuminate\Support\Facades\Route;
 
 Route::middleware(['auth'])->get('/dashboard', [DashboardController::class, 'showDashboard'])->name('dashboard');
@@ -69,8 +71,9 @@ Route::post('/login', [AuthenticatedSessionController::class, 'store']);
 Route::get('/register', [RegisteredUserController::class, 'create'])->name('register');
 Route::post('/register', [RegisteredUserController::class, 'store']);
 
-Route::post('/admin/add-role', [AdminRoleController::class, 'assignAdmin'])->name('admin.assign');
-Route::post('/admin/remove-role', [AdminRoleController::class, 'removeAdmin'])->name('admin.remove');
+Route::post('/add-role', [UserController::class, 'addRole'])->name('users.addRole');
+Route::post('/delete-role', [UserController::class, 'deleteRole'])->name('users.deleteRole');
+
 
 Route::put('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
 
