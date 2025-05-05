@@ -34,7 +34,7 @@
                 @auth
                     <li class="marg-bug dropdown">
                         <a class="link-custom text_color dropdown-toggle fs-3" href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-user-tie"></i>Profile
+                            <i class="fa-solid fa-user-tie"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="userDropdown">
                             <li>

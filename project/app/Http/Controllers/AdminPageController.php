@@ -6,6 +6,7 @@ use App\Models\Category;
 use App\Models\Product;
 use App\Models\Subcategory;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class AdminPageController extends Controller
 {
@@ -78,6 +79,35 @@ class AdminPageController extends Controller
 
         return redirect()->route('admin_add')->with('success', 'Produkt bol úspešne pridaný.');
     }
+    public function deleteProduct(Request $request)
+    {
+        $categories = Category::with('subcategories')->get();
+        $product = null;
+
+        if ($request->filled('s') && $request->filled('subcategory')) {
+            $search = str_replace(' ', '%', $request->input('s'));
+            $product = Product::where('name', 'LIKE', '%' . $search . '%')
+                ->where('subcategory_id', $request->subcategory)
+                ->first();
+        }
+
+        return view('components.delete', compact('categories', 'product'));
+    }
+
+    public function destroyProduct($id)
+    {
+        $product = Product::findOrFail($id);
+
+        // Optionally delete the image from storage
+        if ($product->image && Storage::disk('public')->exists($product->image)) {
+            Storage::disk('public')->delete($product->image);
+        }
+
+        $product->delete();
+
+        return redirect()->route('product.delete')->with('success', 'Produkt bol úspešne odstránený.');
+    }
+
 
     /**
      * Display the specified resource.

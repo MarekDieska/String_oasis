@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminPageController;
+use App\Http\Controllers\AdminProductController;
 use App\Http\Controllers\AdminRoleController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\RegisteredUserController;
@@ -80,5 +81,13 @@ Route::put('/profile/update', [ProfileController::class, 'update'])->name('profi
 Route::post('/cart/add', [CartController::class, 'add'])->name('cart.add');
 Route::delete('/cart/remove/{id}', [CartController::class, 'remove'])->name('cart.remove');
 Route::put('/cart/update/{id}', [CartController::class, 'update'])->name('cart.update');
+
+// Show the product delete form and search
+Route::get('/admin/product/delete', [AdminPageController::class, 'deleteProduct'])->name('product.delete');
+
+// Confirm and delete the product
+Route::delete('/admin/product/delete/{id}', [AdminPageController::class, 'destroyProduct'])->name('product.destroy');
+
+
 
 require __DIR__.'/auth.php';

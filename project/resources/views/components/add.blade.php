@@ -45,9 +45,8 @@
                             </div>
                         </div>
                         <div class="mb-2">
-                            <label class="form-label fw-bold">Kategória</label>
+                            <label class="form-label fw-bold text_color">Kategória</label>
                             <select class="form-select mb-2" name="subcategory" required>
-                                <option disabled selected>Vyber podkategóriu</option>
                                 @foreach ($categories as $category)
                                     @foreach ($category->subcategories as $subcategory)
                                         <option value="{{ $subcategory->id }}">
