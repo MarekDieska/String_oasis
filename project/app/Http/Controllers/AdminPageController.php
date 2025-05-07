@@ -86,7 +86,7 @@ class AdminPageController extends Controller
 
         if ($request->filled('s') && $request->filled('subcategory')) {
             $search = str_replace(' ', '%', $request->input('s'));
-            $product = Product::where('name', 'LIKE', '%' . $search . '%')
+            $product = Product::where('name', 'ILIKE', '%' . $search . '%')
                 ->where('subcategory_id', $request->subcategory)
                 ->first();
         }
@@ -107,6 +107,47 @@ class AdminPageController extends Controller
 
         return redirect()->route('product.delete')->with('success', 'Produkt bol úspešne odstránený.');
     }
+
+    public function editProduct(Request $request)
+    {
+        $categories = Category::with('subcategories')->get();
+        $product = null;
+
+        if ($request->filled('s') && $request->filled('subcategory')) {
+            $search = str_replace(' ', '%', $request->input('s'));
+            $product = Product::where('name', 'ILIKE', '%' . $search . '%')
+                ->where('subcategory_id', $request->subcategory)
+                ->first();
+        }
+
+        return view('components.edit', compact('categories', 'product'));
+    }
+
+    public function updateProduct(Request $request, $id)
+    {
+        $product = Product::findOrFail($id);
+
+        $product->update([
+            'name' => $request->name,
+            'description' => $request->description,
+            'price' => $request->price,
+            'discount' => $request->discount,
+            'brand' => $request->brand,
+            'stock' => $request->stock,
+            'subcategory_id' => $request->subcategory_id,
+        ]);
+
+        if ($request->hasFile('image')) {
+            $image = $request->file('image')->store('images', 'public');
+            $product->image = basename($image);
+            $product->save();
+        }
+
+        return redirect()->route('product.edit', ['s' => $product->name, 'subcategory' => $product->subcategory_id])
+            ->with('success', 'Produkt bol úspešne upravený.');
+    }
+
+
 
 
     /**

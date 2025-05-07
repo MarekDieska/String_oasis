@@ -1,8 +1,6 @@
 <?php
 
 use App\Http\Controllers\AdminPageController;
-use App\Http\Controllers\AdminProductController;
-use App\Http\Controllers\AdminRoleController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\CartController;
@@ -88,6 +86,8 @@ Route::get('/admin/product/delete', [AdminPageController::class, 'deleteProduct'
 // Confirm and delete the product
 Route::delete('/admin/product/delete/{id}', [AdminPageController::class, 'destroyProduct'])->name('product.destroy');
 
+Route::get('/admin/product/edit', [AdminPageController::class, 'editProduct'])->name('product.edit');
+Route::put('/admin/product/edit/{id}', [AdminPageController::class, 'updateProduct'])->name('product.update');
 
 
 require __DIR__.'/auth.php';

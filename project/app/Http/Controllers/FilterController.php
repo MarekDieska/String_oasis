@@ -80,10 +80,12 @@ class FilterController extends Controller
         }
 
         if ($search) {
-            $query->where('name', 'ILIKE', '%' . $search . '%');
+            $search = str_replace(' ', '%', $request->get('q'));
+            $query->where('name', 'ILIKE', "%$search%");
         }
 
-        $p_brands = (clone $query)->select('brand')->distinct()->pluck('brand');
+        $p_brands = (clone $query)->reorder()->select('brand')->distinct()->pluck('brand');
+
 
         if ($brand) {
             $query->whereIn('brand', $brand);
