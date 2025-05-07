@@ -376,6 +376,8 @@ class ProductSeeder extends Seeder
         $products = Product::all();
 
         foreach ($products as $product) {
+            $product->description = $product->name . ' je kvalitná elektro-akustická gitara, ktorá kombinuje klasický dizajn s moderným spracovaním. Jej telo je vyrobené z výberového mahagónu, ktorý zabezpečuje hlboký, bohatý tón s teplými basmi a jasnými výškami. Vrchná doska zo smreku pridáva rezonanciu a dynamiku, vďaka čomu je ideálna pre hráčov všetkých úrovní. Výnimočný sunburst lak dodáva gitare elegantný a nadčasový vzhľad, zatiaľ čo ergonomický výrez umožňuje jednoduchý prístup k vyšším pražcom. Integrovaný predzosilňovač s ekvalizérom a zabudovanou ladičkou zaručuje, že váš zvuk bude vždy presný a vyvážený, či už hráte doma, v štúdiu alebo na pódiu.';
+            $product->save();
             if (in_array($product->subcategory->id, [1, 2, 3, 4, 5])) {
                 Photo::create([
                     'product_id' => $product->id,

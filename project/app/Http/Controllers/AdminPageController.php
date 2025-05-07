@@ -57,7 +57,7 @@ class AdminPageController extends Controller
         $product->description = $validated['description'];
 
         if ($request->hasFile('image')) {
-            $filename = $request->image->extension();
+            $filename = $request->image->getClientOriginalName();
             $request->image->move(public_path('images'), $filename);
             $product->image = $filename;
         }
@@ -65,7 +65,7 @@ class AdminPageController extends Controller
 
         if ($request->hasFile('images')) {
             foreach ($request->file('images') as $image) {
-                $filename = $image->extension();
+                $filename = $image->getClientOriginalName();
                 $image->move(public_path('images'), $filename);
 
                 $product->photos()->create([
