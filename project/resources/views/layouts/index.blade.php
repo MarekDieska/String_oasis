@@ -15,7 +15,7 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('storage/images/favicon.ico') }}">
 
 </head>
 <body class="bg-dark" data-user="@auth auth @else guest @endauth" data-status="{{ session('status') }}">

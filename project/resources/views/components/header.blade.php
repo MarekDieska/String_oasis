@@ -3,7 +3,7 @@
 
         <div class="col-md-4 col-6 d-flex align-items-center">
             <a href="{{ route('index') }}" class="navbar-brand d-flex align-items-center m-0 p-0">
-                <img src="{{ asset('images/logo.svg') }}" alt="Logo" width="60">
+                <img src="{{ asset('storage/images/logo.svg') }}" alt="Logo" width="60">
                 <p class="mb-0 p-0 ms-2 fs-3 logo-p">String<br>Oasis</p>
             </a>
         </div>

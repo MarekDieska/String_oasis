@@ -4,7 +4,7 @@
 @section('content')
     <article class="row justify-content-center align-items-center position-relative w-100 text-center grad">
         <img class="background-image hidden text-center opacity-25 position-absolute"
-             src="{{ asset('images/home_background.svg') }}" alt="photo" width="70%">
+             src="{{ asset('storage/images/home_background.svg') }}" alt="photo" width="70%">
         <h1 class="position-relative text_color">
             "Struny vašich snov, melódia vášho srdca."
         </h1>
@@ -18,7 +18,7 @@
                 <div class="pas">
                     <div class="card produkt mt-3">
                         <div class="product-image">
-                            <img class="card-photo" src="{{ asset('images/' . $product->image) }}" alt="{{ $product->image }}">
+                            <img class="card-photo" src="{{ asset('storage/images/' . $product->image) }}" alt="{{ $product->image }}">
                         </div>
                         <div class="favorite-btn text-center">
                             <p>&#x2661;</p>
@@ -29,7 +29,7 @@
                              data-bs-target="#plusModal"
                              data-name="{{ $product->name }}"
                              data-price="{{ $product->price }}"
-                             data-image="{{ asset('images/' . $product->image) }}"
+                             data-image="{{ asset('storage/images/' . $product->image) }}"
                              data-id="{{ $product->id }}">
                             <p>+</p>
                         </div>
@@ -58,7 +58,7 @@
             <div class="pas">
                 <div class="card produkt mt-3">
                     <div class="product-image">
-                        <img class="card-photo" src="{{ asset('images/' . $product->image) }}" alt="{{ $product->image }}">
+                        <img class="card-photo" src="{{ asset('storage/images/' . $product->image) }}" alt="{{ $product->image }}">
                     </div>
                     <div class="favorite-btn text-center">
                         <p>&#x2661;</p>
@@ -69,7 +69,7 @@
                          data-bs-target="#plusModal"
                          data-name="{{ $product->name }}"
                          data-price="{{ $product->price }}"
-                         data-image="{{ asset('images/' . $product->image) }}"
+                         data-image="{{ asset('storage/images/' . $product->image) }}"
                          data-id="{{ $product->id }}">
                         <p>+</p>
                     </div>

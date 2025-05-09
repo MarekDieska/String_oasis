@@ -68,7 +68,7 @@
 
                         <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between w-100">
                             <a href="#" class="link-custom text-black d-flex flex-row align-items-center">
-                                <img src="{{ asset('images/' . $prod->image) }}" width="60" alt="obrazok produktu {{$prod->name}}" class="me-3">
+                                <img src="{{ asset('storage/images/' . $prod->image) }}" width="60" alt="obrazok produktu {{$prod->name}}" class="me-3">
                                 <p class="mb-0 fs-5">{{ $prod->name }}</p>
                             </a>
                         </div>

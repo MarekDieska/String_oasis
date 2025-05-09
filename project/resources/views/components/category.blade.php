@@ -46,7 +46,7 @@
     <button class="navbar-toggler menu-custom" type="button"
             data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <img src="{{ asset('images/menu.svg') }}" alt="Menu" height="35">
+        <img src="{{ asset('storage/images/menu.svg') }}" alt="Menu" height="35">
     </button>
 
     <div class="row d-none d-md-flex w-100" id="categoryGroup">
@@ -58,7 +58,7 @@
                        data-bs-toggle="collapse"
                    data-bs-target="#{{ Str::slug($category->name) }}Collapse"
                     @endif>
-                    <img src="{{ asset('images/'.$category->url) }}" alt="{{ $category->name }}" height="70" class="d-none d-md-block">
+                    <img src="{{ asset('storage/images/'.$category->url) }}" alt="{{ $category->name }}" height="70" class="d-none d-md-block">
                     <p class="m-0">{{ mb_strtoupper($category->name) }}</p>
                 </a>
 

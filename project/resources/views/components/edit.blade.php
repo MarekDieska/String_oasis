@@ -111,7 +111,7 @@
                                         <input type="file" name="image" class="form-control bg-dark text_color mb-2 mt-2">
                                         @if ($product->image)
                                             <div class="d-flex w-100 justify-content-center">
-                                                <img src="{{ asset('images/' . $product->image) }}"
+                                                <img src="{{ asset('storage/images/' . $product->image) }}"
                                                      style="width:70%; height:auto" class="mt-3 img-fluid" alt="Produkt">
                                             </div>
                                         @endif
@@ -122,7 +122,7 @@
                                         <div class="justify-content-center row">
                                             @foreach($product->photos as $image)
                                                 <div class="card bg-transparent col-6 align-items-center justify-content-between">
-                                                    <img src="{{ asset('images/' . $image->url) }}"
+                                                    <img src="{{ asset('storage/images/' . $image->url) }}"
                                                          style="width:70%; height:auto" class="mt-3 img-fluid" alt="Produkt">
                                                     <button class="btn btn-outline-danger mb-3 mt-3"> Vymazať </button>
                                                 </div>

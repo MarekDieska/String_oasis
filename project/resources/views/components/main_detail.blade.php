@@ -13,7 +13,7 @@
 
         <div class="col-12 col-md-6 d-flex flex-column product-detail justify-content-center">
             <div class="card mx-auto">
-                <img src="{{ asset('images/' . $product->image) }}" class="img-fluid img-big"
+                <img src="{{ asset('storage/images/' . $product->image) }}" class="img-fluid img-big"
                      alt="fotka svetlohnedej drevenej akustickej gitary z predu">
             </div>
         </div>
@@ -53,7 +53,7 @@
                 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#plusModal"
                         data-name="{{ $product->name }}"
                         data-price="{{ $product->price }}"
-                        data-image="{{ asset('images/' . $product->image) }}"
+                        data-image="{{ asset('storage/images/' . $product->image) }}"
                         data-id="{{ $product->id }}">Pridať
                     do košíka
                 </button>
@@ -86,7 +86,7 @@
             <div class="d-flex justify-content-center col-md-3">
                 <div class="p-3">
                     <div class="card">
-                        <img src="{{asset('images/' . $photo->url)}}" class="card-img-top" alt="detailnejší záber gitary">
+                        <img src="{{asset('storage/images/' . $photo->url)}}" class="card-img-top" alt="detailnejší záber gitary">
                     </div>
                 </div>
             </div>

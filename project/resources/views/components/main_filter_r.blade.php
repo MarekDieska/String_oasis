@@ -66,7 +66,7 @@
                 <div class="card products-card d-flex flex-column">
                     <div class="product-image">
                         <img class="card-photo"
-                             src="{{ asset('images/' . $product->image) }}"
+                             src="{{ asset('storage/images/' . $product->image) }}"
                              alt="{{ $product->name }}">
                     </div>
 
@@ -80,7 +80,7 @@
                          data-bs-target="#plusModal"
                          data-name="{{ $product->name }}"
                          data-price="{{ $product->price }}"
-                         data-image="{{ asset('images/' . $product->image) }}"
+                         data-image="{{ asset('storage/images/' . $product->image) }}"
                          data-id="{{ $product->id }}">
                         <p>+</p>
                     </div>

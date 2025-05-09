@@ -10,26 +10,6 @@ use Illuminate\Support\Facades\Storage;
 
 class AdminPageController extends Controller
 {
-
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
-    {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
         $validated = $request->validate([
@@ -57,28 +37,25 @@ class AdminPageController extends Controller
         $product->description = $validated['description'];
 
         if ($request->hasFile('image')) {
-            $filename = $request->image->getClientOriginalName();
-            $request->image->move(public_path('images'), $filename);
-            $product->image = $filename;
+            $imagePath = $request->file('image')->store('images', 'public');
+            $product->image = basename($imagePath);
         }
+
         $product->save();
 
         if ($request->hasFile('images')) {
             foreach ($request->file('images') as $image) {
-                $filename = $image->getClientOriginalName();
-                $image->move(public_path('images'), $filename);
-
+                $filename = $image->store('images', 'public');
                 $product->photos()->create([
                     'product_id' => $product->id,
-                    'url' => $filename,
+                    'url' => basename($filename),
                 ]);
             }
         }
 
-
-
         return redirect()->route('admin_add')->with('success', 'Produkt bol úspešne pridaný.');
     }
+
     public function deleteProduct(Request $request)
     {
         $categories = Category::with('subcategories')->get();
@@ -98,15 +75,54 @@ class AdminPageController extends Controller
     {
         $product = Product::findOrFail($id);
 
-        // Optionally delete the image from storage
-        if ($product->image && Storage::disk('public')->exists($product->image)) {
-            Storage::disk('public')->delete($product->image);
+        // Handle the main product image
+        if ($product->image) {
+            $imageFilename = $product->image;
+
+            $usedElsewhere = Product::where('id', '!=', $product->id)
+                ->where('image', $imageFilename)
+                ->whereNull('deleted_at') // Only consider active products
+                ->exists();
+
+            if (!$usedElsewhere && Storage::disk('public')->exists('images/' . $imageFilename)) {
+                Storage::disk('public')->move(
+                    'images/' . $imageFilename,
+                    'images/trash/' . $imageFilename
+                );
+            }
         }
 
-        $product->delete();
+        // Handle additional photos associated with the product
+        foreach ($product->photos as $photo) {
+            $photoFilename = $photo->url;
 
-        return redirect()->route('product.delete')->with('success', 'Produkt bol úspešne odstránený.');
+            $usedElsewhere = \DB::table('photos')
+                ->where('product_id', '!=', $product->id)
+                ->where('url', $photoFilename)
+                ->whereNull('deleted_at')
+                ->exists();
+
+            if (!$usedElsewhere && Storage::disk('public')->exists('images/' . $photoFilename)) {
+                Storage::disk('public')->move(
+                    'images/' . $photoFilename,
+                    'images/trash/' . $photoFilename
+                );
+            }
+
+            // Soft delete the photo
+            $photo->deleted_at = now();
+            $photo->save();
+        }
+
+        // Soft delete the product
+        $product->deleted_at = now();
+        $product->save();
+
+        return redirect()->route('product.delete')
+            ->with('success', 'Produkt bol úspešne odstránený.');
     }
+
+
 
     public function editProduct(Request $request)
     {
@@ -147,12 +163,6 @@ class AdminPageController extends Controller
             ->with('success', 'Produkt bol úspešne upravený.');
     }
 
-
-
-
-    /**
-     * Display the specified resource.
-     */
     public function show(Request $request)
     {
         $category = $request->get('cat');
@@ -165,29 +175,5 @@ class AdminPageController extends Controller
         }
 
         return view('components.add', compact('categories', 'subcategories'));
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit()
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy()
-    {
-        //
     }
 }

@@ -35,7 +35,7 @@
                             <button class="btn btn-outline-primary w-100 mb-3" type="submit">Hľadať</button>
 
                             @if ($product)
-                                <img src="{{ asset('images/' . $product->image) }}" style="width:75%; height:auto"
+                                <img src="{{ asset('storage/images/' . $product->image) }}" style="width:75%; height:auto"
                                      class="card-img-top img-fluid" alt="{{ $product->name }}">
                                 <div class="card-body text-center">
                                     <h5 class="card-title fs-2">{{ $product->name }}</h5>
