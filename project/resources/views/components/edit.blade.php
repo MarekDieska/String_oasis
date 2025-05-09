@@ -14,10 +14,12 @@
                         <form id="searchProductForm" method="GET" action="{{ route('product.edit') }}">
                             <div class="row mb-3">
                                 <div class="col-md-8">
+                                    <label class="form-label fw-bold text_color">Zadajte názov</label>
                                     <input type="text" class="form-control text-black placeholder-black" maxlength="100"
                                            name="s" placeholder="Názov produktu" value="{{ request('s') }}">
                                 </div>
                                 <div class="col-md-4">
+                                    <label class="form-label fw-bold text_color">Z kategórie</label>
                                     <select class="form-select" name="subcategory" required>
                                         @foreach ($categories as $category)
                                             @foreach ($category->subcategories as $subcategory)
@@ -96,18 +98,36 @@
                                         <input type="number" name="stock" class="form-control placeholder-black"
                                                value="{{ $product->stock }}" min="0">
                                     </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-bold text_color">Hodnotenie</label>
+                                        <input type="number" name="stock" class="form-control placeholder-black"
+                                               value="{{ $product->stars}}" min="0" max="5">
+                                    </div>
                                 </div>
 
                                 <div class="row mb-3">
                                     <div class="col-md-6 d-inline-block">
-                                        <label class="form-label fw-bold text_color">Obrázok produktu</label>
-                                        <input type="file" name="image" class="form-control bg-dark text_color">
+                                        <label class="form-label fw-bold text_color mt-2">Hlavný obrázok produktu</label>
+                                        <input type="file" name="image" class="form-control bg-dark text_color mb-2 mt-2">
                                         @if ($product->image)
                                             <div class="d-flex w-100 justify-content-center">
                                                 <img src="{{ asset('images/' . $product->image) }}"
                                                      style="width:70%; height:auto" class="mt-3 img-fluid" alt="Produkt">
                                             </div>
                                         @endif
+                                    </div>
+                                    <div class="col-md-6 d-inline-block">
+                                        <label class="form-label fw-bold text_color mt-2">Ďalšie obrázky</label>
+                                        <input type="file" name="images[]" class="form-control bg-dark text_color form-control  mb-2 mt-2" multiple>
+                                        <div class="justify-content-center row">
+                                            @foreach($product->photos as $image)
+                                                <div class="card bg-transparent col-6 align-items-center justify-content-between">
+                                                    <img src="{{ asset('images/' . $image->url) }}"
+                                                         style="width:70%; height:auto" class="mt-3 img-fluid" alt="Produkt">
+                                                    <button class="btn btn-outline-danger mb-3 mt-3"> Vymazať </button>
+                                                </div>
+                                            @endforeach
+                                        </div>
                                     </div>
                                 </div>
 

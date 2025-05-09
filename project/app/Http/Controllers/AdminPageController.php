@@ -42,7 +42,7 @@ class AdminPageController extends Controller
             'rating' => 'required|numeric|min:1|max:5',
             'description' => 'required|string|min:50|max:500',
             'image' => 'required|image',
-            'images' => 'required|array',
+            'images' => 'required|array|min:2',
             'images.*' => 'image',
         ]);
 

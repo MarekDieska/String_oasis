@@ -91,7 +91,7 @@ class FilterController extends Controller
             $query->whereIn('brand', $brand);
         }
 
-        $p_products = $query->simplePaginate(16)->appends($request->except('page'));
+        $p_products = $query->paginate(16)->appends($request->except('page'));
 
         if ($subcategory != 0) {
             $p_ratings = Product::where('subcategory_id', $subcategory)->select('stars')->distinct()->orderBy('stars', 'asc')->pluck('stars');
