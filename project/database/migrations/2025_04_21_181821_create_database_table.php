@@ -54,7 +54,7 @@ return new class extends Migration
             $table->decimal('price');
             $table->decimal('discount');
             $table->integer('stock');
-            $table->decimal('stars');
+            $table->integer('stars');
             $table->text('description')->nullable();
             $table->string('image')->nullable();
         });
@@ -86,15 +86,15 @@ return new class extends Migration
 
         Schema::create('deliveries', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('description');
+            $table->string('name',50);
+            $table->text('description');
             $table->decimal('price');
         });
 
         Schema::create('payments', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('description');
+            $table->string('name',50);
+            $table->text('description');
             $table->decimal('price');
         });
 
