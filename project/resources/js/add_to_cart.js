@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Function to show the error toast
 function showErrorToast(errorMessage) {
-    const toastEl = document.getElementById('loginErrorToast');  // Use the loginErrorToast ID
+    const toastEl = document.getElementById('errorToast');  // Use the errorToast ID
     const toastBody = document.getElementById('loginErrorContent');
 
     toastBody.textContent = errorMessage; // Set error message to toast body

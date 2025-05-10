@@ -85,6 +85,8 @@ Route::get('/admin/product/delete', [AdminPageController::class, 'deleteProduct'
 
 // Confirm and delete the product
 Route::delete('/admin/product/delete/{id}', [AdminPageController::class, 'destroyProduct'])->name('product.destroy');
+Route::delete('/admin/product/photo/{id}', [AdminPageController::class, 'deletePhoto'])->name('photo.delete');
+
 
 Route::get('/admin/product/edit', [AdminPageController::class, 'editProduct'])->name('product.edit');
 Route::put('/admin/product/edit/{id}', [AdminPageController::class, 'updateProduct'])->name('product.update');

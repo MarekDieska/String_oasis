@@ -57,7 +57,7 @@
                                 <div class="row mb-3">
                                     <div class="col-md-12">
                                         <label class="form-label fw-bold text_color">Popis produktu</label>
-                                        <textarea name="description" class="form-control placeholder-black" rows="3" minlength="50"
+                                        <textarea name="description" class="form-control placeholder-black" rows="4" minlength="50"
                                                   maxlength="500">{{ $product->description }}</textarea>
                                     </div>
                                 </div>
@@ -100,7 +100,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <label class="form-label fw-bold text_color">Hodnotenie</label>
-                                        <input type="number" name="stock" class="form-control placeholder-black"
+                                        <input type="number" name="stars" class="form-control placeholder-black"
                                                value="{{ $product->stars}}" min="0" max="5">
                                     </div>
                                 </div>
@@ -124,7 +124,7 @@
                                                 <div class="card bg-transparent col-6 align-items-center justify-content-between">
                                                     <img src="{{ asset('storage/images/' . $image->url) }}"
                                                          style="width:70%; height:auto" class="mt-3 img-fluid" alt="Produkt">
-                                                    <button class="btn btn-outline-danger mb-3 mt-3"> Vymazať </button>
+                                                    <button type="button" class="btn btn-outline-danger mb-3 mt-3 btn-delete-image" data-photo-id="{{ $image->id }}">Vymazať</button>
                                                 </div>
                                             @endforeach
                                         </div>
@@ -132,7 +132,7 @@
                                 </div>
 
                                 <div class="d-flex justify-content-end gap-2">
-                                    <a href="{{ route('admin') }}" class="btn btn-secondary">Zrušiť</a>
+                                    <a href="{{ route('admin_edit') }}" class="btn btn-secondary">Zrušiť</a>
                                     <button type="submit" class="btn btn-warning">Upraviť produkt</button>
                                 </div>
                             </form>
@@ -152,4 +152,6 @@
             <a href="{{ route('admin') }}" class="btn btn-success w-75 p-1 fs-5">Dokončiť</a>
         </div>
     </section>
+
+
 @endsection

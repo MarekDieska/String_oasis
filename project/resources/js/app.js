@@ -6,3 +6,4 @@ import './load_modal_data';
 import './add_to_cart';
 import './login_handler';
 import './payment_delivery_show';
+import './edit_product';

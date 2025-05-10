@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     // ✅ Show toast if there are validation errors
     if (window.validationErrors && window.validationErrors.length > 0) {
-        const toastEl = document.getElementById('loginErrorToast');
+        const toastEl = document.getElementById('errorToast');
         const toastBody = document.getElementById('loginErrorContent');
 
         if (toastEl && toastBody) {

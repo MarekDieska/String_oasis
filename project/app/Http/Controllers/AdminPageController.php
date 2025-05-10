@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Photo;
 use App\Models\Product;
 use App\Models\Subcategory;
 use Illuminate\Http\Request;
@@ -47,7 +48,6 @@ class AdminPageController extends Controller
             foreach ($request->file('images') as $image) {
                 $filename = $image->store('images', 'public');
                 $product->photos()->create([
-                    'product_id' => $product->id,
                     'url' => basename($filename),
                 ]);
             }
@@ -73,56 +73,38 @@ class AdminPageController extends Controller
 
     public function destroyProduct($id)
     {
-        $product = Product::findOrFail($id);
+        $product = Product::with('photos')->findOrFail($id);
 
-        // Handle the main product image
         if ($product->image) {
-            $imageFilename = $product->image;
-
             $usedElsewhere = Product::where('id', '!=', $product->id)
-                ->where('image', $imageFilename)
-                ->whereNull('deleted_at') // Only consider active products
-                ->exists();
-
-            if (!$usedElsewhere && Storage::disk('public')->exists('images/' . $imageFilename)) {
-                Storage::disk('public')->move(
-                    'images/' . $imageFilename,
-                    'images/trash/' . $imageFilename
-                );
-            }
-        }
-
-        // Handle additional photos associated with the product
-        foreach ($product->photos as $photo) {
-            $photoFilename = $photo->url;
-
-            $usedElsewhere = \DB::table('photos')
-                ->where('product_id', '!=', $product->id)
-                ->where('url', $photoFilename)
+                ->where('image', $product->image)
                 ->whereNull('deleted_at')
                 ->exists();
 
-            if (!$usedElsewhere && Storage::disk('public')->exists('images/' . $photoFilename)) {
-                Storage::disk('public')->move(
-                    'images/' . $photoFilename,
-                    'images/trash/' . $photoFilename
-                );
+            if (!$usedElsewhere && Storage::disk('public')->exists('images/' . $product->image)) {
+                Storage::disk('public')->move('images/' . $product->image, 'images/trash/' . $product->image);
             }
-
-            // Soft delete the photo
-            $photo->deleted_at = now();
-            $photo->save();
         }
 
-        // Soft delete the product
-        $product->deleted_at = now();
-        $product->save();
+        foreach ($product->photos as $photo) {
+            $usedElsewhere = \DB::table('photos')
+                ->where('product_id', '!=', $product->id)
+                ->where('url', $photo->url)
+                ->whereNull('deleted_at')
+                ->exists();
+
+            if (!$usedElsewhere && Storage::disk('public')->exists('images/' . $photo->url)) {
+                Storage::disk('public')->move('images/' . $photo->url, 'images/trash/' . $photo->url);
+            }
+
+            $photo->delete();
+        }
+
+        $product->delete();
 
         return redirect()->route('product.delete')
             ->with('success', 'Produkt bol úspešne odstránený.');
     }
-
-
 
     public function editProduct(Request $request)
     {
@@ -131,7 +113,8 @@ class AdminPageController extends Controller
 
         if ($request->filled('s') && $request->filled('subcategory')) {
             $search = str_replace(' ', '%', $request->input('s'));
-            $product = Product::where('name', 'ILIKE', '%' . $search . '%')
+            $product = Product::with(['photos', 'subcategory.category'])
+                ->where('name', 'ILIKE', '%' . $search . '%')
                 ->where('subcategory_id', $request->subcategory)
                 ->first();
         }
@@ -141,26 +124,82 @@ class AdminPageController extends Controller
 
     public function updateProduct(Request $request, $id)
     {
-        $product = Product::findOrFail($id);
-
-        $product->update([
-            'name' => $request->name,
-            'description' => $request->description,
-            'price' => $request->price,
-            'discount' => $request->discount,
-            'brand' => $request->brand,
-            'stock' => $request->stock,
-            'subcategory_id' => $request->subcategory_id,
+        $validated = $request->validate([
+            'name' => 'required|string|max:100',
+            'description' => 'required|string|min:50|max:500',
+            'price' => 'required|numeric|min:0.01|max:5000',
+            'discount' => 'required|numeric|min:0|max:100',
+            'brand' => 'required|string|max:100',
+            'stock' => 'required|integer|min:0',
+            'stars' => 'required|numeric|min:1|max:5',
+            'subcategory_id' => 'required|exists:subcategories,id',
+            'image' => 'nullable|image|max:2048',
+            'images.*' => 'nullable|image|max:2048',
+            'deleted_images' => 'nullable|string',
         ]);
 
-        if ($request->hasFile('image')) {
-            $image = $request->file('image')->store('images', 'public');
-            $product->image = basename($image);
-            $product->save();
+        $product = Product::with('photos')->findOrFail($id);
+        $oldImage = $product->image;
+
+        $product->update($validated);
+
+        if (!Storage::disk('public')->exists('images/trash')) {
+            Storage::disk('public')->makeDirectory('images/trash');
         }
 
-        return redirect()->route('product.edit', ['s' => $product->name, 'subcategory' => $product->subcategory_id])
-            ->with('success', 'Produkt bol úspešne upravený.');
+        if ($request->hasFile('image')) {
+            $imagePath = $request->file('image')->store('images', 'public');
+            $product->image = basename($imagePath);
+            $product->save();
+
+            if ($oldImage) {
+                $this->safelyMoveToTrash('images/'.$oldImage, 'products', 'image', $product->id);
+            }
+        }
+
+        if ($request->hasFile('images')) {
+            foreach ($request->file('images') as $image) {
+                $filename = $image->store('images', 'public');
+                $product->photos()->create(['url' => basename($filename)]);
+            }
+        }
+
+        if ($request->filled('deleted_images')) {
+            $deletedIds = json_decode($request->deleted_images, true);
+
+            $product->photos()
+                ->whereIn('id', $deletedIds)
+                ->each(function($photo) {
+                    $this->safelyMoveToTrash('images/'.$photo->url, 'photos', 'url', $photo->id);
+                    $photo->delete();
+                });
+        }
+
+        return redirect()->route('product.edit', [
+            's' => $product->name,
+            'subcategory' => $product->subcategory_id
+        ])->with('success', 'Produkt bol úspešne upravený.');
+    }
+
+    protected function safelyMoveToTrash(string $filePath, string $table, string $column, int $excludeId): bool
+    {
+        if (!Storage::disk('public')->exists($filePath)) {
+            return false;
+        }
+
+        $usedElsewhere = \DB::table($table)
+            ->where($column, basename($filePath))
+            ->where('id', '!=', $excludeId)
+            ->whereNull('deleted_at')
+            ->exists();
+
+        if (!$usedElsewhere) {
+            $newFilename = time().'_'.basename($filePath);
+            Storage::disk('public')->move($filePath, 'images/trash/'.$newFilename);
+            return true;
+        }
+
+        return false;
     }
 
     public function show(Request $request)
@@ -175,5 +214,18 @@ class AdminPageController extends Controller
         }
 
         return view('components.add', compact('categories', 'subcategories'));
+    }
+
+    public function deletePhoto($id)
+    {
+        $photo = Photo::findOrFail($id);
+
+        if (Storage::disk('public')->exists('images/' . $photo->url)) {
+            Storage::disk('public')->move('images/' . $photo->url, 'images/trash/' . $photo->url);
+        }
+
+        $photo->delete();
+
+        return response()->json(['success' => true]);
     }
 }
