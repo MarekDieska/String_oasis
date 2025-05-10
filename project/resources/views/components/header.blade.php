@@ -24,7 +24,7 @@
 
         <div class="col-md-4 col-6 d-flex justify-content-end align-items-center">
             <ul class="d-flex list-unstyled fs-3 m-0 justify-content-end">
-                <li class="marg-bug"><a href="{{ route('cart_page') }}"><i class="link-custom text_color fa fa-cart-shopping fs-4"></i>Cart</a></li>
+                <li class="marg-bug"><a href="{{ route('cart_page') }}"><i class="link-custom text_color fa fa-cart-shopping fs-4"></i></a></li>
                 @guest
                     <li class="marg-bug">
                         <i class="link-custom text_color fa-regular fa-user" data-bs-toggle="modal" data-bs-target="#login_form"></i>
