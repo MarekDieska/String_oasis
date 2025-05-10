@@ -2,12 +2,15 @@
 
     <div class="collapse navbar-collapse" id="navbarNav">
         <div class="d-flex d-md-none flex-column accordion accordion-flush accordion-custom" id="accordionFlush">
-            <label class="search w-100 p-3">
-                <input type="text" placeholder="Hľadať podľa názvu..." class="form-control input-custom rounded-pill border-0">
-            </label>
+            <form action="{{ route('filters_page') }}" method="GET" class="w-100">
+                <input type="hidden" name="sub" value="0">
+                <label class="search w-100">
+                    <input type="text" name="q" placeholder="Hľadať podľa názvu..." class="form-control input-custom rounded-pill border-0 my-2" value="{{ request('q') }}">
+                </label>
+            </form>
 
             @foreach ($categories as $category)
-                @if ($category->subcategories->isNotEmpty())
+                @if ($category->subcategories->first()->name)
                     <div class="accordion-item accordion_color">
                         <h1 class="accordion-header">
                             <button class="accordion-button collapsed accordion_color" type="button"
@@ -23,7 +26,7 @@
                              data-bs-parent="#accordionFlush">
                             <div class="accordion-body d-flex flex-column">
                                 @foreach ($category->subcategories as $subcategory)
-                                    <a href="{{ route('filters_page', ['sub' => $subcategory->id]) }}">
+                                    <a class="p-1" href="{{ route('filters_page', ['sub' => $subcategory->id]) }}">
                                         {{ $subcategory->name }}
                                     </a>
                                 @endforeach

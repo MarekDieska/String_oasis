@@ -3,12 +3,8 @@
 
 @section('content')
     <section class="row justify-content-center align-items-center pt-4 mt-4">
-        <div class="col-12 d-none d-sm-flex flex-row justify-content-center align-items-center">
-            <div class="d-flex align-items-center flex-column  circle-box-custom">
-                <div class="btn btn-secondary circle-custom-big rounded-pill"><i
-                        class="fa-regular fa-circle-check"></i></div>
-                <h6>hotovo</h6>
-            </div>
+        <div class="btn btn-secondary circle-custom-big rounded-pill d-flex justify-content-center align-items-center">
+            <i class="fa-regular fa-circle-check"></i>
         </div>
     </section>
 

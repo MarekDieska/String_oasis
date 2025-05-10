@@ -6,7 +6,7 @@
         <div class="col-12 d-none d-sm-flex flex-row justify-content-center align-items-center mt-4 mt-md-0">
             @foreach (['Košík', 'Delivery', 'Údaje', 'Kontrola', 'hotovo'] as $index => $step)
                 <div class="d-flex align-items-center flex-column circle-box-custom">
-                    <div class="btn btn-secondary circle-custom rounded-pill {{ $index > 1 ? 'disabled' : '' }}">
+                    <div class="btn btn-secondary circle-custom rounded-pill {{ $index > 2 ? 'disabled' : '' }}">
                         {{ $index == 4 ? '' : $index + 1 }}
                         @if($index == 4)
                             <i class="fa-regular fa-circle-check"></i>
