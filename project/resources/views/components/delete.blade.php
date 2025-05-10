@@ -5,6 +5,12 @@
 @endphp
 
 @section('content')
+    @if (session('success'))
+        <div class="alert alert-success m-3 me-md-0 text-center">
+            {{ session('success') }}
+        </div>
+    @endif
+
     <section class="row w-100 justify-content-center">
         <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center p-5">
             <div class="card bg-dark border-danger text-dark w-100">

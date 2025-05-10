@@ -1,6 +1,11 @@
 @extends('layouts.index')
 
 @section('content')
+    @if (session('success'))
+        <div class="alert alert-success m-3 me-md-0 text-center">
+            {{ session('success') }}
+        </div>
+    @endif
     <section class="card mt-5 mb-3 bg-dark border-success-subtle text_color">
         <form method="POST" action="{{ route('add') }}" enctype="multipart/form-data">
             @csrf

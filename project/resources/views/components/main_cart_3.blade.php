@@ -3,23 +3,21 @@
 
 @section('content')
     <section class="row justify-content-center align-items-center mt-4">
-        <div class="col-12 d-none d-sm-flex flex-row justify-content-center align-items-center">
-            @php
-                $steps = ['Košík', 'Doprava', 'Údaje', 'Kontrola', 'hotovo'];
-            @endphp
-
-            @foreach ($steps as $index => $step)
+        <div class="col-12 d-none d-sm-flex flex-row justify-content-center align-items-center mt-4 mt-md-0">
+            @foreach (['Košík', 'Delivery', 'Údaje', 'Kontrola', 'hotovo'] as $index => $step)
                 <div class="d-flex align-items-center flex-column circle-box-custom">
-                    <div class="btn btn-secondary circle-custom rounded-pill {{ $index > 2 ? 'disabled' : '' }}">
-                        {{ $index < 4 ? $index + 1 : ($index === 4 ? '' : '✔') }}
-                        @if ($index === 4)
+                    <div class="btn btn-secondary circle-custom rounded-pill {{ $index > 1 ? 'disabled' : '' }}">
+                        {{ $index == 4 ? '' : $index + 1 }}
+                        @if($index == 4)
                             <i class="fa-regular fa-circle-check"></i>
                         @endif
                     </div>
-                    <h6 class="{{ $index < 4 ? 'text-light txt-custom' : '' }}">{{ $step }}</h6>
+                    <h6 class="text-light txt-custom">{{ $step }}</h6>
                 </div>
                 @if ($index < 4)
-                    <p class="btn btn-secondary arrow-custom fs-5"><i class="fa fa-arrow-right m-0"></i></p>
+                    <p class="btn btn-secondary arrow-custom fs-5">
+                        <i class="fa fa-arrow-right m-0"></i>
+                    </p>
                 @endif
             @endforeach
         </div>
@@ -46,7 +44,7 @@
         <input type="hidden" name="d_c" value="{{ request('d_c') }}">
         <input type="hidden" name="p_c" value="{{ request('p_c')}}">
 
-        <section class="row">
+        <section class="row mx-2 mx-md-0">
             <div class="col-12 col-md-7 align-items-start justify-content-center p-3 p-sm-5 pe-md-0">
                 <div class="mt-0">
                     <div class="row">
@@ -120,19 +118,19 @@
                 <div class="total-custom rounded-1 p-3 d-flex flex-column justify-content-between">
                     <div>
                         <h2 class="subtotal">Zhrnutie:</h2>
-                        <div class="d-flex justify-content-between align-items-center m-3">
+                        <div class="d-flex justify-content-between align-items-center">
                             <p class="fs-5">Medzisúčet</p>
                             <p class="fs-5">{{ number_format($s, 2) }}€</p>
                         </div>
-                        <div class="d-flex justify-content-between align-items-center m-3">
+                        <div class="d-flex justify-content-between align-items-center">
                             <p class="fs-5">Zľavy</p>
                             <p class="fs-5">{{ $d }}%</p>
                         </div>
-                        <div class="d-flex justify-content-between align-items-center m-3">
+                        <div class="d-flex justify-content-between align-items-center">
                             <p class="fs-5">Doprava</p>
                             <p class="fs-5">{{ $d_c }}€</p>
                         </div>
-                        <div class="d-flex justify-content-between align-items-center m-3">
+                        <div class="d-flex justify-content-between align-items-center">
                             <p class="fs-5">Platba</p>
                             <p class="fs-5"> {{ $p_c }}€</p>
                         </div>
