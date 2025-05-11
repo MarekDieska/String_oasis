@@ -21,7 +21,7 @@ class AdminPageController extends Controller
             'discount' => 'required|numeric|min:0|max:100',
             'stock' => 'required|numeric|min:0',
             'rating' => 'required|numeric|min:1|max:5',
-            'description' => 'required|string|min:50|max:500',
+            'description' => 'required|string|min:50',
             'image' => 'required|image',
             'images' => 'required|array|min:2',
             'images.*' => 'image',
@@ -126,7 +126,7 @@ class AdminPageController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|string|max:100',
-            'description' => 'required|string|min:50|max:500',
+            'description' => 'required|string|min:50',
             'price' => 'required|numeric|min:0.01|max:5000',
             'discount' => 'required|numeric|min:0|max:100',
             'brand' => 'required|string|max:100',

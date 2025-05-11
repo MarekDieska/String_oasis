@@ -1,7 +1,7 @@
 function showErrorToast(message) {
     const toastEl = document.getElementById('errorToast');
     if (toastEl) {
-        const toastContent = document.getElementById('loginErrorContent');
+        const toastContent = document.getElementById('errorContent');
         const toast = bootstrap.Toast.getOrCreateInstance(toastEl);
         toastContent.textContent = message;
         toast.show();
