@@ -88,7 +88,6 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-end gap-2 mt-2 mb-3">
-                    <a type="button" href="{{route('admin_add')}}" class="btn btn-outline-secondary">Zrušiť</a>
                     <button type="reset" class="btn btn-outline-danger">Vyčistiť</button>
                     <button type="submit" class="btn btn-primary">Pridať produkt</button>
                 </div>

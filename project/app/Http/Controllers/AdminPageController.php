@@ -38,17 +38,17 @@ class AdminPageController extends Controller
         $product->description = $validated['description'];
 
         if ($request->hasFile('image')) {
-            $imagePath = $request->file('image')->store('images', 'public');
-            $product->image = basename($imagePath);
+            $imagePath = $request->file('image')->storeAs('images', $request->file('image')->getClientOriginalName(), 'public');
+            $product->image = $request->file('image')->getClientOriginalName();
         }
 
         $product->save();
 
         if ($request->hasFile('images')) {
             foreach ($request->file('images') as $image) {
-                $filename = $image->store('images', 'public');
+                $filename = $image->storeAs('images', $image->getClientOriginalName(), 'public');
                 $product->photos()->create([
-                    'url' => basename($filename),
+                    'url' => $image->getClientOriginalName(),
                 ]);
             }
         }
@@ -148,19 +148,19 @@ class AdminPageController extends Controller
         }
 
         if ($request->hasFile('image')) {
-            $imagePath = $request->file('image')->store('images', 'public');
-            $product->image = basename($imagePath);
+            $imagePath = $request->file('image')->storeAs('images', $request->file('image')->getClientOriginalName(), 'public');
+            $product->image = $request->file('image')->getClientOriginalName();
             $product->save();
 
             if ($oldImage) {
-                $this->safelyMoveToTrash('images/'.$oldImage, 'products', 'image', $product->id);
+                $this->checkForSfD('images/'.$oldImage, 'products', 'image', $product->id);
             }
         }
 
         if ($request->hasFile('images')) {
             foreach ($request->file('images') as $image) {
-                $filename = $image->store('images', 'public');
-                $product->photos()->create(['url' => basename($filename)]);
+                $filename = $image->storeAs('images', $image->getClientOriginalName(), 'public');
+                $product->photos()->create(['url' => $image->getClientOriginalName()]);
             }
         }
 
@@ -170,7 +170,7 @@ class AdminPageController extends Controller
             $product->photos()
                 ->whereIn('id', $deletedIds)
                 ->each(function($photo) {
-                    $this->safelyMoveToTrash('images/'.$photo->url, 'photos', 'url', $photo->id);
+                    $this->checkForSfD('images/'.$photo->url, 'photos', 'url', $photo->id);
                     $photo->delete();
                 });
         }
@@ -181,21 +181,23 @@ class AdminPageController extends Controller
         ])->with('success', 'Produkt bol úspešne upravený.');
     }
 
-    protected function safelyMoveToTrash(string $filePath, string $table, string $column, int $excludeId): bool
+    protected function checkForSfD(string $filePath, string $table, string $column, int $excludeId): bool
     {
         if (!Storage::disk('public')->exists($filePath)) {
             return false;
         }
 
+        $filenameToCheck = last(explode('/', $filePath));
+
         $usedElsewhere = \DB::table($table)
-            ->where($column, basename($filePath))
+            ->where($column, $filenameToCheck)
             ->where('id', '!=', $excludeId)
             ->whereNull('deleted_at')
             ->exists();
 
         if (!$usedElsewhere) {
-            $newFilename = time().'_'.basename($filePath);
-            Storage::disk('public')->move($filePath, 'images/trash/'.$newFilename);
+            $filename = pathinfo($filePath, PATHINFO_BASENAME);
+            Storage::disk('public')->move($filePath, 'images/trash/' . $filename);
             return true;
         }
 

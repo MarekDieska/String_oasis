@@ -17,7 +17,7 @@ return new class extends Migration
 
         $user = User::create([
             'email' => 'admin@admin.sk',
-            'password' => Hash::make('admin'),
+            'password' => Hash::make('Admin123'),
             'anonym' => false,
         ]);
 
