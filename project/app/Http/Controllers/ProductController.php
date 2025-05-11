@@ -7,7 +7,6 @@ class ProductController extends Controller
     {
         public function showStars($rating)
         {
-            // Ensure rating is between 0 and 5
             $rating = max(0, min(5, (int) $rating));
 
             return view('components.stars', ['rating' => $rating]);

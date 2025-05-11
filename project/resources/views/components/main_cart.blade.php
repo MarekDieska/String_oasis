@@ -1,4 +1,3 @@
-@include("../components/variables")
 @extends('layouts.index')
 
 @php

@@ -17,7 +17,7 @@ class UserController extends Controller
 
     public function create()
     {
-        $roles = Role::all(); // If you're selecting a role in a form
+        $roles = Role::all();
         return view('users.create', compact('roles'));
     }
 
@@ -47,10 +47,8 @@ class UserController extends Controller
             'email' => 'required|email|exists:users,email',
         ]);
 
-        // Find the user based on email
         $user = User::where('email', $request->email)->first();
 
-        // Assign the role to the user
         $user->assignRole('admin');
 
         return back()->with('success', 'Rola pridaná úspešne!');
