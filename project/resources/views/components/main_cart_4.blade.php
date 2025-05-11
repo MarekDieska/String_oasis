@@ -35,7 +35,7 @@
             <div class="row pb-2 mb-2 ps-xl-5">
                 <div class="col-12 col-md-3"></div>
                 <div class="col-6 col-md-4  opacity-75">Email:</div>
-                <div class="col-6 col-md-5">{{ $user->email }}</div>
+                <div class="col-6 col-md-5">{{ $profile->email }}</div>
             </div>
             <div class="row pb-2 mb-2 ps-xl-5">
                 <div class="col-12 col-md-3"></div>

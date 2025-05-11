@@ -17,7 +17,8 @@ class Profile extends Model
         'street',
         'city',
         'zip',
-        'country'
+        'country',
+        'email',
     ];
 
     public function user()

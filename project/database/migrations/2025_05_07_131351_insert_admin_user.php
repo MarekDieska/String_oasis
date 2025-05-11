@@ -24,8 +24,8 @@ return new class extends Migration
         $user->assignRole('admin');
 
         $user->profile()->create([
-            'user_id' => $user->id,
             'name' => 'Admin',
+            'email' => 'admin@admin.sk',
             'surname' => 'Account',
         ]);
     }

@@ -61,9 +61,6 @@ class CartController4 extends Controller
         $userId = Auth::check() ? Auth::id() : session('anonymous_user');
         $user = User::find($userId);
 
-        $user->update([
-            'email' => $request->email,
-        ]);
 
         $profileData = [
             'name' => $request->meno,
@@ -73,9 +70,10 @@ class CartController4 extends Controller
             'city' => $request->mesto,
             'zip' => $request->psc,
             'country' => $request->krajina,
+            'email' => $request->email,
         ];
 
-        if ($user->profile) {
+        if ($user->profile && !$user->anonym) {
             $user->profile->update($profileData);
             $profile = $user->profile;
         } else {
