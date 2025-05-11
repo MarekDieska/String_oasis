@@ -35,8 +35,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-outline-primary mb-0">+ Pridať Parameter</button>
-                            <button type="button" class="ms-3 btn btn-outline-danger mb-0">Odstrániť Parameter</button>
                         </div>
                     </div>
                     <div class="col-md-4">
