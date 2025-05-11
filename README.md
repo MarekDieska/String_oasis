@@ -15,8 +15,7 @@ fotky z figmy: ->project->Wireframe
 
 UML diagram: ->project->diagram_StringOasis.png
 
-Používateľská príručka
-Na spustenie aplikácie je potrebné: 
+Používateľská príručka: 
 1.	Stiahnuť PHPStorm alebo iné prostredie, ktoré podporuje php
 2.	Stiahnuť PHP + composer, nastaviť php.ini
 3.	Stiahnuť node.js na https://nodejs.org kvôli vite
