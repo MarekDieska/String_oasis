@@ -31,7 +31,7 @@
                     <x-input label="Krajina" name="country" :value="$user->profile->country" />
                 </fieldset>
 
-                <button type="submit" class="btn btn-light mt-3 w-100">Uložiť zmeny</button>
+                <button type="submit" class="btn btn-primary mt-3 w-100">Uložiť zmeny</button>
             </form>
 
 
