@@ -23,11 +23,13 @@ Používateľská príručka:
 5.	V príkazovom riadku cd project, composer install
 6.	V PgAdmin vytvoriť databázu s názvom a heslom, ktorý je v .env
 7.	Skopírovať celý priečinok public/images do storage/app/public - vznikne priečinok  storage/app/public/images s fotkami
-8.	php artisan migrate:fresh –seed
-9.	npm install, npm run build
-10.	php artisan storage:link
-11.	php artisan key:generate
-12.	php artisan serve
+8.	V storage/app/public/ vytvoriť prázdny priečinok trash
+9.	php artisan migrate:fresh –seed
+10.	npm install, npm run build
+11.	php artisan storage:link
+12.	php artisan key:generate
+13.	php artisan serve
+
 
 
 [✔️] zobrazenie prehľadu všetkých produktov z vybratej kategórie používateľom
